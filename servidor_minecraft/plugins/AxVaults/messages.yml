@@ -1,0 +1,104 @@
+guis:
+  selector:
+    title: '&nMis mochilas'
+    item-owned:
+      # the players can change the default material if the have permission
+      material: HAY_BLOCK
+      name: '&aMochila &7(#%num%)'
+      glow: false
+      lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fLlena tu mochila con una variedad'
+      - '&fde artículos que tienes disponibles'
+      - ''
+      - '&8&l● &fEspacios: &#aaffaa%used%&7/&#aaffaa%max%'
+      - ''
+      - '&e▸ ¡Clic izq para abrir!'
+      - '&e▸ ¡Shift + clic!'
+    item-locked:
+      # the players can change the default material if the have permission
+      material: RED_STAINED_GLASS_PANE
+      name: '&#FF0000Mochila &7(#%num%)'
+      glow: false
+      lore:
+      - ''
+      - '&fEsta mochila actualmente no '
+      - '&fse encuentra disponible.'
+      - ''
+      - '&8&l● &fEstado: &#FF0000&l✘'
+      - ' '
+      - '&e▸ ¡Adquiére mochilas!'
+  item-picker:
+    title: '&nSelecciona un item'
+  vault:
+    title: '&nMochila número #%num%'
+
+gui-items:
+  close:
+    material: BARRIER
+    name: '&#FF3333Cerrar menú'
+    lore:
+    - ' '
+    - '&fNo sabes cómo salir del menú'
+    - '&fde las Mochilas, te ayudare!'
+    - ' '
+    - '&e▸ ¡Salir ahora mismo!'
+  back:
+    material: BARRIER
+    name: '&#FF3333Regresar al menú'
+    lore:
+    - ' '
+    - '&fNo sabes cómo regresar del menú'
+    - '&fde las Mochilas, te ayudare!'
+    - ' '
+    - '&e▸ ¡Regresar ahora mismo!'
+  previous-page:
+    material: ARROW
+    name: '&#FF3333Página anterior'
+    lore:
+    - ' '
+    - '&fNo sabes cómo regresar del menú'
+    - '&fde las Mochilas, te ayudare!'
+    - ' '
+    - '&e▸ ¡Regresar ahora mismo!'
+  next-page:
+    material: ARROW
+    name: '&aPágina siguiente'
+    lore:
+    - ' '
+    - '&fNo sabes cómo avanzar del menú'
+    - '&fde las Mochilas, te ayudare!'
+    - ' '
+    - '&e▸ ¡Avanzar ahora mismo!'
+help:
+- '&#55ff00&lAxVaults &7» &#AAFFAAHelp:'
+- ' '
+- '  &7⋆ &f/axvaultsadmin view <player> <vault> &7| &#AAFFAAOpen another player''s vault'
+- '  &7⋆ &f/axvaultsadmin forceopen <player> &7| &#AAFFAAOpen vault selector to player'
+- '  &7⋆ &f/axvaultsadmin set [number] &7| &#AAFFAAAdd vault to block'
+- '  &7⋆ &f/axvaultsadmin reload &7| &#AAFFAAReload configuration'
+- ' '
+
+vault:
+  not-unlocked: '&#FF0000✘ ¡Algo salió  mal! &fActualmente no dispones de esta mochila!'
+  opened: '&#FFFFBD☄ ¡Excelente! &fHas habierto la mochila número &#FFFFBD#%num%'
+
+reload:
+  success: '&#33FF33Plugin successfully reloaded!'
+  failed: '&#FF3333Failed to reload the plugin! Something is wrong in the &f%file%&#FF3333 file, look in the console or use a yaml validator to fix the errors!'
+
+set:
+  success: '&#00FF00Puede agregar correctamente la mochila a este bloque!'
+  already: '&#FF0000Este bloque ya tiene una mochila.!'
+  no-block: '&#FF0000debes mirar un bloque!'
+  removed: '&#FF0000Has eliminado la mochila de este bloque.!'
+
+no-permission: '&#FF0000No tienes permiso para usar esto.!'
+force-open: '&#00FF00Selector de mochila abierto para &f%player%&#55FF00!'
+view: '&#55FF00%player%&f''s &#55FF00#%num% &fmochila abierta!'
+view-not-found: '&#FF0000Can''t find player or vault!'
+banned-item: '&#FF0000You can''t put this item into vaults!'
+
+# do not change this
+version: 2

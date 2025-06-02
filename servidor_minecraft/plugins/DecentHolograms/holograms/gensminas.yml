@@ -1,0 +1,54 @@
+location: Minas:5,500:93,000:33,500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: golden_pickaxe'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&e&lMINAS'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f¡Hola! &e&n%player_name%&f...'
+    height: 0.3
+  - content: '&f¡Te damos la bienvenida a nuestras minas!'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&e⚒ &fObtendrás esencias únicas qué podras intercambiar'
+    height: 0.3
+  - content: '&fen el apartado de nuestros tradeos en el spawn &e⚒'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: 'En nuestra mina podras '
+    height: 0.3
+  - content: '&fencontrar lo siguiente'
+    height: 0.3
+  - content: '&e&n¡Sobre está zona!'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&e1# &8- &fMina carbón'
+    height: 0.3
+  - content: '&e2# &8- &fMina hierro'
+    height: 0.3
+  - content: '&e3# &8- &fMina oro'
+    height: 0.3
+  - content: '&e4# &8- &fMina diamante'
+    height: 0.3
+  - content: '&e5# &8- &fMina esmeralda &7(5%)'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fÚnete: &a&ndiscord.gg/mineluxe'
+    height: 0.3
+  actions: {}

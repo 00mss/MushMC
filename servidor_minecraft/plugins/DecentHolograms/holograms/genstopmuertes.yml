@@ -1,0 +1,68 @@
+location: Spawn:0,500:70,000:30,500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: <#ANIM:wave:&#FF0202&l,&#FF0D02&l>ᴛᴏᴘ ᴅᴇ ᴍᴜᴇʀᴛᴇꜱ</#ANIM>
+    height: 0.27
+  - content: '&8ᴊᴜɢᴀᴅᴏʀᴇꜱ ᴄᴏɴ ᴍᴀꜱ ᴍᴜᴇʀᴛᴇꜱ'
+    height: 0.27
+  - content: '&r'
+    height: 0.27
+  - content: '&fAquí está nuestro &#FF0202&lᴛᴏᴘ&f de muertes en '
+    height: 0.27
+  - content: '&fla modalidad generadores.'
+    height: 0.27
+  - content: ''
+    height: 0.27
+  - content: '&#FF0202¡Clasificación de más asesinatos del servidor!'
+    height: 0.27
+  - content: '&c¡Entérate de más en Discord!'
+    height: 0.27
+  - content: ''
+    height: 0.27
+  - content: '&#FF0202&lɢʟᴏʙᴀʟ'
+    height: 0.27
+  - content: '&f¡Descubre otras posiciones!'
+    height: 0.27
+  - content: ''
+    height: 0.27
+  - content: '#FF0202&l#1 &7| &f%ajlb_lb_statistic_deaths_1_daily_name% &8- #FF0202%ajlb_lb_statistic_deaths_1_daily_value%
+      #FF0202☠'
+    height: 0.27
+  - content: '#FF0202&l#2 &7| &f%ajlb_lb_statistic_deaths_2_daily_name% &8- #FF0202%ajlb_lb_statistic_deaths_2_daily_value%
+      #FF0202☠'
+    height: 0.27
+  - content: '#FF0202&l#3 &7| &f%ajlb_lb_statistic_deaths_3_daily_name% &8- #FF0202%ajlb_lb_statistic_deaths_3_daily_value%
+      #FF0202☠'
+    height: 0.27
+  - content: ''
+    height: 0.27
+  - content: ''
+    height: 0.27
+  - content: '&#FF0202&lᴘᴇʀꜱᴏɴᴀʟ'
+    height: 0.27
+  - content: '&f¡Descubre tu posición actual!'
+    height: 0.27
+  - content: ''
+    height: 0.27
+  - content: '#FF0202&l#%ajlb_position_statistic_deaths_alltime% &7| &f%player_name%:
+      #FF0202&l%ajlb_value_statistic_deaths_alltime% #FF0202☠'
+    height: 0.27
+  - content: '&7(Los mejores obtendrán recompensas)'
+    height: 0.27
+  - content: ''
+    height: 0.27
+  - content: '#ICON: BONE_BLOCK'
+    height: 0.3
+  actions:
+    LEFT:
+    - NEXT_PAGE
+    - SOUND:ENTITY_WARDEN_LISTENING_ANGRY
+    RIGHT:
+    - PREV_PAGE
+    - SOUND:ENTITY_WARDEN_LISTENING_ANGRY

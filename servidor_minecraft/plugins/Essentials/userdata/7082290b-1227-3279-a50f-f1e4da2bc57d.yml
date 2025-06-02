@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1729651073384
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1729658477544
+  login: 1729658363408
+money: '1010986190168.0'
+last-account-name: Divertidamente
+lastlocation:
+  world: ed055d91-2dfd-4525-a826-7b1b62e7f8ee
+  world-name: Islas
+  x: 617.7152108924505
+  y: 102.0
+  z: -4.960222729126787
+  yaw: 118.5216064453125
+  pitch: 9.180746078491211
+logoutlocation:
+  world: 14767f7f-9279-4ea5-b8b9-1a855a5f717b
+  world-name: Spawn
+  x: 40.75041699394605
+  y: 63.0
+  z: -27.525280195600004
+  yaw: -74.65762329101562
+  pitch: 27.192840576171875

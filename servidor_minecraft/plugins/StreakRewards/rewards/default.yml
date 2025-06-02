@@ -1,0 +1,170 @@
+# could be either TREE, REVERSED_TREE, CIRCLE, CROWN, VICTORY, TORNADO, CHEST, SNAKE or CUSTOM
+menu_shape: SNAKE
+menu_title: '&nRacha de conexión'
+menu_size: 54
+days: 30
+# could be either PER_DAY or PER_PLAYER
+claim_type: PER_DAY
+# use with PER_DAY # this is in MINUTES from 12:00 am. If you want for example the day to reset at 4:00 am, then make the value 240
+per_day_timezone_offset: 0
+# use with PER_PLAYER # this is in MINUTES, if you want a player to only wait 18 hours instead of 24, make the value 1080, (default 1440 for 24 hour day)
+per_player_day_length: 6080
+# this is in MINUTES, make the value 720 to add 12 hours of grace period, and cannot be negative
+player_grace_period: 720
+# enable if you want players to be online at least x time in order to claim their reward
+require_minimum_time_online: false
+# players must be at least 10 minutes online to claim their reward. (this option is in minutes)
+minimum_time_online: 110
+# if you set this to true, the menu will be closed when the player clicks a non-empty item
+close_menu_on_click: true
+
+default_actions:
+- '[console]give %player% stick %day%'
+- '[message]§x§F§F§D§2§5§8⌛ ¡Adelante, todo correcto! &fHas reclamado con éxito la
+  recompensa de rachas &7(#%day%)'
+default_items:
+  # this item will be displayed in the menu as all days that were already claimed.
+  claimed:
+    material: minecart
+    amount: -1
+    displayName: '&6Racha de conexión &7(#%day%)'
+    lore:
+    - '&8Rachas de conexión'
+    - ''
+    - '&fReclamaste tu recompensa con éxito'
+    - '&fdeberás cumplir los nuevos requisitos'
+    - '&fpara obtener una nueva recompensa'
+    - ''
+    - '&8&l● &fEstado: &6&l✔'
+    - ''
+    - '&e▸ ¡Comple los nuevos requisitos!'
+    glow: false
+  # this item will be displayed in the menu when as the next reward if it's claimable.
+  canClaim:
+    material: CHEST_MINECART
+    amount: -1
+    displayName: '&aRacha de conexión &7(#%day%)'
+    lore:
+    - '&8Rachas de conexión'
+    - ''
+    - '&fVaya, parece que tienes una'
+    - '&frecompensa que aún no has'
+    - '&freclamado, reclamala ahora'
+    - ''
+    - '&8&l● &fEstado: &a&l✔'
+    - ''
+    - '&e▸ ¡Nueva recompensa disponible!'
+    glow: false
+  # this item will be displayed in the menu when the day is not yet claimable.
+  unclaimed:
+    material: furnace_minecart
+    amount: -1
+    displayName: '&aRacha de conexión &7(#%day%)'
+    lore:
+    - '&8Rachas de conexión'
+    - ''
+    - '&c⚠ &o¡Cuidado, si no te conectas'
+    - '&c&oun dia perderás la racha! ⚠'
+    - ''
+    - '&fLa recompensa de hoy aún no está'
+    - '&fdisponible, deberás esperar para'
+    - '&fpoder reclamarla nuevamente'
+    - ''
+    - '&8&l● &fEstado: &c&l✘'
+    - ''
+    - '&e▸ ¡Conectate diariamente!'
+    glow: false
+  # this item will be displayed in all empty slots of the menu. If you don't want the menu to be filled, just remove this.
+  empty:
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    displayName: ' '
+    lore: []
+    glow: false
+  # this item will be displayed as the next reward in the menu if they have to wait for it
+  nextReward:
+    material: furnace_minecart
+    amount: -1
+    displayName: '&aRacha de conexión &7(#%day%)'
+    lore:
+    - '&8Recompensa especial'
+    - ''
+    - '&c⚠ &o¡Cuidado, si no te conectas'
+    - '&c&oun dia perderás la racha! ⚠'
+    - ''
+    - '&fRecompensa en estado de congelación '
+    - '&fcumple los requisitos para reclamar'
+    - ''
+    - '&8&l● &fEstado: &c&l✘'
+    - '&8&l● &fTiempo: &e%remaining_hours%h, %remaining_minutes%m, %remaining_seconds%s'
+    - ''
+    - '&e▸ ¡Conectate diariamente!'
+day-1:
+  actions:
+  - '[console]give %player% stick 1'
+  - '[message]§x§F§F§D§2§5§8⌛ ¡Adelante, todo correcto! &fHas reclamado con éxito
+    la recompensa de rachas &7(#%day%)'
+day-2:
+  actions:
+  - '[console]give %player% stick 2'
+  - '[message]§x§F§F§D§2§5§8⌛ ¡Adelante, todo correcto! &fHas reclamado con éxito
+    la recompensa de rachas &7(#%day%)'
+day-3:
+- '[console]give %player% stick 3'
+- '[message]&aYou claimed the third day!'
+day-4:
+  menu:
+    claimed:
+      displayName: '&6Racha de conexión &7(#%day%)'
+      lore:
+      - '&8Rachas de conexión'
+      - ''
+      - '&fReclamaste tu recompensa con éxito'
+      - '&fdeberás cumplir los nuevos requisitos'
+      - '&fpara obtener una nueva recompensa'
+      - ''
+      - '&8&l● &fEstado: &6&l✔'
+      - ''
+      - '&e▸ ¡Comple los nuevos requisitos!'
+      material: furnace_minecart
+      glow: false
+      amount: -1
+    unclaimed:
+      material: furnace_minecart
+      lore:
+      - '&8Recompensa especial'
+      - ''
+      - '&c⚠ &o¡Cuidado, si no te conectas'
+      - '&c&oun dia perderás la racha! ⚠'
+      - ''
+      - '&fLa recompensa de hoy aún no está'
+      - '&fdisponible, deberás esperar para'
+      - '&fpoder reclamarla nuevamente'
+      - ''
+      - '&8&l● &fEstado: &c&l✘'
+      - ''
+      - '&e▸ ¡Conectate diariamente!'
+    canClaim:
+      material: furnace_minecart
+      lore:
+      - '&aYou can claim this reward!'
+    nextReward:
+      material: furnace_minecart
+      glow: false
+      lore:
+      - '&8Recompensa especial'
+      - ''
+      - '&c⚠ &o¡Cuidado, si no te conectas'
+      - '&c&oun dia perderás la racha! ⚠'
+      - ''
+      - '&fRecompensa en estado de congelación '
+      - '&fcumple los requisitos para reclamar'
+      - ''
+      - '&8&l● &fEstado: &c&l✘'
+      - '&8&l● &fTiempo: &e%remaining_hours%h, %remaining_minutes%m, %remaining_seconds%s'
+      - ''
+      - '&e▸ ¡Conectate diariamente!'
+  actions:
+  - '[console]give %player% stick 5'
+  - '[message]§x§F§F§D§2§5§8⌛ ¡Adelante, todo correcto! &fHas reclamado con éxito
+    la recompensa de rachas &7(#%day%)'

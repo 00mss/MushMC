@@ -1,0 +1,101 @@
+# PlaceholderAPI
+# Version: @version@
+# Created by: extended_clip
+# Contributors: https://github.com/PlaceholderAPI/PlaceholderAPI/graphs/contributors
+# Issues: https://github.com/PlaceholderAPI/PlaceholderAPI/issues
+# Expansions: https://api.extendedclip.com/all/
+# Wiki: https://github.com/PlaceholderAPI/PlaceholderAPI/wiki
+# Discord: https://helpch.at/discord
+# No placeholders are provided with this plugin by default.
+# Download placeholders: /papi ecloud
+check_updates: true
+cloud_enabled: true
+cloud_sorting: name
+cloud_allow_unverified_expansions: false
+boolean:
+  'true': 'yes'
+  'false': 'no'
+date_format: MM/dd/yy HH:mm:ss
+debug: false
+expansions:
+  player:
+    ping_value:
+      high: 100
+      medium: 50
+    direction:
+      north: N
+      south: S
+      north_west: NW
+      north_east: NE
+      east: E
+      south_east: SE
+      west: W
+      south_west: SW
+    ping_color:
+      medium: '&e'
+      high: '&c'
+      low: '&a'
+  vault:
+    formatting:
+      thousands: k
+      millions: M
+      billions: B
+      trillions: T
+      quadrillions: Q
+    baltop:
+      check_delay: 30
+      cache_size: 100
+      enabled: false
+  server:
+    tps_color:
+      high: '&a'
+      low: '&c'
+      medium: '&e'
+    server_name: A Minecraft Server
+  playerlist:
+    offline-text: Offline
+    argument-separator: '||'
+    lists:
+      staff:
+        type: ONLINE
+        included: true
+        filters:
+        - PERMISSION:group.staff
+        - CANSEE
+  localtime:
+    date_format: dd/MM/yyyy hh:mma
+  javascript:
+    debug: false
+    github_script_downloads: false
+    argument_split: ','
+    use_quick_js: false
+  progress:
+    in_progress: '&e■'
+    length: 10
+    completed: '&a■'
+    maximum_value: 100
+    decimal: 2
+    remaining: '&7■'
+    full: '&aCompleted'
+    replace_placeholder:
+    - ',;.'
+  streak:
+    material:
+      on_cooldown: HOPPER_MINECART
+      claimed: MINECART
+      ready_to_claim: CHEST_MINECART
+      not_available: FURNACE_MINECART
+    lore:
+      claimed: Already claimed
+      ready_to_claim: Ready to claim
+      not_available: Not available
+      on_cooldown: On cooldown
+    status:
+      not_available: '&c✘'
+      on_cooldown: '&e⌚'
+      claimed: '&a&l✔'
+      ready_to_claim: '&a✔'
+
+
+# Downloaded from https://nullforums.net/resources/gens-tycoon-premium-setup.5543/
+# 22766AHPF5Y4IR54FCZ19DBXADQ3BLFSMHU6W3

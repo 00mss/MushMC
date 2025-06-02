@@ -1,0 +1,23 @@
+prefix: '&x&9&a&e&3&a&8⌚ ¡Olvidaste algo!'
+command:
+  no-permission: '&c⚠ &c¡Oye! &fSin los permisos suficientes, si crees qué esto
+    es un problema contáctanos: &c&ndiscord.gg/mineluxe'
+  unknown: '{prefix} &fComando desconocido. Escribe &e/trs help &fpara ver la lista de comandos.'
+  invalid: '{prefix} &fUso inválido. Usa &e/{args}&f.'
+  invalid-player: '{prefix} &fJugador inválido: &c{player}&f.'
+  unknown-reward: '{prefix} &fRecompensa desconocida: &c{reward}&f.'
+  tr-reload-complete: '{prefix} &fTimedRewards se ha recargado exitosamente (tiempo tomado: &e{time}&fms).'
+  tr-resetclaimtime-invalid-user: '{prefix} &fUsuario inválido: &c{player}&f.'
+  tr-resetclaimtime-reset: '{prefix} &fSe ha reiniciado el tiempo de reclamación de la recompensa &e{reward} &fpara &a{user}&f.'
+  rewards-disabled: '{prefix} &fEste comando ha sido desactivado.'
+config-change-available: '{prefix} &fHay un cambio de configuración disponible. Actual: &c{current} &fNuevo: &a{new}&f.'
+reward-no-permission: '&c⚠ &c¡Oye! &fSin los permisos suficientes, si crees qué esto
+    es un problema contáctanos: &c&ndiscord.gg/mineluxe'
+reward-already-claimed: '&c⚠ &c¡Oye! &fYa has reclamado esta recompensa, intenta volver más tarde'
+reward-cooldown:
+  now: '&aAhora'
+  formats:
+    cooldown_digital: '&e{hours}h &e{minutes}m {seconds}s'
+    cooldown_digital_short: '&e{hours}h &e{minutes}m {seconds}s'
+    cooldown_long: '{days}d {hours}h {minutes}m {seconds}s'
+    your_own_custom_one: '{hours}h {minutes}m {seconds}s'

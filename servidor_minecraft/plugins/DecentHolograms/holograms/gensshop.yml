@@ -1,0 +1,18 @@
+location: Spawn:24,500:67,143:18,500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&#E7FC60&lTIENDA DE GENS'
+    height: 0.3
+  - content: '&fCompra generadores para'
+    height: 0.3
+  - content: '&fcomenzar con tu aventura'
+    height: 0.3
+  - content: '&e▸ ¡Clic para abrir!'
+    height: 0.3
+  actions: {}

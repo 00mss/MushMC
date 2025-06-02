@@ -1,0 +1,66 @@
+# Comandos e aliases do plugin
+Comando:
+  Mito:
+    Comando: mito
+    Aliases: []
+#
+Mito: Servername
+Tag: '&x&F&8&E&A&2&A&lMITOS'
+
+NPC:
+  # Altura do holograma
+  Offset: 3.1
+  Holograma:
+  - '&x&F&8&E&A&2&A&lFUGITIVOS'
+  - '&f¡Mata al fugitivo!'
+  - '&7(/{player}&7)'
+  - ''
+  Mensagens:
+    Setado: '&aNPC do mito setado com sucesso.'
+    Removido: '&aNPC do mito removido com sucesso'
+    Nao setado: '&cO NPC não está setado.'
+
+Soltar raio: true
+Spawnar morcegos: true
+Usar som: true
+Som: ENDERDRAGON_GROWL
+
+Mensagens:
+  Broadcast:
+    Ativar: true
+    Mensagem matou:
+    - ''
+    - '&8&l● &fEl jugador &e{matou} &fmato al fugitivo &e{morreu} &fy ahora es el
+      más buscado'
+    - ''
+    Mensagem:
+    - ''
+    - '&8&l● &fEl jugador &e{player} &f¡ahora es el más buscado &x&F&8&E&A&2&A&l☄&f!'
+    - ''
+  Title:
+    Ativar: true
+    Title: '&x&F&8&E&A&2&A&l¡ALERTA!<nl>&e{player} &f¡Es ahora &x&F&8&E&A&2&A&lFUGITIVO&f!'
+  Actionbar:
+    Ativar: true
+    Mensagem matou: '&f¡El jugador &e{matou} &fmato al fugitivo &e{morreu}&f!'
+    Mensagem: '&fEl jugador &e{player} &fahora es el más buscado &x&F&8&E&A&2&A&lFUGITIVO&f!'
+  Mito atual: '&8&l● &e{player} &fes el fugitivo.'
+  Nenhum: '&cNão há nenhum mito.'
+
+Eventos:
+  Broadcast:
+    Ativar: false
+    Mensagem entrou:
+    - ''
+    - '&8&l● &fEl jugador &7{player} &centrou no servidor.'
+    - ''
+    Mensagem saiu:
+    - ''
+    - '&8&l● &fEl jugador &7{player} &csaiu do servidor.'
+    - ''
+  Actionbar:
+    Ativar: true
+    Mensagem entrou: '&f¡El fugitivo &e{player} &fentro al servidor!!'
+    Mensagem saiu: '&f¡El fugitivo &e{player} &fsalió al servidor!!'
+
+Mito local: Spawn;116.48747984119568;64.0;-5.513049013356741;89.82802;-1.8000019

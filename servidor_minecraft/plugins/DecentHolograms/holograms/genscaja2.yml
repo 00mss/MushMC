@@ -1,0 +1,28 @@
+location: Spawn:115,500:69,000:10,500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#FFB87C&lBAÚL GENERADOR'
+    height: 0.3
+  - content: '&7Probabilidad &8┇ (15)%'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fAdquiére llaves desde'
+    height: 0.3
+  - content: '#F8D4A9&nᴛɪᴇɴᴅᴀ.ᴍɪɴᴇʟᴜxᴇ.ᴜꜱ'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fCalidad del baúl: #FFB87C★★&7★★★★'
+    height: 0.3
+  - content: <#ANIM:wave:&#F8D4A9,&#FFB87C>¡Clic der para abrir!</#ANIM>
+    height: 0.3
+  - content: '#ICON: BROWN_DYE'
+    height: 0.3
+  actions: {}

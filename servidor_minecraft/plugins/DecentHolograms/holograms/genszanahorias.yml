@@ -1,0 +1,48 @@
+location: cultivos:-29,404:96,000:-5,585
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: CARROT'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '#FF9B00&lZONA DE CULTIVOS'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f¡Hola! <#ANIM:wave:&#FF9B00,&#FFB900>%player_name%</#ANIM>&f!'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fTe encuentras en nuestra zona de cultivos'
+    height: 0.3
+  - content: '&fComienza a cosechar &#FF9B00&n&lZANAHORIAS&f para mejorar tu azada'
+    height: 0.3
+  - content: '&fvende tus cosechas para obtener ganancias.'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&8&l● &fNivel de azada req: &#FF9B008'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f¿Quieres dirigirte al spawn?'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&#FF9B00&n¡Golpea la Información!'
+    height: 0.3
+  actions:
+    LEFT:
+    - COMMAND:/spawn
+    - SOUND:BLOCK_COMPARATOR_CLICK
+    RIGHT:
+    - COMMAND:/spawn
+    - SOUND:BLOCK_COMPARATOR_CLICK

@@ -1,0 +1,18 @@
+location: Spawn:108,486:67,246:-19,531
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&#FB6B08&lM&#F16E0C&lO&#E8700F&lC&#DE7313&lH&#D57517&lI&#CB781B&lL&#C27A1E&lA&#B87D22&lS'
+    height: 0.3
+  - content: '&fColoca tus items entre más'
+    height: 0.3
+  - content: '&fcosas en tus mochilas'
+    height: 0.3
+  - content: '&e▸ ¡Clic para abrir!'
+    height: 0.3
+  actions: {}

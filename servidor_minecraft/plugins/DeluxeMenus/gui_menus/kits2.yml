@@ -1,0 +1,659 @@
+menu_title: '&nEquipamientos de sistema&r&r | &n2/3'
+open_command:
+- kits2
+- playerkits2
+- playerkits:kit2
+- playerkits:kits2
+- playerkits:kits2
+- kit2
+update_interval: 2
+size: 54
+items:
+  'Fill':
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: "&r"
+    slots: 
+    - 10
+    - 19
+    - 28
+  'siguiente':
+    material: arrow
+    slots:
+    - 50
+    display_name: '&aSiguiente página'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEstá es nuestra lista amplia de'
+    - '&fequipamientos disponibles'
+    - ''
+    - '&e▸ ¡Adquiére paquetes! ' 
+    left_click_commands:
+    - '[openguimenu] kits3'
+    - '[sound] BLOCK_WOODEN_TRAPDOOR_OPEN'
+    - '[sound] BLOCK_WATER_AMBIENT' 
+  'anterior':
+    material: arrow
+    slots:
+    - 48
+    display_name: '&cPágina anterior'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEstá es nuestra lista amplia de'
+    - '&fequipamientos disponibles'
+    - ''
+    - '&e▸ ¡Adquiére paquetes! ' 
+    left_click_commands:
+    - '[openguimenu] kits'
+    - '[sound] BLOCK_WOODEN_TRAPDOOR_OPEN'
+    - '[sound] BLOCK_WATER_AMBIENT'    
+  'inforrmacion':
+    display_name: '&#ECF074¡Equipamientos!'
+    material: nautilus_shell
+    slot: 49  
+    left_click_commands:
+    - '[sound] BLOCK_BAMBOO_BREAK'
+    
+    
+  '1-disp':
+    display_name: '&#00E0FFEquipamiento &lPESCA'
+    material: CHEST_MINECART
+    slot: 18
+    update: true           
+    priority: 1
+    view_requirement:
+      requirements:
+        Tiempo:
+          type: string equals ignorecase
+          input: '%playerkits_cooldown_caña%'
+          output: '¡Listo!'
+        Permiso:
+          type: has permission
+          permission: 'playerkits.kit.caña'
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fReclama este equipamiento y'
+    - '&fúnete a combate contra los'
+    - '&fdemás jugadores para ser '
+    - ''
+    - '&7Información'
+    - '&8&l● &fEstado: &a&l✔'
+    - ''
+    - '&#F8DB71▸ ¡Clic izq para reclamar!'     
+    left_click_commands:
+    - '[player] kit caña'     
+    - '[close]'
+    right_click_commands:
+    - '[player] kit preview caña'     
+  '1-tiempo':
+    material: hopper_minecart
+    slot: 18
+    update: true 
+    display_name: '&#00E0FFEquipamiento &lPESCA'
+    priority: 2
+    view_requirement:
+      requirements:
+        Permiso:
+          type: has permission
+          permission: 'playerkits.kit.caña'
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fReclama este equipamiento y'
+    - '&fúnete a combate contra los'
+    - '&fdemás jugadores para ser '
+    - ''
+    - '&7Información'
+    - '&8&l● &fEstado: &#F87044⌚'
+    - '&8&l● &fTiempo: &6%playerkits_cooldown_caña%'
+    - ''
+    - '&#F8DB71▸ ¡Clic izq para reclamar!' 
+    left_click_commands:
+    - '[player] kit caña' 
+    - '[close]' 
+    - '[refresh]'     
+    right_click_commands:
+    - '[player] kit preview caña'     
+  '1-noperms':
+    material: MINECART
+    slot: 18
+    update: true 
+    display_name: '&#00E0FFEquipamiento &lPESCA'
+    priority: 3
+    lore:
+    - '&8Acceso directo'
+    - '' 
+    - '&fReclama este equipamiento y'
+    - '&fúnete a combate contra los'
+    - '&fdemás jugadores para ser '
+    - ''
+    - '&7Información'
+    - '&8&l● &fEstado: &c&l✘'
+    - '&8&l● &fNivel Req: &a15'
+    - ''
+    - '&#F8DB71▸ ¡Sin acceso a esto!' 
+    left_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND' 
+    - '[message] &c&l✘ &c¡Oye! &fSin los permisos suficientes, adquiere rango desde nuestra &c&lTIENDA&f para obtener este paquete. &c&ntienda.mineluxe.us'
+    - '[close]'  
+    right_click_commands:
+    - '[player] kit preview caña'
+    - '[close]'
+
+
+#################################################
+    
+  '3-disp':
+    display_name: '&#93fb9bE&#92fb99q&#91fb98u&#90fc96i&#8ffc94p&#8efc93a&#8dfc91m&#8cfc90i&#8bfc8ee&#8afd8cn&#89fd8bt&#88fd89o &#93fb9b&lG&#91fb98&lR&#90fc96&lA&#8efc93&lN&#8dfc91&lJ&#8bfc8e&lE&#8afd8c&lR&#88fd89&lO'
+    material: CHEST_MINECART
+    slot: 21
+    update: true           
+    priority: 1
+    view_requirement:
+      requirements:
+        Tiempo:
+          type: string equals ignorecase
+          input: '%playerkits_cooldown_granjero%'
+          output: '¡Listo!'
+        Permiso:
+          type: has permission
+          permission: 'playerkits.kit.granjero'
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fReclama este equipamiento y'
+    - '&fúnete a combate contra los'
+    - '&fdemás jugadores para ser '
+    - ''
+    - '&7Información '
+    - '&8&l● &fEstado: &a&l✔'
+    - ''
+    - '&#F8DB71▸ ¡Clic izq para reclamar!'        
+    left_click_commands:
+    - '[player] kit granjero'     
+    - '[close]'     
+    right_click_commands:
+    - '[player] kit preview granjero'     
+  '3-tiempo':
+    material: MINECART
+    slot: 21
+    update: true 
+    display_name: '&#93fb9bE&#92fb99q&#91fb98u&#90fc96i&#8ffc94p&#8efc93a&#8dfc91m&#8cfc90i&#8bfc8ee&#8afd8cn&#89fd8bt&#88fd89o &#93fb9b&lG&#91fb98&lR&#90fc96&lA&#8efc93&lN&#8dfc91&lJ&#8bfc8e&lE&#8afd8c&lR&#88fd89&lO'
+    priority: 2
+    view_requirement:
+      requirements:
+        Permiso:
+          type: has permission
+          permission: 'playerkits.kit.granjero'
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fReclama este equipamiento y'
+    - '&fúnete a combate contra los'
+    - '&fdemás jugadores para ser '
+    - ''
+    - '&7Información '
+    - '&8&l● &fEstado: &#F87044⌚'
+    - '&8&l● &fTiempo: &6%playerkits_cooldown_granjero%'
+    - ''
+    - '&#F8DB71▸ ¡Clic izq para reclamar!'  
+    left_click_commands:
+    - '[player] kit granjero' 
+    - '[close]' 
+    - '[refresh]'     
+    right_click_commands:
+    - '[player] kit preview granjero'     
+  '3-noperms':
+    material: MINECART
+    slot: 21
+    update: true 
+    display_name: '&#93fb9bE&#92fb99q&#91fb98u&#90fc96i&#8ffc94p&#8efc93a&#8dfc91m&#8cfc90i&#8bfc8ee&#8afd8cn&#89fd8bt&#88fd89o &#93fb9b&lG&#91fb98&lR&#90fc96&lA&#8efc93&lN&#8dfc91&lJ&#8bfc8e&lE&#8afd8c&lR&#88fd89&lO'
+    priority: 3
+    lore:
+    - '&8Acceso directo'
+    - '' 
+    - '&fReclama este equipamiento y'
+    - '&fúnete a combate contra los'
+    - '&fdemás jugadores para ser '
+    - ''
+    - '&7Información '
+    - '&8&l● &fEstado: &c&l✘'
+    - '&8&l● &fPrestigio Req: &#93fb9b&lG&#91fb98&lR&#90fc96&lA&#8efc93&lN&#8dfc91&lJ&#8bfc8e&lE&#8afd8c&lR&#88fd89&lO'
+    - ''
+    - '&#F8DB71▸ ¡Sin acceso a esto!'  
+    left_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND' 
+    - '[message] &c&l✘ &c¡Oye! &fSin los permisos suficientes, adquiere rango desde nuestra &c&lTIENDA&f para obtener este paquete. &c&ntienda.mineluxe.us'
+    - '[close]'  
+    right_click_commands:
+    - '[player] kit preview granjero'
+    - '[close]'               
+  '4-disp':
+    display_name: '&#fbce82E&#fbd183q&#fbd485u&#fcd786i&#fcda88p&#fcdd89a&#fce08bm&#fce38ci&#fce68ee&#fde98fn&#fdec91t&#fdef92o &#fbce82&lF&#fbd485&lA&#fcd987&lR&#fcdf8a&lM&#fce48d&lE&#fdea8f&lR&#fdef92&lO'
+    material: CHEST_MINECART
+    slot: 22
+    update: true           
+    priority: 1
+    view_requirement:
+      requirements:
+        Tiempo:
+          type: string equals ignorecase
+          input: '%playerkits_cooldown_farmero%'
+          output: '¡Listo!'
+        Permiso:
+          type: has permission
+          permission: 'playerkits.kit.farmero'
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fReclama este equipamiento y'
+    - '&fúnete a combate contra los'
+    - '&fdemás jugadores para ser '
+    - ''
+    - '&7Información '
+    - '&8&l● &fEstado: &a&l✔'
+    - ''
+    - '&#F8DB71▸ ¡Clic izq para reclamar!'        
+    left_click_commands:
+    - '[player] kit farmero'     
+    - '[close]'     
+    right_click_commands:
+    - '[player] kit preview farmero'     
+  '4-tiempo':
+    material: MINECART
+    slot: 22
+    update: true 
+    display_name: '&#fbce82E&#fbd183q&#fbd485u&#fcd786i&#fcda88p&#fcdd89a&#fce08bm&#fce38ci&#fce68ee&#fde98fn&#fdec91t&#fdef92o &#fbce82&lF&#fbd485&lA&#fcd987&lR&#fcdf8a&lM&#fce48d&lE&#fdea8f&lR&#fdef92&lO'
+    priority: 2
+    view_requirement:
+      requirements:
+        Permiso:
+          type: has permission
+          permission: 'playerkits.kit.farmero'
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fReclama este equipamiento y'
+    - '&fúnete a combate contra los'
+    - '&fdemás jugadores para ser '
+    - ''
+    - '&7Información '
+    - '&8&l● &fEstado: &#F87044⌚'
+    - '&8&l● &fTiempo: &6%playerkits_cooldown_farmero%'
+    - ''
+    - '&#F8DB71▸ ¡Clic izq para reclamar!'  
+    left_click_commands:
+    - '[player] kit farmero' 
+    - '[close]' 
+    - '[refresh]'     
+    right_click_commands:
+    - '[player] kit preview farmero'     
+  '4-noperms':
+    material: MINECART
+    slot: 22
+    update: true 
+    display_name: '&#fbce82E&#fbd183q&#fbd485u&#fcd786i&#fcda88p&#fcdd89a&#fce08bm&#fce38ci&#fce68ee&#fde98fn&#fdec91t&#fdef92o &#fbce82&lF&#fbd485&lA&#fcd987&lR&#fcdf8a&lM&#fce48d&lE&#fdea8f&lR&#fdef92&lO'
+    priority: 3
+    lore:
+    - '&8Acceso directo'
+    - ''  
+    - '&fReclama este equipamiento y'
+    - '&fúnete a combate contra los'
+    - '&fdemás jugadores para ser '
+    - ''
+    - '&7Información '
+    - '&8&l● &fEstado: &c&l✘'
+    - '&8&l● &fPrestigio Req: &#fbce82&lF&#fbd485&lA&#fcd987&lR&#fcdf8a&lM&#fce48d&lE&#fdea8f&lR&#fdef92&lO'
+    - ''
+    - '&#F8DB71▸ ¡Sin acceso a esto!'  
+    left_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND' 
+    - '[message] &c&l✘ &c¡Oye! &fSin los permisos suficientes, adquiere rango desde nuestra &c&lTIENDA&f para obtener este paquete. &c&ntienda.mineluxe.us'
+    - '[close]'  
+    right_click_commands:
+    - '[player] kit preview farmero'
+    - '[close]'          
+  '5-disp':
+    display_name: '&#fb7373E&#fb7675q&#fb7a78u&#fc7d7ai&#fc807cp&#fc837fa&#fc8781m&#fc8a84i&#fc8d86e&#fd9088n&#fd948bt&#fd978do &#fb7373&lT&#fb7776&lE&#fb7a78&lR&#fc7e7b&lR&#fc817d&lA&#fc8580&lN&#fc8983&lI&#fc8c85&lE&#fd9088&lN&#fd938a&lT&#fd978d&lE'
+    material: CHEST_MINECART
+    slot: 23
+    update: true           
+    priority: 1
+    view_requirement:
+      requirements:
+        Tiempo:
+          type: string equals ignorecase
+          input: '%playerkits_cooldown_terraniente%'
+          output: '¡Listo!'
+        Permiso:
+          type: has permission
+          permission: 'playerkits.kit.terraniente'
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fReclama este equipamiento y'
+    - '&fúnete a combate contra los'
+    - '&fdemás jugadores para ser '
+    - ''
+    - '&7Información '
+    - '&8&l● &fEstado: &a&l✔'
+    - ''
+    - '&#F8DB71▸ ¡Clic izq para reclamar!'        
+    left_click_commands:
+    - '[player] kit terraniente'     
+    - '[close]'     
+    right_click_commands:
+    - '[player] kit preview terraniente'     
+  '5-tiempo':
+    material: MINECART
+    slot: 23
+    update: true 
+    display_name: '&#fb7373E&#fb7675q&#fb7a78u&#fc7d7ai&#fc807cp&#fc837fa&#fc8781m&#fc8a84i&#fc8d86e&#fd9088n&#fd948bt&#fd978do &#fb7373&lT&#fb7776&lE&#fb7a78&lR&#fc7e7b&lR&#fc817d&lA&#fc8580&lN&#fc8983&lI&#fc8c85&lE&#fd9088&lN&#fd938a&lT&#fd978d&lE'
+    priority: 2
+    view_requirement:
+      requirements:
+        Permiso:
+          type: has permission
+          permission: 'playerkits.kit.terraniente'
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fReclama este equipamiento y'
+    - '&fúnete a combate contra los'
+    - '&fdemás jugadores para ser '
+    - ''
+    - '&7Información '
+    - '&8&l● &fEstado: &#F87044⌚'
+    - '&8&l● &fTiempo: &6%playerkits_cooldown_terraniente%'
+    - ''
+    - '&#F8DB71▸ ¡Clic izq para reclamar!'  
+    left_click_commands:
+    - '[player] kit terraniente' 
+    - '[close]' 
+    - '[refresh]'     
+    right_click_commands:
+    - '[player] kit preview terraniente'     
+  '5-noperms':
+    material: MINECART
+    slot: 23
+    update: true 
+    display_name: '&#fb7373E&#fb7675q&#fb7a78u&#fc7d7ai&#fc807cp&#fc837fa&#fc8781m&#fc8a84i&#fc8d86e&#fd9088n&#fd948bt&#fd978do &#fb7373&lT&#fb7776&lE&#fb7a78&lR&#fc7e7b&lR&#fc817d&lA&#fc8580&lN&#fc8983&lI&#fc8c85&lE&#fd9088&lN&#fd938a&lT&#fd978d&lE'
+    priority: 3
+    lore:
+    - '&8Acceso directo'
+    - '' 
+    - '&fReclama este equipamiento y'
+    - '&fúnete a combate contra los'
+    - '&fdemás jugadores para ser '
+    - ''
+    - '&7Información '
+    - '&8&l● &fEstado: &c&l✘'
+    - '&8&l● &fPrestigio Req: &#fb7373&lT&#fb7776&lE&#fb7a78&lR&#fc7e7b&lR&#fc817d&lA&#fc8580&lN&#fc8983&lI&#fc8c85&lE&#fd9088&lN&#fd938a&lT&#fd978d&lE'
+    - ''
+    - '&#F8DB71▸ ¡Sin acceso a esto!'   
+    left_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND' 
+    - '[message] &c&l✘ &c¡Oye! &fSin los permisos suficientes, adquiere rango desde nuestra &c&lTIENDA&f para obtener este paquete. &c&ntienda.mineluxe.us'
+    - '[close]'  
+    right_click_commands:
+    - '[player] kit preview terraniente'
+    - '[close]'      
+  '6-disp':
+    display_name: '&#a48e4bE&#a48e4bq&#a48e4bu&#a48e4bi&#a48e4bp&#a48e4ba&#a48e4bm&#a48e4bi&#a48e4be&#a48e4bn&#a48e4bt&#a48e4bo &#a48e4b&lS&#a48e4b&lE&#a48e4b&lM&#a48e4b&lB&#a48e4b&lR&#a48e4b&lA&#a48e4b&lD&#a48e4b&lO&#a48e4b&lR'
+    material: CHEST_MINECART
+    slot: 24
+    update: true           
+    priority: 1
+    view_requirement:
+      requirements:
+        Tiempo:
+          type: string equals ignorecase
+          input: '%playerkits_cooldown_sembrador%'
+          output: '¡Listo!'
+        Permiso:
+          type: has permission
+          permission: 'playerkits.kit.sembrador'
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fReclama este equipamiento y'
+    - '&fúnete a combate contra los'
+    - '&fdemás jugadores para ser '
+    - ''
+    - '&7Información '
+    - '&8&l● &fEstado: &a&l✔'
+    - ''
+    - '&#F8DB71▸ ¡Clic izq para reclamar!'        
+    left_click_commands:
+    - '[player] kit sembrador'     
+    - '[close]'     
+    right_click_commands:
+    - '[player] kit preview sembrador'     
+  '6-tiempo':
+    material: MINECART
+    slot: 24
+    update: true 
+    display_name: '&#a48e4bE&#a48e4bq&#a48e4bu&#a48e4bi&#a48e4bp&#a48e4ba&#a48e4bm&#a48e4bi&#a48e4be&#a48e4bn&#a48e4bt&#a48e4bo &#a48e4b&lS&#a48e4b&lE&#a48e4b&lM&#a48e4b&lB&#a48e4b&lR&#a48e4b&lA&#a48e4b&lD&#a48e4b&lO&#a48e4b&lR'
+    priority: 2
+    view_requirement:
+      requirements:
+        Permiso:
+          type: has permission
+          permission: 'playerkits.kit.sembrador'
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fReclama este equipamiento y'
+    - '&fúnete a combate contra los'
+    - '&fdemás jugadores para ser '
+    - ''
+    - '&7Información '
+    - '&8&l● &fEstado: &#F87044⌚'
+    - '&8&l● &fTiempo: &6%playerkits_cooldown_sembrador%'
+    - ''
+    - '&#F8DB71▸ ¡Clic izq para reclamar!'  
+    left_click_commands:
+    - '[player] kit sembrador' 
+    - '[close]' 
+    - '[refresh]'     
+    right_click_commands:
+    - '[player] kit preview sembrador'     
+  '6-noperms':
+    material: MINECART
+    slot: 24
+    update: true 
+    display_name: '&#a48e4bE&#a48e4bq&#a48e4bu&#a48e4bi&#a48e4bp&#a48e4ba&#a48e4bm&#a48e4bi&#a48e4be&#a48e4bn&#a48e4bt&#a48e4bo &#a48e4b&lS&#a48e4b&lE&#a48e4b&lM&#a48e4b&lB&#a48e4b&lR&#a48e4b&lA&#a48e4b&lD&#a48e4b&lO&#a48e4b&lR'
+    priority: 3
+    lore:
+    - '&8Acceso directo'
+    - '' 
+    - '&fReclama este equipamiento y'
+    - '&fúnete a combate contra los'
+    - '&fdemás jugadores para ser '
+    - ''
+    - '&7Información '
+    - '&8&l● &fEstado: &c&l✘'
+    - '&8&l● &fPrestigio Req: &#a48e4b&lS&#a48e4b&lE&#a48e4b&lM&#a48e4b&lB&#a48e4b&lR&#a48e4b&lA&#a48e4b&lD&#a48e4b&lO&#a48e4b&lR'
+    - ''
+    - '&#F8DB71▸ ¡Sin acceso a esto!'  
+    left_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND' 
+    - '[message] &c&l✘ &c¡Oye! &fSin los permisos suficientes, adquiere rango desde nuestra &c&lTIENDA&f para obtener este paquete. &c&ntienda.mineluxe.us'
+    - '[close]'  
+    right_click_commands:
+    - '[player] kit preview sembrador'
+    - '[close]'        
+  '7-disp':
+    display_name: '&#50a474E&#50a474q&#50a474u&#50a474p&#50a474a&#50a474m&#50a474i&#50a474e&#50a474n&#50a474t&#50a474o &#50a474&lC&#50a474&lO&#50a474&lS&#50a474&lE&#50a474&lC&#50a474&lH&#50a474&lA&#50a474&lD&#50a474&lO&#50a474&lR'
+    material: CHEST_MINECART
+    slot: 25
+    update: true           
+    priority: 1
+    view_requirement:
+      requirements:
+        Tiempo:
+          type: string equals ignorecase
+          input: '%playerkits_cooldown_cosechador%'
+          output: '¡Listo!'
+        Permiso:
+          type: has permission
+          permission: 'playerkits.kit.cosechador'
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fReclama este equipamiento y'
+    - '&fúnete a combate contra los'
+    - '&fdemás jugadores para ser '
+    - ''
+    - '&7Información '
+    - '&8&l● &fEstado: &a&l✔'
+    - ''
+    - '&#F8DB71▸ ¡Clic izq para reclamar!'        
+    left_click_commands:
+    - '[player] kit cosechador'     
+    - '[close]'     
+    right_click_commands:
+    - '[player] kit preview cosechador'     
+  '7-tiempo':
+    material: MINECART
+    slot: 25
+    update: true 
+    display_name: '&#50a474E&#50a474q&#50a474u&#50a474p&#50a474a&#50a474m&#50a474i&#50a474e&#50a474n&#50a474t&#50a474o &#50a474&lC&#50a474&lO&#50a474&lS&#50a474&lE&#50a474&lC&#50a474&lH&#50a474&lA&#50a474&lD&#50a474&lO&#50a474&lR'
+    priority: 2
+    view_requirement:
+      requirements:
+        Permiso:
+          type: has permission
+          permission: 'playerkits.kit.cosechador'
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fReclama este equipamiento y'
+    - '&fúnete a combate contra los'
+    - '&fdemás jugadores para ser '
+    - ''
+    - '&7Información '
+    - '&8&l● &fEstado: &#F87044⌚'
+    - '&8&l● &fTiempo: &6%playerkits_cooldown_cosechador%'
+    - ''
+    - '&#F8DB71▸ ¡Clic izq para reclamar!'  
+    left_click_commands:
+    - '[player] kit cosechador' 
+    - '[close]'
+    - '[refresh]'     
+    right_click_commands:
+    - '[player] kit preview cosechador'     
+  '7-noperms':
+    material: MINECART
+    slot: 25
+    update: true 
+    display_name: '&#50a474E&#50a474q&#50a474u&#50a474p&#50a474a&#50a474m&#50a474i&#50a474e&#50a474n&#50a474t&#50a474o &#50a474&lC&#50a474&lO&#50a474&lS&#50a474&lE&#50a474&lC&#50a474&lH&#50a474&lA&#50a474&lD&#50a474&lO&#50a474&lR'
+    priority: 3
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fReclama este equipamiento y'
+    - '&fúnete a combate contra los'
+    - '&fdemás jugadores para ser '
+    - ''
+    - '&7Información '
+    - '&8&l● &fEstado: &c&l✘'
+    - '&8&l● &fPrestigio Req: &#50a474&lC&#50a474&lO&#50a474&lS&#50a474&lE&#50a474&lC&#50a474&lH&#50a474&lA&#50a474&lD&#50a474&lO&#50a474&lR'
+    - ''
+    - '&#F8DB71▸ ¡Sin acceso a esto!'  
+    left_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND' 
+    - '[message] &c&l✘ &c¡Oye! &fSin los permisos suficientes, adquiere rango desde nuestra &c&lTIENDA&f para obtener este paquete. &c&ntienda.mineluxe.us'
+    - '[close]'  
+    right_click_commands:
+    - '[player] kit preview cosechador'
+    - '[close]'      
+  '8-disp':
+    display_name: '&#48a1a4E&#48a1a4q&#48a1a4u&#48a1a4i&#48a1a4p&#48a1a4a&#48a1a4m&#48a1a4i&#48a1a4e&#48a1a4n&#48a1a4t&#48a1a4o &#48a1a4&lN&#48a1a4&lU&#48a1a4&lB&#48a1a4&lE'
+    material: CHEST_MINECART
+    slot: 32
+    update: true           
+    priority: 1
+    view_requirement:
+      requirements:
+        Tiempo:
+          type: string equals ignorecase
+          input: '%playerkits_cooldown_nube%'
+          output: '¡Listo!'
+        Permiso:
+          type: has permission
+          permission: 'playerkits.kit.nube'
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fReclama este equipamiento y'
+    - '&fúnete a combate contra los'
+    - '&fdemás jugadores para ser '
+    - ''
+    - '&7Información '
+    - '&8&l● &fEstado: &a&l✔'
+    - ''
+    - '&#F8DB71▸ ¡Clic izq para reclamar!'        
+    left_click_commands:
+    - '[player] kit nube'     
+    - '[close]'     
+    right_click_commands:
+    - '[player] kit preview nube'     
+  '8-tiempo':
+    material: MINECART
+    slot: 32
+    update: true 
+    display_name: '&#48a1a4E&#48a1a4q&#48a1a4u&#48a1a4i&#48a1a4p&#48a1a4a&#48a1a4m&#48a1a4i&#48a1a4e&#48a1a4n&#48a1a4t&#48a1a4o &#48a1a4&lN&#48a1a4&lU&#48a1a4&lB&#48a1a4&lE'
+    priority: 2
+    view_requirement:
+      requirements:
+        Permiso:
+          type: has permission
+          permission: 'playerkits.kit.nube'
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fReclama este equipamiento y'
+    - '&fúnete a combate contra los'
+    - '&fdemás jugadores para ser '
+    - ''
+    - '&7Información '
+    - '&8&l● &fEstado: &#F87044⌚'
+    - '&8&l● &fTiempo: &6%playerkits_cooldown_nube%'
+    - ''
+    - '&#F8DB71▸ ¡Clic izq para reclamar!'  
+    left_click_commands:
+    - '[player] kit nube' 
+    - '[close]' 
+    - '[refresh]'     
+    right_click_commands:
+    - '[player] kit preview nube'     
+  '8-noperms':
+    material: MINECART
+    slot: 32
+    update: true 
+    display_name: '&#48a1a4E&#48a1a4q&#48a1a4u&#48a1a4i&#48a1a4p&#48a1a4a&#48a1a4m&#48a1a4i&#48a1a4e&#48a1a4n&#48a1a4t&#48a1a4o &#48a1a4&lN&#48a1a4&lU&#48a1a4&lB&#48a1a4&lE'
+    priority: 3
+    lore:
+    - '&8Acceso directo'
+    - '' 
+    - '&fReclama este equipamiento y'
+    - '&fúnete a combate contra los'
+    - '&fdemás jugadores para ser '
+    - ''
+    - '&7Información '
+    - '&8&l● &fEstado: &c&l✘'
+    - '&8&l● &fPrestigio Req: &#48a1a4&lN&#48a1a4&lU&#48a1a4&lB&#48a1a4&lE'
+    - ''
+    - '&#F8DB71▸ ¡Sin acceso a esto!'  
+    left_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND' 
+    - '[message] &c&l✘ &c¡Oye! &fSin los permisos suficientes, adquiere rango desde nuestra &c&lTIENDA&f para obtener este paquete. &c&ntienda.mineluxe.us'
+    - '[close]'  
+    right_click_commands:
+    - '[player] kit preview nube'
+    - '[close]'        
+
+

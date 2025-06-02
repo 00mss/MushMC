@@ -1,0 +1,88 @@
+# The title of the gui
+title: "&8Repair Menu"
+# The size of the gui
+size: 27
+# The slots for the generator
+display-slots: [13]
+display-enough-money:
+  display-name: "&4ɢᴇɴᴇʀᴀᴛᴏʀ ʙʀᴏᴋᴇɴ"
+  # Enchantment Format:
+  # <ENCHANT>;<LEVEL>
+  # Example: DURABILITY;1
+  enchantments: [ ]
+  # Item Flag Example:
+  # - HIDE_ATTRIBUTES
+  # - HIDE_ENCHANTS
+  flags: [ ]
+  custom-model-data: 0
+  lore:
+    - "ɢᴇɴᴇʀᴀᴛᴏʀ ɪᴛᴇᴍ"
+    - "&r"
+    - "  &aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ"
+    - "  &fCurrent Generator: {current}"
+    - "  &fReason: &4Power Outages"
+    - "&r"
+    - "  &aᴄᴏsᴛ"
+    - "  &fRepair Cost: &a${cost}"
+    - "  &fYou have: &2${balance}"
+    - "&7"
+    - "&7Click to repair this generator"
+
+# Item that will be shown when player doesn't have enough money to upgrade the generator
+display-no-money:
+  display-name: "&4ɢᴇɴᴇʀᴀᴛᴏʀ ʙʀᴏᴋᴇɴ"
+  # Enchantment Format:
+  # <ENCHANT>;<LEVEL>
+  # Example: DURABILITY;1
+  enchantments: [ ]
+  # Item Flag Example:
+  # - HIDE_ATTRIBUTES
+  # - HIDE_ENCHANTS
+  flags: [ ]
+  custom-model-data: 0
+  lore:
+    - "ɢᴇɴᴇʀᴀᴛᴏʀ ɪᴛᴇᴍ"
+    - "&r"
+    - "  &aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ"
+    - "  &fCurrent Generator: {current}"
+    - "  &fReason: &4Power Outages"
+    - "&r"
+    - "  &aᴄᴏsᴛ"
+    - "  &fRepair Cost: &a${cost}"
+    - "  &fYou have: &2${balance}"
+    - "&7"
+    - "&7You cannot afford to repair this generator"
+
+# The slots for confirm button
+confirm-slots: [4, 5, 6, 7, 8, 14, 15, 16, 17, 23, 24, 25, 26]
+# The confirm button item
+confirm-button:
+  material: LIME_STAINED_GLASS_PANE
+  display-name: "&aConfirm"
+  # Enchantment Format:
+  # <ENCHANT>;<LEVEL>
+  # Example: DURABILITY;1
+  enchantments: [ ]
+  # Item Flag Example:
+  # - HIDE_ATTRIBUTES
+  # - HIDE_ENCHANTS
+  flags: [ ]
+  custom-model-data: 0
+  lore: []
+
+# The slots for cancel button
+cancel-slots: [0, 1, 2, 3, 9, 10, 11, 12, 18, 19, 20, 21, 22]
+# The cancel button item
+cancel-button:
+  material: RED_STAINED_GLASS_PANE
+  display-name: "&cCancel"
+  # Enchantment Format:
+  # <ENCHANT>;<LEVEL>
+  # Example: DURABILITY;1
+  enchantments: [ ]
+  # Item Flag Example:
+  # - HIDE_ATTRIBUTES
+  # - HIDE_ENCHANTS
+  flags: [ ]
+  custom-model-data: 0
+  lore: []

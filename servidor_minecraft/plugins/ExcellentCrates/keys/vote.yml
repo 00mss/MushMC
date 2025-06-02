@@ -1,0 +1,26 @@
+Name: '#63FF15Llave #63FF15&lVOTE'
+Virtual: false
+Item:
+  Material: LIME_DYE
+  Name: '#63FF15Llave #63FF15&lVOTE'
+  Lore:
+  - '&8Artículo de eventos'
+  - ''
+  - '#63FF15ℹ &fPodrás usar este item en'
+  - '&flas cajas qué se encuentran'
+  - '&fen el spawn principal. #63FF15✔'
+  - ''
+  - '&fAdquiere más llaves desde:'
+  - '#63FF15&ntienda.mineluxe.us'
+  - ''
+  Enchants:
+    sharpness: 1
+  Item_Flags:
+  - HIDE_ENCHANTS
+  - HIDE_ATTRIBUTES
+  - HIDE_UNBREAKABLE
+  - HIDE_DESTROYS
+  - HIDE_PLACED_ON
+  - HIDE_POTION_EFFECTS
+  - HIDE_DYE
+  - HIDE_ARMOR_TRIM

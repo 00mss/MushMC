@@ -1,0 +1,80 @@
+debug: false
+updater:
+  enable: true
+  include_snapshots: true
+
+storage:
+  # Type could either be SQLite or MySQL
+  # SQLite is used as default storage system instead of YAML files.
+  # SQLite does not require any additional setup steps.
+  type: SQLite
+  mysql:
+    host: localhost
+    port: 3306
+    database: streakrewards
+    username: myuser
+    password: mypass
+
+menu_deleted: §x§F§F§D§2§5§8⌛ ¡Todo con éxito! &fEliminaste exitosamente el menú de
+  recompensas %menu% con todos sus datos del jugador. esto es irreversible!
+menu_created: §x§F§F§D§2§5§8⌛ ¡Todo con éxito! &fYou successfully created a new rewards
+  menu called '%menu%'!
+menu_already_exists: §x§F§F§D§2§5§8⌛ ¡Todo con éxito! &cThere already is a menu with
+  that name.
+day_unlocked: §x§F§F§D§2§5§8⌛ ¡Todo con éxito! &fDesbloqueaste el día siguiente de
+  %player% para el menú %menu%.
+menu_not_found: §x§F§F§D§2§5§8⌛ ¡Todo con éxito! &cThat menu could not be found.
+already_claimed: §x§F§F§D§2§5§8⌛ ¡Todo con éxito! &fHas reclamado con éxito, esta
+  racha de recompensas por conexión anteriormente, cumple los nuevos requerimientos.
+come_back_tomorrow: §x§F§F§D§2§5§8⌛ ¡Todo con éxito! &fPor favor, regresa una vez
+  cumplas con los requisitos necesarios para reclamar esta recompensa por rachas de
+  conexión.
+cant_claim_yet: §x§F§F§D§2§5§8⌛ ¡Todo con éxito! &fAún no cumples con los requisitos
+  necesarios para reclamar esta recompensa por rachas de conexión
+streak: '§x§F§F§D§2§5§8⌛ ¡Todo con éxito! &fYour %menu% streak is: &b%streak%'
+streak_other: '§x§F§F§D§2§5§8⌛ ¡Todo con éxito! &b%player%&f''s %menu% current streak
+  is: &b%streak%'
+day: '§x§F§F§D§2§5§8⌛ ¡Todo con éxito! &fYour %menu% streak is: &b%day%'
+day_other: '§x§F§F§D§2§5§8⌛ ¡Todo con éxito! &b%player%&f''s %menu% current day is:
+  &b%day%'
+invalid_player: §x§F§F§D§2§5§8⌛ ¡Todo con éxito! &fThat player is not online
+reload: §x§F§F§D§2§5§8⌛ ¡Todo con éxito! &fSuccessfully reloaded the plugin
+must_specify_integer: §x§F§F§D§2§5§8⌛ ¡Todo con éxito! &fYou must specify a valid
+  integer
+set_streak: §x§F§F§D§2§5§8⌛ ¡Todo con éxito! &fYou set &b%player%&f's &b%menu% &fstreak
+  to &b%streak%
+boost: §x§F§F§D§2§5§8⌛ ¡Todo con éxito! &fYou boosted the menu &b%menu% &ffor &b%player%
+  &fwith &b%boost% &fextra days
+reset: §x§F§F§D§2§5§8⌛ ¡Todo con éxito! &fYou reset &b%player%&f's streak for the
+  &b%menu%&f menu.
+npc_created: §x§F§F§D§2§5§8⌛ ¡Todo con éxito! &fYou successfully created a StreakRewards
+  NPC. Use Citizens to customize and remove it.
+must_be_longer_online: §x§F§F§D§2§5§8⌛ ¡Todo con éxito! &fYou must be at least %min_time%
+  minutes online in order to claim this reward. You have to wait another %time_left%
+  to claim this.
+online_timer_reset_msg_enable: true
+online_timer_reset_msg: §x§F§F§D§2§5§8⌛ ¡Todo con éxito! &fYour online timer has reset
+claimed_all: §x§F§F§D§2§5§8⌛ ¡Todo con éxito! &fYou quick-claimed a total of &b%claimed%
+  &frewards!
+
+status_placeholder_claimable: §x§F§F§D§2§5§8⌛ ¡Todo con éxito! &f&lPuedes reclamar
+  tu ¡siguiente recompensa!
+status_placeholder_cannotclaim: §x§F§F§D§2§5§8⌛ ¡Todo con éxito! &fPróxima recompensa
+  en %hours%h %minutes%m %seconds%s
+no_permission: §x§F§F§D§2§5§8⌛ ¡Todo con éxito! &fPróxima recompensa enPróxima recompensa
+  en
+
+enable_streak_reset_msg: true
+streak_reset: §x§F§F§D§2§5§8⌛ ¡Todo con éxito! &fNo pudiste reclamar tu recompensa
+  seguidamente, por lo que tu racha se restablecerá.
+
+enable_join_reminder: false
+# wait this amount of seconds before reminding player that they have something to open
+join_message_delay: 3
+join_reminder:
+- '       &7&m-------------------------------'
+- '          &f&lYou can claim new rewards!'
+- '            &7You have &b%claimable% &7rewards pending.'
+- ''
+- '               &dUse /daily to claim them.'
+- '       &7&m-------------------------------'

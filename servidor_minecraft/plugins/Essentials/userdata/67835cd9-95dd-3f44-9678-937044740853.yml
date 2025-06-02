@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1729658356582
+  login: 1729658352116
+money: '6000'
+last-account-name: Ninther
+lastlocation:
+  world: 14767f7f-9279-4ea5-b8b9-1a855a5f717b
+  world-name: Spawn
+  x: 0.39168570990675966
+  y: 65.0
+  z: 0.48816687449415375
+  yaw: -89.10060119628906
+  pitch: -5.250089645385742
+logoutlocation:
+  world: 14767f7f-9279-4ea5-b8b9-1a855a5f717b
+  world-name: Spawn
+  x: 19.31888116928456
+  y: 63.0
+  z: 0.6120702653321646
+  yaw: -95.4116439819336
+  pitch: 8.031383514404297

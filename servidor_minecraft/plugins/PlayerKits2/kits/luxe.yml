@@ -1,0 +1,120 @@
+cooldown: 3600
+one_time: false
+auto_armor: false
+permission_required: false
+display:
+  default:
+    id: STONE_SWORD
+    name: '&c&l%kit_name% &cKit'
+    amount: 1
+    lore:
+    - '&fThis is a description of the kit.'
+    - ''
+    - '&7Edit it on the &c%kit_name%.yml &7file'
+    - '&7or using &c/kit edit %kit_name%'
+    item_flags:
+    - HIDE_ATTRIBUTES
+  no_permission:
+    id: BARRIER
+    name: '&c&l%kit_name% &cKit'
+    amount: 1
+    lore:
+    - '&cYou don''t have permissions to claim'
+    - '&cthis kit.'
+  cooldown:
+    id: STONE_SWORD
+    name: '&c&l%kit_name% &cKit'
+    amount: 1
+    lore:
+    - '&cYou need to wait &7%time%'
+    - '&cto claim this kit again.'
+    item_flags:
+    - HIDE_ATTRIBUTES
+items:
+  '1':
+    id: DIAMOND_HELMET
+    name: '&x&F&F&0&0&0&0Equipamiento &x&F&F&0&0&0&0&lL&x&F&0&0&0&0&0&lU&x&E&0&0&0&0&0&lX&x&D&1&0&0&0&0&lE'
+    amount: 1
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;8
+    - DURABILITY;8
+    preview_slot: 0
+  '2':
+    id: DIAMOND_CHESTPLATE
+    name: '&x&F&F&0&0&0&0Equipamiento &x&F&F&0&0&0&0&lL&x&F&0&0&0&0&0&lU&x&E&0&0&0&0&0&lX&x&D&1&0&0&0&0&lE'
+    amount: 1
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;8
+    - DURABILITY;8
+    preview_slot: 1
+  '3':
+    id: DIAMOND_LEGGINGS
+    name: '&x&F&F&0&0&0&0Equipamiento &x&F&F&0&0&0&0&lL&x&F&0&0&0&0&0&lU&x&E&0&0&0&0&0&lX&x&D&1&0&0&0&0&lE'
+    amount: 1
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;8
+    - DURABILITY;8
+    preview_slot: 2
+  '4':
+    id: DIAMOND_BOOTS
+    name: '&x&F&F&0&0&0&0Equipamiento &x&F&F&0&0&0&0&lL&x&F&0&0&0&0&0&lU&x&E&0&0&0&0&0&lX&x&D&1&0&0&0&0&lE'
+    amount: 1
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;8
+    - DURABILITY;8
+    preview_slot: 3
+  '5':
+    id: DIAMOND_SWORD
+    name: '&x&F&F&0&0&0&0Espada &x&F&F&0&0&0&0&lL&x&F&0&0&0&0&0&lU&x&E&0&0&0&0&0&lX&x&D&1&0&0&0&0&lE'
+    amount: 1
+    enchants:
+    - DAMAGE_ALL;8
+    - DURABILITY;6
+    preview_slot: 4
+  '6':
+    id: DIAMOND_PICKAXE
+    name: '&x&F&F&0&0&0&0Pico &x&F&F&0&0&0&0&lL&x&F&0&0&0&0&0&lU&x&E&0&0&0&0&0&lX&x&D&1&0&0&0&0&lE'
+    amount: 1
+    enchants:
+    - DIG_SPEED;7
+    - DURABILITY;7
+    preview_slot: 5
+  '7':
+    id: DIAMOND_SHOVEL
+    name: '&x&F&F&0&0&0&0Pala &x&F&F&0&0&0&0&lL&x&F&0&0&0&0&0&lU&x&E&0&0&0&0&0&lX&x&D&1&0&0&0&0&lE'
+    amount: 1
+    enchants:
+    - DIG_SPEED;7
+    - DURABILITY;7
+    preview_slot: 6
+  '8':
+    id: DIAMOND_AXE
+    name: '&x&F&F&0&0&0&0Hacha &x&F&F&0&0&0&0&lL&x&F&0&0&0&0&0&lU&x&E&0&0&0&0&0&lX&x&D&1&0&0&0&0&lE'
+    amount: 1
+    enchants:
+    - DIG_SPEED;7
+    - DURABILITY;7
+    preview_slot: 7
+  '9':
+    id: COOKED_BEEF
+    amount: 64
+    preview_slot: 8
+  '10':
+    id: GOLDEN_APPLE
+    amount: 12
+    preview_slot: 9
+  '11':
+    id: ENCHANTED_GOLDEN_APPLE
+    amount: 2
+    preview_slot: 10
+actions:
+  claim:
+    '1':
+      action: 'playsound: BLOCK_NOTE_BLOCK_PLING;10;2'
+      execute_before_items: false
+      count_as_item: false
+  error:
+    '1':
+      action: 'playsound: BLOCK_NOTE_BLOCK_PLING;10;0.1'
+      execute_before_items: false
+      count_as_item: false

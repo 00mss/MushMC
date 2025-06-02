@@ -1,0 +1,77 @@
+cooldown: 5600
+one_time: false
+auto_armor: false
+permission_required: true
+display:
+  default:
+    id: STONE_SWORD
+    name: '&c&l%kit_name% &cKit'
+    amount: 1
+    lore:
+    - '&fThis is a description of the kit.'
+    - ''
+    - '&7Edit it on the &c%kit_name%.yml &7file'
+    - '&7or using &c/kit edit %kit_name%'
+    item_flags:
+    - HIDE_ATTRIBUTES
+  no_permission:
+    id: BARRIER
+    name: '&c&l%kit_name% &cKit'
+    amount: 1
+    lore:
+    - '&cYou don''t have permissions to claim'
+    - '&cthis kit.'
+  cooldown:
+    id: STONE_SWORD
+    name: '&c&l%kit_name% &cKit'
+    amount: 1
+    lore:
+    - '&cYou need to wait &7%time%'
+    - '&cto claim this kit again.'
+items:
+  '1':
+    id: CHAINMAIL_CHESTPLATE
+    name: '&x&3&9&F&B&8&1E&x&3&D&F&B&8&1q&x&4&0&F&B&8&0u&x&4&4&F&C&8&0i&x&4&7&F&C&8&0p&x&4&B&F&C&8&0a&x&4&E&F&C&7&Fm&x&5&2&F&C&7&Fi&x&5&5&F&C&7&Fe&x&5&9&F&D&7&Fn&x&5&C&F&D&7&Et&x&6&0&F&D&7&Eo
+      &x&3&9&F&B&8&1&lN&x&4&1&F&B&8&0&lU&x&4&9&F&C&8&0&lE&x&5&0&F&C&7&F&lV&x&5&8&F&D&7&F&lO&x&6&0&F&D&7&E&lS'
+    amount: 1
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;1
+    preview_slot: 0
+  '2':
+    id: SPYGLASS
+    name: '&x&2&6&B&E&F&BVara de &x&2&6&B&E&F&B&lVENTA &b⚗'
+    amount: 1
+    lore:
+    - '&8Artículo exclusivo'
+    - '&7'
+    - '&fUsa este artículo para vender'
+    - '&fde manera más facil y rapida.'
+    - ''
+    - '&aInformación'
+    - '&8&l● &fUsos: &x&A&F&E&6&F&C10 ⚡'
+    - '&8&l● &fMultiplicador: &x&F&A&E&E&8&7x1'
+    - '&7'
+    - '&aEstadísticas'
+    - '&8&l● &fTotal ganado: &x&8&B&C&8&2&1$0'
+    - '&8&l● &fitems vendidos: &x&B&5&D&F&6&C0 items'
+    - '&7'
+    - '&e▸ ¡Clic der para vender!'
+    enchants:
+    - DURABILITY;1
+    item_flags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
+    nbt:
+    - PublicBukkitValues|{"nextgens:nextgens_sellwand_global":"b8c9f3b1-ec5d-4536-b3b1-339d710dddce","nextgens:nextgens_sellwand_multiplier":1.0d,"nextgens:nextgens_sellwand_total_items":0,"nextgens:nextgens_sellwand_total_sold":0.0d,"nextgens:nextgens_sellwand_uses":10}|compound
+    preview_slot: 1
+actions:
+  claim:
+    '1':
+      action: 'playsound: BLOCK_NOTE_BLOCK_PLING;10;2'
+      execute_before_items: false
+      count_as_item: false
+  error:
+    '1':
+      action: 'playsound: BLOCK_NOTE_BLOCK_PLING;10;0.1'
+      execute_before_items: false
+      count_as_item: false

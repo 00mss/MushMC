@@ -1,0 +1,22 @@
+location: Spawn:116,500:68,000:0,500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&#F6F34D&k!&#F6F34D&k!&#F6F34D&k! &#F6F34D&k!&#F6F34D&k!&#F6F34D&k! &#F6F34D&k!&#F6F34D&k!&#F6F34D&k! &#FBE108&lC&#F8DE0C&lR&#F4DB0F&lA&#F1D813&lT&#EDD516&lE &#EAD21A&lD&#E6CF1D&lE &#E3CC21&lL&#E0C824&lA &#DCC528&lS&#D9C22B&lU&#D5BF2F&lE&#D2BC32&lR&#CEB936&lT&#CBB639&lE &#F6F34D&k!&#F6F34D&k!&#F6F34D&k! &#F6F34D&k!&#F6F34D&k!&#F6F34D&k! &#F6F34D&k!&#F6F34D&k!&#F6F34D&k!'
+    height: 0.3
+  - content: '&8Exclusivo de la tienda'
+    height: 0.3
+  - content: ''
+    height: 0.3  
+  - content: '&fGana &#FBE1085&f artículos !'
+    height: 0.3  
+  - content: 'exclusivos de la tienda!'
+    height: 0.3
+  - content: '&e¡tienda.mineluxe.us!'
+    height: 0.3
+  actions: {}

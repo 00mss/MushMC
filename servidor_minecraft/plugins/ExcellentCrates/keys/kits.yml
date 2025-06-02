@@ -1,0 +1,26 @@
+Name: '#0B6B71Llave #0B6B71&lKITS'
+Virtual: false
+Item:
+  Material: CYAN_DYE
+  Name: '#0B6B71Llave #0B6B71&lKITS'
+  Lore:
+  - '&8Artículo de eventos'
+  - ''
+  - '#0B6B71ℹ &fPodrás usar este item en'
+  - '&flas cajas qué se encuentran'
+  - '&fen el spawn principal. #0B6B71✔'
+  - ''
+  - '&fAdquiere más llaves desde:'
+  - '#0B6B71&ntienda.mineluxe.us'
+  - ''
+  Enchants:
+    sharpness: 1
+  Item_Flags:
+  - HIDE_ENCHANTS
+  - HIDE_ATTRIBUTES
+  - HIDE_UNBREAKABLE
+  - HIDE_DESTROYS
+  - HIDE_PLACED_ON
+  - HIDE_POTION_EFFECTS
+  - HIDE_DYE
+  - HIDE_ARMOR_TRIM

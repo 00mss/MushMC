@@ -1,0 +1,28 @@
+location: Spawn:112,500:69,000:18,500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#FF3815&lBAÚL KOTH'
+    height: 0.3
+  - content: '&7Probabilidad &8┇ (20)%'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fAdquiére llaves desde'
+    height: 0.3
+  - content: '#F96464&nᴛɪᴇɴᴅᴀ.ᴍɪɴᴇʟᴜxᴇ.ᴜꜱ'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fCalidad del baúl: #FF3815★★★★&7★★'
+    height: 0.3
+  - content: <#ANIM:wave:&#F96464,&#FF3815>¡Clic der para abrir!</#ANIM>
+    height: 0.3
+  - content: '#ICON: RED_DYE'
+    height: 0.3
+  actions: {}

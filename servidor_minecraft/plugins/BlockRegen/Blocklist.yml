@@ -1,0 +1,62 @@
+# BlockRegen
+# 
+# Developer(s): Aurorion & Wertik1206
+# Version: 3.10.5
+#
+# Material list: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+
+# Note: You can remove a part of the section to ignore it's function.
+# Note no.2: Most Strings (commands, names, lores) allow PlaceholderAPI placeholders.
+# Note no.3: Most Amounts (money, regen-delay, amount) support dynamic amounts (random) with a low and high.
+
+Blocks:
+  COAL_ORE:
+    replace-block: BEDROCK
+    regen-delay: 2-40
+    regenerate-into: COAL_ORE
+    natural-break: false
+    regeneration-particles: block_frame
+    drop-item:
+      material: coal
+      amount: 1
+      name: '&fCarbón'
+  IRON_ORE:
+    replace-block: BEDROCK
+    regen-delay: 2-40
+    regenerate-into: IRON_ORE
+    natural-break: false
+    regeneration-particles: block_frame
+    drop-item:
+      material: iron_ingot
+      amount: 1
+      name: '&fLingote de hierro'      
+  GOLD_ORE:
+    replace-block: BEDROCK
+    regen-delay: 2-40
+    regenerate-into: GOLD_ORE
+    natural-break: false
+    regeneration-particles: block_frame
+    drop-item:
+      material: gold_ingot
+      amount: 1
+      name: '&fLingote de oro'
+  DIAMOND_ORE:
+    replace-block: BEDROCK
+    regen-delay: 2-40
+    regenerate-into: DIAMOND_ORE
+    natural-break: false
+    regeneration-particles: block_frame
+    drop-item:
+      material: diamond
+      amount: 1
+      name: '&fDiamante'
+  EMERALD_ORE:
+    replace-block: BEDROCK
+    regen-delay: 2-40
+    regenerate-into: EMERALD_ORE
+    natural-break: false
+    regeneration-particles: block_frame
+    drop-item:
+      material: emerald
+      amount: 1
+      name: '&fEsmeralda'  

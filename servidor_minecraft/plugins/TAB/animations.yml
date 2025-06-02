@@ -1,0 +1,56 @@
+MyAnimation1:
+  change-interval: 300
+  texts:
+  - "&r&f●&f●&f●"
+  - "&r&f●&f●&#A5FFE5●"
+  - "&r&f●&#A5FFE5●&#A5FFE5●"
+  - "&r&#A5FFE5●&#A5FFE5●&#A5FFE5●"
+  - "&r&f●&f●&f●"
+  - "&r&f●&#A5FFE5●&#A5FFE5●"
+  - "&r&f●&f●&#A5FFE5●"
+  - "&r&f●&f●&f●"
+  - "&r&f●&f●&f●"
+Gens:
+  change-interval: 300
+  texts:
+  - "&#FFFF50&lG&#D7D74A&lE&#AEAE43&lN&#86863D&lS"
+  - "&#D7D74A&lG&#FFFF50&lE&#D7D74A&lN&#AEAE43&lS"
+  - "&#AEAE43&lG&#D7D74A&lE&#FFFF50&lN&#D7D74A&lS"
+  - "&#86863D&lG&#AEAE43&lE&#D7D74A&lN&#FFFF50&lS"
+  - "&#AEAE43&lG&#86863D&lE&#AEAE43&lN&#D7D74A&lS"
+  - "&#D7D74A&lG&#AEAE43&lE&#86863D&lN&#AEAE43&lS"
+# Config by Zyro Studio
+# https://twitter.com/zyrostudio
+# ==================================== #
+
+tabAbove:
+  change-interval: 8000
+  texts:
+    - '&b&l● &b&lTIENDA ⚐&7 [ᴅɪsᴄᴏʀᴅ] [ᴠᴏᴛᴇ] [sᴜᴘᴘᴏʀᴛ]'
+    - '&7[sᴛᴏʀᴇ] &d&n[ᴅɪsᴄᴏʀᴅ]&7 [ᴠᴏᴛᴇ] [sᴜᴘᴘᴏʀᴛ]'
+    - '&7[sᴛᴏʀᴇ] [ᴅɪsᴄᴏʀᴅ] &e&n[ᴠᴏᴛᴇ]&7 [sᴜᴘᴘᴏʀᴛ]'
+    - '&7[sᴛᴏʀᴇ] [ᴅɪsᴄᴏʀᴅ] [ᴠᴏᴛᴇ] &a&n[sᴜᴘᴘᴏʀᴛ]'
+tabLine1:
+  change-interval: 8000
+  texts:
+    - '&fApóyanos comprando rangos y otros productos'
+    - "Únete a nuestra comunidad de Discord para recibir actualizaciones."
+    - '&f"¡Vota por nuestro servidor todos los días!"'
+tabLine2:
+  change-interval: 8000
+  texts:
+    - '&f¡Una nueva modalidad esta aqui!'
+    - '&fᴀɴɴᴏᴜɴᴄᴇᴍᴇɴᴛѕ, ɢɪᴠᴇᴀᴡᴀʏѕ, ᴀɴᴅ ᴍᴜᴄʜ ᴍᴏʀᴇ!'
+    - '&fᴀɴᴅ ɢᴇᴛ ꜰʀᴇᴇ ᴀᴡᴇѕᴏᴍᴇ ʀᴇᴡᴀʀᴅѕ!'
+    - '&fʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇѕᴛɪᴏɴѕ ᴏʀ ɴᴇᴇᴅ ᴀɴʏ ʜᴇʟᴘ.'
+tabBelow:
+  change-interval: 8000
+  texts:
+  - '&btienda.mineluxe.us'
+  - '&dᴅɪѕᴄᴏʀᴅ.ɢɢ/mineluxe'
+  - '&eᴠᴏᴛᴇ.mineluxe'
+  - '&amc.mineluxe.us'
+
+# ==================================== #
+# Official TAB Wiki
+# https://github.com/NEZNAMY/TAB/wiki

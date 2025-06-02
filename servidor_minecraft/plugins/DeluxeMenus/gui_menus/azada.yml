@@ -1,0 +1,72 @@
+menu_title: '&nAzada de recolección'
+open_command: azada1
+size: 54
+items:
+  'Fill':
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: "&r"
+    slots: 
+    - 10
+    - 19
+    - 28
+  'siguiente':
+    material: golden_hoe
+    slots:
+    - 22
+    display_name: '&x&F&9&F&F&B&EAzada de &lRECOLECCIÓN &7(Modo Normal)'   
+    lore:
+    - '&8Artículo de recursos'
+    - ''
+    - '&x&F&9&F&F&B&E⚠ &8(&x&E&F&C&5&5&A▎▎▎▎▎▎▎▎▎▎▎▎▎▎▎▎▎▎▎▎▎&8) &x&F&9&F&F&B&E0.0%'
+    - ''
+    - '&fComienza a cosechar los diferentes'
+    - '&fcultivos para poder progresar y poder'
+    - '&favanzar al nivel maxímo de tu azada'
+    - ''
+    - '&e⊅ ¡Sobre la azada!'
+    - '&8&l● &fEsencias: &x&F&9&F&F&B&E0'
+    - '&8&l● &fNivel actual: &x&F&9&F&F&B&E0'
+    - '&8&l● &fPrestigio: &x&F&9&F&F&B&E0'
+    - ''
+    - '&e⸙ ¡Encantamientos!'
+    - ''
+    - '&e&l〆 &8▸ &x&F&9&F&F&B&E¡Ninguno!'
+    - ''
+    - '&e▸ ¡Comprala por 250k!'
+    left_click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[takemoney] 250000'
+    - '[console] hoe give %player_name%'
+    - '[close]'
+
+    left_click_requirement:
+      requirements:
+        Economy:
+          type: has money
+          amount: 250000
+      deny_commands:
+      - '[message] &c&l✘ &c¡Oye! &fDesafortunadamente, no dispones de los fondos necesarios para adquirir esta azada de recolección &7(%vault_eco_balance_formatted%/$250,000)'
+      - '[sound] ENTITY_VILLAGER_NO'
+      - '[close]'
+  'sobre':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjY0NTliZTA5OTk4ZTUwYWJkMmNjZjRjZDM4M2U2YjM4YWI1YmM5MDVmYWNiNjZkY2UwZTE0ZTAzOGJhMTk2OCJ9fX0=
+    slots:
+    - 18
+    display_name: '&a¿Perdiste tu azada?'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fPodrás comprar nuevamente tu azada'
+    - '&fcon los ingresos obtenidos'
+    - ''
+    - '&fInformate sobre los niveles'
+    - '&fde los cultivos y más'
+    - ''
+    - '&e₪ &f/cropslevels &8‣ &7(Azada en el inventario)'
+    - ''
+    - '&e▸ ¡Ey, intentare ayudarte! '     
+    left_click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  
+  
+

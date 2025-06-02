@@ -1,0 +1,212 @@
+location: Spawn:15,500:70,000:44,500
+enabled: true
+display-range: 24
+update-range: 24
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: <#ANIM:wave:&#47E36F&l,&#00FF42&l>ᴛᴏᴘ ᴄʟᴀɴᴇꜱ - ᴀꜱᴇꜱɪɴᴀᴛᴏꜱ</#ANIM>
+    height: 0.27
+  - content: '&8clanes del servidor'
+    height: 0.27
+  - content: '&r'
+    height: 0.27
+  - content: '&fAquí está nuestro &#47E36F&lᴛᴏᴘ&f de clanes con mas'
+    height: 0.27
+  - content: '&fasesinatos en la modalidad generadores.'
+    height: 0.27
+  - content: ''
+    height: 0.27
+  - content: '&#47E36F¡Clasificación de clanes del servidor!'
+    height: 0.27
+  - content: '&#00FF42¡Entérate de más en Discord!'
+    height: 0.27
+  - content: ''
+    height: 0.27
+  - content: '&#47E36F&lɢʟᴏʙᴀʟ'
+    height: 0.27
+  - content: '&f¡Descubre otras posiciones!'
+    height: 0.27
+  - content: ''
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:kill:1}_ifmatch:&#47E36F&l#1
+      &f--- &#00FF42&l✘_else:{uclans_top:kill:1}%'
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:kill:2}_ifmatch:&#47E36F&l#2
+      &f--- &#00FF42&l✘_else:{uclans_top:kill:2}%'
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:kill:3}_ifmatch:&#47E36F&l#3
+      &f--- &#00FF42&l✘_else:{uclans_top:kill:3}%'
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:kill:4}_ifmatch:&#47E36F&l#4
+      &f--- &#00FF42&l✘_else:{uclans_top:kill:4}%'
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:kill:5}_ifmatch:&#47E36F&l#5
+      &f--- &#00FF42&l✘_else:{uclans_top:kill:5}%'
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:kill:6}_ifmatch:&#47E36F&l#6
+      &f--- &#00FF42&l✘_else:{uclans_top:kill:6}%'
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:kill:7}_ifmatch:&#47E36F&l#7
+      &f--- &#00FF42&l✘_else:{uclans_top:kill:7}%'
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:kill:8}_ifmatch:&#47E36F&l#8
+      &f--- &#00FF42&l✘_else:{uclans_top:kill:8}%'
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:kill:9}_ifmatch:&#47E36F&l#9
+      &f--- &#00FF42&l✘_else:{uclans_top:kill:9}%'
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:kill:10}_ifmatch:&#47E36F&l#10
+      &f--- &#00FF42&l✘_else:{uclans_top:kill:10}%'
+    height: 0.27
+  - content: ''
+    height: 0.27
+  - content: '#47E36FAsesinatos &8• &7Niveles &8• &7Miembros'
+    height: 0.27
+  - content: ''
+    height: 0.27
+  - content: '#ICON: GOLDEN_HOE'
+    height: 0.3
+  actions:
+    RIGHT:
+    - NEXT_PAGE
+    - SOUND:BLOCK_COMPARATOR_CLICK
+- lines:
+  - content: <#ANIM:wave:&#15CCA3&l,&#07FFC7&l>ᴛᴏᴘ ᴄʟᴀɴᴇꜱ - ɴɪᴠᴇʟᴇꜱ</#ANIM>
+    height: 0.27
+  - content: '&8clanes del servidor'
+    height: 0.27
+  - content: '&r'
+    height: 0.27
+  - content: '&fAquí está nuestro &#15CCA3&lᴛᴏᴘ&f de clanes con mas'
+    height: 0.27
+  - content: '&fasesinatos en la modalidad generadores.'
+    height: 0.27
+  - content: ''
+    height: 0.27
+  - content: '&#15CCA3¡Clasificación de clanes del servidor!'
+    height: 0.27
+  - content: '&#07FFC7¡Entérate de más en Discord!'
+    height: 0.27
+  - content: ''
+    height: 0.27
+  - content: '&#15CCA3&lɢʟᴏʙᴀʟ'
+    height: 0.27
+  - content: '&f¡Descubre otras posiciones!'
+    height: 0.27
+  - content: ''
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:level:1}_ifmatch:&#15CCA3&l#1
+      &f--- &#07FFC7&l✘_else:{uclans_top:level:1}%'
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:level:2}_ifmatch:&#15CCA3&l#2
+      &f--- &#07FFC7&l✘_else:{uclans_top:level:2}%'
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:level:3}_ifmatch:&#15CCA3&l#3
+      &f--- &#07FFC7&l✘_else:{uclans_top:level:3}%'
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:level:4}_ifmatch:&#15CCA3&l#4
+      &f--- &#07FFC7&l✘_else:{uclans_top:level:4}%'
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:level:5}_ifmatch:&#15CCA3&l#5
+      &f--- &#07FFC7&l✘_else:{uclans_top:level:5}%'
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:level:6}_ifmatch:&#15CCA3&l#6
+      &f--- &#07FFC7&l✘_else:{uclans_top:level:6}%'
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:level:7}_ifmatch:&#15CCA3&l#7
+      &f--- &#07FFC7&l✘_else:{uclans_top:level:7}%'
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:level:8}_ifmatch:&#15CCA3&l#8
+      &f--- &#07FFC7&l✘_else:{uclans_top:level:8}%'
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:level:9}_ifmatch:&#15CCA3&l#9
+      &f--- &#07FFC7&l✘_else:{uclans_top:level:9}%'
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:level:10}_ifmatch:&#15CCA3&l#10
+      &f--- &#07FFC7&l✘_else:{uclans_top:level:10}%'
+    height: 0.27
+  - content: ''
+    height: 0.27
+  - content: '&7Asesinatos &8• &#15CCA3Niveles &8• &7Miembros'
+    height: 0.27
+  - content: ''
+    height: 0.27
+  - content: '#ICON: GOLDEN_HOE'
+    height: 0.3
+  actions:
+    LEFT:
+    - PREV_PAGE
+    - SOUND:BLOCK_COMPARATOR_CLICK
+    RIGHT:
+    - NEXT_PAGE
+    - SOUND:BLOCK_COMPARATOR_CLICK
+- lines:
+  - content: <#ANIM:wave:&#CEFF07&l,&#07FFC7&l>ᴛᴏᴘ ᴄʟᴀɴᴇꜱ - ᴍɪᴇᴍʙʀᴏꜱꜱ</#ANIM>
+    height: 0.27
+  - content: '&8clanes del servidor'
+    height: 0.27
+  - content: '&r'
+    height: 0.27
+  - content: '&fAquí está nuestro &#CEFF07&lᴛᴏᴘ&f de clanes con mas'
+    height: 0.27
+  - content: '&fmiembros en la modalidad generadores.'
+    height: 0.27
+  - content: ''
+    height: 0.27
+  - content: '&e¡Clasificación de clanes del servidor!'
+    height: 0.27
+  - content: '&#E0FF62¡Entérate de más en Discord!'
+    height: 0.27
+  - content: ''
+    height: 0.27
+  - content: '&#CEFF07&lɢʟᴏʙᴀʟ'
+    height: 0.27
+  - content: '&f¡Descubre otras posiciones!'
+    height: 0.27
+  - content: ''
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:member:1}_ifmatch:&#E0FF62&l#1
+      &f--- &#CEFF07&l✘_else:{uclans_top:member:1}%'
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:member:2}_ifmatch:&#E0FF62&l#2
+      &f--- &#CEFF07&l✘_else:{uclans_top:member:2}%'
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:member:3}_ifmatch:&#E0FF62&l#3
+      &f--- &#CEFF07&l✘_else:{uclans_top:member:3}%'
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:member:4}_ifmatch:&#E0FF62&l#4
+      &f--- &#CEFF07&l✘_else:{uclans_top:member:4}%'
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:member:5}_ifmatch:&#E0FF62&l#5
+      &f--- &#CEFF07&l✘_else:{uclans_top:member:5}%'
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:member:6}_ifmatch:&#E0FF62&l#6
+      &f--- &#CEFF07&l✘_else:{uclans_top:member:6}%'
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:member:7}_ifmatch:&#E0FF62&l#7
+      &f--- &#CEFF07&l✘_else:{uclans_top:member:7}%'
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:member:8}_ifmatch:&#E0FF62&l#8
+      &f--- &#CEFF07&l✘_else:{uclans_top:member:8}%'
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:member:9}_ifmatch:&#E0FF62&l#9
+      &f--- &#CEFF07&l✘_else:{uclans_top:member:9}%'
+    height: 0.27
+  - content: '%changeoutput_equals_input:_matcher:{uclans_top:member:10}_ifmatch:&#E0FF62&l#10
+      &f--- &#CEFF07&l✘_else:{uclans_top:member:10}%'
+    height: 0.27
+  - content: ''
+    height: 0.27
+  - content: '&7Asesinatos &8• &7Niveles &8• &#CEFF07Miembros'
+    height: 0.27
+  - content: ''
+    height: 0.27
+  - content: '#ICON: GOLDEN_HOE'
+    height: 0.3
+  actions:
+    LEFT:
+    - PREV_PAGE
+    - SOUND:BLOCK_COMPARATOR_CLICK

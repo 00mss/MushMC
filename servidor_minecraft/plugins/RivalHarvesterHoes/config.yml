@@ -1,0 +1,1309 @@
+#####################################################################################################################
+#  ____  _____     ___    _       _   _    _    ______     _______ ____ _____ _____ ____    _   _  ___  _____ ____  #
+# |  _ \|_ _\ \   / / \  | |     | | | |  / \  |  _ \ \   / | ____/ ___|_   _| ____|  _ \  | | | |/ _ \| ____/ ___| #
+# | |_) || | \ \ / / _ \ | |     | |_| | / _ \ | |_) \ \ / /|  _| \___ \ | | |  _| | |_) | | |_| | | | |  _| \___ \ #
+# |  _ < | |  \ V / ___ \| |___  |  _  |/ ___ \|  _ < \ V / | |___ ___) || | | |___|  _ <  |  _  | |_| | |___ ___) |#
+# |_| \_|___|  \_/_/   \_|_____| |_| |_/_/   \_|_| \_\ \_/  |_____|____/ |_| |_____|_| \_\ |_| |_|\___/|_____|____/ #
+#                                                                                                                   #
+#####################################################################################################################
+Database:
+  # SQLite or MySQL
+  database-type: SQLite
+  mysql:
+    host: localhost
+    port: 3306
+    database: dbName
+    username: dbUser
+    password: dbPassword
+Main:
+  # Time is in Ticks: 1 second = 20 ticks
+  Money-Giver:
+    time: 100
+  #Keep Hoe after dying
+  keep-on-death: true
+  # Prevents player from using the hoe if he is not the owner
+  perplayerhoes: true
+  # Disables player from upgrading hoe if he is not the owner
+  perplayerhoes-upgrades: true
+  # Prevents players exploting schematica and farming
+  mcmmo:
+    exp-per-crop: 20
+  aurelium-skills:
+    wheat: 2.0
+    potato: 2.5
+    beetroot: 2.5
+    carrot: 2.7
+    cocoabean: 3.0
+    nether-wart: 3.0
+    pumpkin: 3.4
+    melon: 3.4
+    sugar-cane: 1.7
+  ultimate-skills:
+    wheat: 2.0
+    potato: 2.5
+    beetroot: 2.5
+    carrot: 2.7
+    cocoabean: 3.0
+    nether-wart: 3.0
+    pumpkin: 3.4
+    melon: 3.4
+    sugar-cane: 1.7
+  # If set to true, it uses crop prices from ShopGUIPlus, if a Crop is missing it defaults to config price
+  shopguiplus-hook: true
+  # ShopGUIPlus hook must be enabled for this to work
+  shopguiplus-multipliers: true
+  anti-printerfarm-cane:
+    enabled: true
+    message:
+      value: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fNo puedes colocar caña de azúcar encima
+        de otra caña de azúcar.'
+      enabled: true
+  # Give players a hoe on first join
+  on-join-hoe:
+    enabled: true
+    enchants: keyfinder:1,EXPFinder:1
+  # Filler used in all GUI's
+  filler:
+    material: BLACK_STAINED_GLASS_PANE
+# Sounds
+Sounds:
+  use-sounds: true
+  main-menu-open: ORB_PICKUP;1.0;1.0
+  enchant-purchase: LEVEL_UP;1.0;1.0
+  enchant-disenchant: ITEM_BREAK;1.0;1.0
+  enchant-maxlevel: ANVIL_LAND;1.0;1.0
+  captcha-fail: ANVIL_LAND;1.0;1.0
+  captcha-success: LEVEL_UP;1.0;1.0
+  autosell-message: LEVEL_UP;1.0;1.0
+  hoe-levelup: LEVEL_UP;1.0;1.0
+  hoe-prestige: LEVEL_UP;1.0;1.0
+  hoe-levelup-max: WITHER_SHOOT;1.0;1.0
+# Main Menu That opens when Right Clicked with Hoe
+MainMenu:
+  name: '&nAzada de recolección'
+  size: 45
+  hoe-preview-slot: 19
+  hoe-preview-enabled: true
+  settings-enabled: true
+  disenchanter-enabled: true
+  enchants-display: true
+  croptop-mainmenu: true
+  essencetop-mainmenu: true
+  prices-mainmenu: true
+  stats-enabled: true
+  stats-slot: 31
+  enchants-display-slot: 32
+  upgrades-slot: 21
+  settings-slot: 22
+  croptop-slot: 23
+  essencetop-slot: 24
+  prices-slot: 25
+# Settings for Crop Prices and Essence Amounts
+Settings:
+  SugarCane:
+    money: 6.5
+    essence: 3
+  Potato:
+    money: 2
+    essence: 3
+    default-drop: 2-4
+  Melon:
+    money: 1.5
+    essence: 3
+    default-drop: 3-7
+  Pumpkin:
+    money: 2.25
+    essence: 3
+    default-drop: 1
+  Wheat:
+    money: 2
+    essence: 3
+    default-drop: 2-4
+  CocoBean:
+    money: 2
+    essence: 3
+    default-drop: 3
+  NetherWart:
+    money: 2.25
+    essence: 3
+    default-drop: 2-4
+  Carrot:
+    money: 2
+    essence: 3
+    default-drop: 1-4
+  Beetroot:
+    money: 2
+    essence: 3
+    default-drop: 1
+  # Crop Prices GUI Settings
+  GUI:
+    SugarCane:
+      name: '&x&3&9&F&B&2&6Caña de azucar'
+      lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEnterate de los precios'
+      - '&ffijos de los cultivos'
+      - ''
+      - '&fPrecio de venta'
+      - '&8&l●&f Precio: &e${money} ⛃'
+      - ''
+      - '&fEsencias por item'
+      - '&8&l●&f Precio: &e{essence} 🌊'
+      - ''
+      - '&e▸ ¡Comienza a recolectar!'
+      slot: 22
+      enabled: false
+    Potato:
+      name: '&x&3&9&F&B&2&6Patatas'
+      lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEnterate de los precios'
+      - '&ffijos de los cultivos'
+      - ''
+      - '&fPrecio de venta'
+      - '&8&l●&f Precio: &e${money} ⛃'
+      - ''
+      - '&fEsencias por item'
+      - '&8&l●&f Precio: &e{essence} 🌊'
+      - ''
+      - '&e▸ ¡Comienza a recolectar!'
+      slot: 14
+      enabled: true
+    Melon:
+      name: '&x&3&9&F&B&2&6Sandia'
+      lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEnterate de los precios'
+      - '&ffijos de los cultivos'
+      - ''
+      - '&fPrecio de venta'
+      - '&8&l●&f Precio: &e${money} ⛃'
+      - ''
+      - '&fEsencias por item'
+      - '&8&l●&f Precio: &e{essence} 🌊'
+      - ''
+      - '&e▸ ¡Comienza a recolectar!'
+      slot: 12
+      enabled: false
+    Pumpkin:
+      name: '&x&3&9&F&B&2&6Calabaza'
+      lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEnterate de los precios'
+      - '&ffijos de los cultivos'
+      - ''
+      - '&fPrecio de venta'
+      - '&8&l●&f Precio: &e${money} ⛃'
+      - ''
+      - '&fEsencias por item'
+      - '&8&l●&f Precio: &e{essence} 🌊'
+      - ''
+      - '&e▸ ¡Comienza a recolectar!'
+      slot: 13
+      enabled: false
+    Wheat:
+      name: '&x&3&9&F&B&2&6Trigo'
+      lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEnterate de los precios'
+      - '&ffijos de los cultivos'
+      - ''
+      - '&fPrecio de venta'
+      - '&8&l●&f Precio: &e${money} ⛃'
+      - ''
+      - '&fEsencias por item'
+      - '&8&l●&f Precio: &e{essence} 🌊'
+      - ''
+      - '&e▸ ¡Comienza a recolectar!'
+      slot: 12
+      enabled: true
+    CocoBean:
+      name: '&x&3&9&F&B&2&6Coco'
+      lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEnterate de los precios'
+      - '&ffijos de los cultivos'
+      - ''
+      - '&fPrecio de venta'
+      - '&8&l●&f Precio: &e${money} ⛃'
+      - ''
+      - '&fEsencias por item'
+      - '&8&l●&f Precio: &e{essence} 🌊'
+      - ''
+      - '&e▸ ¡Comienza a recolectar!'
+      slot: 15
+      enabled: false
+    NetherWart:
+      name: '&x&3&9&F&B&2&6Verruga del nether'
+      lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEnterate de los precios'
+      - '&ffijos de los cultivos'
+      - ''
+      - '&fPrecio de venta'
+      - '&8&l●&f Precio: &e${money} ⛃'
+      - ''
+      - '&fEsencias por item'
+      - '&8&l●&f Precio: &e{essence} 🌊'
+      - ''
+      - '&e▸ ¡Comienza a recolectar!'
+      slot: 16
+      enabled: false
+    Carrot:
+      name: '&x&3&9&F&B&2&6Zanahorias'
+      lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEnterate de los precios'
+      - '&ffijos de los cultivos'
+      - ''
+      - '&fPrecio de venta'
+      - '&8&l●&f Precio: &e${money} ⛃'
+      - ''
+      - '&fEsencias por item'
+      - '&8&l●&f Precio: &e{essence} 🌊'
+      - ''
+      - '&e▸ ¡Comienza a recolectar!'
+      slot: 13
+      enabled: true
+    Beetroot:
+      name: '&x&3&9&F&B&2&6Remolachas'
+      lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEnterate de los precios'
+      - '&ffijos de los cultivos'
+      - ''
+      - '&fPrecio de venta'
+      - '&8&l●&f Precio: &e${money} ⛃'
+      - ''
+      - '&fEsencias por item'
+      - '&8&l●&f Precio: &e{essence} 🌊'
+      - ''
+      - '&e▸ ¡Comienza a recolectar!'
+      slot: 12
+      enabled: false
+  # Crop Prices GUI Settings
+GUI:
+  back-enchanter:
+    material: BOOK
+    base64:
+      enabled: true
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzdhZWU5YTc1YmYwZGY3ODk3MTgzMDE1Y2NhMGIyYTdkNzU1YzYzMzg4ZmYwMTc1MmQ1ZjQ0MTlmYzY0NSJ9fX0=
+    name: '&cPágina anterior'
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fUsa este item para regresar'
+    - '&fde la azada de recolección'
+    - ''
+    - '&e▸ ¡Clic izq para regresar!'
+    enabled: true
+    slot: 36
+  back-disenchanter:
+    material: BOOK
+    base64:
+      enabled: true
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzdhZWU5YTc1YmYwZGY3ODk3MTgzMDE1Y2NhMGIyYTdkNzU1YzYzMzg4ZmYwMTc1MmQ1ZjQ0MTlmYzY0NSJ9fX0=
+    name: '&cPágina anterior'
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fUsa este item para regresar'
+    - '&fde la azada de recolección'
+    - ''
+    - '&e▸ ¡Clic izq para regresar!'
+    enabled: true
+    slot: 36
+  already-have:
+    material: BARRIER
+    base64:
+      enabled: true
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ==
+    name: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema!'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fSe ha producido un error al  '
+    - '&fintentar aplicar esta mejora'
+    - ''
+    - '&e▸ ¡Mejora adquirida!'
+    message: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fEn este momento, ya dispones de esta
+      mejora.'
+  purchased:
+    material: EMERALD_BLOCK
+    base64:
+      enabled: true
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODZhZGRiZDVkZWRhZDQwOTk5NDczYmU0YTdmNDhmNjIzNmE3OWEwZGNlOTcxYjVkYmQ3MzcyMDE0YWUzOTRkIn19fQ==
+    name: '&x&E&7&D&B&9&4☀ ¡Bien hecho!   '
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fHas comprado correctamente '
+    - '&festá mejora para tu azada  '
+    - ''
+    - '&e▸ ¡Compra exitosa!'
+    message: '&x&E&7&D&B&9&4☀ ¡Bien hecho! &fHas adquirido la mejora {enchant} &fcorrectamente.'
+  no-level:
+    material: BARRIER
+    base64:
+      enabled: true
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ==
+    name: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema!'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEl nivel actual de tu azada '
+    - '&fde recolección es muy bajo       '
+    - ''
+    - '&e▸ ¡Comienza a farmear!'
+    message: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fEl nivel de tu azada de recolección
+      es muy bajo.'
+    leveled-up: '&x&E&7&D&B&9&4☀ ¡Bien hecho! &fHas subido correctamente el nivel tu azada al nivel &x&E&7&D&B&9&4{level}&f.'
+  no-essence:
+    material: BARRIER
+    base64:
+      enabled: true
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ==
+    name: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema!'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fNo cuentas con esencias '
+    - '&fsuficientes para esto   '
+    - ''
+    - '&e▸ ¡Comienza a farmear!'
+    message: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fNo cuentas con esencias suficientes
+      para adquirir esto.'
+  max-level:
+    material: BARRIER
+    base64:
+      enabled: true
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ==
+    name: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema!'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEste encantamiento está '
+    - '&fal nivel maximo   '
+    - ''
+    - '&e▸ ¡Mejora maxima!'
+    message: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fEste encantamiento está en su nivel
+      &cmáximo'
+    message-exceeded: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! Esta compra excedería el nivel
+      &cmáximo&f para este encantamiento.'
+  upgrades-mainmenu:
+    material: PAINTING
+    base64:
+      enabled: true
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjY0NTliZTA5OTk4ZTUwYWJkMmNjZjRjZDM4M2U2YjM4YWI1YmM5MDVmYWNiNjZkY2UwZTE0ZTAzOGJhMTk2OCJ9fX0=
+    name: '&aMejoras de la azada'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEn este menú podras visualizar '
+    - '&flos diferentes tipos de mejora '
+    - '&fpara tu azada de recolección. '
+    - ''
+    - '&e▸ ¡Mejorar mi azada ahora mismo!'
+  disenchanter-mainmenu:
+    material: nautilus_shell
+    base64:
+      enabled: false
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzY3ZWFmMTgyY2VmMDFhN2VjYmEyMjZkNGJjZTlhY2U3N2E1MjUzYWM5NGFhMTY2YTliMzFjZTdmYmNhODI0NSJ9fX0=
+    gui-name: '&nDesencantador de la azada'
+    gui-slots: 36
+    gui-size: 45
+    name: '&aDescantamientos de la azada'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEn este menú podras desencantar '
+    - '&falgun encantamiento aplicado en tu '
+    - '&fazada de recolección.  '
+    - ''
+    - '&e▸ ¡Desencantar mi azada ahora mismo!'
+  settings-mainmenu:
+    material: QUARTZ
+    base64:
+      enabled: true
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWQwNzQyMTZiZDA2NTdjMjQxMDA1Y2JjNDBiZDJmOTQzYzBmOGIzMDU3M2NkOWM5MDMzZDgyOWEwMTZmNmIwZiJ9fX0=
+    name: '&aConfiguración de la azada'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fActiva o desactiva opciones '
+    - '&fde tu azada de recolección.  '
+    - ''
+    - '&e▸ ¡Configurar opciones ahora!'
+  croptop-mainmenu:
+    material: SUGAR_CANE
+    base64:
+      enabled: true
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjdhM2VkNmE2MjljNWVjYmRhM2JhMDYxOTE1ZTVkMWZmNTg4ZTVhMmVjZGM5Zjg0YmY3MDg4Yjc4NzI2NWEzNSJ9fX0=
+    name: '&aMejores cosechadores'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fInformate sobre los mejores '
+    - '&fcosechadores del servidor '
+    - ''
+    - '&e▸ ¡Ver mejora cosechadores!'  
+  essencetop-mainmenu:
+    material: MAGMA_CREAM
+    base64:
+      enabled: true
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzFlZjgxZjIwZTM4YTc3YTU1MmU0MGI2ZjYxNTY0ZTk1MmNkZWYzNjYyMDJhZDM0NzU3MjA5YzhjYjZmZjEyNSJ9fX0=
+    name: '&aJugadores con más esencias'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fInformate sobre los mejores '
+    - '&fcon mayor promedio de esencia'
+    - '&fen el servidor'
+    - ''
+    - '&e▸ ¡Ver lo mejores jugadores!'
+  prices-mainmenu:
+    material: PAPER
+    base64:
+      enabled: true
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGE5OTUzY2U5NDVkYTZlMmZiODAwMzBlNzU0ZmE4ZTA5MmM0ZTllY2QwNTQ4ZjkzOGMzNDk3YTgwOGU0MWE0OCJ9fX0=
+    gui-name: '&nPrecio de cultivos'
+    name: '&aPrecio de cultivos'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fInformate sobre los precios '
+    - '&fde venta de distintos cultivos'
+    - ''
+    - '&e▸ ¡Clic izq para abrir!'
+  # /harvesters GUI - Shows players currently farming
+  harvesters-mainmenu:
+    gui-name: '&nLista de jugadores con azadas'
+    item:
+      lore:
+      - '&8&l● &bMoney: &2$&a{money}'
+      - '&8&l● &bEssence: &6❋&e{essence}'
+      - ''
+      - '&8&l● &bPotato: &f{potato}'
+      - '&8&l● &bCarrot: &f{carrot}'
+      - '&8&l● &bBeetroot: &f{beetroot}'
+      - '&8&l● &bWheat: &f{wheat}'
+      - ''
+      - '&8&l● &bCosechas Totales: &f{global}'
+      - ''
+      - '&8&l● &bBloques por Segundo: &f{bps}'
+      - ''
+      - '&e▸ ¡Clic para ir donde este jugador!'
+    color: '&f&l'
+    pages:
+      name: '&Paginas'
+      base64:
+        enabled: false
+        value: ''
+      material: BOOK
+    next-page:
+      material: PAPER
+      base64:
+        enabled: false
+        value: ''
+      name: '&aSiguiente página'
+      lore:
+      - '&8Acceso directo'
+      - ''
+      - '&fUsa este item para ir'
+      - '&fal siguiente menú '
+      - ''
+      - '&e▸ ¡Clic izq para ir!'
+    return-page:
+      material: PAPER
+      base64:
+        enabled: false
+        value: ''
+      name: '&cPágina anterior'
+      lore:
+      - '&8Acceso directo'
+      - ''
+      - '&fUsa este item para ir'
+      - '&fal menú anterior '
+      - ''
+      - '&e▸ ¡Clic izq para ir!'
+  # Hoe Settings Menu
+  settings-menu:
+    name: '&nConfiguración de la azada'
+    size: 45
+    autosell-message-chat-enabled:
+      slot: 11
+      material: SIGN
+      base64:
+        enabled: true
+        value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmY3NWQxYjc4NWQxOGQ0N2IzZWE4ZjBhN2UwZmQ0YTFmYWU5ZTdkMzIzY2YzYjEzOGM4Yzc4Y2ZlMjRlZTU5In19fQ==
+      name: '&aMensaje de venta automática'
+      lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fActiva o desactiva los mensajes '
+      - '&fde venta automatica'
+      - ''
+      - '&8&l● &fEstado: &a&l✔'
+      - ''
+      - '&e▸ ¡Clic izq para alternar!'
+    autosell-message-chat-disabled:
+      material: SIGN
+      base64:
+        enabled: true
+        value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmY3NWQxYjc4NWQxOGQ0N2IzZWE4ZjBhN2UwZmQ0YTFmYWU5ZTdkMzIzY2YzYjEzOGM4Yzc4Y2ZlMjRlZTU5In19fQ==
+      name: '&cMensaje de venta automática'
+      lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fActiva o desactiva los mensajes '
+      - '&fde venta automatica'
+      - ''
+      - '&8&l● &fEstado: &c&l✘'
+      - ''
+      - '&e▸ ¡Clic izq para alternar!'
+    keyfinder-messages-enabled:
+      slot: 13
+      material: TRIPWIRE_HOOK
+      base64:
+        enabled: true
+        value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjIxNWU4ZWJlZmYwYTIwMDhmMTRiZGEwNzJmNzU2MTVkYWNhYzBjNGRhYmM5MGQ5ZDUyY2MzMjE0ZTVjNTM1NyJ9fX0=
+      name: '&aMensaje de Llaves sorpresas'
+      lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fActiva o desactiva los mensajes '
+      - '&fdel buscador de llaves'
+      - ''
+      - '&8&l● &fEstado: &a&l✔'
+      - ''
+      - '&e▸ ¡Clic izq para alternar!'
+    keyfinder-messages-disabled:
+      material: TRIPWIRE_HOOK
+      base64:
+        enabled: true
+        value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjIxNWU4ZWJlZmYwYTIwMDhmMTRiZGEwNzJmNzU2MTVkYWNhYzBjNGRhYmM5MGQ5ZDUyY2MzMjE0ZTVjNTM1NyJ9fX0=
+      name: '&cMensaje de Llaves sorpresa'
+      lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fActiva o desactiva los mensajes '
+      - '&fdel buscador de llaves'
+      - ''
+      - '&8&l● &fEstado: &c&l✘'
+      - ''
+      - '&e▸ ¡Clic izq para alternar!'
+    spawnerfinder-messages-enabled:
+      slot: 14
+      material: MOB_SPAWNER
+      base64:
+        enabled: true
+        value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjQ3ZTJlNWQ1NWI2ZDA0OTQzNTE5YmVkMjU1N2M2MzI5ZTMzYjYwYjkwOWRlZTg5MjNjZDg4YjExNTIxMCJ9fX0=
+      name: '&aMensaje del Localizador de generadores'
+      lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fActiva o desactiva los mensajes '
+      - '&fdel localizador de spawners'
+      - ''
+      - '&8&l● &fEstado: &a&l✔'
+      - ''
+      - '&e▸ ¡Clic izq para alternar!'
+    spawnerfinder-messages-disabled:
+      material: MOB_SPAWNER
+      base64:
+        enabled: false
+        value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjQ3ZTJlNWQ1NWI2ZDA0OTQzNTE5YmVkMjU1N2M2MzI5ZTMzYjYwYjkwOWRlZTg5MjNjZDg4YjExNTIxMCJ9fX0=
+      name: '&cMensaje del Localizador de generadores'
+      lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fActiva o desactiva los mensajes '
+      - '&fdel localizador de spawners'
+      - ''
+      - '&8&l● &fEstado: &c&l✘'
+      - ''
+      - '&e▸ ¡Clic izq para alternar!'
+    essencepouch-messages-enabled:
+      slot: 15
+      material: GOLD_INGOT
+      base64:
+        enabled: true
+        value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTMzZTkyYjA2NTcxOTZjYmExODZjZTc0ZjIwMzhiOTNiZThlNDI1MWFlMmNhYTNlYmY1MWNkZWYwM2E3NDM4NCJ9fX0=
+      name: '&aMensaje de Duplicador de esencias'
+      lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fActiva o desactiva los mensajes '
+      - '&fdel Mensaje de bolsa de esencia '
+      - ''
+      - '&8&l● &fEstado: &a&l✔'
+      - ''
+      - '&e▸ ¡Clic izq para alternar!'
+    essencepouch-messages-disabled:
+      material: GOLD_INGOT
+      base64:
+        enabled: true
+        value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTMzZTkyYjA2NTcxOTZjYmExODZjZTc0ZjIwMzhiOTNiZThlNDI1MWFlMmNhYTNlYmY1MWNkZWYwM2E3NDM4NCJ9fX0=
+      name: '&cMensaje de Duplicador de esencias'
+      lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fActiva o desactiva los mensajes '
+      - '&fdel Mensaje de bolsa de esencia '
+      - ''
+      - '&8&l● &fEstado: &c&l✘'
+      - ''
+      - '&e▸ ¡Clic izq para alternar!'
+    moneypouch-messages-enabled:
+      slot: 12
+      material: BLAZE_ROD
+      base64:
+        enabled: true
+        value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTZlMGQ1ZmU4N2QyZDIxZTJiZGU2Mzc0NDI1YTM0MWE3NTczYjM3NWQ1YmI3ZDQ3ZjRiOGRhZTM1Mjk3ZWE0In19fQ==
+      name: '&aMensaje de Cofre de riquezas'
+      lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fActiva o desactiva los mensajes '
+      - '&fdel Mensaje de bolsa de dinero '
+      - ''
+      - '&8&l● &fEstado: &a&l✔'
+      - ''
+      - '&e▸ ¡Clic izq para alternar!'
+    moneypouch-messages-disabled:
+      material: BLAZE_ROD
+      base64:
+        enabled: true
+        value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTZlMGQ1ZmU4N2QyZDIxZTJiZGU2Mzc0NDI1YTM0MWE3NTczYjM3NWQ1YmI3ZDQ3ZjRiOGRhZTM1Mjk3ZWE0In19fQ==
+      name: '&cMensaje de Cofre de riquezas'
+      lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fActiva o desactiva los mensajes '
+      - '&fdel Mensaje de bolsa de dinero '
+      - ''
+      - '&8&l● &fEstado: &c&l✘'
+      - ''
+      - '&e▸ ¡Clic izq para alternar!'
+    actionbar-messages-enabled:
+      slot: 30
+      material: BLAZE_ROD
+      base64:
+        enabled: true
+        value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzdlYTY3Njg2OTcxOGIxMWU4YTNhMTc0OTdjYzYzOGU2YThkYzFkMzFlNTM4MmZmZTNjZjk0YWFlNzE3YWRhZiJ9fX0=
+      name: '&aMensajes de la barra de acciones'
+      lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fActiva o desactiva los mensajes '
+      - '&fde tipo barra de acciónes '
+      - ''
+      - '&8&l● &fEstado: &a&l✔'
+      - ''
+      - '&e▸ ¡Clic izq para alternar!'
+    actionbar-messages-disabled:
+      material: BLAZE_ROD
+      base64:
+        enabled: true
+        value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzdlYTY3Njg2OTcxOGIxMWU4YTNhMTc0OTdjYzYzOGU2YThkYzFkMzFlNTM4MmZmZTNjZjk0YWFlNzE3YWRhZiJ9fX0=
+      name: '&cMensajes de la barra de acciones'
+      lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fActiva o desactiva los mensajes '
+      - '&fde tipo barra de acciónes '
+      - ''
+      - '&8&l● &fEstado: &c&l✘'
+      - ''
+      - '&e▸ ¡Clic izq para alternar!'
+    title-messages-enabled:
+      slot: 32
+      material: BLAZE_ROD
+      base64:
+        enabled: true
+        value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjgwOGQ5MjEzYWY5ZTIyMzVhMDgyOGMyOWZiODA2MGVkMGUzYTdhZjI5ZGJkNWI1YTkyYWI5NjRjZjhhNTRlYSJ9fX0=
+      name: '&aMensajes de título'
+      lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fActiva o desactiva los mensajes '
+      - '&fde tipo: en tu pantalla &7(titulos) '
+      - ''
+      - '&8&l● &fEstado: &a&l✔'
+      - ''
+      - '&e▸ ¡Clic izq para alternar!'
+    title-messages-disabled:
+      material: BLAZE_ROD
+      base64:
+        enabled: true
+        value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjgwOGQ5MjEzYWY5ZTIyMzVhMDgyOGMyOWZiODA2MGVkMGUzYTdhZjI5ZGJkNWI1YTkyYWI5NjRjZjhhNTRlYSJ9fX0=
+      name: '&cMensajes de título'
+      lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fActiva o desactiva los mensajes '
+      - '&fde tipo: en tu pantalla &7(titulos) '
+      - ''
+      - '&8&l● &fEstado: &c&l✘'
+      - ''
+      - '&e▸ ¡Clic izq para alternar!'
+  stats-mainmenu:
+    material: GOLDEN_HOE
+    base64:
+      enabled: true
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWFmNjQ1ZjQ4MjRlNTRkMjY5NzJkMGJmNzIxMWI2ODE1MzgyMWRjM2EwZGY5OTJlNzY2NWNiMjFjNjk2OTBkYSJ9fX0=
+    name: '&aEstadísticas de la azada'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fAquí podrás encontrar estadísticas'
+    - '&fdetalladas sobre tus actividades'
+    - '&fcon la azada de recolección'
+    - ''
+    - ' &8| &x&F&B&D&A&8&8Trigo ☄'
+    - "&7"
+    - ' &fRecolectado: &e{wheat} &e⊅'
+    - ' &fVendelo por: &x&F&B&D&A&8&85.0 ⛃'
+    - '&7'
+    - ' &8| &x&F&B&D&A&8&8Zanahorias ☄'
+    - "&7"
+    - ' &fRecolectado: &e{carrots} &e⊅'
+    - ' &fVendelo por: &x&F&B&D&A&8&810.0 ⛃'
+    - '&7'
+    - ' &8| &x&F&B&D&A&8&8Patatas ☄'
+    - "&7"
+    - ' &fRecolectado: &e{potato} &e⊅'
+    - ' &fVendelo por: &x&F&B&D&A&8&815.0 ⛃'
+    - '&7'
+    - '&e▸ ¡Comienza a recolectar ahora!'
+# Harvester Hoe Item Settings
+Hoe-Settings:
+  name: '&x&F&9&F&F&B&EAzada de &lRECOLECCIÓN &7(Modo {mode})'
+  # Possible types: WOODEN, STONE, IRON, GOLDEN, DIAMOND, 1.16+ NETHERITE
+  type: GOLDEN
+  autosell: Automatico
+  collect: Normal
+  lore:
+  - '&8Artículo de recursos'
+  - ''
+  - '&x&F&9&F&F&B&E⚠ &8({progress}&8) &x&F&9&F&F&B&E{percentage}%'
+  - ''
+  - '&fComienza a cosechar los diferentes'
+  - '&fcultivos para poder progresar y poder'
+  - '&favanzar al nivel maxímo de tu azada'
+  - ''
+  - '&e⊅ ¡Sobre la azada!'
+  - '&8&l● &fEsencias: &x&F&9&F&F&B&E{essenceharvested}'
+  - '&8&l● &fNivel actual: &x&F&9&F&F&B&E{level}'
+  - '&8&l● &fPrestigio: &x&F&9&F&F&B&E{prestige}'
+  - ''
+  - '&e⸙ ¡Encantamientos!'
+  - '&e&l〆 &8▸ &a%enchant-AutoSell%'
+  - '&e&l〆 &8▸ &a%enchant-EXPFinder%'
+  - '&e&l〆 &8▸ &a%enchant-KeyFinder%'
+  - '&e&l〆 &8▸ &a%enchant-SpawnerFinder%'
+  - '&e&l〆 &8▸ &a%enchant-MoneyBooster%'
+  - '&e&l〆 &8▸ &a%enchant-Speed%'
+  - '&e&l〆 &8▸ &a%enchant-CropsBooster%'
+  - '&e&l〆 &8▸ &a%enchant-MoneyPouch%'
+  - '&e&l〆 &8▸ &a%enchant-EssencePouch%'
+  - '&e&l〆 &8▸ &a%enchant-AirStrike%'
+  - ''
+  - '&e▸ ¡Azada de &e{owner}!'
+  changed-mode: '&x&E&7&D&B&9&4☀ ¡Bien hecho! &fModo de la azada recolectora cambiado a &e{mode}.'
+  opened-gui: '&3&l[!] &bAbierto el GUI de mejoras de la &fazada recolectora&b.'
+  no-hoe: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fNo estás sosteniendo una azada recolectora.'
+  opened-gui-message: false
+  glow: true
+  format-decimal-progress: true
+  progress-bar:
+    amount: 20
+    symbol: ▎
+    completed-color: '&e'
+    not-completed-color: '&x&E&F&C&5&5&A'
+  # Used for Hoe Levels, each crop broken = amount down below added to progress
+  xp-per-crop: 1.0
+  hoe-info:
+    name: '&aEncantamientos de la azadas'
+    material: nautilus_shell
+    base64:
+      enabled: true
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjQzZjUyMGM4NTZiYzdhMDM2NGUwZWRlNzI5ZmI0OWQ2ZGMwNDZjZjdkOGY1NjQ5NGQwYzJmMjg2YjYyMzUzMSJ9fX0=
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fInformate sobre los encantamientos'
+    - '&fúnicos qué fueron aplicados a la'
+    - '&fazada de recolección de cultivos'
+    - ''
+    - '&e⸙ ¡Encantamientos!'
+    - '&e&l〆 &8▸ &a%enchant-AutoSell%'
+    - '&e&l〆 &8▸ &a%enchant-EXPFinder%'
+    - '&e&l〆 &8▸ &a%enchant-KeyFinder%'
+    - '&e&l〆 &8▸ &a%enchant-SpawnerFinder%'
+    - '&e&l〆 &8▸ &a%enchant-MoneyBooster%'
+    - '&e&l〆 &8▸ &a%enchant-Speed%'
+    - '&e&l〆 &8▸ &a%enchant-CropsBooster%'
+    - '&e&l〆 &8▸ &a%enchant-MoneyPouch%'
+    - '&e&l〆 &8▸ &a%enchant-EssencePouch%'
+    - '&e&l〆 &8▸ &a%enchant-AirStrike%'
+    - ''
+    - '&e▸ ¡Encantamientos de &e{owner}!'
+command:
+  essence:
+    default:
+    - '&f&l[!] &e&lEssence Commands '
+    - ' &8● &f/essence &7balance <player>'
+    - ' &8● &f/essence &7pay <player> <amount>'
+    - ' &8● &f/essence &7withdraw <player> <amount>'
+    - ' &8● &f/essence &7shop'
+    admin:
+    - '&f&l[!] &e&lEssence Admin Commands '
+    - ' &8● &f/essence &7give <player> <amount>'
+    - ' &8● &f/essence &7reset <player>'
+    - ' &8● &f/essence &7set <player> <amount>'
+    - ' &8● &f/essence &7remove <player> <amount>'
+    - ' &8● &f/essence &7reload'
+    - ' &8● &f/essence &7force'
+  crops:
+    default:
+    - '&3&l[!] &b&lCrops Commands'
+    - ' &8● &f/crops top &7<crop>'
+    - ' &8● &f/crops balance &7<player> <crop>'
+    admin:
+    - '&3&l[!] &b&lCrops Admin Commands'
+    - ' &8● &f/crops set &7<player> <crop> <amount>'
+    - ' &8● &f/crops give &7<player> <crop> <amount>'
+    - ' &8● &f/crops reset &7<player> <crop> <amount>'
+    - ' &8● &f/crops remove &7<player> <crop> <amount>'
+    - ' &8● &f/crops force &7'
+  hoe:
+    default:
+    - '&f&l[!] &b&lHoe Commands '
+    - ' &8● &f/hoe &7about'
+    - ' &8● &f/hoe &7info'
+    - ' &8● &f/hoe &7stats'
+    admin:
+    - '&f&l[!] &b&lHoe Admin Commands '
+    - ' &8● &f/hoe &7give <player> <enchant:level>,<enchant:level>,<level:level>,<autosell:1>'
+    - ' &8● &f/hoe &7testchance <enchant> <levels> <blocks>'
+    - ' &8● &f/hoe &7giveenchant <player> <enchant> <level>'
+    - ' &8● &f/hoe &7givelevel <player> <level>'
+    - ' &8● &f/hoe &7setlevel <level>'
+    - ' &8● &f/hoe &7setenchant <enchant:level>, <enchant:level>'
+    - ' &8● &f/hoe &7calc <enchant> <levels>'
+    - ' &8● &f/hoe &7admin'
+    - ' &8● &f/hoe &7reload'
+# Permissions - add rivalhoes.main to give access to commands, rivalhoes.admin permission for admin commands
+permissions:
+  force-captcha: rivalhoes.captcha.force
+  harvesters: rivalhoes.harvesters
+  hoe-testchance: rivalhoes.testchance
+  hoe-stats: rivalhoes.stats
+  hoe-reload: rivalhoes.reload
+  hoe-info: rivalhoes.info
+  hoe-give: rivalhoes.give
+  hoe-harvesterevent: rivalhoes.harvesterevent
+  hoe-calculate: rivalhoes.calculate
+  hoe-admin: rivalhoes.admin
+  hoe-max: rivalhoes.max
+  hoe-setenchant: rivalhoes.setenchant
+  hoe-giveenchant: rivalhoes.giveenchant
+  hoe-givelevel: rivalhoes.givelevel
+  hoe-setowner: rivalhoes.setowner
+  hoe-prestige: rivalhoes.prestige
+  hoe-setprestige: rivalhoes.setprestige
+  hoe-mode: rivalhoes.mode
+  hoe-toggle: rivalhoes.toggle
+  hoe-transfer: rivalhoes.transfer
+  crops-force: rivalhoes.crops.force
+  crops-give: rivalhoes.crops.give
+  crops-remove: rivalhoes.crops.removed
+  crops-reset: rivalhoes.crops.reset
+  crops-set: rivalhoes.crops.set
+  crops-balance: rivalhoes.crops.balance
+  crops-top: rivalhoes.crops.top
+  essence-give: rivalhoes.essence.give
+  essence-remove: rivalhoes.essence.remove
+  essence-reset: rivalhoes.essence.reset
+  essence-set: rivalhoes.essence.set
+  essence-pay: rivalhoes.essence.pay
+  essence-balance: rivalhoes.essence.balance
+  essence-shop: rivalhoes.essence.shop
+  essence-withdraw: rivalhoes.essence.withdraw
+  harvester-event: rivalhoes.harvesterevent
+  no-permission: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fSin los permisos suficientes, si crees qué esto
+    es un problema contáctanos: &x&F&F&B&E&1&E&ndiscord.gg/mineluxe'
+Shop:
+  open-essence-shop: '&x&E&7&D&B&9&4☀ ¡Tienda abierta! &fAquí encontrarás una amplia selección de los mejores objetos a precios inigualables'
+  not-enough: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fYou don''t have enough essence for
+    this item.'
+  successful-purchase: '&3&l[!] &bYou have successfully bought {item} for &f{price}
+    &bessence.'
+Crops:
+  set-admin: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fHas establecido la cantidad de &f{crop}
+    &cde {player} a &f{value}&c.'
+  set-player: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fLa cantidad de tus &f{crop} &cse ha
+    establecido en &f{value}&c.'
+  remove-admin: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fHas eliminado &f{value} &c{crop}
+    de la cuenta de {player}.'
+  remove-player: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &f{value} &c{crop} se han retirado
+    de tu cuenta.'
+  give-admin: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fHas dado a {player} &f{value} &c{crop}.'
+  give-player: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fTe han dado &f{value} &c{crop}.'
+  reset-admin: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fHas reiniciado la cantidad de &f{crop}
+    &cde {player}.'
+  reset-player: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fLa cantidad de tus &f{crop} &cse
+    ha reiniciado.'
+# Harvester Event
+HarvesterEvent:
+  config:
+    started-event: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &7Has iniciado el Evento de Cosecha.'
+    already-started: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &7El Evento de Cosecha ya ha comenzado.'
+    not-started: '&3&l[!] &7El &fEvento de Cosecha &7aún no ha comenzado. Comenzará
+      en &b{next-time}'
+  auto-start:
+    enabled: true
+    # Times in Seconds
+    time: 1200
+  lasts-time: 300
+  message-started:
+  - ''
+  - '    &7#FFEEC3⌘ &l¡EVENTO DE RECOLECCIÓN! #FFEEC3⌘ '
+  - ''
+  - '   &fEl evento de cosecha a comenzado, dirigete a la zona'
+  - '   &fde cultivos para quedar en los primeros puestos'
+  - ''
+  - '           &8&l● &fTiempo: #FADC95 minutos'
+  - '&7'
+  - '#FFEEC3      ¡Recibiras una recompensa!'
+  - ''
+  places: 5
+  message:
+  - '[center]&x&E&7&D&B&9&4&l¡EVENTO DE RECOLECCIÓN!'
+  - ''
+  - '[center]&8● &7El evento de recolección ha terminado'
+  - ''
+  - '[center]&e#1 &a{player-0} &8- &f{amount-0}'
+  - '[center]&e#2 &a{player-1} &8- &f{amount-1}'
+  - '[center]&e#3 &a{player-2} &8- &f{amount-2}'
+  - '[center]&e#4 &a{player-3} &8- &f{amount-3}'
+  - '[center]&e#5 &a{player-4} &8- &f{amount-4}'
+  - ''
+  - '[center]&e▸ ¡Top 5 recolectores reciben una recompensa!'
+  current:
+  - '[center]&x&E&7&D&B&9&4&l¡EVENTO DE RECOLECCIÓN!'
+  - ''
+  - '[center]&8● &7Current Leaderboard!'
+  - ''
+  - '[center]&e#1 &a{player-0} &8- &f{amount-0}'
+  - '[center]&e#2 &a{player-1} &8- &f{amount-1}'
+  - '[center]&e#3 &a{player-2} &8- &f{amount-2}'
+  - '[center]&e#4 &a{player-3} &8- &f{amount-3}'
+  - '[center]&e#5 &a{player-4} &8- &f{amount-4}'
+  - '[center]&e&o(( Top 5 players will receive a reward! ))'
+  - ''
+  - '[center]&fTus cultivos cosechados: &a{current}'
+  - '[center]&fTiempo restante.: &f{time-left}'
+  - ''
+  rewards:
+    '0':
+      commands:
+      - eco give {player} 150000
+      message: '&3&lHARVESTER EVENT &8» &7You have placed in #1 Place and received
+        a reward'
+    '1':
+      commands:
+      - eco give {player} 400000
+      message: '&3&lHARVESTER EVENT &8» &7You have placed in #2 Place and received
+        a reward'
+    '2':
+      commands:
+      - eco give {player} 300000
+      message: '&3&lHARVESTER EVENT &8» &7You have placed in #3 Place and received
+        a reward'
+    '3':
+      commands:
+      - eco give {player} 200000
+      message: '&3&lHARVESTER EVENT &8» &7You have placed in #4 Place and received
+        a reward'
+    '4':
+      commands:
+      - eco give {player} 100000
+      message: '&3&lHARVESTER EVENT &8» &7You have placed in #5 Place and received
+        a reward'
+EnchantBook:
+  material: NAUTILUS_SHELL
+  glow: true
+  name: '{enchant} &8» &fNivel &x&E&7&D&B&9&4{level}'
+  lore:
+  - '&8Artículo de información'
+  - ''
+  - '&fUsa este objeto para aplicar un'
+  - '&fencantamiento a tu azada &x&E&7&D&B&9&4☃'
+  - ''
+  - '&8● &fEncantamiento: &x&E&7&D&B&9&4{enchant-raw}'
+  - '&8● &fNivel: &x&E&7&D&B&9&4{level}'
+  - '&8● &fAplicable: &x&E&7&D&B&9&4Azada de recolección'
+  - ''
+  - '&e▸ ¡Aplicable en la azada!'
+  message: '&2&l[!] &7You have added &f{level} &7levels of &f{enchant} &7to your harvester
+    hoe!'
+  max-level: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &7The {enchant} Enchant &7is already at
+    max level!'
+LevelCrystal:
+  material: EMERALD
+  glow: true
+  name: '&2&l[!] &a&lLevel Upgrade'
+  lore:
+  - '&8● &7Levels: &f{level}'
+  - '&8● &7Can be applied to: &fHarvester Hoe'
+  - ''
+  - '&7&o(( Place this on a harvester hoe to level it up))'
+  message: '&2&l[!] &aYou have added &f{level} &alevels to your harvester hoe!'
+  max-level: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fYour &fhoe &cis already at &f&nmax&r
+    &clevel!'
+Essence:
+  item-material: MAGMA_CREAM
+  item-name: '&x&D&D&B&3&F&FEsencias &lINSTANTANEAS'
+  item-lore:
+  - '&8Artículo único de cajas'
+  - ''
+  - '&fCon este item podrás reclamar'
+  - '&x&D&D&B&3&F&F{amount}&f esencias al instante &x&D&D&B&3&F&F&l🌊'
+  - ''
+  - '&8&l● &fEsencias: &x&D&D&B&3&F&F{amount}'
+  - ''
+  - '&x&D&D&B&3&F&F▸ ¡Reclamalas ahora mismo!'
+  decimal-format: '#,###'
+  no-hoe: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fYou must be holding a Harvester Hoe'
+  bottom-block: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fYou can not break bottom block of
+    sugarcane with your hoe.'
+  per-player-hoe: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fYou can''t use that &cHarvester
+    Hoe &fas you are not the &cOwner &fof the &cHarvester Hoe&f.'
+  full-inventory: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fTu inventario esta muy lleno'
+  received-hoe: '&x&E&7&D&B&9&4☀ ¡Éxito! &fHas recibido una azada de recolección correctamente.'
+  given-hoe: '&3&l[!] &bYou have given &f{player} &ba &fHarvester Hoe&b.'
+  invalid-player: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fYou have entered an invalid player
+    name!'
+  invalid-page: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fThere is no page by that name'
+  invalid-number: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fYou didn''t enter a valid number.'
+  inventory-full: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fTu inventario esta muy lleno'
+  only-players: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fOnly players may do this.'
+  incorrect-usage: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fIncorrect Usage: &f{command}'
+  under-zero: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fYou may not use numbers under 1!'
+  no-essence: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fYou do not have that much essence,
+    you have &f{essence}'
+  yourself: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fYou cannot send essence to yourself.'
+  redeemed: '&x&E&7&D&B&9&4☀ ¡Todo correcto! &fHas canjeado &x&E&7&D&B&9&4{value}&f de esencia.'
+  withdrawn: '&3&l[!] &bYou have withdrawn &f{value}&b essence.'
+  set-admin: '&3&l[!] &bYou set &f{player}''s&b essence amount to &f{value}&b.'
+  set-player: '&3&l[!] &bYour &fessence &bamount has been set to &f{value}&b.'
+  remove-admin: '&3&l[!] &bYou removed &f{value}&b essence from &f{player}''s&b balance.'
+  remove-player: '&3&l[!] &f{value} &bessence have been taken from your account.'
+  give-admin: '&3&l[!] &bYou have given &f{player} {value} &bessence.'
+  give-player: '&x&E&7&D&B&9&4☀ ¡Todo correcto! &fSe te ha otorgado &x&E&7&D&B&9&4{value}&f de esencias a tu cuenta'
+  paid-player: '&x&E&7&D&B&9&4☀ ¡Éxito! &bYou have received &f{value}&b essence from &f{player}'
+  player-that-paid: '&3&l[!] &bYou have paid &f{player} {value} &bessence.'
+  reset-admin: '&3&l[!] &bYou have reset &f{player}''s&b essence amount.'
+  reset-player: '&3&l[!] &bYour &fessence &bamount has been reset.'
+  toggle-gui-on: '&2&l[!] &7You have &aallowed &7the Hoe GUI to open!'
+  toggle-gui-off: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &7You have &cdisabled &7the Hoe GUI
+    from opening!'
+  hoe-transfer-not-owner: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fYou are not the owner of
+    this hoe!'
+  hoe-transfer-same-player: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fYou cant transfer ownership
+    to the same player!'
+  hoe-transfer: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fYou transferred Hoe Ownership &cto
+    &f{playernew}&c!'
+  player-balance-format:
+  - '&e&lYour Essence &8» &f{amount}'
+  - '&7Spend Essence by upgrading your hoe or in /essence shop'
+  others-balance-format:
+  - '&e&l{player}''s Essence &8» &f{amount}'
+  - '&7Spend Essence by upgrading your hoe or in /essence shop'
+DefaultSettings:
+  AutoSellChat: true
+  KeyFinder: true
+  SpawnerFinder: true
+  MoneyPouch: true
+  EssencePouch: true
+  ActionBar: true
+  Titles: true
+Features:
+  drophoe-title:
+    enabled: true
+    title: '&x&F&9&F&F&B&E&l¡QUE HACES!'
+    subtitle: '&fPresiona la letra &x&F&9&F&F&B&EQ &fnuevamente!'
+    fadeIn: 20
+    fadeOut: 20
+    time: 80
+  drophoe-actionbar:
+    enabled: true
+    value: '&f¡&x&F&9&F&F&B&E&lNOTA&f! Perderás la azada de recolección, no hay vuelta atrás.'
+    time: 80
+  drophoe-messages:
+    drop-hoe-enabled: true
+    message: '&x&E&7&D&B&9&4☀ ¡Intentalo de nuevo! &fDebes usar nuevamente la letra &x&F&9&F&F&B&EQ&f
+      para desaserté de la azada de recolección.'
+    time: 10
+  levelup-title:
+    enabled: true
+    title: '&x&E&7&D&B&9&4&l¡ENHORABUENA!'
+    subtitle: '&f¡Subiste con éxito el nivel de tu azada al nivel &x&E&7&D&B&9&4{level}&f!'
+    fadeIn: 20
+    fadeOut: 20
+    time: 80
+  levelup-actionbar:
+    enabled: false
+    value: '&2&l[!] &aYou have leveled up your Hoe to level &f{level}&a!'
+    time: 80
+  modechanged-title:
+    enabled: true
+    title: '&x&E&7&D&B&9&4&l¡MODO CAMBIADO!'
+    title-noautosell: '&x&F&F&B&E&1&E&l¡UPS!'
+    subtitle-noautosell: '&f¡Aún no cuentas con esta mejora!'
+    subtitle: '&f¡Tu modo fue cambiado al modo &x&E&7&D&B&9&4{mode}&f!'
+    fadeIn: 20
+    fadeOut: 20
+    time: 80
+  modechanged-actionbar:
+    enabled: false
+    value: '&f¡Tu modo fue cambiado al modo &x&E&7&D&B&9&4{mode}&f!'
+    value-noautosell: '#FF1700⚠ No tienes este encantamiento'
+    time: 80
+  merchant-title:
+    enabled: true
+    title: '&5&l[!] &d&lMERCHANT'
+    subtitle: '&7&o(( Activated. ))'
+    fadeIn: 20
+    fadeOut: 20
+    time: 80
+  merchant-actionbar:
+    enabled: true
+    value: '&5&l[!] &d&lMERCHANT &7has been activated'
+    time: 80
+  essencedeposit-title:
+    enabled: true
+    title: '&x&D&D&B&3&F&F&l¡LISTO!'
+    subtitle: '&f¡&x&D&D&B&3&F&F{essence}&f esencias fueron añadidas a tu saldo!'
+    fadeIn: 20
+    fadeOut: 20
+    time: 80
+  essencedeposit-actionbar:
+    enabled: true
+    value: '&f¡&x&D&D&B&3&F&F&lNOTA&f! &fReclamaste correctamente &x&D&D&B&3&F&F{essence} &fesencias'
+    time: 80
+  essencewithdraw-title:
+    enabled: true
+    title: '&x&F&F&B&E&1&E&l¡DEPOSITASTE ALGO!'
+    subtitle: '&c&l- &x&F&F&B&E&1&E{essence}'
+    fadeIn: 20
+    fadeOut: 20
+    time: 80
+  essencewithdraw-actionbar:
+    enabled: true
+    value: '&6&l[!] &e&lESSENCE &c&l- &6❋&e{essence}'
+    time: 80
+  essencenone-title:
+    enabled: true
+    title: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &f&lESSENCE'
+    subtitle: '&7&o(( You dont''t have enough essence. ))'
+    fadeIn: 20
+    fadeOut: 20
+    time: 80
+  essencenone-actionbar:
+    enabled: true
+    value: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &7You dont have enough Essence, You have:
+      &6❋&e{essence}'
+    time: 80
+  fullinventory-title:
+    enabled: true
+    title: '&x&F&F&B&E&1&E⚠ &l¡UPS!'
+    subtitle: '&fTu inventario esta muy lleno'
+    fadeIn: 20
+    fadeOut: 20
+    time: 80
+  fullinventory-actionbar:
+    enabled: false
+    value: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fTu inventario esta muy lleno'
+    time: 80
+  airstrike-title-activated:
+    enabled: true
+    title: '&x&E&7&D&B&9&4&l¡ATAQUE AÉREO!'
+    subtitle: '&fAtaque aéreo encontrado'
+    fadeIn: 20
+    fadeOut: 20
+    time: 80
+  airstrike-actionbar-activated:
+    enabled: false
+    value: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &f&lAirStrike &7inbound!'
+    time: 80
+  airstrike-title-ended:
+    enabled: true
+    title: '&x&E&7&D&B&9&4&l¡ATAQUE AÉREO!'
+    subtitle: 'Dinero: &x&E&7&D&B&9&4${money} &8&l•  &fEsencias: &x&E&7&D&B&9&4{essence} 🌊'
+    fadeIn: 20
+    fadeOut: 20
+    time: 80
+  airstrike-actionbar-ended:
+    enabled: false
+    value: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &f&lAirStrike: &a&l+ &2$&a{money}  &e&l+
+      &6❋&e{essence}'
+    time: 80
+  spawnerfinder-title:
+    enabled: true
+    title: '&x&E&7&D&B&9&4&l¡QUÉ SUERTE!'
+    subtitle: '&f¡Encontraste algo en la zona de cosecha!'
+    fadeIn: 20
+    fadeOut: 20
+    time: 80
+  spawnerfinder-actionbar:
+    enabled: false
+    value: '&3&l[!] &b&lSpawner Finder: {reward}'
+    time: 80
+  keyfinder-title:
+    enabled: true
+    title: '&x&E&7&D&B&9&4&l¡QUÉ SUERTE!'
+    subtitle: '&f¡Encontraste algo en la zona de farmeo!'
+    fadeIn: 20
+    fadeOut: 20
+    time: 80
+  keyfinder-actionbar:
+    enabled: false
+    value: '&3&l[!] &b&lKey Finder: {reward}'
+    time: 80
+  rush-title-activated:
+    enabled: true
+    title: '&b&l[!] &3&lRUSH'
+    subtitle: '&7&oRush mode activated!'
+    fadeIn: 20
+    fadeOut: 20
+    time: 80
+  rush-actionbar-activated:
+    enabled: true
+    value: '&b&l[!] &3&lRush &7has been activated!'
+    time: 80
+  rush-actionbar-activated-stay:
+    enabled: true
+    value: '&3&lRUSH: &7Time left: &f{time}'
+  jackhammer-title:
+    enabled: true
+    title: '&6&l[!] &e&lJACKHAMMER'
+    subtitle: '&7Your jackhammer enchant has been activated!'
+    fadeIn: 20
+    fadeOut: 20
+    time: 80
+  jackhammer-actionbar:
+    enabled: true
+    value: '&6&l[!] &e&lJACKHAMMER: &7Your jackhammer enchant has been activated!'
+    time: 80

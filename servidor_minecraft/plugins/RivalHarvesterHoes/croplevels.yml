@@ -1,0 +1,97 @@
+Enabled: true
+GUI-Size: 27
+GUI-Name: '&nNiveles de cultivos'
+Crop-Levels:
+  Level1:
+    hoe-level: 0
+    material: STONE
+    base64:
+      value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTBhNGM5NGRkNjVhN2NhZGM0MTcyY2VkZjM5OTBhODU0Mjc3MmJiMTEzY2RmMWEwZjc4ZWY2NTJjNmFiZTZjYiJ9fX0='
+    slot: 12
+    name: '&aNiveles de la azada'
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fPara poder cosechar diferentes'
+      - '&ftipos de cultivos tu nivel de tu'
+      - '&fazada tiene que ser superior'
+      - ''
+      - '&8&l● &fNivel req: &c&l✘'
+      - '&8&l● &fCultivo: &eTrigos'
+      - ''
+      - '&aEstadísticas'
+      - '&8&l● &fNivel: &e{current-level}'
+      - '&8&l● &fCosechas recolectadas: &e{crops-harvested}'
+      - '&8&l● &fExp: &e{current-xp}'
+      - ''
+      - '&e▸ ¡Avanza a un nuevo nivel!'
+    crops:
+      - WHEAT
+  Level2:
+    hoe-level: 8
+    material: STONE
+    base64:
+      value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTQ3YzU1MDY0ZjFkMDc2MjVhZjA1Y2RiYzBmYzdjODQxNzNiMTA1NDEwMjRjODg1NWVkNzEzMmNhNzc2NzI0NiJ9fX0='
+    slot: 13
+    name: '&aNiveles de la azada'
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&e☃ {progress} &7(&f{percentage}%/100%&7)'
+      - ''
+      - '&fPara poder cosechar diferentes'
+      - '&ftipos de cultivos tu nivel de tu'
+      - '&fazada tiene que ser superior'
+      - ''
+      - '&8&l● &fNivel req: &e8'
+      - '&8&l● &fCultivo: &eZanahorias'
+      - ''
+      - '&aEstadísticas'
+      - '&8&l● &fNivel: &e{current-level}'
+      - '&8&l● &fCosechas recolectadas: &e{crops-harvested}'
+      - '&8&l● &fExp: &e{current-xp}'
+      - ''
+      - '&e▸ ¡Avanza a un nuevo nivel!'
+    crops:
+      - CARROTS
+  Level3:
+    hoe-level: 15
+    material: STONE
+    base64:
+      value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDljYjk0ZDg3MjkxOTdhMThhNzY4ODJjMjQ5MThhOGMwNDQ5NGQzNDcyN2Y0ZGYwNjBmYjdhNDVhMWZmODUzNyJ9fX0='
+    slot: 14
+    name: '&aNiveles de la azada'
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&e☃ {progress} &7(&f{percentage}%/100%&7)'
+      - ''
+      - '&fPara poder cosechar diferentes'
+      - '&ftipos de cultivos tu nivel de tu'
+      - '&fazada tiene que ser superior'
+      - ''
+      - '&8&l● &fNivel req: &e15'
+      - '&8&l● &fCultivos: &ePatatas'
+      - ''
+      - '&aEstadísticas'
+      - '&8&l● &fNivel: &e{current-level}'
+      - '&8&l● &fCosechas recolectadas: &e{crops-harvested}'
+      - '&8&l● &fExp: &e{current-xp}'
+      - ''
+      - '&e▸ ¡Avanza a un nuevo nivel!'
+    crops:
+      - POTATOS
+
+Messages:
+  requirement:
+    - ''
+    - '      &7#FFEEC3⌘ &l¡NIVEL INSUFICIENTE! #FFEEC3⌘ '
+    - ''
+    - '   &fParece que no cumples con los requisitos'
+    - '   &fnecesarios para recolectar en esta área'
+    - ''
+    - '           &8&l● &fNivel actual: #FADC91{level}'
+    - '           &8&l● &fNivel requerido: #FADC91{next-level}'
+    - '&7'
+    - '#FFEEC3        ¡Explora otros terrenos!'
+    - ''

@@ -1,0 +1,81 @@
+inventories:
+  main_inventory:
+    slots: 54
+    title: '&4&lKits'
+    0;1;7;8;9;17;36;44;45;46;52;53:
+      item:
+        id: BLACK_STAINED_GLASS_PANE
+        name: ' '
+        amount: 1
+    '49':
+      item:
+        id: DIAMOND_BLOCK
+        name: '&ePremium Kits'
+        amount: 1
+      open_inventory: premium_kits_inventory
+    '2':
+      type: 'kit: Nuevos'
+    '29':
+      type: 'kit: Plus'
+    '30':
+      type: 'kit: Crystal'
+    '31':
+      type: 'kit: Deluxio'
+    '32':
+      type: 'kit: Luxury'
+    '33':
+      type: 'kit: Deluxe'
+    '34':
+      type: 'kit: Luxe'
+    '3':
+      type: 'kit: nuevos'
+    '4':
+      type: 'kit: caña'
+  premium_kits_inventory:
+    slots: 54
+    title: '&nEquipamientos de paga'
+    0;1;7;8;9;17;36;44;45;46;52;53:
+      item:
+        id: YELLOW_STAINED_GLASS_PANE
+        name: ' '
+        amount: 1
+    '49':
+      item:
+        id: IRON_BLOCK
+        name: '&9&l» &8Kits'
+        amount: 1
+      open_inventory: main_inventory
+  preview_inventory:
+    slots: 54
+    title: '&nPrevisualización'
+    '45':
+      item:
+        id: PAPER
+        name: '&cPágina anterior'
+        amount: 1
+      click_commands:
+      - dm open kits %player%
+  buy_requirements_inventory:
+    slots: 27
+    title: '&4&lBuy Kit Requirements'
+    '13':
+      item:
+        id: BOOK
+        name: '&c&lRequirements'
+        amount: 1
+        lore:
+        - '%kit_requirements_message%'
+    '10':
+      item:
+        id: RED_STAINED_GLASS_PANE
+        name: '&cGo Back'
+        amount: 1
+        nbt:
+        - playerkits_buy|no
+    '16':
+      item:
+        id: GREEN_STAINED_GLASS_PANE
+        name: '&aBuy'
+        amount: 1
+        nbt:
+        - playerkits_buy|yes

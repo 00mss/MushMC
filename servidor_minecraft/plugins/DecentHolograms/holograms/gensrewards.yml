@@ -1,0 +1,18 @@
+location: Spawn:40,500:67,253:20,500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&#78FB08&lR&#7BEE0D&lA&#7EE012&lC&#80D318&lH&#83C51D&lA&#86B822&lS'
+    height: 0.3
+  - content: '&fConectate todos los dias y recibe'
+    height: 0.3
+  - content: '&fincreibles recompensas'
+    height: 0.3
+  - content: '&e▸ ¡Clic para abrir!'
+    height: 0.3
+  actions: {}

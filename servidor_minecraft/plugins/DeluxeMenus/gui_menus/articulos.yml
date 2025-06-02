@@ -1,0 +1,57 @@
+menu_title: '&nCrate de la suerte&r&r | &n1/1'
+open_command:
+- exclusivo
+update_interval: 2
+size: 54
+items:    
+  'Fill':
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: "&r"
+    slots: 
+    - 10
+    - 19
+    - 28
+  'comprar':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjFlOTc0YTI2MDhiZDZlZTU3ZjMzNDg1NjQ1ZGQ5MjJkMTZiNGEzOTc0NGViYWI0NzUzZjRkZWI0ZWY3ODIifX19
+    slot: 21
+    display_name: '&#BAFE5E&lCOMPRAR'
+    priority: 1
+    left_click_commands:
+    - '[message]  &#FFFA00⌛ ¡Gracias por apoyarnos! &fAdquiére este paquete desde nuestra tienda &#FFFA00&nhttps://tienda.mineluxe.us'
+    - '[close]'
+  'cancelar':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2U2MjMyMTFiZGE1ZGQ1YWI5ZTc2MDMwZjg2YjFjNDczMGI5ODg3MjZlZWY2YTNhYjI4YWExYzFmN2Q4NTAifX19
+    slot: 25
+    display_name: '&#FF3737&lCANCELAR'
+    left_click_commands:
+    - '[close]'   
+  '2-disp':
+    display_name: '&#70fba4P&#74fba1a&#77fc9fq&#7bfc9cu&#7ffc99e&#82fc96t&#86fd94e &#89fd91d&#8dfd8ee la &#70fba4&lSUERTE'
+    material: beacon
+    slot: 23
+    lore:
+    - '&8Acceso externo'
+    - ''
+    - '&fAdquiere este paquete desde'
+    - '&fnuestra tienda oficial.'
+    - ''
+    - '&7Información '
+    - '&fal adquirir este paquete obtendrás'
+    - '&fdirectamente los siguientes artículos'
+    - ''
+    - '&8&l● &#FFDE11Generador de la &#F1B71C&lSUERTE'          
+    - '&8&l● &#70fba4P&#74fba1a&#77fc9fq&#7bfc9cu&#7ffc99e&#82fc96t&#86fd94e &#89fd91d&#8dfd8ee &#70fba4&lG&#73fba2&lE&#76fba0&lN&#79fc9d&lE&#7cfc9b&lR&#7ffc99&lA&#81fc97&lD&#84fc95&lO&#87fd92&lR&#8afd90&lE&#8dfd8e&lS'          
+    - '&8&l● &#96affbP&#93b9f8a&#91c3f5q&#8eccf2u&#8cd6efe&#89e0ect&#86eae9e &#84f3e6d&#81fde3e &#96affb&lL&#92bff6&lL&#8ecef1&lA&#89deed&lV&#85ede8&lE&#81fde3&lS'          
+    - '&8&l● &#fb417eP&#fb3e7ca&#fc3a7aq&#fc3778u&#fc3476e&#fd3074t&#fd2d72e &#fb417e&lM&#fb3e7c&lA&#fc3a7a&lE&#fc3778&lS&#fc3476&lT&#fd3074&lR&#fd2d72&lO'  
+    - '&8&l● &eBrocha de &lVENTA &nx3'                            
+    - '&8&l● &fx3 &fLlave &#70fba4&lKOTH'                    
+    - '&8&l● &fx5 &fLlave &#70fba4&lBROCHAS'                    
+    - '&8&l● &fx10 &fLlave &#70fba4&lGENERADORES'                    
+    - '&8&l● &fx15 Llave &#70fba4&lVOTE'                    
+    - '&8&l● &fx20 &fLlave&#70fba4&l ESENCIAS'                    
+    - '&8&l● &fx50 &fmillones de&#70fba4&l DINERO'                    
+    - ''          
+    - '&e¡tienda.mineluxe.us!'          
+    right_click_commands:
+    - '[player] kit preview Plus'       
+       

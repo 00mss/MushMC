@@ -1,0 +1,294 @@
+# Timed Rewards by Bradley.
+#
+# /Contact
+# Spigot: https://www.spigotmc.org/members/292138/
+
+
+menu:
+  title: '&8&nRecompensas Diarias'
+  size: 54
+  items:
+    1:
+      slot: 28
+      item:
+        amount: 1
+        material: CHEST_MINECART
+        damage: 0
+        name: '&aRecompensa &lNUEVOS'
+        lore:
+        - '&8Artículo de recompensa'
+        - ''
+        - '&fPodrás reclamar tu recompensa'
+        - '&fdiaria jugando todos los dias'
+        - ''
+        - '&8&l● &fLlaves &ax1 &lVOTE &a✬'
+        - '&8&l● &fDinero &a 10k ⛃'
+        - '&8&l● &fExp de nivel &ax500 ✈'
+        - ''    
+        - '&e&e▸ ¡Clic izq para reclamar!'       
+      cooldown: 86400
+      commands:
+      - '[CONSOLE]timedrewards blankmsg {player} &#9AE3A8☀ ¡Bien hecho! &fReclamaste correctamente tu recompensa diaria, vuelve mañana para reclamar nuevamente.'
+      - '[CONSOLE]eco give {player} 10000'      
+      - '[CONSOLE]excellentcrates key give {player} vote 1'   
+      - '[CONSOLE]cyberlevel addExp 500 {player}'     
+    2:
+      slot: 37
+      item:
+        amount: 1
+        material: CHEST_MINECART
+        damage: 0
+        name: '&#FF0997Recompensa de &#FF0997&lRANKUPS'
+        lore:
+        - '&8Artículo de recompensa'
+        - ''
+        - '&fPodrás reclamar tu recompensa'
+        - '&fdiaria jugando todos los dias'
+        - ''
+        - '&8&l● &fLlaves &#FF0997x2 &lVOTE &#FF0997✬'
+        - '&8&l● &fDinero &#FF0997 30k ⛃'
+        - '&8&l● &fExp de nivel &#FF0997x600 ✈'
+        - ''    
+        - '&e&e▸ ¡Clic izq para reclamar!'      
+      cooldown: 86400
+      commands:
+      - '[CONSOLE]timedrewards blankmsg {player} &#9AE3A8☀ ¡Bien hecho! &fReclamaste correctamente tu recompensa diaria, vuelve mañana para reclamar nuevamente.'
+      - '[CONSOLE]eco give {player} 30000'     
+      - '[CONSOLE]excellentcrates key give {player} vote 2'   
+      - '[CONSOLE]cyberlevel addExp 600 {player}'    
+      permission: recompensa.rankups
+    4:
+      slot: 30
+      item:
+        amount: 1
+        material: CHEST_MINECART
+        damage: 0
+        name: '&6Recompensa &#ff900d&lP&#ff9d18&lL&#ffab23&lU&#ffb82e&lS'
+        lore:
+        - '&8Artículo de recompensa'
+        - ''
+        - '&fPodrás reclamar tu recompensa'
+        - '&fdiaria jugando todos los dias'
+        - ''
+        - '&8&l● &fLlaves &#ff900dx3 &lVOTE &#ff900d✬'
+        - '&8&l● &fDinero &#ff900d 50k ⛃'
+        - '&8&l● &fExp de nivel &#ff900dx900 ✈'
+        - ''    
+        - '&e&e▸ ¡Clic izq para reclamar!'      
+      cooldown: 86400
+      commands:
+      - '[CONSOLE]timedrewards blankmsg {player} &#9AE3A8☀ ¡Bien hecho! &fReclamaste correctamente tu recompensa diaria, vuelve mañana para reclamar nuevamente.'
+      - '[CONSOLE]eco give {player} 50000'     
+      - '[CONSOLE]excellentcrates key give {player} vote 3'   
+      - '[CONSOLE]cyberlevel addExp 900 {player}'                
+      permission: recompensa.Plus
+    5:
+      slot: 31
+      item:
+        amount: 1
+        material: CHEST_MINECART
+        damage: 0
+        name: '&#ff0f9fRecompensa &#ff0f9f&lC&#f20faf&lR&#e50ebf&lY&#d80ecf&lS&#cb0edf&lT&#be0def&lA&#b10dff&lL'
+        lore:
+        - '&8Artículo de recompensa'
+        - ''
+        - '&fPodrás reclamar tu recompensa'
+        - '&fdiaria jugando todos los dias'
+        - ''
+        - '&8&l● &fLlaves &#ff0f9fx3 &lVOTE &#ff0f9f✬'
+        - '&8&l● &fDinero &#ff0f9f 90k ⛃'
+        - '&8&l● &fExp de nivel &#ff0f9fx1,100 ✈'
+        - ''    
+        - '&e&e▸ ¡Clic izq para reclamar!'        
+      cooldown: 86400
+      commands:
+      - '[CONSOLE]timedrewards blankmsg {player} &#9AE3A8☀ ¡Bien hecho! &fReclamaste correctamente tu recompensa diaria, vuelve mañana para reclamar nuevamente.'
+      - '[CONSOLE]eco give {player} 90000'     
+      - '[CONSOLE]excellentcrates key give {player} vote 3'   
+      - '[CONSOLE]cyberlevel addExp 1100 {player}'   
+      permission: recompensa.Crystal
+    6:
+      slot: 32
+      item:
+        amount: 1
+        material: CHEST_MINECART
+        damage: 0
+        name: '&#fff612Recompensa &#fff612&lD&#f7e914&lE&#eedb16&lL&#e6ce19&lU&#ddc11b&lX&#d5b31d&lI&#cca61f&lO'
+        lore:
+        - '&8Artículo de recompensa'
+        - ''
+        - '&fPodrás reclamar tu recompensa'
+        - '&fdiaria jugando todos los dias'
+        - ''
+        - '&8&l● &fLlaves &#fff612x4 &lVOTE &#fff612✬'
+        - '&8&l● &fDinero &#fff612 120k ⛃'
+        - '&8&l● &fExp de nivel &#fff612x1,500 ✈'
+        - ''    
+        - '&e&e▸ ¡Clic izq para reclamar!'       
+      cooldown: 86400
+      commands:
+      - '[CONSOLE]timedrewards blankmsg {player} &#9AE3A8☀ ¡Bien hecho! &fReclamaste correctamente tu recompensa diaria, vuelve mañana para reclamar nuevamente.'
+      - '[CONSOLE]eco give {player} 120000'
+      - '[CONSOLE]excellentcrates key give {player} vote 4'   
+      - '[CONSOLE]cyberlevel addExp 1500 {player}'   
+      permission: recompensa.Deluxio   
+    7:
+      slot: 33
+      item:
+        amount: 1
+        material: CHEST_MINECART
+        damage: 0
+        name: '&#0fb7ffRecompensa &#0fb7ff&lL&#19a1fa&lU&#238bf6&lX&#2d74f1&lU&#375eed&lR&#4148e8&lY'
+        lore:
+        - '&8Artículo de recompensa'
+        - ''
+        - '&fPodrás reclamar tu recompensa'
+        - '&fdiaria jugando todos los dias'
+        - ''
+        - '&8&l● &fLlaves &#0fb7ffx5 &lVOTE &#0fb7ff✬'
+        - '&8&l● &fLlaves &#0fb7ffx1 &lESENCIAS &#0fb7ff✴'
+        - '&8&l● &fDinero &#0fb7ff 150k ⛃'
+        - '&8&l● &fExp de nivel &#0fb7ffx1,900 ✈'
+        - ''    
+        - '&e&e▸ ¡Clic izq para reclamar!'      
+      cooldown: 86400
+      commands:
+      - '[CONSOLE]timedrewards blankmsg {player} &#9AE3A8☀ ¡Bien hecho! &fReclamaste correctamente tu recompensa diaria, vuelve mañana para reclamar nuevamente.'
+      - '[CONSOLE]eco give {player} 150000'
+      - '[CONSOLE]excellentcrates key give {player} vote 5'   
+      - '[CONSOLE]excellentcrates key give {player} esencias 1'   
+      - '[CONSOLE]cyberlevel addExp 1900 {player}'  
+      permission: recompensa.Luxury
+    8:
+      slot: 34
+      item:
+        amount: 1
+        material: CHEST_MINECART
+        damage: 0
+        name: '&#46b314Recompensa &#46b314&lD&#4bc015&lE&#51cd17&lL&#56db18&lU&#5ce81a&lX&#61f51b&lE'
+        lore:
+        - '&8Artículo de recompensa'
+        - ''
+        - '&fPodrás reclamar tu recompensa'
+        - '&fdiaria jugando todos los dias'
+        - ''
+        - '&8&l● &fLlaves &#46b314x6 &lVOTE &#46b314✬'
+        - '&8&l● &fLlaves &#46b314x2 &lESENCIAS &#46b314✴'
+        - '&8&l● &fDinero &#46b314 170k ⛃'
+        - '&8&l● &fExp de nivel &#46b314x2,100 ✈'
+        - ''    
+        - '&e&e▸ ¡Clic izq para reclamar!'     
+      cooldown: 86400
+      commands:
+      - '[CONSOLE]timedrewards blankmsg {player} &#9AE3A8☀ ¡Bien hecho! &fReclamaste correctamente tu recompensa diaria, vuelve mañana para reclamar nuevamente.'
+      - '[CONSOLE]eco give {player} 170000'
+      - '[CONSOLE]excellentcrates key give {player} vote 6'   
+      - '[CONSOLE]excellentcrates key give {player} esencias 2'   
+      - '[CONSOLE]cyberlevel addExp 2100 {player}'     
+      permission: recompensa.Deluxe                
+    9:
+      slot: 41
+      item:
+        amount: 1
+        material: CHEST_MINECART
+        damage: 0
+        name: '&#ff0000Recompensa &#ff0000&lL&#f00000&lU&#e00000&lX&#d10000&lE'
+        lore:
+        - '&8Artículo de recompensa'
+        - ''
+        - '&fPodrás reclamar tu recompensa'
+        - '&fdiaria jugando todos los dias'
+        - ''
+        - '&8&l● &fLlaves &#ff0000x7 &lVOTE &#ff0000✬'
+        - '&8&l● &fLlaves &#ff0000x3 &lESENCIAS &#ff0000✴'
+        - '&8&l● &fDinero &#ff0000 190k ⛃'
+        - '&8&l● &fExp de nivel &#ff0000x2,300 ✈'
+        - ''    
+        - '&e&e▸ ¡Clic izq para reclamar!'        
+      cooldown: 86400
+      commands:
+      - '[CONSOLE]timedrewards blankmsg {player} &#9AE3A8☀ ¡Bien hecho! &fReclamaste correctamente tu recompensa diaria, vuelve mañana para reclamar nuevamente.'
+      - '[CONSOLE]eco give {player} 190000'
+      - '[CONSOLE]excellentcrates key give {player} vote 7'   
+      - '[CONSOLE]excellentcrates key give {player} esencias 3'   
+      - '[CONSOLE]cyberlevel addExp 2300 {player}'   
+      permission: recompensa.Luxe         
+    10:
+      slot: 0
+      item:
+        amount: 1
+        material: nautilus_shell
+        damage: 0
+        name: '&aRecompensas diarias'
+        lore:
+        - '&8Artículo de información'
+        - ''
+        - '&fEntra al servidor diriamente'
+        - '&fy podrás recibir increibles'
+        - '&fRecompensas diarias'
+        - ''  
+        - '&e▸ ¡Entra diariamente!'        
+    11:
+      slot: 10
+      item:
+        amount: 1
+        material: BLACK_STAINED_GLASS_PANE
+        damage: 0
+        name: '&r'    
+    12:
+      slot: 9
+      item:
+        amount: 1
+        material: LIME_STAINED_GLASS_PANE
+        damage: 0
+        name: '&r'
+    13:
+      slot: 11
+      item:
+        amount: 1
+        material: BLACK_STAINED_GLASS_PANE
+        damage: 0
+        name: '&r'
+    14:
+      slot: 12
+      item:
+        amount: 1
+        material: BLACK_STAINED_GLASS_PANE
+        damage: 0
+        name: '&r'
+    16:
+      slot: 13
+      item:
+        amount: 1
+        material: BLACK_STAINED_GLASS_PANE
+        damage: 0
+        name: '&r'
+    18:
+      slot: 14
+      item:
+        amount: 1
+        material: BLACK_STAINED_GLASS_PANE
+        damage: 0
+        name: '&r'
+    19:
+      slot: 15
+      item:
+        amount: 1
+        material: BLACK_STAINED_GLASS_PANE
+        damage: 0
+        name: '&r'
+    20:
+      slot: 16
+      item:
+        amount: 1
+        material: BLACK_STAINED_GLASS_PANE
+        damage: 0
+        name: '&r'
+    21:
+      slot: 17
+      item:
+        amount: 1
+        material: BLACK_STAINED_GLASS_PANE
+        damage: 0
+        name: '&r'
+        

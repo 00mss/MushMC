@@ -1,0 +1,1233 @@
+#######################################################
+#  _____ _   _  ____ _   _    _    _   _ _____ ____   #
+#  | ____| \ | |/ ___| | | |  / \  | \ | |_   _/ ___| #
+# |  _| |  \| | |   | |_| | / _ \ |  \| | | | \___ \  #
+# | |___| |\  | |___|  _  |/ ___ \| |\  | | |  ___) | #
+# |_____|_| \_|\____|_| |_/_/   \_|_| \_| |_| |____/  #
+#                                                     #
+#######################################################
+UpgradesMenu:
+  name: '&nMejoras de la azada'
+  size: 45
+  noautosell: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fAún no cuentas con el encantamiento de &x&E&7&D&B&9&4Venta automatica&f desbloqueado'
+  hasenchant: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fYa tienes ese encantamiento.'
+  noenchant: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fNo tienes ese encantamiento.'
+  bought: '&x&E&7&D&B&9&4☀ ¡Bien hecho! &fHas comprado un nivel &x&E&7&D&B&9&4%level% &fdel encantamiento &x&E&7&D&B&9&4%enchant% &fpor &x&E&7&D&B&9&4%essence% &fesencias &x&E&7&D&B&9&4🌊'
+  refunded: '&x&E&7&D&B&9&4☀ ¡Bien hecho! &fHas reembolsado el Encantamiento &e%enchant% &fy has recibido &e%essence% &fde esencias&b.'
+  noenchantlevel: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fNo tienes ningún nivel de encantamiento para desencantar.'
+  no-essence: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fNo tienes suficiente esencia para comprar este encantamiento.'
+  nolevel: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fDebes tener una azada de Nivel &x&E&7&D&B&9&4%level% &fpara comprar este encantamiento.'
+  hoe-preview: true
+  hoe-preview-slot: 19
+  hoe-disenchanter-slot: 44
+  disenchant-percentage: 90
+Enchants:
+  AutoSell:
+    upgradable: true
+    disenchanter: true
+    name: '&x&F&9&F&F&B&EVenta automatica &8⚑ &e'
+    material: EMERALD
+    base64:
+      enabled: true
+      value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmY3NWQxYjc4NWQxOGQ0N2IzZWE4ZjBhN2UwZmQ0YTFmYWU5ZTdkMzIzY2YzYjEzOGM4Yzc4Y2ZlMjRlZTU5In19fQ=='
+    slot: 12
+    price: 300000
+    required-level: 8
+    autosell-time: 60
+    lore:
+      - '&8Encantamiento de azada'
+      - ''
+      - '&fPodrás vender de forma automatica'
+      - '&ftus items de cultivos recolectados'
+      - ''
+      - '&8&l● &fPrecio: &e%cost%'
+      - '&8&l● &fNivel req: &e%hoe_level%'
+      - ' '
+      - '&e▸ ¡Clic izq para comprar!'
+    disenchant:
+      - '&8Encantamiento de azada'
+      - ''
+      - '&fAqui podrás desencantar el nivel'
+      - '&faplicado en tu azada.'
+      - ' '
+      - '&e▸ ¡Clic izq para remover!'
+    message:
+      - ''
+      - '&8&l      &x&F&9&F&F&B&E&l¡VENTA AUTOMATICA!'
+      - '&7&o'
+      - '    &f¡Vendiste con éxito &x&F&9&F&F&B&E{items}&f items'
+      - '&7&o'
+      - '&fUna nueva venta automatica fue realizada con'
+      - '&fcon éxito, y estas son sus estadísticas'
+      - ''
+      - '   &x&E&7&D&B&9&4&l$  &f¡Generaste Dinero! &x&E&7&D&B&9&4${money}&f'
+      - '   &x&D&D&B&3&F&F&l🌊 &f¡Generaste Esencias! &x&D&D&B&3&F&F${essence}&f'
+      - ''
+      - '          &x&E&7&D&B&9&4¡Vamos, sigue haci!'
+      - ''
+    autosell-actionbar:
+      enabled: false
+      value: '&x&E&7&D&B&9&4&l¡Venta exitosa! &x&E&7&D&B&9&4&l${money}  &8&l●  &x&E&7&D&B&9&4{essence}🌊'
+      time: 80
+    autosell-title:
+      enabled: false
+      title: '&x&E&7&D&B&9&4&l¡NUEVA VENTA!'
+      subtitle: '  &fDinero: &x&E&7&D&B&9&4${money}  &8&l•  &fEsencias: &x&E&7&D&B&9&4{essence}🌊'
+      fadeIn: 20
+      fadeOut: 20
+      time: 80
+  KeyFinder:
+    enabled: true
+    disenchanter: true
+    name: '&x&F&9&F&F&B&ELlaves sorpresa &8⚑ &e'
+    material: TRIPWIRE_HOOK
+    base64:
+      enabled: true
+      value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjIxNWU4ZWJlZmYwYTIwMDhmMTRiZGEwNzJmNzU2MTVkYWNhYzBjNGRhYmM5MGQ5ZDUyY2MzMjE0ZTVjNTM1NyJ9fX0='
+    slot: 13
+    base-chance: 0.100
+    increase-per-level: 0.000001
+    price: 150000
+    price-increase: 80
+    max-level: 15
+    required-level: 10
+    lore:
+      - '&8Encantamiento de la azada'
+      - ''
+      - '&fPara poder desbloquear esta mejora'
+      - '&fencantamiento el nivel de tu azada'
+      - '&fdebe ser como minimo nivel &e%hoe_level%'
+      - ''
+      - '&8(%progress%&8) &f%percentage%%'
+      - ''
+      - '&8&l● &fComprar por: &e%cost%'
+      - '&8&l● &fNivel maximo: &e%max_level%'
+      - '&8&l● &fNivel actual: &e%current_level%'
+      - ' '
+      - '&e▸ ¡Clic izq para comprar!'
+    disenchant:
+      - '&8Encantamiento de azada'
+      - ''
+      - '&fAqui podrás desencantar el nivel'
+      - '&faplicado en tu azada.'
+      - ' '
+      - '&e▸ ¡Clic izq para remover!'
+    message-enabled: true
+    message: '&x&E&7&D&B&9&4☀ ¡Qué, suerte! &fHas encontrado el item &x&F&9&F&F&B&E{reward} &fcon el encantamiento &x&F&9&F&F&B&EBuscador de Llaves&f.'
+    rewards:
+      '1':
+        commands:
+          -  excellentcrates key give %player% vote 1
+        chance: 100
+        name: '&aLlave &lVOTE'
+  EXPFinder:
+    enabled: true
+    disenchanter: true
+    name: '&x&F&9&F&F&B&EAcumulador de experiencia &8⚑ &e'
+    material: EXP_BOTTLE
+    base64:
+      enabled: true
+      value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODdkODg1YjMyYjBkZDJkNmI3ZjFiNTgyYTM0MTg2ZjhhNTM3M2M0NjU4OWEyNzM0MjMxMzJiNDQ4YjgwMzQ2MiJ9fX0='
+    slot: 14
+    base-chance: 3.0
+    increase-per-level: 0.003
+    max-amount: 80
+    min-amount: 40
+    amount-increase-per-level: 0.003
+    price: 150000
+    price-increase: 25
+    max-level: 15
+    required-level: 5
+    lore:
+      - '&8Encantamiento de la azada'
+      - ''
+      - '&fPara poder desbloquear esta mejora'
+      - '&fencantamiento el nivel de tu azada'
+      - '&fdebe ser como minimo nivel &e%hoe_level%'
+      - ''
+      - '&8(%progress%&8) &f%percentage%%'
+      - ''
+      - '&8&l● &fComprar por: &e%cost%'
+      - '&8&l● &fNivel maximo: &e%max_level%'
+      - '&8&l● &fNivel actual: &e%current_level%'
+      - ' '
+      - '&e▸ ¡Clic izq para comprar!'
+    disenchant:
+      - '&8Encantamiento de azada'
+      - ''
+      - '&fAqui podrás desencantar el nivel'
+      - '&faplicado en tu azada.'
+      - ' '
+      - '&e▸ ¡Clic izq para remover!'
+  SpawnerFinder:
+    enabled: true
+    disenchanter: true
+    name: '&x&F&9&F&F&B&ELocalizador de generadores &8⚑ &e'
+    material: SPAWNER
+    base64:
+      enabled: true
+      value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjQ3ZTJlNWQ1NWI2ZDA0OTQzNTE5YmVkMjU1N2M2MzI5ZTMzYjYwYjkwOWRlZTg5MjNjZDg4YjExNTIxMCJ9fX0='
+    slot: 23
+    base-chance: 0.105
+    increase-per-level: 0.00005
+    price: 150000
+    price-increase: 25
+    max-level: 15
+    required-level: 8
+    lore:
+      - '&8Encantamiento de la azada'
+      - ''
+      - '&fPara poder desbloquear esta mejora'
+      - '&fencantamiento el nivel de tu azada'
+      - '&fdebe ser como minimo nivel &e%hoe_level%'
+      - ''
+      - '&8(%progress%&8) &f%percentage%%'
+      - ''
+      - '&8&l● &fComprar por: &e%cost%'
+      - '&8&l● &fNivel maximo: &e%max_level%'
+      - '&8&l● &fNivel actual: &e%current_level%'
+      - ' '
+      - '&e▸ ¡Clic izq para comprar!'
+    disenchant:
+      - '&8Encantamiento de azada'
+      - ''
+      - '&fAqui podrás desencantar el nivel'
+      - '&faplicado en tu azada.'
+      - ' '
+      - '&e▸ ¡Clic izq para remover!'
+    message: '&x&E&7&D&B&9&4☀ ¡Qué, suerte! &fHas encontrado {reward} &fdel encantamiento &x&F&9&F&F&B&Elocalizador de generadores&f.'
+    rewards:
+      '1':
+        commands:
+          - i minecraft:spawner{BlockEntityTag:{SpawnData:{id:"pig"}}} %player% spawner blaze 1
+        chance: 100
+        name: '&b1X Blaze Spawner'
+      '2':
+        commands:
+          - stacker give -s %player% spawner creeper 1
+        chance: 100
+        name: '&b1X Creeper Spawner'
+      '3':
+        commands:
+          - stacker give -s %player% spawner iron_golem 1
+        chance: 90
+        name: '&b1X Iron Golem Spawner'
+      '4':
+        commands:
+          - stacker give -s %player% spawner witch 1
+        chance: 70
+        name: '&b1X Witch Spawner'
+      '5':
+        commands:
+          - stacker give -s %player% spawner villager 1
+        chance: 90
+        name: '&b1X Villager Spawner'
+  MoneyBooster:
+    enabled: true
+    disenchanter: true
+    name: '&x&F&9&F&F&B&EMultiplicador de ganancias &8⚑ &e'
+    material: EMERALD
+    base64:
+      enabled: true
+      value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjQ5NzRlYzE5ZDQwZWVmOTJiMmU0YWUzMmFjN2I4NjQ2ZjM0ODljNTA4ZjUwYjE2ZjM4MzUyOTZlMmFkYTIifX19'
+    slot: 16
+    boost-per-level: 0.01
+    price: 150000
+    price-increase: 150
+    max-level: 15
+    required-level: 10
+    lore:
+      - '&8Encantamiento de la azada'
+      - ''
+      - '&fPara poder desbloquear esta mejora'
+      - '&fencantamiento el nivel de tu azada'
+      - '&fdebe ser como minimo nivel &e%hoe_level%'
+      - ''
+      - '&8(%progress%&8) &f%percentage%%'
+      - ''
+      - '&8&l● &fComprar por: &e%cost%'
+      - '&8&l● &fNivel maximo: &e%max_level%'
+      - '&8&l● &fNivel actual: &e%current_level%'
+      - ' '
+      - '&e▸ ¡Clic izq para comprar!'
+    disenchant:
+      - '&8Encantamiento de azada'
+      - ''
+      - '&fAqui podrás desencantar el nivel'
+      - '&faplicado en tu azada.'
+      - ' '
+      - '&e▸ ¡Clic izq para remover!'
+  EssenceBooster:
+    enabled: false
+    disenchanter: false
+    name: '&x&F&9&F&F&B&EPotenciador de esencias'
+    material: GOLD_NUGGET
+    base64:
+      enabled: true
+      value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjgwOWQyZTY5NjEwZjFlNmI3NWZlMGQ0NTk4ZTQ0MWU1NjAzMjVkMmQ1MmQ5N2NmNjY4NTljNDRmYTNkOGE3OSJ9fX0='
+    slot: 0
+    boost-per-level: 0.01
+    price: 100
+    price-increase: 12
+    max-level: 15
+    required-level: 8
+    lore:
+      - '&8Encantamiento de la azada'
+      - ''
+      - '&fPara poder desbloquear esta mejora'
+      - '&fencantamiento el nivel de tu azada'
+      - '&fdebe ser como minimo nivel &e%hoe_level%'
+      - ''
+      - '&8(%progress%&8) &f%percentage%%'
+      - ''
+      - '&8&l● &fComprar por: &e%cost%'
+      - '&8&l● &fNivel maximo: &e%max_level%'
+      - '&8&l● &fNivel actual: &e%current_level%'
+      - ' '
+      - '&e▸ ¡Clic izq para comprar!'
+    disenchant:
+      - '&8Encantamiento de azada'
+      - ''
+      - '&fAqui podrás desencantar el nivel'
+      - '&faplicado en tu azada.'
+      - ' '
+      - '&e▸ ¡Clic izq para remover!'
+  CropsBooster:
+    enabled: true
+    disenchanter: true
+    name: '&x&F&9&F&F&B&EPotenciador de cosechas &8⚑ &e'
+    material: BLAZE_POWDER
+    base64:
+      enabled: true
+      value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTgxYWE3MTI2NzY1NGM0YzE3ZjIzZGQ1NmY5ZjU1NDE3YzZlNjA1YjYwOTUxNTc4ODdmZGVmY2Q1OGJiZTMxNyJ9fX0='
+    slot: 25
+    boost-per-level: 1.01
+    price: 150000
+    price-increase: 115
+    max-level: 15
+    required-level: 8
+    lore:
+      - '&8Encantamiento de la azada'
+      - ''
+      - '&fPara poder desbloquear esta mejora'
+      - '&fencantamiento el nivel de tu azada'
+      - '&fdebe ser como minimo nivel &e%hoe_level%'
+      - ''
+      - '&8(%progress%&8) &f%percentage%%'
+      - ''
+      - '&8&l● &fComprar por: &e%cost%'
+      - '&8&l● &fNivel maximo: &e%max_level%'
+      - '&8&l● &fNivel actual: &e%current_level%'
+      - ' '
+      - '&e▸ ¡Clic izq para comprar!'
+    disenchant:
+      - '&8Encantamiento de azada'
+      - ''
+      - '&fAqui podrás desencantar el nivel'
+      - '&faplicado en tu azada.'
+      - ' '
+      - '&e▸ ¡Clic izq para remover!'
+  MoneyPouch:
+    enabled: true
+    disenchanter: true
+    name: '&x&F&9&F&F&B&ECofre de riquezas &8⚑ &e'
+    material: BLAZE_ROD
+    base64:
+      enabled: true
+      value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTZlMGQ1ZmU4N2QyZDIxZTJiZGU2Mzc0NDI1YTM0MWE3NTczYjM3NWQ1YmI3ZDQ3ZjRiOGRhZTM1Mjk3ZWE0In19fQ=='
+    slot: 21
+    max-amount: 10000
+    min-amount: 1000
+    base-chance: 3.004
+    increase-per-level: 0.0000
+    scale-per-level: 0.00
+    price: 150000
+    price-increase: 100
+    max-level: 15
+    required-level: 10
+    add-to-autosell: true
+    message: '&x&E&7&D&B&9&4☀ ¡Qué suerte! &fHas recibido &x&E&7&D&B&9&4${amount} &fde la mejora &x&E&7&D&B&9&4cofre de riquezas&f.'
+    lore:
+      - '&8Encantamiento de la azada'
+      - ''
+      - '&fPara poder desbloquear esta mejora'
+      - '&fencantamiento el nivel de tu azada'
+      - '&fdebe ser como minimo nivel &e%hoe_level%'
+      - ''
+      - '&8(%progress%&8) &f%percentage%%'
+      - ''
+      - '&8&l● &fComprar por: &e%cost%'
+      - '&8&l● &fNivel maximo: &e%max_level%'
+      - '&8&l● &fNivel actual: &e%current_level%'
+      - ' '
+      - '&e▸ ¡Clic izq para comprar!'
+    disenchant:
+      - '&8Encantamiento de azada'
+      - ''
+      - '&fAqui podrás desencantar el nivel'
+      - '&faplicado en tu azada.'
+      - ' '
+      - '&e▸ ¡Clic izq para remover!'
+  EssencePouch:
+    enabled: true
+    disenchanter: true
+    name: '&x&F&9&F&F&B&EDuplicador de esencias &8⚑ &e'
+    material: GOLD_INGOT
+    base64:
+      enabled: true
+      value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTMzZTkyYjA2NTcxOTZjYmExODZjZTc0ZjIwMzhiOTNiZThlNDI1MWFlMmNhYTNlYmY1MWNkZWYwM2E3NDM4NCJ9fX0='
+    slot: 22
+    max-amount: 1000
+    min-amount: 1000
+    base-chance: 1.111
+    increase-per-level: 0.00000
+    scale-per-level: 1.00
+    price: 150000
+    price-increase: 915
+    max-level: 15
+    required-level: 15
+    add-to-autosell: true
+    message: '&x&E&7&D&B&9&4☀ ¡Qué suerte! &fHas recibido &x&E&7&D&B&9&4{amount} &fesencias de la mejora &x&E&7&D&B&9&4duplicador de esencias'
+    lore:
+      - '&8Encantamiento de la azada'
+      - ''
+      - '&fPara poder desbloquear esta mejora'
+      - '&fencantamiento el nivel de tu azada'
+      - '&fdebe ser como minimo nivel &e%hoe_level%'
+      - ''
+      - '&8(%progress%&8) &f%percentage%%'
+      - ''
+      - '&8&l● &fComprar por: &e%cost%'
+      - '&8&l● &fNivel maximo: &e%max_level%'
+      - '&8&l● &fNivel actual: &e%current_level%'
+      - ' '
+      - '&e▸ ¡Clic izq para comprar!'
+    disenchant:
+      - '&8Encantamiento de azada'
+      - ''
+      - '&fAqui podrás desencantar el nivel'
+      - '&faplicado en tu azada.'
+      - ' '
+      - '&e▸ ¡Clic izq para remover!'
+  Rush:
+    enabled: false
+    disenchanter: false
+    name: '&3&lRush'
+    material: CHEST
+    base64:
+      enabled: true
+      value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjdhYWYyZWU2NGJkYjIxMTAxNGM3ZWNjNzAwNmZhYTIzNDQ4ZDc4ZjRiYjkwMmU4YTEzMjVlMWM5ZDdmMTFlIn19fQ=='
+    slot: 0
+    base-chance: 0.002
+    increase-per-level: 0.0023
+    price: 150
+    price-increase: 25
+    max-level: 50
+    required-level: 15
+    activated: '&3&lRUSH &8» &fYour Rush enchant has activated and lasts for &b{time}&f.'
+    command: '&3&lRUSH &8» &fYou have Rush multiplier for another &b{time}&f.'
+    no-rush: '&3&lRUSH &8» &cYou don''t have a Rush Multiplier.'
+    boosts:
+      money:
+        enabled: true
+        default: 1.5
+        increase:
+          enabled: true
+          per-level: 0.03
+      essence:
+        enabled: true
+        default: 1.5
+        increase:
+          enabled: true
+          per-level: 0.03
+      enchantproc:
+        enabled: true
+        default: 0.25
+        increase:
+          enabled: true
+          per-level: 0.025
+      crop:
+        enabled: true
+        default: 1
+        increase:
+          enabled: true
+          per-level: 0.025
+    time:
+      #Time in Seconds
+      default: 30
+      increase:
+        enabled: true
+        per-level: 1
+    lore:
+      - '&7&o(( Chance to active rush mode and boost money, essence, crops'
+      - '&7&oand enchant procs for a amount of time. ))'
+      - ' '
+      - '&f&l● &bPrice: &f%cost%'
+      - '&f&l● &bMax Level: &f%max_level%'
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - '&f&l● &bLasts for: &f%lastsfor%'
+      - ' '
+      - '&f&l● &x&E&7&D&B&9&4Money Boost: &f%moneyboost%x'
+      - '&f&l● &eEssence Boost: &f%essenceboost%x'
+      - '&f&l● &bEnchant Proc Boost: &f%enchantprocboost%x'
+      - '&f&l● &fCrop Boost: &f%cropboost%x'
+      - ' '
+      - '&7&o(( &f&oLeft-Click&7&o to add 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to add 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to add 100 levels ))'
+      - ' '
+      - '&8[%progress%&8] &f%percentage%%'
+      - '&7You must have at least Level &c&l%hoe_level% &7on your hoe'
+    disenchant:
+      - '&7&o(( Chance to active rush mode and boost money, essence, crops'
+      - '&7&oand enchant procs for a amount of time. ))'
+      - ''
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - ''
+      - '&7&o(( &f&oLeft-Click&7&o to disenchant 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to disenchant 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to disenchant 100 levels ))'
+  Merchant:
+    enabled: false
+    disenchanter: false
+    name: '&d&lMerchant'
+    material: CHEST
+    base64:
+      enabled: true
+      value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDVjNmRjMmJiZjUxYzM2Y2ZjNzcxNDU4NWE2YTU2ODNlZjJiMTRkNDdkOGZmNzE0NjU0YTg5M2Y1ZGE2MjIifX19'
+    slot: 0
+    base-chance: 3.002
+    increase-per-level: 0.00023
+    price: 150
+    price-increase: 25
+    times-money: 2
+    max-level: 1000
+    required-level: 15
+    activated: '&5&lMERCHANT &8» &fYour merchant enchant has activated&f.'
+    message: '&5&lMERCHANT &8» &fYou have doubled the money earned from &x&E&7&D&B&9&4AutoSell&f.'
+    lore:
+      - '&7&o(( Chance to double money earned from autosell. ))'
+      - ' '
+      - '&f&l● &bPrice: &f%cost%'
+      - '&f&l● &bMax Level: &f%max_level%'
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - ' '
+      - '&7&o(( &f&oLeft-Click&7&o to add 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to add 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to add 100 levels ))'
+      - '&7&o(( &f&oQ&7&o to add MAX levels ))'
+      - ' '
+      - '&8[%progress%&8] &f%percentage%%'
+      - '&7You must have at least Level &c&l%hoe_level% &7on your hoe'
+    disenchant:
+      - '&7&o(( Chance to double money earned from autosell. ))'
+      - ''
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - ''
+      - '&7&o(( &f&oLeft-Click&7&o to disenchant 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to disenchant 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to disenchant 100 levels ))'
+      - '&7&o(( &f&oQ&7&o to disenchant All levels ))'
+  AirStrike:
+    enabled: true
+    disenchanter: true
+    name: '&x&F&9&F&F&B&EAtaque aéreo &8⚑ &e'
+    material: TNT
+    base64:
+      enabled: true
+      value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2FmNTk3NzZmMmYwMzQxMmM3YjU5NDdhNjNhMGNmMjgzZDUxZmU2NWFjNmRmN2YyZjg4MmUwODM0NDU2NWU5In19fQ=='
+    slot: 24
+    money-max-amount: 700000
+    money-min-amount: 200000
+    essence-max-amount: 70000
+    essence-min-amount: 20000
+    base-chance: 0.002
+    increase-per-level: 0.00023
+    scale-per-level: 0.03
+    price: 150000
+    price-increase: 25
+    max-level: 15
+    required-level: 15
+    add-to-autosell: true
+    message-activated: '&x&E&7&D&B&9&4☀ ¡Qué, suerte! &fUn taque aéreo fue encontrado muy cerca de la zona de cultivos.&f.'
+    message:
+      - ''
+      - '&4&l     &x&E&7&D&B&9&4&l¡ATAQUE AÉREO!'
+      - '&7&o'
+      - '&7&o¡Oye, preparate, hay un nuevo ataqué!'
+      - '&7&o'
+      - '&8&l● &fDinero garantizado: &x&E&7&D&B&9&4${money}'
+      - '&8&l● &fEsencia garantizada: &x&E&7&D&B&9&4{essence}🌊'
+      - ''
+      - '          &e¡Vamos, sigue haci!'
+      - ''
+    lore:
+      - '&8Encantamiento de la azada'
+      - ''
+      - '&fPara poder desbloquear esta mejora'
+      - '&fencantamiento el nivel de tu azada'
+      - '&fdebe ser como minimo nivel &e%hoe_level%'
+      - ''
+      - '&8(%progress%&8) &f%percentage%%'
+      - ''
+      - '&8&l● &fComprar por: &e%cost%'
+      - '&8&l● &fNivel maximo: &e%max_level%'
+      - '&8&l● &fNivel actual: &e%current_level%'
+      - ' '
+      - '&e▸ ¡Clic izq para comprar!'
+    disenchant:
+      - '&8Encantamiento de azada'
+      - ''
+      - '&fAqui podrás desencantar el nivel'
+      - '&faplicado en tu azada.'
+      - ' '
+      - '&e▸ ¡Clic izq para remover!'
+  Speed:
+    enabled: true
+    disenchanter: true
+    name: '&x&F&9&F&F&B&EVelocidad de cosecha &8⚑ &e'
+    material: SUGAR
+    base64:
+      enabled: true
+      value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzBmZWU2OTViNGVmNjY0YzNlNTFkYzQ2YmUyNDU0ODZkMzY1OTYzNjhmOTE2ODNjM2M4MzNhY2Y5ZGNiYiJ9fX0='
+    slot: 15
+    price: 5000
+    price-increase: 2000
+    max-level: 15
+    required-level: 10
+    lore:
+      - '&8Encantamiento de la azada'
+      - ''
+      - '&fPara poder desbloquear esta mejora'
+      - '&fencantamiento el nivel de tu azada'
+      - '&fdebe ser como minimo nivel &e%hoe_level%'
+      - ''
+      - '&8(%progress%&8) &f%percentage%%'
+      - ''
+      - '&8&l● &fComprar por: &e%cost%'
+      - '&8&l● &fNivel maximo: &e%max_level%'
+      - '&8&l● &fNivel actual: &e%current_level%'
+      - ' '
+      - '&e▸ ¡Clic izq para comprar!'
+    disenchant:
+      - '&8Encantamiento de azada'
+      - ''
+      - '&fAqui podrás desencantar el nivel'
+      - '&faplicado en tu azada.'
+      - ' '
+      - '&e▸ ¡Clic izq para remover!'
+  Haste:
+    enabled: false
+    disenchanter: false
+    name: '&x&F&9&F&F&B&E&lHaste'
+    material: CLAY_BALL
+    base64:
+      enabled: true
+      value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGY1MGNkMzU0ODEzYmNlYzc3NDk5MzliNDFhZjhmY2Q1ZTlhOTUxNGQxM2Y2YWRhODViNWY2ODUyMWYxZTgifX19'
+    slot: 30
+    price: 5000
+    price-increase: 2000
+    max-level: 5
+    required-level: 0
+    lore:
+      - '&7&o(( Boosts your breaking speed. ))'
+      - ' '
+      - '&f&l● &bPrice: &f%cost%'
+      - '&f&l● &bMax Level: &f%max_level%'
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - ' '
+      - '&7&o(( &f&oLeft-Click&7&o to add 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to add 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to add 100 levels ))'
+      - '&7&o(( &f&oQ&7&o to add MAX levels ))'
+      - ' '
+      - '&8[%progress%&8] &f%percentage%%'
+      - '&7You must have at least Level &c&l%hoe_level% &7on your hoe'
+    disenchant:
+      - '&7&o(( Boosts your breaking speed. ))'
+      - ''
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - ''
+      - '&7&o(( &f&oLeft-Click&7&o to disenchant 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to disenchant 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to disenchant 100 levels ))'
+      - '&7&o(( &f&oQ&7&o to disenchant All levels ))'
+  Trench:
+    enabled: false
+    disenchanter: false
+    name: '&x&F&9&F&F&B&E&lTrench'
+    material: CLAY_BALL
+    base64:
+      enabled: true
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWFlOWVjMjE4NDg4ZDhjMWQ4NjIxM2EyNDYzZjg2ZGQ1MzAzZDliMWM4NDBmNzcwOGZlOTcwMDZkZGEzMWUzOSJ9fX0=
+    slot: 5
+    base-chance: 1.002
+    increase-per-level: 0.0023
+    price: 150
+    price-increase: 250
+    max-level: 15
+    required-level: 200
+    default-size: 3
+    toggle:
+      enabled: true
+      toggle-on: '&6&l[!] &e&lTrench Enchant &7has been toggled &x&E&7&D&B&9&4on!'
+      toggle-off: '&6&l[!] &e&lTrench Enchant &7has been toggled &coff!'
+    # Infinite Tiers
+    size-upgrades:
+      tier-1:
+        level: 5
+        size: 5
+      tier-2:
+        level: 10
+        size: 8
+      tier-3:
+        level: 15
+        size: 10
+    lore:
+      - '&7&o(( Chance to break crops in a %area%x%area% radius. ))'
+      - ' '
+      - '&f&l● &bPrice: &f%cost%'
+      - '&f&l● &bMax Level: &f%max_level%'
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - '&f&l● &bCurrent Radius: &f%area%x%area%'
+      - ' '
+      - '&7&o(( &f&oLeft-Click&7&o to add 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to add 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to add 100 levels ))'
+      - '&7&o(( &f&oQ&7&o to add MAX levels ))'
+      - ' '
+      - '&8[%progress%&8] &f%percentage%%'
+      - '&7You must have at least Level &c&l%hoe_level% &7on your hoe'
+    disenchant:
+      - '&7&o(( Chance to break crops in a %area%x%area% radius. ))'
+      - ''
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - ''
+      - '&7&o(( &f&oLeft-Click&7&o to disenchant 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to disenchant 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to disenchant 100 levels ))'
+      - '&7&o(( &f&oQ&7&o to disenchant All levels ))'
+  JackHammer:
+    enabled: false
+    disenchanter: false
+    name: '&x&F&9&F&F&B&E&lJackHammer'
+    material: CLAY_BALL
+    base64:
+      enabled: true
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjA3M2Q4NGQ2ZmRhNmEzNDA0ZTc3YWQ4ZDBmMTkwODkzYWU2NmQxOTVmYmI0NGQzYzQ2MDdhNmI3MWQ5YjlkNSJ9fX0=
+    slot: 3
+    base-chance: 0.002
+    increase-per-level: 0.0023
+    price: 150
+    price-increase: 250
+    max-level: 5
+    required-level: 200
+    max-radius: 150
+    clear-per-tick: 200
+    toggle:
+      enabled: true
+      toggle-on: '&6&l[!] &e&lJackHammer Enchant &7has been toggled &x&E&7&D&B&9&4on!'
+      toggle-off: '&6&l[!] &e&lJackHammer Enchant &7has been toggled &coff!'
+    message:
+      value: '&6&l[!] &e&lJACKHAMMER: &7Your jackhammer enchant has been activated!'
+      enabled: true
+    lore:
+      - '&7&o(( Chance to break a layer of the current crop. ))'
+      - ' '
+      - '&f&l● &bPrice: &f%cost%'
+      - '&f&l● &bMax Level: &f%max_level%'
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - ' '
+      - '&7&o(( &f&oLeft-Click&7&o to add 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to add 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to add 100 levels ))'
+      - '&7&o(( &f&oQ&7&o to add MAX levels ))'
+      - ' '
+      - '&8[%progress%&8] &f%percentage%%'
+      - '&7You must have at least Level &c&l%hoe_level% &7on your hoe'
+    disenchant:
+      - '&7&o(( Chance to break a layer of the current crop. ))'
+      - ''
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - ''
+      - '&7&o(( &f&oLeft-Click&7&o to disenchant 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to disenchant 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to disenchant 100 levels ))'
+      - '&7&o(( &f&oQ&7&o to disenchant All levels ))'
+  EnchantProcBooster:
+    enabled: false
+    disenchanter: false
+    name: '&f&lEnchant Proc Booster'
+    material: GOLD_NUGGET
+    base64:
+      enabled: true
+      value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDk0OTIyMjQzMDQyZmZkMzJkNjZlNTc3YzViMzBmODRkMmQyODcyODc5MTE4MDI3ZjRmMTcxZDhiNTE0OTQ0OSJ9fX0='
+    slot: 31
+    boost-per-level: 0.0005
+    price: 100
+    price-increase: 125
+    max-level: 300
+    required-level: 15
+    lore:
+      - '&7&o(( Boosts enchants proc rate. ))'
+      - ' '
+      - '&f&l● &bPrice: &f%cost%'
+      - '&f&l● &bMax Level: &f%max_level%'
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - '&f&l● &bBoost: &f%boost%x'
+      - ' '
+      - '&7&o(( &f&oLeft-Click&7&o to add 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to add 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to add 100 levels ))'
+      - ' '
+      - '&8[%progress%&8] &f%percentage%%'
+      - '&7You must have at least Level &c&l%hoe_level% &7on your hoe'
+    disenchant:
+      - '&7&o(( Boosts enchants proc rate. ))'
+      - ''
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - ''
+      - '&7&o(( &f&oLeft-Click&7&o to disenchant 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to disenchant 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to disenchant 100 levels ))'
+  CustomEnchant1:
+    enabled: false
+    disenchanter: false
+    name: '&b&lCustom Enchant 1'
+    material: STONE
+    base64:
+      enabled: false
+      value: ''
+    slot: 13
+    base-chance: 1.3
+    increase-per-level: 0.003
+    price: 2000
+    price-increase: 200
+    max-level: 500
+    required-level: 0
+    lore:
+      - '&7&o(( Custom Enchant 1 ))'
+      - ' '
+      - '&f&l● &bPrice: &f%cost%'
+      - '&f&l● &bMax Level: &f%max_level%'
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - ' '
+      - '&7&o(( &f&oLeft-Click&7&o to add 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to add 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to add 100 levels ))'
+      - ' '
+      - '&7You must have at least Level &c&l%hoe_level% &7on your hoe'
+    disenchant:
+      - '&7&o(( Custom Enchant 1 ))'
+      - ''
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - ''
+      - '&7&o(( &f&oLeft-Click&7&o to disenchant 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to disenchant 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to disenchant 100 levels ))'
+    rewards:
+      '1':
+        commands:
+          - broadcast Custom 1
+        chance: 20
+      '2':
+        commands:
+          - broadcast Custom 2
+        chance: 20
+  CustomEnchant2:
+    enabled: false
+    disenchanter: false
+    name: '&b&lCustom Enchant 2'
+    material: STONE
+    base64:
+      enabled: false
+      value: ''
+    slot: 13
+    base-chance: 1.3
+    increase-per-level: 0.003
+    price: 2000
+    price-increase: 200
+    max-level: 500
+    required-level: 0
+    lore:
+      - '&7&o(( Custom Enchant 2 ))'
+      - ' '
+      - '&f&l● &bPrice: &f%cost%'
+      - '&f&l● &bMax Level: &f%max_level%'
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - ' '
+      - '&7&o(( &f&oLeft-Click&7&o to add 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to add 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to add 100 levels ))'
+      - ' '
+      - '&7You must have at least Level &c&l%hoe_level% &7on your hoe'
+    disenchant:
+      - '&7&o(( Custom Enchant 2 ))'
+      - ''
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - ''
+      - '&7&o(( &f&oLeft-Click&7&o to disenchant 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to disenchant 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to disenchant 100 levels ))'
+    rewards:
+      '1':
+        commands:
+          - broadcast Custom 1
+        chance: 20
+      '2':
+        commands:
+          - broadcast Custom 2
+        chance: 20
+  CustomEnchant3:
+    enabled: false
+    disenchanter: false
+    name: '&b&lCustom Enchant 3'
+    material: STONE
+    base64:
+      enabled: false
+      value: ''
+    slot: 13
+    base-chance: 1.3
+    increase-per-level: 0.003
+    price: 2000
+    price-increase: 200
+    max-level: 500
+    required-level: 0
+    lore:
+      - '&7&o(( Custom Enchant 3 ))'
+      - ' '
+      - '&f&l● &bPrice: &f%cost%'
+      - '&f&l● &bMax Level: &f%max_level%'
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - ' '
+      - '&7&o(( &f&oLeft-Click&7&o to add 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to add 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to add 100 levels ))'
+      - ' '
+      - '&7You must have at least Level &c&l%hoe_level% &7on your hoe'
+    disenchant:
+      - '&7&o(( Custom Enchant 3 ))'
+      - ''
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - ''
+      - '&7&o(( &f&oLeft-Click&7&o to disenchant 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to disenchant 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to disenchant 100 levels ))'
+    rewards:
+      '1':
+        commands:
+          - broadcast Custom 1
+        chance: 20
+      '2':
+        commands:
+          - broadcast Custom 2
+        chance: 20
+
+  CustomEnchant4:
+    enabled: false
+    disenchanter: false
+    name: '&b&lCustom Enchant 4'
+    material: STONE
+    base64:
+      enabled: false
+      value: ''
+    slot: 13
+    base-chance: 1.3
+    increase-per-level: 0.003
+    price: 2000
+    price-increase: 200
+    max-level: 500
+    required-level: 0
+    lore:
+      - '&7&o(( Custom Enchant 4 ))'
+      - ' '
+      - '&f&l● &bPrice: &f%cost%'
+      - '&f&l● &bMax Level: &f%max_level%'
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - ' '
+      - '&7&o(( &f&oLeft-Click&7&o to add 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to add 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to add 100 levels ))'
+      - ' '
+      - '&7You must have at least Level &c&l%hoe_level% &7on your hoe'
+    disenchant:
+      - '&7&o(( Custom Enchant 4 ))'
+      - ''
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - ''
+      - '&7&o(( &f&oLeft-Click&7&o to disenchant 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to disenchant 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to disenchant 100 levels ))'
+    rewards:
+      '1':
+        commands:
+          - broadcast Custom 1
+        chance: 20
+      '2':
+        commands:
+          - broadcast Custom 2
+        chance: 20
+  CustomEnchant5:
+    enabled: false
+    disenchanter: false
+    name: '&b&lCustom Enchant 5'
+    material: STONE
+    base64:
+      enabled: false
+      value: ''
+    slot: 13
+    base-chance: 1.3
+    increase-per-level: 0.003
+    price: 2000
+    price-increase: 200
+    max-level: 500
+    required-level: 0
+    lore:
+      - '&7&o(( Custom Enchant 5 ))'
+      - ' '
+      - '&f&l● &bPrice: &f%cost%'
+      - '&f&l● &bMax Level: &f%max_level%'
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - ' '
+      - '&7&o(( &f&oLeft-Click&7&o to add 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to add 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to add 100 levels ))'
+      - ' '
+      - '&7You must have at least Level &c&l%hoe_level% &7on your hoe'
+    disenchant:
+      - '&7&o(( Custom Enchant 5 ))'
+      - ''
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - ''
+      - '&7&o(( &f&oLeft-Click&7&o to disenchant 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to disenchant 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to disenchant 100 levels ))'
+    rewards:
+      '1':
+        commands:
+          - broadcast Custom 1
+        chance: 20
+      '2':
+        commands:
+          - broadcast Custom 2
+        chance: 20
+  CustomEnchant6:
+    enabled: false
+    disenchanter: false
+    name: '&b&lCustom Enchant 6'
+    material: STONE
+    base64:
+      enabled: false
+      value: ''
+    slot: 13
+    base-chance: 1.3
+    increase-per-level: 0.003
+    price: 2000
+    price-increase: 200
+    max-level: 500
+    required-level: 0
+    lore:
+      - '&7&o(( Custom Enchant 6 ))'
+      - ' '
+      - '&f&l● &bPrice: &f%cost%'
+      - '&f&l● &bMax Level: &f%max_level%'
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - ' '
+      - '&7&o(( &f&oLeft-Click&7&o to add 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to add 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to add 100 levels ))'
+      - ' '
+      - '&7You must have at least Level &c&l%hoe_level% &7on your hoe'
+    disenchant:
+      - '&7&o(( Custom Enchant 6 ))'
+      - ''
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - ''
+      - '&7&o(( &f&oLeft-Click&7&o to disenchant 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to disenchant 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to disenchant 100 levels ))'
+    rewards:
+      '1':
+        commands:
+          - broadcast Custom 1
+        chance: 20
+      '2':
+        commands:
+          - broadcast Custom 2
+        chance: 20
+  CustomEnchant7:
+    enabled: false
+    disenchanter: false
+    name: '&b&lCustom Enchant 7'
+    material: STONE
+    base64:
+      enabled: false
+      value: ''
+    slot: 13
+    base-chance: 1.3
+    increase-per-level: 0.003
+    price: 2000
+    price-increase: 200
+    max-level: 500
+    required-level: 0
+    lore:
+      - '&7&o(( Custom Enchant 7 ))'
+      - ' '
+      - '&f&l● &bPrice: &f%cost%'
+      - '&f&l● &bMax Level: &f%max_level%'
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - ' '
+      - '&7&o(( &f&oLeft-Click&7&o to add 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to add 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to add 100 levels ))'
+      - ' '
+      - '&7You must have at least Level &c&l%hoe_level% &7on your hoe'
+    disenchant:
+      - '&7&o(( Custom Enchant 7 ))'
+      - ''
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - ''
+      - '&7&o(( &f&oLeft-Click&7&o to disenchant 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to disenchant 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to disenchant 100 levels ))'
+    rewards:
+      '1':
+        commands:
+          - broadcast Custom 1
+        chance: 20
+      '2':
+        commands:
+          - broadcast Custom 2
+        chance: 20
+  CustomEnchant8:
+    enabled: false
+    disenchanter: false
+    name: '&b&lCustom Enchant 8'
+    material: STONE
+    base64:
+      enabled: false
+      value: ''
+    slot: 13
+    base-chance: 1.3
+    increase-per-level: 0.003
+    price: 2000
+    price-increase: 200
+    max-level: 500
+    required-level: 0
+    lore:
+      - '&7&o(( Custom Enchant 8 ))'
+      - ' '
+      - '&f&l● &bPrice: &f%cost%'
+      - '&f&l● &bMax Level: &f%max_level%'
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - ' '
+      - '&7&o(( &f&oLeft-Click&7&o to add 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to add 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to add 100 levels ))'
+      - ' '
+      - '&7You must have at least Level &c&l%hoe_level% &7on your hoe'
+    disenchant:
+      - '&7&o(( Custom Enchant 8 ))'
+      - ''
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - ''
+      - '&7&o(( &f&oLeft-Click&7&o to disenchant 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to disenchant 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to disenchant 100 levels ))'
+    rewards:
+      '1':
+        commands:
+          - broadcast Custom 1
+        chance: 20
+      '2':
+        commands:
+          - broadcast Custom 2
+        chance: 20
+  CustomEnchant9:
+    enabled: false
+    disenchanter: false
+    name: '&b&lCustom Enchant 9'
+    material: STONE
+    base64:
+      enabled: false
+      value: ''
+    slot: 13
+    base-chance: 1.3
+    increase-per-level: 0.003
+    price: 2000
+    price-increase: 200
+    max-level: 500
+    required-level: 0
+    lore:
+      - '&7&o(( Custom Enchant 9 ))'
+      - ' '
+      - '&f&l● &bPrice: &f%cost%'
+      - '&f&l● &bMax Level: &f%max_level%'
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - ' '
+      - '&7&o(( &f&oLeft-Click&7&o to add 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to add 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to add 100 levels ))'
+      - ' '
+      - '&7You must have at least Level &c&l%hoe_level% &7on your hoe'
+    disenchant:
+      - '&7&o(( Custom Enchant 9 ))'
+      - ''
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - ''
+      - '&7&o(( &f&oLeft-Click&7&o to disenchant 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to disenchant 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to disenchant 100 levels ))'
+    rewards:
+      '1':
+        commands:
+          - broadcast Custom 1
+        chance: 20
+      '2':
+        commands:
+          - broadcast Custom   2
+        chance: 20
+  CustomEnchant10:
+    enabled: false
+    disenchanter: false
+    name: '&b&lCustom Enchant 10'
+    material: STONE
+    base64:
+      enabled: false
+      value: ''
+    slot: 13
+    base-chance: 1.3
+    increase-per-level: 0.003
+    price: 2000
+    price-increase: 200
+    max-level: 500
+    required-level: 0
+    lore:
+      - '&7&o(( Custom Enchant 10 ))'
+      - ' '
+      - '&f&l● &bPrice: &f%cost%'
+      - '&f&l● &bMax Level: &f%max_level%'
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - ' '
+      - '&7&o(( &f&oLeft-Click&7&o to add 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to add 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to add 100 levels ))'
+      - ' '
+      - '&7You must have at least Level &c&l%hoe_level% &7on your hoe'
+    disenchant:
+      - '&7&o(( Custom Enchant 10 ))'
+      - ''
+      - '&f&l● &bCurrent Level: &f%current_level%'
+      - ''
+      - '&7&o(( &f&oLeft-Click&7&o to disenchant 1 level ))'
+      - '&7&o(( &f&oRight-Click&7&o to disenchant 10 levels ))'
+      - '&7&o(( &f&oMiddle-Click&7&o to disenchant 100 levels ))'
+    rewards:
+      '1':
+        commands:
+          - broadcast Custom 1
+        chance: 20
+      '2':
+        commands:
+          - broadcast Custom 2
+        chance: 20

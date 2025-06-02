@@ -1,0 +1,578 @@
+  # Configuration for Crop Balance Command
+Crops:
+  main-menu:
+    # GUI Name
+    name: '&nTabla de mejores jugadores'
+    # GUI Size
+    size: 45
+    # Filler of the GUI
+    filler: BLACK_STAINED_GLASS_PANE
+
+
+# Configuration for the SugarCane Top Leaderboard
+    SugarCane:
+      name: '&aTop de caña de azucar'
+      base64:
+        enabled: true
+        value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmEyYzg3YWU1ZmEwMzM0NWRmNDJjMTJkZmM5NTcxNzdjNjdjNjllMTQwMGViZWY3MDA1ZWIxM2I1OGJlNjc1OSJ9fX0=
+      material: SUGAR_CANE
+      lore:
+      - '&8Acceso directo'
+      - ''
+      - '&fAqui podras encontrar la tabla de'
+      - '&fclasificación donde veras los mejores'
+      - '&fcosechadores de caña de azucar'
+      - ''
+      - '&e▸ ¡Clic izq para abrir!'
+      slot: 25
+      enabled: false
+    # GUI Items
+    Potato:
+      name: '&x&E&7&D&B&9&4Top patatas'
+      base64:
+        enabled: true
+        value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Y0NjI0ZWJmN2Q0MTlhMTFlNDNlZDBjMjAzOGQzMmNkMDlhZDFkN2E2YzZlMjBmNjMzOWNiY2ZlMzg2ZmQxYyJ9fX0=
+      material: POTATO
+      lore:
+      - '&8Acceso directo'
+      - ''
+      - '&fAqui podras encontrar la tabla de'
+      - '&fclasificación de los mejores'
+      - '&fcosechadores de Patatas'
+      - ''
+      - '&e▸ ¡Clic izq para abrir!'
+      slot: 33
+      enabled: true
+    Melon:
+      name: '&3&l[!] &b&lMelon'
+      base64:
+        enabled: true
+        value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmY4MjdiNWYxMjZjZjU4OGY5MzU1Njc4Y2FlZTMwNTQ0MjZkYTBmYTcxNmRmYTVmMmFlNzk5YmJiMjdiODMifX19
+      material: MELON
+      lore:
+      - '&7&o(( Click to view Melon Top. ))'
+      slot: 23
+      enabled: false
+    Pumpkin:
+      name: '&3&l[!] &b&lPumpkin'
+      base64:
+        enabled: true
+        value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDk4YWFiMzY4ZmE2ODEzYmM3YzZkM2RjNGMyNTVmMzgxYzg4MmMwNDU2ZmUzZGYxMGMyYmFiZmYwMzM0YjYyNyJ9fX0=
+      material: PUMPKIN
+      lore:
+      - '&7&o(( Click to view Pumpkin Top. ))'
+      slot: 24
+      enabled: false
+    Wheat:
+      name: '&x&E&7&D&B&9&4Top trigo'
+      base64:
+        enabled: true
+        value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjMDI5YzkxNDRkOTZmYzRhMDZmYWUwNTk5NjMwZDJkYWMwZjcxNTE2NmYxYzRlYzExZTczMWFlZDdiM2Q3ZiJ9fX0=
+      material: WHEAT
+      lore:
+      - '&8Acceso directo'
+      - ''
+      - '&fAqui podras encontrar la tabla de'
+      - '&fclasificación de los mejores'
+      - '&fcosechadores de trigo'
+      - ''
+      - '&e▸ ¡Clic izq para abrir!'
+      slot: 15
+      enabled: true
+    CocoaBean:
+      name: '&3&l[!] &b&lCocoa Bean'
+      base64:
+        enabled: true
+        value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzM5ODJjYjRhMjM4ZTExODlmZGIxODI5NDMzYTcxNDNjZmExOThhMjc2YzhhOWMzNDIyMTdjZmNiMmUzZDM4In19fQ==
+      material: COCOABEAN
+      lore:
+      - '&7&o(( Click to view Cocoa Bean Top. ))'
+      slot: 26
+      enabled: false
+    NetherWart:
+      name: '&3&l[!] &b&lNether Wart'
+      base64:
+        enabled: true
+        value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTExYTNjZWM3YWFmOTA0MjEyY2NmOTNiYjY3YTNjYWYzZDY0OTc4M2JhOTBiOGI2MGJiNjNjNzY4N2ViMzlmIn19fQ==
+      material: NETHER_WART
+      lore:
+      - '&7&o(( Click to view Nether Wart Top. ))'
+      slot: 24
+      enabled: false
+    Carrot:
+      name: '&x&E&7&D&B&9&4Top zanahorias'
+      base64:
+        enabled: true
+        value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjQ0OGMxODNhNzY0MDg2N2U0MjExOGU2OWMzZjRkMTVkYjFmZmIwZDkzNjQ2Yjc3MDc4ZWNlZGNhMmE0MzQ1NCJ9fX0=
+      material: CARROT
+      lore:
+      - '&8Acceso directo'
+      - ''
+      - '&fAqui podras encontrar la tabla de'
+      - '&fclasificación de los mejores'
+      - '&fcosechadores de zanahorias'
+      - ''
+      - '&e▸ ¡Clic izq para abrir!'
+      slot: 24
+      enabled: true
+    Beetroot:
+      name: '&x&E&7&D&B&9&4Mejores cosechadores de remolacha'
+      base64:
+        enabled: true
+        value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWM5ZTE3MTg3N2EzMTA3MzhmYTM3NzVjODAzOWE3N2FiMTQxNDE3ZjU2ZDI3NmE3MzE4OWM5NzQ5MjBlMjRkMiJ9fX0=
+      material: SUGAR_CANE
+      lore:
+      - '&8Acceso directo'
+      - ''
+      - '&fAqui podras encontrar la tabla de'
+      - '&fclasificación de los mejores'
+      - '&fcosechadores de remolachas'
+      - ''
+      - '&e▸ ¡Clic izq para abrir!'
+      slot: 25
+      enabled: false
+    Crops:
+      name: '&x&E&7&D&B&9&4Top cosechadores'
+      base64:
+        enabled: true
+        value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGFkZTE5OWQ1YjNhOGI4YzZmZTJlZWI2MjhhZjM4ZGFhZGEzMDVmN2M5MGQxYmQxMjI0Y2YxZjA3MWZjYmU4YiJ9fX0=
+      material: NETHER_STAR
+      lore:
+      - '&8Acceso directo'
+      - ''
+      - '&fAqui podras encontrar la tabla de'
+      - '&fclasificación de los mejores'
+      - '&fcosechadores del servidor'
+      - ''
+      - '&e▸ ¡Clic izq para abrir!'
+      slot: 19
+      enabled: true
+
+
+# Configuration for the SugarCane Top Leaderboard
+SugarCane:
+  hologram-no-player: No Player
+  name: '&nTop cosechadores'
+  display:
+    your-rank: '&x&E&7&D&B&9&4Posición actual: &e{rank}# '
+    your-lore:
+    - ''
+    - '&8&l● &fCosecha de caña: &x&E&7&D&B&9&4{amount}'
+    name: '&e{rank}# &f{player}'
+    lore:
+    - '&8Estadísticas personales'
+    - ''
+    - '&8&l● &fPatatas colectadas: &x&E&7&D&B&9&4{amount}'
+    name-invalid: '&e{rank}# &f¡Ninguno!'
+    lore-invalid:
+    - ''
+    - '&e&e▸ ¡No hay ningun jugador aún!'
+
+  # Configuration for the Potato Top Leaderboard
+Potato:
+  hologram-no-player: No Player
+  name: '&nTop cosechadores'
+  display:
+    your-rank: '&x&E&7&D&B&9&4Posición actual: &e{rank}# '
+    your-lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fInformate de las pociones de las'
+    - '&ftablas de mejores cosechadores'
+    - ''
+    - ' &8| &x&F&B&D&A&8&8Patatas ☄'
+    - "&7"
+    - ' &fRecolectado: &e{amount} &e⊅'
+    - '&7'
+    - '&e▸ ¡Tus estadísticas actuales!'
+    name: '&e{rank}# &7{player}'
+    lore:
+    - '&8Estadísticas personales'
+    - ''
+    - '&f¡Este jugador domina las cosechas y'
+    - '&fse encuentra en esta posición&f!'
+    - ''
+    - ' &8| &x&F&B&D&A&8&8Patatas ☄'
+    - "&7"
+    - ' &fRecolectado: &e{amount} &e⊅'
+    - '&7'
+    - '&e▸ ¡Mejores jugadores del podio!'
+    name-invalid: '&e{rank}# &f¡Ninguno!'
+    lore-invalid:
+    - ''
+    - '&e&e▸ ¡No hay ningun jugador aún!'
+  # Configuration for the Melon Top Leaderboard
+Melon:
+  hologram-no-player: No Player
+  name: '&8ServerName » Melon Top'
+  display:
+    your-rank: '&3&l<!> &b&lYour Rank: &f&l#{rank} '
+    your-lore:
+    - ''
+    - '&f● &bMelons Broken: &f{amount}'
+    name: '&3&l<!> &f&l#{rank} &b&l{player}'
+    lore:
+    - ''
+    - '&f● &bMelons Broken: &f{amount}'
+    name-invalid: '&4&l<!>  &f&l#{rank} &c&l?????'
+    lore-invalid:
+    - ''
+    - '&7&o(( No player yet ))'
+  # Configuration for the Pumpkin Top Leaderboard
+Pumpkin:
+  hologram-no-player: No Player
+  name: '&8ServerName » Pumpkin Top'
+  display:
+    your-rank: '&3&l<!> &b&lYour Rank: &f&l#{rank} '
+    your-lore:
+    - ''
+    - '&f● &bPumpkins Broken: &f{amount}'
+    name: '&3&l<!> &f&l#{rank} &b&l{player}'
+    lore:
+    - ''
+    - '&f● &bPumpkins Broken: &f{amount}'
+    name-invalid: '&4&l<!>  &f&l#{rank} &c&l?????'
+    lore-invalid:
+    - ''
+    - '&7&o(( No player yet ))'
+  # Configuration for the Wheat Top Leaderboard
+Wheat:
+  hologram-no-player: No Player
+  name: '&nTop cosechadores'
+  display:
+    your-rank: '&x&E&7&D&B&9&4Posición actual: &e{rank}# '
+    your-lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fInformate de las pociones de las'
+    - '&ftablas de mejores cosechadores'
+    - ''
+    - ' &8| &x&F&B&D&A&8&8Trigo ☄'
+    - "&7"
+    - ' &fRecolectado: &e{amount} &e⊅'
+    - '&7'
+    - '&e▸ ¡Tus estadísticas actuales!'
+    name: '&e{rank}# &7{player}'
+    lore:
+    - '&8Estadísticas personales'
+    - ''
+    - '&f¡Este jugador domina las cosechas y'
+    - '&fse encuentra en esta posición&f!'
+    - ''
+    - ' &8| &x&F&B&D&A&8&8Trigo ☄'
+    - "&7"
+    - ' &fRecolectado: &e{amount} &e⊅'
+    - '&7'
+    - '&e▸ ¡Mejores jugadores del podio!'
+    name-invalid: '&e{rank}# &f¡Ninguno!'
+    lore-invalid:
+    - ''
+    - '&e&e▸ ¡No hay ningun jugador aún!'
+  # Configuration for the CocoaBean Top Leaderboard
+CocoaBean:
+  hologram-no-player: No Player
+  name: '&8ServerName » CocoaBean Top'
+  display:
+    your-rank: '&3&l<!> &b&lYour Rank: &f&l#{rank} '
+    your-lore:
+    - ''
+    - '&f● &bCocoaBeans Broken: &f{amount}'
+    name: '&3&l<!> &f&l#{rank} &b&l{player}'
+    lore:
+    - ''
+    - '&f● &bCocoaBeans Broken: &f{amount}'
+    name-invalid: '&4&l<!>  &f&l#{rank} &c&l?????'
+    lore-invalid:
+    - ''
+    - '&7&o(( No player yet ))'
+  # Configuration for the NetherWart Top Leaderboard
+NetherWart:
+  hologram-no-player: No Player
+  name: '&8ServerName » NetherWart Top'
+  display:
+    your-rank: '&3&l<!> &b&lYour Rank: &f&l#{rank} '
+    your-lore:
+    - ''
+    - '&f● &bNetherWarts Broken: &f{amount}'
+    name: '&3&l<!> &f&l#{rank} &b&l{player}'
+    lore:
+    - ''
+    - '&f● &bNetherWarts Broken: &f{amount}'
+    name-invalid: '&4&l<!>  &f&l#{rank} &c&l?????'
+    lore-invalid:
+    - ''
+    - '&7&o(( No player yet ))'
+  # Configuration for the Carrot Top Leaderboard
+Carrot:
+  hologram-no-player: No Player
+  name: '&nTop cosechadores'
+  display:
+    your-rank: '&x&E&7&D&B&9&4Posición actual: &e{rank}#'
+    your-lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fInformate de las pociones de las'
+    - '&ftablas de mejores cosechadores'
+    - ''
+    - ' &8| &x&F&B&D&A&8&8Zanahorias ☄'
+    - "&7"
+    - ' &fRecolectado: &e{amount} &e⊅'
+    - '&7'
+    - '&e▸ ¡Tus estadísticas actuales!'
+    name: '&e{rank}# &7{player}'
+    lore:
+    - '&8Estadísticas personales'
+    - ''
+    - '&f¡Este jugador domina las cosechas y'
+    - '&fse encuentra en esta posición&f!'
+    - ''
+    - ' &8| &x&F&B&D&A&8&8Zanahorias ☄'
+    - "&7"
+    - ' &fRecolectado: &e{amount} &e⊅'
+    - '&7'
+    - '&e▸ ¡Mejores jugadores del podio!'
+    name-invalid: '&e{rank}# &f¡Ninguno!'
+    lore-invalid:
+    - ''
+    - '&e&e▸ ¡No hay ningun jugador aún!'
+  # Configuration for the Beetroot Top Leaderboard
+Beetroot:
+  hologram-no-player: No Player
+  name: '&nTop cosechadores'
+  display:
+    your-rank: '&x&E&7&D&B&9&4Posición actual: &e{rank}# '
+    your-lore:
+    - ''
+    - '&8&l● &fCosecha de remolachas: &x&E&7&D&B&9&4{amount}'
+    name: '&e{rank}# &b&l{player}'
+    lore:
+    - '&8Estadísticas personales'
+    - ''
+    - '&8&l● &fRemolachas colectadas: &x&E&7&D&B&9&4{amount}'
+    name-invalid: '&e{rank}# &f¡Ninguno!'
+    lore-invalid:
+    - ''
+    - '&e&e▸ ¡No hay ningun jugador aún!'
+# Configuration for the Essence Top Leaderboard
+Essence:
+  hologram-no-player: No Player
+  name: '&nTop esencias'
+  display:
+    your-rank: '&x&E&7&D&B&9&4Posición actual: &e{rank}# '
+    your-lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fInformate de las pociones de las'
+    - '&ftablas de mejores cosechadores'
+    - ''
+    - '&8&l● &fTus esencias: &x&E&7&D&B&9&4{amount} 🌊'
+    - ''
+    - '&e▸ ¡Tus estadísticas actuales!'
+    name: '&e{rank}# &7{player}'
+    lore:
+    - '&8Estadísticas personales'
+    - ''
+    - '&f¡Este jugador domina las cosechas y'
+    - '&fse encuentra en esta posición&f!'
+    - ''
+    - '&8&l● &fEsencias: &x&E&7&D&B&9&4{amount} 🌊'
+    - ''
+    - '&e▸ ¡Mejores jugadores del podio!'
+    name-invalid: '&e{rank}# &f¡Ninguno!'
+    lore-invalid:
+    - ''
+    - '&e&e▸ ¡No hay ningun jugador aún!'
+# Configuration for the Crops Top Leaderboard
+Crop:
+  hologram-no-player: No Player
+  name: '&nTop del sevidor'
+  display:
+    your-rank: '&x&E&7&D&B&9&4Posición actual: &e{rank}# '
+    your-lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEstadísticas globales sobre tu'
+    - '&factividad en general con la'
+    - '&fazada de recolección'
+    - ''
+    - '&x&E&7&D&B&9&4Lista de cultivos'
+    - '&8&l● &fTrigo: &x&E&7&D&B&9&4{wheat}'
+    - '&8&l● &fZanahorias: &x&E&7&D&B&9&4{carrot}'
+    - '&8&l● &fPatatas: &x&E&7&D&B&9&4{potato}'
+    - ''
+    - ' &8| &x&F&B&D&A&8&8Total ☄'
+    - "&7"
+    - ' &fRecolectado: &e{amount} &e⊅'
+    - '&7'
+    - '&e▸ ¡Estadísticas generales!'
+    name: '&e{rank}# &f{player}'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEstadísticas globales sobre tu'
+    - '&factividad en general con la'
+    - '&fazada de recolección'
+    - ''
+    - '&x&E&7&D&B&9&4Lista de cultivos'
+    - '&8&l● &fTrigo: &x&E&7&D&B&9&4{wheat}'
+    - '&8&l● &fZanahorias: &x&E&7&D&B&9&4{carrot}'
+    - '&8&l● &fPatatas: &x&E&7&D&B&9&4{potato}'
+    - ''
+    - ' &8| &x&F&B&D&A&8&8Total ☄'
+    - "&7"
+    - ' &fRecolectado: &e{amount} &e⊅'
+    - '&7'
+    - '&e▸ ¡Estadísticas generales!'
+    name-invalid: '&e{rank}# &f¡Ninguno!'
+    lore-invalid:
+    - ''
+    - '&e&e▸ ¡No hay ningun jugador aún!'
+Data:
+  # Save all Data - Time in seconds
+  save-data: 300
+  broadcast: false
+  permission: rival.admin.update
+  message:
+  - ''
+  - '&x&E&7&D&B&9&4☀ ¡Bien hecho! &fDatos guardados correctamente.'
+  - ''
+
+# Configuration for the Crops Balance Commands
+Balance:
+  Invalid-Crop:
+    message:
+    - ''
+    - '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &f&lInvalid Crop, possible crops: &fSugarCane, Potato, Carrot, Beetroot,
+      Wheat, CocoaBean, NetherWart, Pumpkin, Melon'
+    - ''
+
+
+# Configuration for the SugarCane Top Leaderboard
+  SugarCane:
+    player-balance-format:
+    - '&x&E&7&D&B&9&4&lYour Sugarcane &8» &f{amount}'
+    - '&7Harvest Sugarcane and compete on the /sugarcane top leaderboards'
+    others-balance-format:
+    - '&x&E&7&D&B&9&4&l{player}''s Sugarcane &8» &f{amount}'
+    - '&7Harvest Sugarcane and compete on the /sugarcane top leaderboards'
+
+  # Configuration for the Potato Top Leaderboard
+  Potato:
+    player-balance-format:
+    - '&x&E&7&D&B&9&4&lYour Potatoes &8» &f{amount}'
+    - '&7Harvest Potatoes and compete on the /potato top leaderboards'
+    others-balance-format:
+    - '&x&E&7&D&B&9&4&l{player}''s Potato &8» &f{amount}'
+    - '&7Harvest Potatoes and compete on the /potato top leaderboards'
+  # Configuration for the Beetroot Top Leaderboard
+  Beetroot:
+    player-balance-format:
+    - '&x&E&7&D&B&9&4&lYour Beetroots &8» &f{amount}'
+    - '&7Harvest Sugarcane and compete on the /sugarcane top leaderboards'
+    others-balance-format:
+    - '&x&E&7&D&B&9&4&l{player}''s Beetroot &8» &f{amount}'
+    - '&7Harvest Beetroot and compete on the /beetroot top leaderboards'
+  # Configuration for the Carrot Top Leaderboard
+  Carrot:
+    player-balance-format:
+    - '&x&E&7&D&B&9&4&lYour Carrots &8» &f{amount}'
+    - '&7Harvest Sugarcane and compete on the /carrot top leaderboards'
+    others-balance-format:
+    - '&x&E&7&D&B&9&4&l{player}''s Carrots &8» &f{amount}'
+    - '&7Harvest Sugarcane and compete on the /carrot top leaderboards'
+  # Configuration for the Wheat Top Leaderboard
+  Wheat:
+    player-balance-format:
+    - '&x&E&7&D&B&9&4&lYour Wheat &8» &f{amount}'
+    - '&7Harvest Wheat and compete on the /wheat top leaderboards'
+    others-balance-format:
+    - '&x&E&7&D&B&9&4&l{player}''s Wheat &8» &f{amount}'
+    - '&7Harvest Wheat and compete on the /wheat top leaderboards'
+  # Configuration for the CocoaBean Top Leaderboard
+  CocoaBean:
+    player-balance-format:
+    - '&x&E&7&D&B&9&4&lYour CocoaBeans &8» &f{amount}'
+    - '&7Harvest CocoaBeans and compete on the /cocoabean top leaderboards'
+    others-balance-format:
+    - '&x&E&7&D&B&9&4&l{player}''s CocoaBeans &8» &f{amount}'
+    - '&7Harvest Cocoabeans and compete on the /cocoabean top leaderboards'
+  # Configuration for the NetherWart Top Leaderboard
+  NetherWart:
+    player-balance-format:
+    - '&x&E&7&D&B&9&4&lYour Netherwart &8» &f{amount}'
+    - '&7Harvest Netherwart and compete on the /netherwart top leaderboards'
+    others-balance-format:
+    - '&x&E&7&D&B&9&4&l{player}''s Netherwart &8» &f{amount}'
+    - '&7Harvest Netherwart and compete on the /netherwart top leaderboards'
+  # Configuration for the Pumpkin Top Leaderboard
+  Pumpkin:
+    player-balance-format:
+    - '&x&E&7&D&B&9&4&lYour Pumpkins &8» &f{amount}'
+    - '&7Harvest Pumpkins and compete on the /pumpkin top leaderboards'
+    others-balance-format:
+    - '&x&E&7&D&B&9&4&l{player}''s Pumpkins &8» &f{amount}'
+    - '&7Harvest Pumpkins and compete on the /pumpkin top leaderboards'
+  # Configuration for the Melon Top Leaderboard
+  Melon:
+    player-balance-format:
+    - '&x&E&7&D&B&9&4&lYour Melons &8» &f{amount}'
+    - '&7Harvest Melons and compete on the /melon top leaderboards'
+    others-balance-format:
+    - '&x&E&7&D&B&9&4&l{player}''s Melons &8» &f{amount}'
+    - '&7Harvest Melons and compete on the /melon top leaderboards'
+  # Configuration for Crop Balance Command
+  Crops:
+    player-balance-format:
+    - '&x&E&7&D&B&9&4&lYour Total Crops &8» &f{amount}'
+    - ''
+    - '&2&lCROPS'
+    - '&8&l● &x&E&7&D&B&9&4SugarCane: &f{sugarcane}'
+    - '&8&l● &x&E&7&D&B&9&4Potato: &f{potato}'
+    - '&8&l● &x&E&7&D&B&9&4Carrot: &f{carrot}'
+    - '&8&l● &x&E&7&D&B&9&4Beetroot: &f{beetroot}'
+    - '&8&l● &x&E&7&D&B&9&4Wheat: &f{wheat}'
+    - '&8&l● &x&E&7&D&B&9&4CocoaBean: &f{cocoabean}'
+    - '&8&l● &x&E&7&D&B&9&4NetherWart: &f{netherwart}'
+    - '&8&l● &x&E&7&D&B&9&4Pumpkin: &f{pumpkin}'
+    - '&8&l● &x&E&7&D&B&9&4Melon: &f{melon}'
+    - '&7Harvest Crops and compete on the /crop top leaderboards'
+    others-balance-format:
+    - '&x&E&7&D&B&9&4&l{player}''s Total Crops &8» &f{amount}'
+    - ''
+    - '&2&lCROPS'
+    - '&8&l● &x&E&7&D&B&9&4SugarCane: &f{sugarcane}'
+    - '&8&l● &x&E&7&D&B&9&4Potato: &f{potato}'
+    - '&8&l● &x&E&7&D&B&9&4Carrot: &f{carrot}'
+    - '&8&l● &x&E&7&D&B&9&4Beetroot: &f{beetroot}'
+    - '&8&l● &x&E&7&D&B&9&4Wheat: &f{wheat}'
+    - '&8&l● &x&E&7&D&B&9&4CocoaBean: &f{cocoabean}'
+    - '&8&l● &x&E&7&D&B&9&4NetherWart: &f{netherwart}'
+    - '&8&l● &x&E&7&D&B&9&4Pumpkin: &f{pumpkin}'
+    - '&8&l● &x&E&7&D&B&9&4Melon: &f{melon}'
+    - '&7Harvest Crops and compete on the /crop top leaderboards'
+
+# /hoe stats <player> command
+Hoe-Stats:
+  message:
+  - '&x&E&7&D&B&9&4&l{player}''s Stats'
+  - ''
+  - '&2&lBALANCES'
+  - '&8&l● &x&E&7&D&B&9&4Money: &f{money}'
+  - '&8&l● &x&E&7&D&B&9&4Essence: &f{essence}'
+  - ''
+  - '&2&lCROPS'
+  - '&8&l● &x&E&7&D&B&9&4SugarCane: &f{sugarcane}'
+  - '&8&l● &x&E&7&D&B&9&4Potato: &f{potato}'
+  - '&8&l● &x&E&7&D&B&9&4Carrot: &f{carrot}'
+  - '&8&l● &x&E&7&D&B&9&4Beetroot: &f{beetroot}'
+  - '&8&l● &x&E&7&D&B&9&4Wheat: &f{wheat}'
+  - '&8&l● &x&E&7&D&B&9&4CocoaBean: &f{cocoabean}'
+  - '&8&l● &x&E&7&D&B&9&4NetherWart: &f{netherwart}'
+  - '&8&l● &x&E&7&D&B&9&4Pumpkin: &f{pumpkin}'
+  - '&8&l● &x&E&7&D&B&9&4Melon: &f{melon}'
+  - '&8&l● &x&E&7&D&B&9&4Global: &f{global}'
+Crop-Commands:
+  usage:
+  - '&b&l{crop} Commands'
+  - '&8&l● &f/{crop-lowercase} &7balance <player>'
+  - '&8&l● &f/{crop-lowercase} &7top'

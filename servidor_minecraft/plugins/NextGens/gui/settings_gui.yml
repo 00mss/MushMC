@@ -1,0 +1,61 @@
+title: "&nConfiguración de gens"
+size: 27
+
+# Text that will be shown if the setting is on
+placeholder-on: "&a&l✔"
+# Text that will be shown if the setting is off
+placeholder-off: "&c&l✘"
+
+# The List of items that will be shown in the gui
+# Keep in mind that you can add as many items as you want
+items:
+  cashback:
+    type: toggle_cashback
+    material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWVhMjMxNjhjNmM5NDk5ZDI2ZDM0MTZlNzVjNDFiNTZkNjY5YTcyMGQ1ZWViYTdlNTJhYjJiNDViMjRhOCJ9fX0=
+    display-name: "&aNotificación de cashback"
+    slots: [ 11 ]
+    lore:
+      - "&8Interacción de item"
+      - ""
+      - "&fRecibiras una notificación sobre"
+      - "&ftus ventas muy recientes"
+      - "&f"
+      - "&8&l● &fEstado: {status_cashback}"
+      - "&f"
+      - "&e▸ ¡Clic izq para seleccionar!"
+  autosell_inventory:
+    type: toggle_inventory_autosell
+    material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDIyZGQxMGE5Njc0ZTJhMGUzZjUzZWM5ODk0MDdhNWMzOGM2MWMxMGEyMDQ2MTUxMmQ5MjU1ODBjMzU2NGIwOCJ9fX0=
+    display-name: "&aVenta de inventario"
+    slots: [ 13 ]
+    lore:
+      - "&8Interacción de item"
+      - ""
+      - "&fActivar esta opción venderá automáticamente"
+      - "&flos recursos dentro de tu inventario."
+      - "&f"
+      - "&8&l● &fEstado: {status_inventory_autosell}"
+      - "&8&l● &fRango rq: &x&2&a&f&b&2&c&lD&x&3&9&f&b&3&9&lE&x&4&8&f&c&4&6&lL&x&5&6&f&c&5&2&lU&x&6&5&f&d&5&f&lX&x&f&4&f&d&6&c&lE"
+      - "&f"
+      - "&e▸ ¡Clic izq para seleccionar!"
+  autosell_gens:
+    type: toggle_gens_autosell
+    material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGU3MzJhZjdkZDljMTNmNmIxZWI4YjcxYmYzNzNiYmUwMmI4YWViM2ZjZjY5YjNlYjQwZDZkMjliNGZmODQyMCJ9fX0=
+    display-name: "&aVenta automatica"
+    slots: [ 15 ]
+    lore:
+      - "&8Interacción de item"
+      - ""
+      - "&fVende automáticamente los items"
+      - "&fqué son generados de tus gens."
+      - "&f"
+      - "&8&l● &fEstado: {status_gens_autosell}"
+      - "&8&l● &fRango rq: &x&f&b&1&1&1&8&lL&x&f&c&1&8&2&f&lU&x&f&c&1&f&3&f&lX&x&f&d&2&6&4&6&lE"
+      - "&f"
+      - "&e▸ ¡Clic izq para seleccionar!"
+  filler_item:
+    type: DUMMY
+    material: BLACK_STAINED_GLASS_PANE
+    display-name: "&f"
+    slots: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 ]
+    lore: []

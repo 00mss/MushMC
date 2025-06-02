@@ -1,0 +1,20 @@
+location: Spawn:114,505:67,134:-13,494
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#C6B3FF&lRANKUPS'
+    height: 0.3
+  - content: '&fSube de prestigios cumpliendo'
+    height: 0.3
+  - content: '&flos diferentes requisitos'
+    height: 0.3
+  - content: '&e▸ ¡Clic para abrir!'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  actions: {}

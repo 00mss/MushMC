@@ -1,0 +1,113 @@
+# The title of the gui
+title: "&8Menu de mejora"
+# The size of the gui
+size: 27
+# The slots for the generator
+display-slots: [13]
+# Item that will be shown when player have enough money to upgrade the generator
+display-enough-money:
+  display-name: "&b&l¡NUEVA MEJORA!"
+  # Enchantment Format:
+  # <ENCHANT>;<LEVEL>
+  # Example: DURABILITY;1
+  enchantments: [ ]
+  # Item Flag Example:
+  # - HIDE_ATTRIBUTES
+  # - HIDE_ENCHANTS
+  flags: [ ]
+  custom-model-data: 0
+  lore:
+    - "&r"
+    - " &aɢᴇɴᴇʀᴀᴅᴏʀ ᴀᴄᴛᴜᴀʟ"
+    - " &fGen actual: {current}"
+    - " &fVelocidad: &e{speed}s"
+    - "&r"
+    - " &aꜱɪɢᴜɪᴇɴᴛᴇ ɢᴇɴᴇʀᴀᴅᴏʀ"
+    - " &fGen siguiente: {next}"
+    - " &fVelocidad: &e{next_speed}s"
+    - "&r"
+    - " &aᴄᴏsᴛo"
+    - " &fCosto de mejora: &a${cost}"
+    - " &fActualmente tienes: &2${balance}"
+    - "&7"
+
+# Item that will be shown when player doesn't have enough money to upgrade the generator
+display-no-money:
+  display-name: "&b&l¡NUEVA MEJORA!"
+  # Enchantment Format:
+  # <ENCHANT>;<LEVEL>
+  # Example: DURABILITY;1
+  enchantments: [ ]
+  # Item Flag Example:
+  # - HIDE_ATTRIBUTES
+  # - HIDE_ENCHANTS
+  flags: [ ]
+  custom-model-data: 0
+  lore:
+    - "&r"
+    - " &aɢᴇɴᴇʀᴀᴅᴏʀ ᴀᴄᴛᴜᴀʟ"
+    - " &fGen actual: {current}"
+    - " &fVelocidad: &e{speed}s"
+    - "&r"
+    - " &aꜱɪɢᴜɪᴇɴᴛᴇ ɢᴇɴᴇʀᴀᴅᴏʀ"
+    - " &fGen siguiente: {next}"
+    - " &fVelocidad: &e{next_speed}s"
+    - "&r"
+    - " &aᴄᴏsᴛo"
+    - " &fCosto de mejora: &a${cost}"
+    - " &fActualmente tienes: &2${balance}"
+    - "&7"
+
+# Item that will be shown if generator has no upgrades
+no-upgrade-button:
+  material: BARRIER
+  display-name: "          &c&l¡SIN MEJORAS!"
+  # Enchantment Format:
+  # <ENCHANT>;<LEVEL>
+  # Example: DURABILITY;1
+  enchantments: [ ]
+  # Item Flag Example:
+  # - HIDE_ATTRIBUTES
+  # - HIDE_ENCHANTS
+  flags: [ ]
+  custom-model-data: 0
+  lore:
+    - "&8         ɪᴛᴇᴍ ᴅᴇ ɢᴇɴᴇʀᴀᴛᴏʀ"
+    - "&r"
+    - "&7Este generador ya no se puede mejorar más!"
+    - "&7Compra más generadores en &b/genshop!"
+    - "&7"
+
+# The slots for confirm button
+confirm-slots: [4, 5, 6, 7, 8, 14, 15, 16, 17, 23, 24, 25, 26, 22]
+# The confirm button item
+confirm-button:
+  material: LIME_STAINED_GLASS_PANE
+  display-name: "&aConfirmar"
+  # Enchantment Format:
+  # <ENCHANT>;<LEVEL>
+  # Example: DURABILITY;1
+  enchantments: [ ]
+  # Item Flag Example:
+  # - HIDE_ATTRIBUTES
+  # - HIDE_ENCHANTS
+  flags: [ ]
+  custom-model-data: 0
+  lore: []
+
+# The slots for cancel button
+cancel-slots: [0, 1, 2, 3, 9, 10, 11, 12, 18, 19, 20, 21]
+# The cancel button item
+cancel-button:
+  material: RED_STAINED_GLASS_PANE
+  display-name: "&cCancelar"
+  # Enchantment Format:
+  # <ENCHANT>;<LEVEL>
+  # Example: DURABILITY;1
+  enchantments: [ ]
+  # Item Flag Example:
+  # - HIDE_ATTRIBUTES
+  # - HIDE_ENCHANTS
+  flags: [ ]
+  custom-model-data: 0
+  lore: []

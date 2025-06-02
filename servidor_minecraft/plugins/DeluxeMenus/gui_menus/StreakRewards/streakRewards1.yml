@@ -1,0 +1,1208 @@
+menu_title: '&nSistema de rankup&r&r | &n1/1'
+open_command: rankups
+register_command: true
+size: 54
+update_interval: 1
+open_commands:
+- "[sound] UI_TOAST_IN"
+close_commands:
+- "[sound] UI_TOAST_OUT"
+items:
+  'Fill':
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: "&r"
+    slots: 
+    - 10
+    - 19
+    - 28
+  'siguiente':
+    material: arrow
+    slots:
+    - 50
+    display_name: '&aSiguiente página'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEstá es nuestra lista amplia de'
+    - '&fgeneradores disponibles'
+    - ''
+    - '&e▸ ¡Solo podras adquirir uno! ' 
+    left_click_commands:
+    - '[sound] BLOCK_WOODEN_TRAPDOOR_OPEN'
+    - '[sound] BLOCK_WATER_AMBIENT'   
+  'sobre':
+    material: book
+    slots:
+    - 18
+    display_name: '&a¡Sube de prestigios!'
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fCuando subas de rankup obtendras'
+    - '&frecompensas increibles, tales como'
+    - '&frangos exclusivo, equipamientos etc. '
+    - ''      
+    - '&#F8DB71▸ ¡Comienza a subir de prestigios!'    
+  'inforrmacion':
+    display_name: '&#ECF074¡No pierdas el ritmo!'
+    material: nautilus_shell
+    slot: 49   
+    left_click_commands:
+    - '[sound] BLOCK_BAMBOO_BREAK'
+    
+#######################################################################
+  'rankup-1':
+    display_name: '&aSistema de rankup &7(#1)'
+    material: CHEST_MINECART
+    slot: 12           
+    priority: 2
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fCuando subas de rankup obtendras'
+    - '&festas recompensas increibles, pero'
+    - '&fprimero deberás cumplir los requisitos '
+    - ''
+    - "&8&l●&f %changeoutput_<=_input:500000_matcher:{vault_eco_balance}_ifmatch:&fTener &e$500,000k &7(&#4AFF01&l✔&7)_else:&fTener &e$500,000k &7(&#FF3E01&l✘&7)%"
+    - "&8&l●&f %changeoutput_<=_input:25_matcher:{statistic_hours_played}_ifmatch:&fTener &e25h &fjugadas &7(&#4AFF01&l✔&7)_else:&fTener &e25h &fjugadas &7(&#FF3E01&l✘&7)%"
+    - ''     
+    - '&aObtendrás'     
+    - ''     
+    - "&8&l●&f Rango §x§F§1§9§3§5§B&lC§x§E§D§8§E§5§6&lA§x§E§9§8§A§5§1&lM§x§E§5§8§5§4§C&lP§x§E§1§8§0§4§7&lE§x§D§C§7§B§4§1&lS§x§D§8§7§7§3§C&lI§x§D§4§7§2§3§7&lN§x§D§0§6§D§3§2&lO "
+    - "&8&l●&f 200k de dinero "
+    - "&8&l●&f Brocha de venta &7&ox1.3 (10) "
+    - "&8&l●&f 1 espacio para generadores "
+    - "&8&l●&f 1 llave Vote"
+    - ''      
+    - "&#F8DB71▸ ¡Clic para subir de nivel!"
+    click_commands:
+      - '[console] lp user %player_name% parent set campesino'
+      - '[console] lp user %player_name% permission set sistema.rankup.campesino'
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] nextgens sellwand %player_name% 1.3 10'
+      - '[console] nextgens addmax %player_name% 1'
+      - '[console] eco take %player_name% 500000'
+      - '[console] eco give %player_name% 200000'
+      - "[message] &r"
+      - "[message] &a&l ✔&f Subiste de correctamente de sistema \n      &f¡Comienza a avanzar aún más!\n"
+      - "[message] &r"      
+      - '[close]'
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '25'
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ❌&f Aún no cumples los requisitos mínimos para \n &feste sistema: ¡Debes tener &e25h&f horas jugadas!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'
+          - '[close]'      
+        Economy:
+          type: has money
+          amount: 500000
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ✘&f Aún no cumples los requisitos mínimos para \n   &feste sistema: ¡Debes tener &e500k&f de dinero!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'      
+          - '[close]'      
+  'rankup-1-c':
+    material: MINECART
+    slot: 12
+    display_name: '&aNivel completado'
+    priority: 1
+    view_requirement:
+      requirements:
+        anything_here:
+          type: has permission
+          permission: sistema.rankup.campesino
+##############################################################################    
+
+    
+  'rankup-2':
+    display_name: '&aSistema de rankup &7(#2)'
+    material: CHEST_MINECART
+    amount: 2
+    priority: 2
+    slot: 13           
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fCuando subas de rankup obtendras'
+    - '&festas recompensas increibles, pero'
+    - '&fprimero deberás cumplir los requisitos '
+    - ''
+    - "&8&l●&f %changeoutput_<=_input:1500000_matcher:{vault_eco_balance}_ifmatch:&fTener &e$1,5m &7(&#4AFF01&l✔&7)_else:&fTener &e$1,5m &7(&#FF3E01&l✘&7)%"
+    - "&8&l●&f %changeoutput_<=_input:30_matcher:{statistic_hours_played}_ifmatch:&fTener &e30h &fjugadas &7(&#4AFF01&l✔&7)_else:&fTener &e30h &fjugadas &7(&#FF3E01&l✘&7)%"
+    - "&8&l●&f %changeoutput_equals_input:campesino_matcher:{vault_rank}_ifmatch:&fTener rango §x§F§1§9§3§5§B&lC§x§E§D§8§E§5§6&lA§x§E§9§8§A§5§1&lM§x§E§5§8§5§4§C&lP§x§E§1§8§0§4§7&lE§x§D§C§7§B§4§1&lS§x§D§8§7§7§3§C&lI§x§D§4§7§2§3§7&lN§x§D§0§6§D§3§2&lO &7(&#4AFF01&l✔&7)_else:&fTener rango §x§F§1§9§3§5§B&lC§x§E§D§8§E§5§6&lA§x§E§9§8§A§5§1&lM§x§E§5§8§5§4§C&lP§x§E§1§8§0§4§7&lE§x§D§C§7§B§4§1&lS§x§D§8§7§7§3§C&lI§x§D§4§7§2§3§7&lN§x§D§0§6§D§3§2&lO &7(&#FF3E01&l✘&7)%"
+    - ''     
+    - '&aObtendrás'     
+    - ''     
+    - "&8&l●&f Rango &#CE8B8B&lS&#D18787&lO&#D48282&lL&#D77E7E&lÍ&#D97979&lC&#DC7575&lI&#DF7070&lT&#E26C6C&lO "
+    - "&8&l●&f 350k de dinero "
+    - "&8&l●&f Brocha de venta &7&ox1.5 (15) "
+    - "&8&l●&f 2 espacio para generadores "
+    - "&8&l●&f 3 llave Vote"
+    - ''      
+    - "&#F8DB71▸ ¡Clic para subir de nivel!"
+    click_commands:
+      - '[console] lp user %player_name% parent set solicito'
+      - '[console] lp user %player_name% permission set sistema.rankup.solicito'
+      - '[console] excellentcrates key give %player_name% vote 3'
+      - '[console] nextgens sellwand %player_name% 1.5 15'
+      - '[console] nextgens addmax %player_name% 2'
+      - '[console] eco take %player_name% 1500000'
+      - '[console] eco give %player_name% 350000'
+      - "[message] &r"
+      - "[message] &a&l ✔&f Subiste de correctamente de sistema \n      &f¡Comienza a avanzar aún más!\n"
+      - "[message] &r"      
+      - '[close]'
+    click_requirement:
+      requirements:
+        open:
+          type: string equals ignorecase
+          input: "%luckperms_inherits_group_Campesino%"
+          output: "yes"
+          deny_commands:
+          - "[message]&c&l✘ &c¡Oye! &f¡Aún no alcanzas el sistema de prestigios anterior!"
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+          - "[close]"
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '30'
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ✘&f Aún no cumples los requisitos mínimos para \n &feste sistema: ¡Debes tener &e30h&f horas jugadas!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'
+          - '[close]'      
+        Economy:
+          type: has money
+          amount: 1500000
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ✘&f Aún no cumples los requisitos mínimos para \n   &feste sistema: ¡Debes tener &e1.5m&f de dinero!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'      
+          - '[close]'      
+  'rankup-2-c':
+    material: MINECART
+    slot: 13
+    priority: 1
+    display_name: '&aNivel completado'
+    view_requirement:
+      requirements:
+        anything_here:
+          type: has permission
+          permission: sistema.rankup.solicito       
+          
+#########################################################################
+          
+  'rankup-3':
+    display_name: '&aSistema de rankup &7(#3)'
+    material: CHEST_MINECART
+    amount: 3
+    priority: 2
+    slot: 14           
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fCuando subas de rankup obtendras'
+    - '&festas recompensas increibles, pero'
+    - '&fprimero deberás cumplir los requisitos '
+    - ''
+    - "&8&l●&f %changeoutput_<=_input:3500000_matcher:{vault_eco_balance}_ifmatch:&fTener &e$3,5m &7(&#4AFF01&l✔&7)_else:&fTener &e$3,5m &7(&#FF3E01&l✘&7)%"
+    - "&8&l●&f %changeoutput_<=_input:35_matcher:{statistic_hours_played}_ifmatch:&fTener &e35h &fjugadas &7(&#4AFF01&l✔&7)_else:&fTener &e35h &fjugadas &7(&#FF3E01&l✘&7)%"
+    - "&8&l●&f %changeoutput_equals_input:solicito_matcher:{vault_rank}_ifmatch:&fTener rango &#CE8B8B&lS&#D18787&lO&#D48282&lL&#D77E7E&lÍ&#D97979&lC&#DC7575&lI&#DF7070&lT&#E26C6C&lO &7(&#4AFF01&l✔&7)_else:&fTener rango &#CE8B8B&lS&#D18787&lO&#D48282&lL&#D77E7E&lÍ&#D97979&lC&#DC7575&lI&#DF7070&lT&#E26C6C&lO &7(&#FF3E01&l✘&7)%"
+    - ''     
+    - '&aObtendrás'     
+    - ''     
+    - "&8&l●&f Rango &#8FBC8B&lA&#85CA7E&lG&#7DD475&lR&#7DD475&lÍ&#7DD475&lC&#7DD475&lO&#85CA7E&lL&#8FBC8B&lA "
+    - "&8&l●&f 450k de dinero "
+    - "&8&l●&f Brocha de venta &7&ox1.5 (20) "
+    - "&8&l●&f 2 espacio para generadores "
+    - "&8&l●&f 4 llave Vote"
+    - ''      
+    - "&#F8DB71▸ ¡Clic para subir de nivel!"
+    click_commands:
+      - '[console] lp user %player_name% parent set agricola'
+      - '[console] lp user %player_name% permission set sistema.rankup.agricola'
+      - '[console] excellentcrates key give %player_name% vote 4'
+      - '[console] nextgens sellwand %player_name% 1.5 20'
+      - '[console] nextgens addmax %player_name% 2'
+      - '[console] eco take %player_name% 3500000'
+      - '[console] eco give %player_name% 450000'
+      - "[message] &r"
+      - "[message] &a&l ✔&f Subiste de correctamente de sistema \n      &f¡Comienza a avanzar aún más!\n"
+      - "[message] &r"      
+      - '[close]'
+    click_requirement:
+      requirements:       
+        open:
+          type: string equals ignorecase
+          input: "%luckperms_inherits_group_solicito%"
+          output: "yes"
+          deny_commands:
+          - "[message]&c&l✘ &c¡Oye! &f¡Aún no alcanzas el sistema de prestigios anterior!"
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+          - "[close]"        
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '35'
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ✘&f Aún no cumples los requisitos mínimos para \n &feste sistema: ¡Debes tener &e35h&f horas jugadas!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'
+          - '[close]'      
+        Economy:
+          type: has money
+          amount: 3500000
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ✘&f Aún no cumples los requisitos mínimos para \n   &feste sistema: ¡Debes tener &e3.5m&f de dinero!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'      
+          - '[close]'      
+  'rankup-3-c':
+    material: MINECART
+    slot: 14
+    priority: 1
+    display_name: '&aNivel completado'
+    view_requirement:
+      requirements:
+        anything_here:
+          type: has permission
+          permission: sistema.rankup.agricola     
+
+
+
+##########################################################################
+
+  'rankup-4':
+    display_name: '&aSistema de rankup &7(#4)'
+    material: CHEST_MINECART
+    amount: 4
+    priority: 2
+    slot: 15           
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fCuando subas de rankup obtendras'
+    - '&festas recompensas increibles, pero'
+    - '&fprimero deberás cumplir los requisitos '
+    - ''
+    - "&8&l●&f %changeoutput_<=_input:5500000_matcher:{vault_eco_balance}_ifmatch:&fTener &e$5,5m &7(&#4AFF01&l✔&7)_else:&fTener &e$6,5m &7(&#FF3E01&l✘&7)%"
+    - "&8&l●&f %changeoutput_<=_input:45_matcher:{statistic_hours_played}_ifmatch:&fTener &e$45h &fjugadas &7(&#4AFF01&l✔&7)_else:&fTener &e$45h &fjugadas &7(&#FF3E01&l✘&7)%"
+    - "&8&l●&f %changeoutput_equals_input:agricola_matcher:{vault_rank}_ifmatch:&fTener rango &#8FBC8B&lA&#85CA7E&lG&#7DD475&lR&#7DD475&lÍ&#7DD475&lC&#7DD475&lO&#85CA7E&lL&#8FBC8B&lA &7(&#4AFF01&l✔&7)_else:&fTener rango &#8FBC8B&lA&#85CA7E&lG&#7DD475&lR&#7DD475&lÍ&#7DD475&lC&#7DD475&lO&#85CA7E&lL&#8FBC8B&lA &7(&#FF3E01&l✘&7)%"
+    - ''     
+    - '&aObtendrás'     
+    - ''     
+    - "&8&l●&f Rango &#857F6E&lC&#A29779&lU&#B7A981&lI&#B7A981&lD&#B7A981&lA&#B7A981&lD&#A29779&lO&#857F6E&lR "
+    - "&8&l●&f 850k de dinero "
+    - "&8&l●&f Brocha de venta &7&ox1.0 (30) "
+    - "&8&l●&f 2 espacio para generadores "
+    - "&8&l●&f 6 llave Vote"
+    - "&8&l●&f 3 llave BROCHAS"
+    - ''      
+    - "&#F8DB71▸ ¡Clic para subir de nivel!"
+    click_commands:
+      - '[console] lp user %player_name% parent set cuidador'
+      - '[console] lp user %player_name% permission set sistema.rankup.cuidador'
+      - '[console] excellentcrates key give %player_name% vote 6'
+      - '[console] excellentcrates key give %player_name% brochas 3'
+      - '[console] nextgens sellwand %player_name% 1.5 30'
+      - '[console] nextgens addmax %player_name% 2'
+      - '[console] eco take %player_name% 5500000'
+      - '[console] eco give %player_name% 850000'
+      - "[message] &r"
+      - "[message] &a&l ✔&f Subiste de correctamente de sistema \n      &f¡Comienza a avanzar aún más!\n"
+      - "[message] &r"      
+      - '[close]'
+    click_requirement:
+      requirements:        
+        open:
+          type: string equals ignorecase
+          input: "%luckperms_inherits_group_agricola%"
+          output: "yes"
+          deny_commands:
+          - "[message]&c&l✘ &c¡Oye! &f¡Aún no alcanzas el sistema de prestigios anterior!"
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+          - "[close]"        
+          deny_commands:
+          - "[message]&c&l✘ &c¡Oye! &f¡Aún no alcanzas el sistema de prestigios anterior!"
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+          - "[close]"
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '45'
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ✘&f Aún no cumples los requisitos mínimos para \n &feste sistema: ¡Debes tener &e45h&f horas jugadas!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'
+          - '[close]'      
+        Economy:
+          type: has money
+          amount: 5500000
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ✘&f Aún no cumples los requisitos mínimos para \n   &feste sistema: ¡Debes tener &e5.5m&f de dinero!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'      
+          - '[close]'      
+  'rankup-4-c':
+    material: MINECART
+    slot: 15
+    priority: 1
+    display_name: '&aNivel completado'
+    view_requirement:
+      requirements:
+        anything_here:
+          type: has permission
+          permission: sistema.rankup.cuidador
+
+##########################################################################
+
+
+  'rankup-5':
+    display_name: '&aSistema de rankup &7(#5)'
+    material: CHEST_MINECART
+    amount: 5
+    priority: 2
+    slot: 16           
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fCuando subas de rankup obtendras'
+    - '&festas recompensas increibles, pero'
+    - '&fprimero deberás cumplir los requisitos '
+    - ''
+    - "&8&l●&f %changeoutput_<=_input:10500000_matcher:{vault_eco_balance}_ifmatch:&fTener &e$10,5m &7(&#4AFF01&l✔&7)_else:&fTener &e$10,5m &7(&#FF3E01&l✘&7)%"
+    - "&8&l●&f %changeoutput_<=_input:50_matcher:{statistic_hours_played}_ifmatch:&fTener &e50h &fjugadas &7(&#4AFF01&l✔&7)_else:&fTener &e$50h &fjugadas &7(&#FF3E01&l✘&7)%"
+    - "&8&l●&f %changeoutput_equals_input:cuidador_matcher:{vault_rank}_ifmatch:&fTener rango &#857F6E&lC&#A29779&lU&#B7A981&lI&#B7A981&lD&#B7A981&lA&#B7A981&lD&#A29779&lO&#857F6E&lR &7(&#4AFF01&l✔&7)_else:&fTener rango &#857F6E&lC&#A29779&lU&#B7A981&lI&#B7A981&lD&#B7A981&lA&#B7A981&lD&#A29779&lO&#857F6E&lR &7(&#FF3E01&l✘&7)%"
+    - ''     
+    - '&aObtendrás'     
+    - ''     
+    - "&8&l●&f Rango &#C383BC&lC&#F57CE7&lA&#FF7AF0&lZ&#FF7AF0&lA&#FE71EE&lD&#FD5FEB&lO&#FD5FEB&lR "
+    - "&8&l●&f 1.5m de dinero "
+    - "&8&l●&f Brocha de venta &7&ox1.5 (30) "
+    - "&8&l●&f 2 espacio para generadores "
+    - "&8&l●&f 7 llave Vote"
+    - "&8&l●&f 5 llave BROCHAS"
+    - ''      
+    - "&#F8DB71▸ ¡Clic para subir de nivel!"
+    click_commands:
+      - '[console] lp user %player_name% parent set cazador'
+      - '[console] lp user %player_name% permission set sistema.rankup.cazador'
+      - '[console] excellentcrates key give %player_name% vote 7'
+      - '[console] excellentcrates key give %player_name% brochas 5'
+      - '[console] nextgens sellwand %player_name% 1.5 30'
+      - '[console] nextgens addmax %player_name% 2'
+      - '[console] eco take %player_name% 10500000'
+      - '[console] eco give %player_name% 1500000'
+      - "[message] &r"
+      - "[message] &a&l ✔&f Subiste de correctamente de sistema \n      &f¡Comienza a avanzar aún más!\n"
+      - "[message] &r"      
+      - '[close]'
+    click_requirement:
+      requirements:                
+        open:
+          type: string equals ignorecase
+          input: "%luckperms_inherits_group_cuidador%"
+          output: "yes"
+          deny_commands:
+          - "[message]&c&l✘ &c¡Oye! &f¡Aún no alcanzas el sistema de prestigios anterior!"
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+          - "[close]"
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '50'
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ✘&f Aún no cumples los requisitos mínimos para \n &feste sistema: ¡Debes tener &e55h&f horas jugadas!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'
+          - '[close]'      
+        Economy:
+          type: has money
+          amount: 10500000
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ✘&f Aún no cumples los requisitos mínimos para \n   &feste sistema: ¡Debes tener &e10.5m&f de dinero!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'      
+          - '[close]'      
+  'rankup-5-c':
+    material: MINECART
+    slot: 16
+    priority: 1
+    display_name: '&aNivel completado'
+    view_requirement:
+      requirements:
+        anything_here:
+          type: has permission
+          permission: sistema.rankup.cazador
+
+
+###########################################################################
+
+  'rankup-6':
+    display_name: '&aSistema de rankup &7(#6)'
+    material: CHEST_MINECART
+    amount: 6
+    priority: 2
+    slot: 21           
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fCuando subas de rankup obtendras'
+    - '&festas recompensas increibles, pero'
+    - '&fprimero deberás cumplir los requisitos '
+    - ''
+    - "&8&l●&f %changeoutput_<=_input:9500000_matcher:{vault_eco_balance}_ifmatch:&fTener &e$9,5m &7(&#4AFF01&l✔&7)_else:&fTener &e$9,5m &7(&#FF3E01&l✘&7)%"
+    - "&8&l●&f %changeoutput_<=_input:40_matcher:{statistic_hours_played}_ifmatch:&fTener &e$40h &fjugadas &7(&#4AFF01&l✔&7)_else:&fTener &e$40h &fjugadas &7(&#FF3E01&l✘&7)%"
+    - "&8&l●&f %changeoutput_equals_input:cazador_matcher:{vault_rank}_ifmatch:&fTener rango &#C383BC&lC&#F57CE7&lA&#FF7AF0&lZ&#FF7AF0&lA&#FE71EE&lD&#FD5FEB&lO&#FD5FEB&lR &7(&#4AFF01&l✔&7)_else:&fTener rango &#C383BC&lC&#F57CE7&lA&#FF7AF0&lZ&#FF7AF0&lA&#FE71EE&lD&#FD5FEB&lO&#FD5FEB&lR &7(&#FF3E01&l✘&7)%"
+    - ''     
+    - '&aObtendrás'     
+    - ''     
+    - "&8&l●&f Rango &#4BEA9D&lS&#3FEE99&lE&#32F195&lG&#26F591&lA&#19F88C&lD&#0DFC88&lO&#00FF84&lR "
+    - "&8&l●&f 100 de experiencia de nivel "
+    - "&8&l●&f 1 llave Vote"
+    - ''      
+    - '&#F8DB71▸ ¡Clic para subir de nivel!'     
+    click_commands:
+      - '[console] lp user %player_name% parent set segador'
+      - '[console] lp user %player_name% permission set sistema.rankup.segador'
+      - '[console] eco take %player_name% 9500000'
+      - "[message] &r"
+      - "[message] &a&l ✔&f Subiste de correctamente de sistema \n      &f¡Comienza a avanzar aún más!\n"
+      - "[message] &r"      
+      - '[close]'
+    click_requirement:
+      requirements:                
+        open:
+          type: string equals ignorecase
+          input: "%luckperms_inherits_group_cazador%"
+          output: "yes"
+          deny_commands:
+          - "[message]&c&l✘ &c¡Oye! &f¡Aún no alcanzas el sistema de prestigios anterior!"
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+          - "[close]"
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '20'
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ✘&f Aún no cumples los requisitos mínimos para \n &feste sistema: ¡Debes tener &e40h&f horas jugadas!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'
+          - '[close]'      
+        Economy:
+          type: has money
+          amount: 9500000
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ✘&f Aún no cumples los requisitos mínimos para \n   &feste sistema: ¡Debes tener &e9.5m&f de dinero!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'      
+          - '[close]'      
+  'rankup-6-c':
+    material: MINECART
+    slot: 21
+    priority: 1
+    display_name: '&aNivel completado'
+    view_requirement:
+      requirements:
+        anything_here:
+          type: has permission
+          permission: sistema.rankup.segador
+
+
+#########################################################################
+
+  'rankup-7':
+    display_name: '&aSistema de rankup &7(#7)'
+    material: CHEST_MINECART
+    amount: 7
+    priority: 2
+    slot: 22           
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fCuando subas de rankup obtendras'
+    - '&festas recompensas increibles, pero'
+    - '&fprimero deberás cumplir los requisitos '
+    - ''
+    - "&8&l●&f %changeoutput_<=_input:9500000_matcher:{vault_eco_balance}_ifmatch:&fTener &e$9,5m &7(&#4AFF01&l✔&7)_else:&fTener &e$9,5m &7(&#FF3E01&l✘&7)%"
+    - "&8&l●&f %changeoutput_<=_input:40_matcher:{statistic_hours_played}_ifmatch:&fTener &e$40h &fjugadas &7(&#4AFF01&l✔&7)_else:&fTener &e$40h &fjugadas &7(&#FF3E01&l✘&7)%"
+    - "&8&l●&f %changeoutput_equals_input:segador_matcher:{vault_rank}_ifmatch:&fTener rango &#4BEA9D&lS&#3FEE99&lE&#32F195&lG&#26F591&lA&#19F88C&lD&#0DFC88&lO&#00FF84&lR &7(&#4AFF01&l✔&7)_else:&fTener rango &#4BEA9D&lS&#3FEE99&lE&#32F195&lG&#26F591&lA&#19F88C&lD&#0DFC88&lO&#00FF84&lR &7(&#FF3E01&l✘&7)%"
+    - ''     
+    - '&aObtendrás'     
+    - ''     
+    - "&8&l●&f Rango &#72CAD2&lG&#62C1D8&lU&#51B8DF&lA&#41AFE5&lR&#31A5EC&lD&#219CF2&lI&#1093F9&lÁ&#008AFF&lN "
+    - "&8&l●&f 100 de experiencia de nivel "
+    - "&8&l●&f 1 llave Vote"
+    - ''      
+    - '&#F8DB71▸ ¡Clic para subir de nivel!'     
+    click_commands:
+      - '[console] lp user %player_name% parent set guardian'
+      - '[console] lp user %player_name% permission set sistema.rankup.guardian'
+      - '[console] eco take %player_name% 9500000'
+      - "[message] &r"
+      - "[message] &a&l ✔&f Subiste de correctamente de sistema \n      &f¡Comienza a avanzar aún más!\n"
+      - "[message] &r"      
+      - '[close]'
+    click_requirement:
+      requirements:                
+        open:
+          type: string equals ignorecase
+          input: "%luckperms_inherits_group_segador%"
+          output: "yes"
+          deny_commands:
+          - "[message]&c&l✘ &c¡Oye! &f¡Aún no alcanzas el sistema de prestigios anterior!"
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+          - "[close]"
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '20'
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ✘&f Aún no cumples los requisitos mínimos para \n &feste sistema: ¡Debes tener &e40h&f horas jugadas!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'
+          - '[close]'      
+        Economy:
+          type: has money
+          amount: 9500000
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ✘&f Aún no cumples los requisitos mínimos para \n   &feste sistema: ¡Debes tener &e9.5m&f de dinero!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'      
+          - '[close]'      
+  'rankup-7-c':
+    material: MINECART
+    slot: 22
+    priority: 1
+    display_name: '&aNivel completado'
+    view_requirement:
+      requirements:
+        anything_here:
+          type: has permission
+          permission: sistema.rankup.guardian
+
+
+#########################################################################
+
+  'rankup-8':
+    display_name: '&aSistema de rankup &7(#8)'
+    material: CHEST_MINECART
+    amount: 8
+    priority: 2
+    slot: 23           
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fCuando subas de rankup obtendras'
+    - '&festas recompensas increibles, pero'
+    - '&fprimero deberás cumplir los requisitos '
+    - ''
+    - "&8&l●&f %changeoutput_<=_input:11500000_matcher:{vault_eco_balance}_ifmatch:&fTener &e$11,5m &7(&#4AFF01&l✔&7)_else:&fTener &e$9,5m &7(&#FF3E01&l✘&7)%"
+    - "&8&l●&f %changeoutput_<=_input:45_matcher:{statistic_hours_played}_ifmatch:&fTener &e$45h &fjugadas &7(&#4AFF01&l✔&7)_else:&fTener &e$40h &fjugadas &7(&#FF3E01&l✘&7)%"
+    - "&8&l●&f %changeoutput_equals_input:guardian_matcher:{vault_rank}_ifmatch:&fTener rango &#72CAD2&lG&#62C1D8&lU&#51B8DF&lA&#41AFE5&lR&#31A5EC&lD&#219CF2&lI&#1093F9&lÁ&#008AFF&lN &7(&#4AFF01&l✔&7)_else:&fTener rango &#72CAD2&lG&#62C1D8&lU&#51B8DF&lA&#41AFE5&lR&#31A5EC&lD&#219CF2&lI&#1093F9&lÁ&#008AFF&lN &7(&#FF3E01&l✘&7)%"
+    - ''     
+    - '&aObtendrás'     
+    - ''     
+    - "&8&l●&f Rango &#385D80&lP&#1872C9&lE&#0082FF&lS&#0082FF&lC&#0082FF&lA&#0082FF&lD&#1872C9&lO&#385D80&lR "
+    - "&8&l●&f 100 de experiencia de nivel "
+    - "&8&l●&f 1 llave Vote"
+    - ''      
+    - '&#F8DB71▸ ¡Clic para subir de nivel!'     
+    click_commands:
+      - '[console] lp user %player_name% parent set pescador'
+      - '[console] lp user %player_name% permission set sistema.rankup.pescador'
+      - '[console] eco take %player_name% 9500000'
+      - "[message] &r"
+      - "[message] &a&l ✔&f Subiste de correctamente de sistema \n      &f¡Comienza a avanzar aún más!\n"
+      - "[message] &r"      
+      - '[close]'
+    click_requirement:
+      requirements:                
+        open:
+          type: string equals ignorecase
+          input: "%luckperms_inherits_group_guardian%"
+          output: "yes"
+          deny_commands:
+          - "[message]&c&l✘ &c¡Oye! &f¡Aún no alcanzas el sistema de prestigios anterior!"
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+          - "[close]"
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '20'
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ✘&f Aún no cumples los requisitos mínimos para \n &feste sistema: ¡Debes tener &e40h&f horas jugadas!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'
+          - '[close]'      
+        Economy:
+          type: has money
+          amount: 9500000
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ✘&f Aún no cumples los requisitos mínimos para \n   &feste sistema: ¡Debes tener &e9.5m&f de dinero!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'      
+          - '[close]'      
+  'rankup-8-c':
+    material: MINECART
+    slot: 23
+    priority: 1
+    display_name: '&aNivel completado'
+    view_requirement:
+      requirements:
+        anything_here:
+          type: has permission
+          permission: sistema.rankup.pescador
+
+
+
+
+#########################################################################
+  'rankup-9':
+    display_name: '&aSistema de rankup &7(#9)'
+    material: CHEST_MINECART
+    amount: 9
+    priority: 2
+    slot: 24           
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fCuando subas de rankup obtendras'
+    - '&festas recompensas increibles, pero'
+    - '&fprimero deberás cumplir los requisitos '
+    - ''
+    - "&8&l●&f %changeoutput_<=_input:14500000_matcher:{vault_eco_balance}_ifmatch:&fTener &e$14,5m &7(&#4AFF01&l✔&7)_else:&fTener &e$9,5m &7(&#FF3E01&l✘&7)%"
+    - "&8&l●&f %changeoutput_<=_input:45_matcher:{statistic_hours_played}_ifmatch:&fTener &e$45h &fjugadas &7(&#4AFF01&l✔&7)_else:&fTener &e$40h &fjugadas &7(&#FF3E01&l✘&7)%"
+    - "&8&l●&f %changeoutput_equals_input:pescador_matcher:{vault_rank}_ifmatch:&fTener rango &#385D80&lP&#1872C9&lE&#0082FF&lS&#0082FF&lC&#0082FF&lA&#0082FF&lD&#1872C9&lO&#385D80&lR &7(&#4AFF01&l✔&7)_else:&fTener rango &#385D80&lP&#1872C9&lE&#0082FF&lS&#0082FF&lC&#0082FF&lA&#0082FF&lD&#1872C9&lO&#385D80&lR &7(&#FF3E01&l✘&7)%"
+    - ''     
+    - '&aObtendrás'     
+    - ''     
+    - "&8&l●&f Rango &#93fb9b&lG&#91fb98&lR&#90fc96&lA&#8efc93&lN&#8dfc91&lJ&#8bfc8e&lE&#8afd8c&lR&#88fd89&lO "
+    - "&8&l●&f Acceso especial a equipamiento "
+    - "&8&l●&f 100 de experiencia de nivel "
+    - "&8&l●&f 1 llave Vote"
+    - ''      
+    - '&#F8DB71▸ ¡Clic para subir de nivel!'     
+    click_commands:
+      - '[console] lp user %player_name% parent set granjero'
+      - '[console] lp user %player_name% permission set sistema.rankup.granjero.especial'
+      - '[console] eco take %player_name% 14500000'
+      - "[message] &r"
+      - "[message] &a&l ✔&f Subiste de correctamente de sistema \n      &f¡Comienza a avanzar aún más!\n"
+      - "[message] &r"      
+      - '[close]'
+    click_requirement:
+      requirements:                
+        open:
+          type: string equals ignorecase
+          input: "%luckperms_inherits_group_pescador%"
+          output: "yes"
+          deny_commands:
+          - "[message]&c&l✘ &c¡Oye! &f¡Aún no alcanzas el sistema de prestigios anterior!"
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+          - "[close]"
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '20'
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ✘&f Aún no cumples los requisitos mínimos para \n &feste sistema: ¡Debes tener &e40h&f horas jugadas!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'
+          - '[close]'      
+        Economy:
+          type: has money
+          amount: 9500000
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ✘&f Aún no cumples los requisitos mínimos para \n   &feste sistema: ¡Debes tener &e14.5m&f de dinero!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'      
+          - '[close]'      
+  'rankup-9-c':
+    material: MINECART
+    slot: 24
+    priority: 1
+    display_name: '&aNivel completado'
+    view_requirement:
+      requirements:
+        anything_here:
+          type: has permission
+          permission: sistema.rankup.granjero.especial
+          
+          
+#######################################################
+  'rankup-10':
+    display_name: '&aSistema de rankup &7(#10)'
+    material: CHEST_MINECART
+    amount: 10
+    priority: 2
+    slot: 25           
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fCuando subas de rankup obtendras'
+    - '&festas recompensas increibles, pero'
+    - '&fprimero deberás cumplir los requisitos '
+    - ''
+    - "&8&l●&f %changeoutput_<=_input:14500000_matcher:{vault_eco_balance}_ifmatch:&fTener &e$14,5m &7(&#4AFF01&l✔&7)_else:&fTener &e$9,5m &7(&#FF3E01&l✘&7)%"
+    - "&8&l●&f %changeoutput_<=_input:45_matcher:{statistic_hours_played}_ifmatch:&fTener &e$45h &fjugadas &7(&#4AFF01&l✔&7)_else:&fTener &e$40h &fjugadas &7(&#FF3E01&l✘&7)%"
+    - "&8&l●&f %changeoutput_equals_input:granjero_matcher:{vault_rank}_ifmatch:&fTener rango &#93fb9b&lG&#91fb98&lR&#90fc96&lA&#8efc93&lN&#8dfc91&lJ&#8bfc8e&lE&#8afd8c&lR&#88fd89&lO &7(&#4AFF01&l✔&7)_else:&fTener rango &#93fb9b&lG&#91fb98&lR&#90fc96&lA&#8efc93&lN&#8dfc91&lJ&#8bfc8e&lE&#8afd8c&lR&#88fd89&lO &7(&#FF3E01&l✘&7)%"
+    - ''     
+    - '&aObtendrás'     
+    - ''     
+    - "&8&l●&f Rango &#fbce82&lF&#fbd485&lA&#fcd987&lR&#fcdf8a&lM&#fce48d&lE&#fdea8f&lR&#fdef92&lO "
+    - "&8&l●&f Acceso especial a equipamiento "
+    - "&8&l●&f 100 de experiencia de nivel "
+    - "&8&l●&f 1 llave Vote"
+    - ''      
+    - '&#F8DB71▸ ¡Clic para subir de nivel!'     
+    click_commands:
+      - '[console] lp user %player_name% parent set farmero'
+      - '[console] lp user %player_name% permission set sistema.rankup.farmero.especial'
+      - '[console] eco take %player_name% 14500000'
+      - "[message] &r"
+      - "[message] &a&l ✔&f Subiste de correctamente de sistema \n      &f¡Comienza a avanzar aún más!\n"
+      - "[message] &r"      
+      - '[close]'
+    click_requirement:
+      requirements:                
+        open:
+          type: string equals ignorecase
+          input: "%luckperms_inherits_group_granjero%"
+          output: "yes"
+          deny_commands:
+          - "[message]&c&l✘ &c¡Oye! &f¡Aún no alcanzas el sistema de prestigios anterior!"
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+          - "[close]"
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '20'
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ✘&f Aún no cumples los requisitos mínimos para \n &feste sistema: ¡Debes tener &e40h&f horas jugadas!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'
+          - '[close]'      
+        Economy:
+          type: has money
+          amount: 9500000
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ✘&f Aún no cumples los requisitos mínimos para \n   &feste sistema: ¡Debes tener &e14.5m&f de dinero!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'      
+          - '[close]'      
+  'rankup-10-c':
+    material: MINECART
+    slot: 25
+    priority: 1
+    display_name: '&aNivel completado'
+    view_requirement:
+      requirements:
+        anything_here:
+          type: has permission
+          permission: sistema.rankup.farmero.especial
+################################################################################################
+
+  'rankup-11':
+    display_name: '&aSistema de rankup &7(#11)'
+    material: CHEST_MINECART
+    amount: 11
+    priority: 2
+    slot: 30           
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fCuando subas de rankup obtendras'
+    - '&festas recompensas increibles, pero'
+    - '&fprimero deberás cumplir los requisitos '
+    - ''
+    - "&8&l●&f %changeoutput_<=_input:14500000_matcher:{vault_eco_balance}_ifmatch:&fTener &e$14,5m &7(&#4AFF01&l✔&7)_else:&fTener &e$9,5m &7(&#FF3E01&l✘&7)%"
+    - "&8&l●&f %changeoutput_<=_input:45_matcher:{statistic_hours_played}_ifmatch:&fTener &e$45h &fjugadas &7(&#4AFF01&l✔&7)_else:&fTener &e$40h &fjugadas &7(&#FF3E01&l✘&7)%"
+    - "&8&l●&f %changeoutput_equals_input:farmero_matcher:{vault_rank}_ifmatch:&fTener rango &#fbce82&lF&#fbd485&lA&#fcd987&lR&#fcdf8a&lM&#fce48d&lE&#fdea8f&lR&#fdef92&lO &7(&#4AFF01&l✔&7)_else:&fTener rango &#fbce82&lF&#fbd485&lA&#fcd987&lR&#fcdf8a&lM&#fce48d&lE&#fdea8f&lR&#fdef92&lO &7(&#FF3E01&l✘&7)%"
+    - ''     
+    - '&aObtendrás'     
+    - ''     
+    - "&8&l●&f Rango &#fb7373&lT&#fb7776&lE&#fb7a78&lR&#fc7e7b&lR&#fc817d&lA&#fc8580&lN&#fc8983&lI&#fc8c85&lE&#fd9088&lN&#fd938a&lT&#fd978d&lE "
+    - "&8&l●&f Acceso especial a equipamiento "
+    - "&8&l●&f 100 de experiencia de nivel "
+    - "&8&l●&f 1 llave Vote"
+    - ''      
+    - '&#F8DB71▸ ¡Clic para subir de nivel!'     
+    click_commands:
+      - '[console] lp user %player_name% parent set terraniente'
+      - '[console] lp user %player_name% permission set sistema.rankup.terraniente.especial'
+      - '[console] eco take %player_name% 14500000'
+      - "[message] &r"
+      - "[message] &a&l ✔&f Subiste de correctamente de sistema \n      &f¡Comienza a avanzar aún más!\n"
+      - "[message] &r"      
+      - '[close]'
+    click_requirement:
+      requirements:                
+        open:
+          type: string equals ignorecase
+          input: "%luckperms_inherits_group_farmero%"
+          output: "yes"
+          deny_commands:
+          - "[message]&c&l✘ &c¡Oye! &f¡Aún no alcanzas el sistema de prestigios anterior!"
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+          - "[close]"
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '20'
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ✘&f Aún no cumples los requisitos mínimos para \n &feste sistema: ¡Debes tener &e40h&f horas jugadas!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'
+          - '[close]'      
+        Economy:
+          type: has money
+          amount: 9500000
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ✘&f Aún no cumples los requisitos mínimos para \n   &feste sistema: ¡Debes tener &e14.5m&f de dinero!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'      
+          - '[close]'      
+  'rankup-11-c':
+    material: MINECART
+    slot: 30
+    priority: 1
+    display_name: '&aNivel completado'
+    view_requirement:
+      requirements:
+        anything_here:
+          type: has permission
+          permission: sistema.rankup.terraniente.especial
+
+################################################################################################
+
+  'rankup-12':
+    display_name: '&aSistema de rankup &7(#12)'
+    material: CHEST_MINECART
+    amount: 12
+    priority: 2
+    slot: 31           
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fCuando subas de rankup obtendras'
+    - '&festas recompensas increibles, pero'
+    - '&fprimero deberás cumplir los requisitos '
+    - ''
+    - "&8&l●&f %changeoutput_<=_input:14500000_matcher:{vault_eco_balance}_ifmatch:&fTener &e$14,5m &7(&#4AFF01&l✔&7)_else:&fTener &e$9,5m &7(&#FF3E01&l✘&7)%"
+    - "&8&l●&f %changeoutput_<=_input:45_matcher:{statistic_hours_played}_ifmatch:&fTener &e$45h &fjugadas &7(&#4AFF01&l✔&7)_else:&fTener &e$40h &fjugadas &7(&#FF3E01&l✘&7)%"
+    - "&8&l●&f %changeoutput_equals_input:terraniente_matcher:{vault_rank}_ifmatch:&fTener rango &#fb7373&lT&#fb7776&lE&#fb7a78&lR&#fc7e7b&lR&#fc817d&lA&#fc8580&lN&#fc8983&lI&#fc8c85&lE&#fd9088&lN&#fd938a&lT&#fd978d&lE &7(&#4AFF01&l✔&7)_else:&fTener rango &#fb7373&lT&#fb7776&lE&#fb7a78&lR&#fc7e7b&lR&#fc817d&lA&#fc8580&lN&#fc8983&lI&#fc8c85&lE&#fd9088&lN&#fd938a&lT&#fd978d&lE &7(&#FF3E01&l✘&7)%"
+    - ''     
+    - '&aObtendrás'     
+    - ''     
+    - "&8&l●&f Rango &#a48e4b&lS&#a48e4b&lE&#a48e4b&lM&#a48e4b&lB&#a48e4b&lR&#a48e4b&lA&#a48e4b&lD&#a48e4b&lO&#a48e4b&lR"
+    - "&8&l●&f Acceso especial a equipamiento "
+    - "&8&l●&f 100 de experiencia de nivel "
+    - "&8&l●&f 1 llave Vote"
+    - ''      
+    - '&#F8DB71▸ ¡Clic para subir de nivel!'     
+    click_commands:
+      - '[console] lp user %player_name% parent set sembrador'
+      - '[console] lp user %player_name% permission set sistema.rankup.sembrador.especial'
+      - '[console] eco take %player_name% 14500000'
+      - "[message] &r"
+      - "[message] &a&l ✔&f Subiste de correctamente de sistema \n      &f¡Comienza a avanzar aún más!\n"
+      - "[message] &r"      
+      - '[close]'
+    click_requirement:
+      requirements:                
+        open:
+          type: string equals ignorecase
+          input: "%luckperms_inherits_group_terraniente%"
+          output: "yes"
+          deny_commands:
+          - "[message]&c&l✘ &c¡Oye! &f¡Aún no alcanzas el sistema de prestigios anterior!"
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+          - "[close]"
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '20'
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ✘&f Aún no cumples los requisitos mínimos para \n &feste sistema: ¡Debes tener &e40h&f horas jugadas!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'
+          - '[close]'      
+        Economy:
+          type: has money
+          amount: 9500000
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ✘&f Aún no cumples los requisitos mínimos para \n   &feste sistema: ¡Debes tener &e14.5m&f de dinero!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'      
+          - '[close]'      
+  'rankup-12-c':
+    material: MINECART
+    slot: 31
+    priority: 1
+    display_name: '&aNivel completado'
+    view_requirement:
+      requirements:
+        anything_here:
+          type: has permission
+          permission: sistema.rankup.sembrador.especial
+
+################################################################################################
+
+  'rankup-13':
+    display_name: '&aSistema de rankup &7(#13)'
+    material: CHEST_MINECART
+    amount: 13
+    priority: 2
+    slot: 32           
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fCuando subas de rankup obtendras'
+    - '&festas recompensas increibles, pero'
+    - '&fprimero deberás cumplir los requisitos '
+    - ''
+    - "&8&l●&f %changeoutput_<=_input:14500000_matcher:{vault_eco_balance}_ifmatch:&fTener &e$14,5m &7(&#4AFF01&l✔&7)_else:&fTener &e$9,5m &7(&#FF3E01&l✘&7)%"
+    - "&8&l●&f %changeoutput_<=_input:45_matcher:{statistic_hours_played}_ifmatch:&fTener &e$45h &fjugadas &7(&#4AFF01&l✔&7)_else:&fTener &e$40h &fjugadas &7(&#FF3E01&l✘&7)%"
+    - "&8&l●&f %changeoutput_equals_input:sembrador_matcher:{vault_rank}_ifmatch:&fTener rango &#a48e4b&lS&#a48e4b&lE&#a48e4b&lM&#a48e4b&lB&#a48e4b&lR&#a48e4b&lA&#a48e4b&lD&#a48e4b&lO&#a48e4b&lR &7(&#4AFF01&l✔&7)_else:&fTener rango &#a48e4b&lS&#a48e4b&lE&#a48e4b&lM&#a48e4b&lB&#a48e4b&lR&#a48e4b&lA&#a48e4b&lD&#a48e4b&lO&#a48e4b&lR &7(&#FF3E01&l✘&7)%"
+    - ''     
+    - '&aObtendrás'     
+    - ''     
+    - "&8&l●&f Rango &#50a474&lC&#50a474&lO&#50a474&lS&#50a474&lE&#50a474&lC&#50a474&lH&#50a474&lA&#50a474&lD&#50a474&lO&#50a474&lR"
+    - "&8&l●&f Acceso especial a equipamiento "
+    - "&8&l●&f 100 de experiencia de nivel "
+    - "&8&l●&f 1 llave Vote"
+    - ''      
+    - '&#F8DB71▸ ¡Clic para subir de nivel!'     
+    click_commands:
+      - '[console] lp user %player_name% parent set cosechador'
+      - '[console] lp user %player_name% permission set sistema.rankup.cosechador.especial'
+      - '[console] eco take %player_name% 14500000'
+      - "[message] &r"
+      - "[message] &a&l ✔&f Subiste de correctamente de sistema \n      &f¡Comienza a avanzar aún más!\n"
+      - "[message] &r"      
+      - '[close]'
+    click_requirement:
+      requirements:                
+        open:
+          type: string equals ignorecase
+          input: "%luckperms_inherits_group_sembrador%"
+          output: "yes"
+          deny_commands:
+          - "[message]&c&l✘ &c¡Oye! &f¡Aún no alcanzas el sistema de prestigios anterior!"
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+          - "[close]"
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '20'
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ✘&f Aún no cumples los requisitos mínimos para \n &feste sistema: ¡Debes tener &e40h&f horas jugadas!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'
+          - '[close]'      
+        Economy:
+          type: has money
+          amount: 9500000
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ✘&f Aún no cumples los requisitos mínimos para \n   &feste sistema: ¡Debes tener &e14.5m&f de dinero!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'      
+          - '[close]'      
+  'rankup-13-c':
+    material: MINECART
+    slot: 32
+    priority: 1
+    display_name: '&aNivel completado'
+    view_requirement:
+      requirements:
+        anything_here:
+          type: has permission
+          permission: sistema.rankup.cosechador.especial
+
+################################################################################################
+  'rankup-14':
+    display_name: '&aSistema de rankup &7(#14)'
+    material: CHEST_MINECART
+    amount: 14
+    priority: 2
+    slot: 33           
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fCuando subas de rankup obtendras'
+    - '&festas recompensas increibles, pero'
+    - '&fprimero deberás cumplir los requisitos '
+    - ''
+    - "&8&l●&f %changeoutput_<=_input:14500000_matcher:{vault_eco_balance}_ifmatch:&fTener &e$14,5m &7(&#4AFF01&l✔&7)_else:&fTener &e$9,5m &7(&#FF3E01&l✘&7)%"
+    - "&8&l●&f %changeoutput_<=_input:45_matcher:{statistic_hours_played}_ifmatch:&fTener &e$45h &fjugadas &7(&#4AFF01&l✔&7)_else:&fTener &e$40h &fjugadas &7(&#FF3E01&l✘&7)%"
+    - "&8&l●&f %changeoutput_equals_input:cosechador_matcher:{vault_rank}_ifmatch:&fTener rango &#50a474&lC&#50a474&lO&#50a474&lS&#50a474&lE&#50a474&lC&#50a474&lH&#50a474&lA&#50a474&lD&#50a474&lO&#50a474&lR &7(&#4AFF01&l✔&7)_else:&fTener rango &#50a474&lC&#50a474&lO&#50a474&lS&#50a474&lE&#50a474&lC&#50a474&lH&#50a474&lA&#50a474&lD&#50a474&lO&#50a474&lR &7(&#FF3E01&l✘&7)%"
+    - ''     
+    - '&aObtendrás'     
+    - ''     
+    - "&8&l●&f Rango &#48a1a4&lN&#48a1a4&lU&#48a1a4&lB&#48a1a4&lE"
+    - "&8&l●&f Acceso especial a equipamiento "
+    - "&8&l●&f 100 de experiencia de nivel "
+    - "&8&l●&f 1 llave Vote"
+    - ''      
+    - '&#F8DB71▸ ¡Clic para subir de nivel!'     
+    click_commands:
+      - '[console] lp user %player_name% parent set nube'
+      - '[console] lp user %player_name% permission set sistema.rankup.nube.especial'
+      - '[console] eco take %player_name% 14500000'
+      - "[message] &r"
+      - "[message] &a&l ✔&f Subiste de correctamente de sistema \n      &f¡Comienza a avanzar aún más!\n"
+      - "[message] &r"      
+      - '[close]'
+    click_requirement:
+      requirements:                
+        open:
+          type: string equals ignorecase
+          input: "%luckperms_inherits_group_cosechador%"
+          output: "yes"
+          deny_commands:
+          - "[message]&c&l✘ &c¡Oye! &f¡Aún no alcanzas el sistema de prestigios anterior!"
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+          - "[close]"
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '20'
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ✘&f Aún no cumples los requisitos mínimos para \n &feste sistema: ¡Debes tener &e40h&f horas jugadas!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'
+          - '[close]'      
+        Economy:
+          type: has money
+          amount: 9500000
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ✘&f Aún no cumples los requisitos mínimos para \n   &feste sistema: ¡Debes tener &e14.5m&f de dinero!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'      
+          - '[close]'      
+  'rankup-14-c':
+    material: MINECART
+    slot: 33
+    priority: 1
+    display_name: '&aNivel completado'
+    view_requirement:
+      requirements:
+        anything_here:
+          type: has permission
+          permission: sistema.rankup.nube.especial
+          
+####################################################################
+
+  'rankup-15':
+    display_name: '&aSistema de rankup &7(#15)'
+    material: CHEST_MINECART
+    amount: 15
+    priority: 2
+    slot: 34           
+    lore:
+    - '&8Acceso directo'
+    - ''
+    - '&fCuando subas de rankup obtendras'
+    - '&festas recompensas increibles, pero'
+    - '&fprimero deberás cumplir los requisitos '
+    - ''
+    - "&8&l●&f %changeoutput_<=_input:14500000_matcher:{vault_eco_balance}_ifmatch:&fTener &e$14,5m &7(&#4AFF01&l✔&7)_else:&fTener &e$9,5m &7(&#FF3E01&l✘&7)%"
+    - "&8&l●&f %changeoutput_<=_input:45_matcher:{statistic_hours_played}_ifmatch:&fTener &e$45h &fjugadas &7(&#4AFF01&l✔&7)_else:&fTener &e$40h &fjugadas &7(&#FF3E01&l✘&7)%"
+    - "&8&l●&f %changeoutput_equals_input:nube_matcher:{vault_rank}_ifmatch:&fTener rango &#48a1a4&lN&#48a1a4&lU&#48a1a4&lB&#48a1a4&lE &7(&#4AFF01&l✔&7)_else:&fTener rango &#48a1a4&lN&#48a1a4&lU&#48a1a4&lB&#48a1a4&lE &7(&#FF3E01&l✘&7)%"
+    - ''     
+    - '&aObtendrás'     
+    - ''     
+    - "&8&l●&f Rango &#fb417e&lM&#fb3e7c&lA&#fc3a7a&lE&#fc3778&lS&#fc3476&lT&#fd3074&lR&#fd2d72&lO &c✤"
+    - "&8&l●&f Acceso especial a paquete "
+    - "&8&l●&f Simbolo único en el tab "
+    - "&8&l●&f 100 de experiencia de nivel "
+    - "&8&l●&f x3 Generador de bebidas "
+    - "&8&l●&f x3 llave FARM"
+    - "&8&l●&f x3 llave KOTH"
+    - "&8&l●&f x3 espacios de generador"
+    - ''      
+    - '&#F8DB71▸ ¡Clic para subir de nivel!'     
+    click_commands:
+      - '[console] lp user %player_name% parent set maestro'
+      - '[console] lp user %player_name% permission set sistema.rankup.maestro.especial'
+      - '[console] eco take %player_name% 14500000'
+      - "[message] &r"
+      - "[message] &a&l ✔&f Subiste de correctamente de sistema \n      &f¡Comienza a avanzar aún más!\n"
+      - "[message] &r"      
+      - '[close]'
+    click_requirement:
+      requirements:                
+        open:
+          type: string equals ignorecase
+          input: "%luckperms_inherits_group_nube%"
+          output: "yes"
+          deny_commands:
+          - "[message]&c&l✘ &c¡Oye! &f¡Aún no alcanzas el sistema de prestigios anterior!"
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+          - "[close]"
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '20'
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ✘&f Aún no cumples los requisitos mínimos para \n &feste sistema: ¡Debes tener &e40h&f horas jugadas!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'
+          - '[close]'      
+        Economy:
+          type: has money
+          amount: 9500000
+          deny_commands:
+          - "[message] &r"
+          - "[message] &c&l ✘&f Aún no cumples los requisitos mínimos para \n   &feste sistema: ¡Debes tener &e14.5m&f de dinero!"
+          - "[message] &r"
+          - '[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM'      
+          - '[close]'      
+  'rankup-15-c':
+    material: MINECART
+    slot: 34
+    priority: 1
+    display_name: '&aNivel completado'
+    view_requirement:
+      requirements:
+        anything_here:
+          type: has permission
+          permission: sistema.rankup.maestro.especial
+
+##############################################################
+    

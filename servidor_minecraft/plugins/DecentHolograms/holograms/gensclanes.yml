@@ -1,0 +1,18 @@
+location: Spawn:56,500:67,230:-17,500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&#FFE296&lCLANES'
+    height: 0.3
+  - content: '&fCrea un clan e invita a tus'
+    height: 0.3
+  - content: '&famigos y domina'
+    height: 0.3
+  - content: '&e▸ ¡Clic para abrir!'
+    height: 0.3
+  actions: {}

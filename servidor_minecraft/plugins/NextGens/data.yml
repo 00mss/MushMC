@@ -1,0 +1,8 @@
+# Downloaded from https://nullforums.net/resources/nextgens-minecraft-gens-tycoon-plugin.5486
+# Do not touch!
+
+event-wait-time: 900.0
+event-index: 1
+events:
+  id: 2x_drop
+  timer: 38.20000000000083

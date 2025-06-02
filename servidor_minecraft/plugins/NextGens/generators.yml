@@ -1,0 +1,4051 @@
+# This must be unique
+trigo_generator:
+  display-name: "#ffae00Generador de &lTRIGO"
+  interval: 20
+  corrupted:
+    enabled: true
+    cost: 1000.0 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    next-generator: sandia_generator
+    upgrade-cost: 2000
+  # The generator item
+  item:
+    material: HAY_BLOCK
+    display-name: "#ffae00Generador de &lTRIGO"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - "&7"
+      - "&8&l● &fMejora: &a$2,000"
+      - "&8&l● &fReparación: &c$1,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fFardo de heno: &e$100"
+      - "&8&l● &fRebanada de pan: &e$150"  
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 100.5 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjMDI5YzkxNDRkOTZmYzRhMDZmYWUwNTk5NjMwZDJkYWMwZjcxNTE2NmYxYzRlYzExZTczMWFlZDdiM2Q3ZiJ9fX0=
+        display-name: "#ffae00&lꜰᴀʀᴅᴏ ᴅᴇ ʜᴇɴᴏ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$100"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 150.5 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTBkNzFmZTA5OWU4YmVlNjAwMjEzYWRlOWUzOGJjM2I5MjE3ZGQxZGMzYjQ0YWFiNDE0NjM1YmNiNjhhYzU0OCJ9fX0=
+        display-name: "#ffae00&lʀᴇʙᴀɴᴀᴅᴀ ᴅᴇ ᴘᴀɴ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$150"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+
+
+##
+
+
+sandia_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#1aff47Generador de &lSANDIA"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 6000.0 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: calabaza_generator
+    upgrade-cost: 3000
+  # The generator item
+  item:
+    material: MELON
+    display-name: "#1aff47Generador de &lSANDIA"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ''
+      - "&8&l● &fMejora: &a$3,000"
+      - "&8&l● &fReparación: &c$6,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fSandia: &a$175"
+      - "&8&l● &fTazón de frutas: &a$185" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 175 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDU4NjcwNTUxZjdmZjEzYWZhYjIzOTMxOGExMGJhZDIzMjdlZTc0MmUxNTc4MzdlYTE3ODVlZjQ0M2QzYTU3NiJ9fX0=
+        display-name: "#1aff47&lꜱᴀɴᴅɪᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$175"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 185 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWExOGFmNjY1Zjg2NTJmMWJlM2FkY2I3ZDc2ZTZlZTY0MzlkMjBhZTAxOGU5ZWRjY2UzODk0YmY1MTM1MGVhZCJ9fX0=
+        display-name: "#1aff47&lᴛᴀᴢᴏɴ ᴅᴇ ꜰʀᴜᴛᴀꜱ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$185"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+
+
+
+##
+
+
+calabaza_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#ff4d00Generador de #ff4d00&lCALABAZA"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 9000.5 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: hongo_generator
+    upgrade-cost: 6000
+  # The generator item
+  item:
+    material: PUMPKIN
+    display-name: "#ff4d00Generador de #ff4d00&lCALABAZA"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ''
+      - "&8&l● &fMejora: &a$6,000"
+      - "&8&l● &fReparación: &c$9,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fCalabaza: &a$195"
+      - "&8&l● &fTazón de calabaza: &a$200" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 195.0 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWVhYjQ4MDdiYTI5MjgwMDhmOTVjNjMxMjI1MjMzN2NlMTVhOGVkOTI1ZmFhYjA0MWQ3MTI3ZjAxZTJkNjNjZSJ9fX0=
+        display-name: "#ff4d00&lᴄᴀʟᴀʙᴀᴢᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$195"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 200 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTdlZGM5MDk4MDg5NDBmNjU2NGU5NjA4NmM5Yjk4Y2RhYTg1OWY2MjdlZWQ1NTZlYzM3NWQ2ZWQyNzA0YzUwNiJ9fX0=
+        display-name: "#ff4d00&lᴛᴀᴢᴏɴ ᴅᴇ ᴄᴀʟᴀʙᴀᴢᴀꜱ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$200"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+
+##
+
+hongo_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#a97051Generador de #a97051&lHONGO"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 12000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: champinon_generator
+    upgrade-cost: 9000
+  # The generator item
+  item:
+    material: BROWN_MUSHROOM_BLOCK
+    display-name: "#a97051Generador de #a97051&lHONGO"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ''
+      - "&8&l● &fMejora: &a$9,000"
+      - "&8&l● &fReparación: &c$12,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fChampiñones: &a$215"
+      - "&8&l● &fSaco de champiñones: &a$220" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 215 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZlMjU3OTlhMmYzOTFhMjM2YTc4MmM2MmU1NDhkZWM5ZmZmZjY4ZDU1NWM5YmExM2ViOTY1MmI3NTkyMjkzIn19fQ==
+        display-name: "#a97051&lᴄʜᴀᴍᴘɪɴᴏɴᴇꜱ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$215"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 220 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzA1ZWNjYzFmYjc2ZjYwNGY5OTUxZWM4ODk1MzI2NmI3MGMyMDBjZjU3Nzk0OTk0ZGU4ZTVmMWVjYTg2MjY0MCJ9fX0=
+        display-name: "#a97051&lꜱᴀᴄᴏ ᴅᴇ ᴄʜᴀᴍᴘɪɴᴏɴᴇꜱ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$220"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+
+##
+
+champinon_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#e81717Generador de #e81717&lCHAMPIÑON"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 15000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: miel_generator
+    upgrade-cost: 12000
+  # The generator item
+  item:
+    material: RED_MUSHROOM_BLOCK
+    display-name: "#e81717Generador de #e81717&lCHAMPIÑON"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ''
+      - "&8&l● &fMejora: &a$12,000"
+      - "&8&l● &fReparación: &c$15,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fHongo rojo: &a$255"
+      - "&8&l● &fVaca de champiñones: &a$270" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 255 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2IwZDM4N2QyOGU2MTcxMTNhM2Q0MDA5YWEyMmQxNGJkNDQwYTk0MTMwMGI1ZGNlNjJjZWUzNmNiOTA3ZjEzNCJ9fX0=
+        display-name: "#e81717&lʜᴏɴɢᴏ ʀᴏᴊᴏ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$255"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 270 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2Q1OTdmNzdjZGUzMmM5YWM5YjA2ZjgyZmNmN2M5Y2I1MDBmYWNjMTRiZmYxNjYyMjJiMjRiZTM5OTYyZjBlZiJ9fX0=
+        display-name: "#e81717&lᴠᴀᴄᴀ ᴅᴇ ᴄʜᴀᴍᴘɪɴᴏɴᴇꜱ&8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$270"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+
+##
+
+miel_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#ffba24Generador de #ffba24&lMIEL"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 18000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: halgas_generator
+    upgrade-cost: 15000
+  # The generator item
+  item:
+    material: HONEYCOMB_BLOCK
+    display-name: "#ffba24Generador de #ffba24&lMIEL"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$15,000"
+      - "&8&l● &fReparación: &c$18,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fBotella de miel: &a$270"
+      - "&8&l● &fAbeja reina: &a$290" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 270 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk0MTFiNTAzODgyYTIyZThjMjMzNjdjYjQzYTZlNWVhNGY0NTQwMjA4ZDUzMWQ3M2RjMjUwNzc4YTI3ZDA4YyJ9fX0=
+        display-name: "#ffba24&lʙᴏᴛᴇʟʟᴀ ᴅᴇ ᴍɪᴇʟ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$270"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 290 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDcxMGY5YWEzMjZjNzIwNTAzODM5MmFlYjEyZjQ1Y2UyMmNmNmExMzM2YjgyMTI5NjY4YmVhMWZjNDZkNDI4NSJ9fX0=
+        display-name: "#ffba24&lᴀʙᴇᴊᴀ ʀᴇɪɴᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$290"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+
+##
+
+halgas_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#008f45Generador de #008f45&lHALGAS"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 21000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: carbon_generator
+    upgrade-cost: 18000
+  # The generator item
+  item:
+    material: DRIED_KELP_BLOCK
+    display-name: "#008f45Generador de #008f45&lHALGAS"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$18,000"
+      - "&8&l● &fReparación: &c$21,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fAlga marina: &a$290"
+      - "&8&l● &fAlga potenciada: &a$310" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 290 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjgwNWNhZjNkMDJlMzVlNGFhZGMxOWFmMTVlODI3OTAxNzdmMWNkN2I3OWY0ZjViODhkOTQzYWM2YmUyMDNhMSJ9fX0=
+        display-name: "#008f45&lᴀʟɢᴀꜱ ᴍᴀʀɪɴᴀꜱ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$290"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 310 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjI3YThmMThkY2ViZWNlYmQ0N2I2MTliZjhjN2E4YzMyZmVkNzI5YTFkNTU1Nzg5NzczM2VhOTE2ZTMyMmY3In19fQ==
+        display-name: "#008f45&lᴀʟɢᴀꜱ ᴍᴀʀɪɴᴀꜱ ᴘᴏᴛᴇɴᴄɪᴀᴅᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$310"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+
+##
+
+carbon_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#636363Generador de &lCARBÓN"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 24000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: hierro_generator
+    upgrade-cost: 21000
+  # The generator item
+  item:
+    material: COAL_BLOCK
+    display-name: "#636363Generador de &lCARBÓN"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$21,000"
+      - "&8&l● &fReparación: &c$24,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fCarbón: &a$310"
+      - "&8&l● &fCarbón quemado: &a$330" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 310 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmU3OGQ4ZWI1ODgzYTExMDY2N2I1MWVlMjBhM2IyMWQ1MmQwODlhMGQ0YzkxYmUzY2I3ODZjMzE4MjhhMjA5NyJ9fX0=
+        display-name: "#636363&lᴄᴀʀʙᴏɴ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$310"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 80 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODI5ZGY2YTc0ODBiMmM0ZmY5MDE5NjhiNjVlNmY0MTUzZTZiNjM2MjliMGNkNDBjOGE0NjVhNTI2MjhjMGY2NCJ9fX0=
+        display-name: "#636363&lᴄᴀʀʙᴏɴ Qᴜᴇᴍᴀᴅᴏ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$330"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+
+##
+
+hierro_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#d9d9d9Generador de #d9d9d9&lHIERRO"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 27000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: oro_generator
+    upgrade-cost: 24000
+  # The generator item
+  item:
+    material: IRON_BLOCK
+    display-name: "#d9d9d9Generador de #d9d9d9&lHIERRO"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$24,000"
+      - "&8&l● &fReparación: &c$27,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fHierro: &a$330"
+      - "&8&l● &fGolem de hierro: &a$350" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 330 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzdhNjg2MmJjODY5MTU3ZmI0OTBiODJhMjM3Yzg2ZDMwMTJkYjhkNDg1Y2EzZTdjM2RiNzAwNTg5ODQ3MmM2MSJ9fX0=
+        display-name: "#d9d9d9&lʜɪᴇʀʀᴏ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$330"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 350 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjY5ZDBkNDcxMTE1M2EwODljNTU2N2E3NDliMjc4NzljNzY5ZDNiZGNlYTZmZGE5ZDZmNjZlOTNkZDhjNDUxMiJ9fX0=
+        display-name: "#d9d9d9&lɢᴏʟᴇᴍ ᴅᴇ ʜɪᴇʀʀᴏ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$350"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+
+##
+
+oro_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#fec13eGenerador de #fec13e&lORO"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 30000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: lapis_generator
+    upgrade-cost: 27000
+  # The generator item
+  item:
+    material: GOLD_BLOCK
+    display-name: "#fec13eGenerador de #fec13e&lORO"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$27,000"
+      - "&8&l● &fReparación: &c$30,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fOro: &a$350"
+      - "&8&l● &fOro potenciado: &a$370" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 350 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTAzYWI1NmQ0OGZlODE1ZGRjMzc5ZjcwNmUxNjE1ZmU1Yjg0YmU2M2FmZGE4ZjhmZWQzYjQ3Njc4ZjM1M2NkZCJ9fX0=
+        display-name: "#fec13e&lᴏʀᴏ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$350"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 370 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2JkNDE4OTZkNWQ4YTI5OTRhMGZjNmU4NTFmMjA3ZDgxZGRlZmI3ZTExMDRlNDcwZTRiNmU5Mjc2NWIzOWRiZiJ9fX0=
+        display-name: "#fec13e&lᴏʀᴏ ᴘᴏᴛᴇɴᴄɪᴀᴅᴏ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$370"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+
+##
+
+lapis_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#1463ffGenerador de #1463ff&lLAPIS"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 33000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: redstone_generator
+    upgrade-cost: 30000
+  # The generator item
+  item:
+    material: LAPIS_BLOCK
+    display-name: "#1463ffGenerador de #1463ff&lLAPIS"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$30,000"
+      - "&8&l● &fReparación: &c$33,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fLapis: &a$390"
+      - "&8&l● &fObre de exp: &a$410" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 390 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTEwMDFiNDI1MTExYmZlMGFjZmY3MTBhOGI0MWVhOTVlM2I5MzZhODVlNWJiNjUxNzE2MGJhYjU4N2U4ODcwZiJ9fX0=
+        display-name: "#1463ff&lʟᴀᴘɪs &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$390"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 410 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODdkODg1YjMyYjBkZDJkNmI3ZjFiNTgyYTM0MTg2ZjhhNTM3M2M0NjU4OWEyNzM0MjMxMzJiNDQ4YjgwMzQ2MiJ9fX0=
+        display-name: "#1463ff&lᴏʀʙᴇ ᴅᴇ ᴇxᴘᴇʀɪᴇɴᴄɪᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$410"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+
+##
+
+redstone_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#ed0c18Generador de #ed0c18&lREDSTONE"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 36000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: diamante_generator
+    upgrade-cost: 33000
+  # The generator item
+  item:
+    material: REDSTONE_BLOCK
+    display-name: "#ed0c18Generador de #ed0c18&lREDSTONE"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$33,000"
+      - "&8&l● &fReparación: &c$36,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fRedstone: &a$410"
+      - "&8&l● &fBloque de comandos: &a$430" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 410 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzFlMWM0ZDhhYjMyYTExNzVjM2JkNmE3OTMyZGQ1ZThiZTdlYjIwZmNkNTRkZTQ2NWIzZDc3ZWE3ZTY0MjJmYSJ9fX0=
+        display-name: "#ed0c18&lʀᴇᴅsᴛᴏɴᴇ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$410"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 430 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2Q4YWY5ODBmZjYwODg2N2I2YmMzNzM2MTExYzRjMDFiNDFmMWZmNjg5OWEyMWU1OTg1OGJjZTNkNDRkY2Y4NiJ9fX0=
+        display-name: "#ed0c18&lʙʟᴏQᴜᴇ ᴅᴇ ᴄᴏᴍᴀɴᴅᴏꜱ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$430"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+
+##
+
+diamante_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#38d7ffGenerador de #38d7ff&lDIAMANTE"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 39000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: esmeralda_generator
+    upgrade-cost: 36000
+  # The generator item
+  item:
+    material: DIAMOND_BLOCK
+    display-name: "#38d7ffGenerador de #38d7ff&lDIAMANTE"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$36,000"
+      - "&8&l● &fReparación: &c$39,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fDiamante: &a$430"
+      - "&8&l● &fDiamante brillante: &a$450" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 430 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmIxYzI2OGVmZWM4ZDdkODhhMWNiODhjMmJmYTA5N2ZhNTcwMzc5NDIyOTlmN2QyMDIxNTlmYzkzY2QzMDM2ZCJ9fX0=
+        display-name: "#38d7ff&lᴅɪᴀᴍᴀɴᴛᴇ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$435"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 450 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2E0MzgxYTVhYjRhY2M2ZGU4ZDRlZWU3NjllYmE2YmFkYjJmMmI0ZTkzNDJhY2FlMjc1MDI5NWU2MDYwNGE1NyJ9fX0=
+        display-name: "#38d7ff&lᴅɪᴀᴍᴀɴᴛᴇ ʙʀɪʟʟᴀɴᴛᴇ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$450"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+
+##
+
+esmeralda_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#00ff33Generador de #00ff33&lESMERALDA"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 42000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: nether_generator
+    upgrade-cost: 39000
+  # The generator item
+  item:
+    material: EMERALD_BLOCK
+    display-name: "#00ff33Generador de #00ff33&lESMERALDA"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$39,000"
+      - "&8&l● &fReparación: &c$42,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fEsmeralda: &a$450"
+      - "&8&l● &fEsmeralda brillante: &a$470" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 450 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDA1Mzg1MTUyN2M0YzllZjMwYTYxZmIwNjdlYmNlOTU3YzcyNmUxNjg3ZjhiNTMwZmI0YTZiZWViYTQzOGJkIn19fQ==
+        display-name: "#00ff33&lᴇꜱᴍᴇʀᴀʟᴅᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$450"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 470 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTk2MGQ2ZmZhZjQ0ZThhZmNiZGY4YjI5YTc3ZDg0Y2UyMmM3MWQwMGM2NGJmZDk5YWYzNDBhNjk1MzViZmQ3In19fQ==
+        display-name: "#00ff33&lᴇꜱᴍᴇʀᴀʟᴅᴀ ʙʀɪʟʟᴀɴᴛᴇ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$470"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+
+##
+
+nether_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#730c0cGenerador de #730c0c&lNETHER"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 45000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: quarzo_generator
+    upgrade-cost: 42000
+  # The generator item
+  item:
+    material: NETHERRACK
+    display-name: "#730c0cGenerador de #730c0c&lNETHER"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$42,000"
+      - "&8&l● &fReparación: &c$45,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fNether: &a$470"
+      - "&8&l● &fFuego de nether: &a$490" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 470 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTliOTRlNWFkOTNkYzdhZGY1OTAwNTZkNGExZTAzNDA5MjUzZGZlY2ZjODhlODMxNTQxYzhkZjU0ZmYwNWNhNiJ9fX0=
+        display-name: "#730c0c&lɴᴇᴛʜᴇʀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$470"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 490 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzZjMGVjMGU2OTBlMjg3ZDNlYmZiODk5YjliZWViZWM3NGVkYjE1YTNhZmIyYWY0MzE0MGM0YzU0ZjgyNzUxNiJ9fX0=
+        display-name: "#730c0c&lꜰᴜᴇɢᴏ ᴅᴇʟ ɴᴇᴛʜᴇʀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$490"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+
+##
+
+quarzo_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#ffb8b8Generador de #ffb8b8&lQUARZO"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 48000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: pepitas_generator
+    upgrade-cost: 45000
+  # The generator item
+  item:
+    material: quartz_block
+    display-name: "#B6F0FEGenerador de #B6F0FE&lQUARZO"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$45,000"
+      - "&8&l● &fReparación: &c$48,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fQuarzo: &a$490"
+      - "&8&l● &fQuarzo rosa: &a$510" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 490 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzkyYjJiMDQxNGNlZTM2YjI0ZDgzZjVjZmEwNzFkODYzODUyNzI0OWMyZGNkZGZhNTgwYmUzN2UwN2M2MGUwOCJ9fX0=
+        display-name: "#B6F0FE&lQᴜᴀʀᴢᴏ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$490"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 510 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzUzNjJmOTBmZjI5Y2NkNDBmNDIzNWEwNWRkOTFkZjA5MWNmNDNmM2EyZjcxNDE0ZGZiYmNhNmU1ZDM2MzRkOSJ9fX0=
+        display-name: "#ffb8b8&lᴄᴜᴀʀᴢᴏ ʀᴏꜱᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$510"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+
+##
+
+pepitas_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#fffe84G#fbfe7be#f8fe71n#f4fe68e#f0fe5er#edff55a#e9ff4cd#e5ff42o#e1ff39r #deff2fd#daff26e #fffe84&lP#f9fe74&lE#f3fe65&lP#edff55&lI#e6ff45&lT#e0ff36&lA#daff26&lS"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 51000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: ladrillos_generator
+    upgrade-cost: 48000
+  # The generator item
+  item:
+    material: yellow_glazed_terracotta
+    display-name: "#fffe84G#fbfe7be#f8fe71n#f4fe68e#f0fe5er#edff55a#e9ff4cd#e5ff42o#e1ff39r #deff2fd#daff26e #fffe84&lP#f9fe74&lE#f3fe65&lP#edff55&lI#e6ff45&lT#e0ff36&lA#daff26&lS"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$48,000"
+      - "&8&l● &fReparación: &c$51,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fOro de nether: &a$490"
+      - "&8&l● &fOro de nether potenciado: &a$510" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 490 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2I0NjIwZTBmZTdhNzQwODIxZTk1NDg5MDIyNjAxYjRhZTg3NjIzYmIzNjQwYzVkNDdkNTJiZTFmMzI3Njk4OCJ9fX0=
+        display-name: "#ffc800&lᴏʀᴏ ᴅᴇʟ ɴᴇᴛʜᴇʀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$490"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 510 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWZiYjg1NGVhNTg4ZWNmYjc0OWRhNjRmZDA0MjE1NTBhZGI2YmRmZmQ5MzRjM2I2Njk5MjdlMzM4NDhjZGZkNyJ9fX0=
+        display-name: "#ffc800&lᴏʀᴏ ᴅᴇʟ ɴᴇᴛʜᴇʀ ᴘᴏᴛᴇɴᴄɪᴀᴅᴏ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$510"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+
+##
+
+ladrillos_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#B31540Generador de &lLADRILLOS"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 54000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: magma_generator
+    upgrade-cost: 51000
+  # The generator item
+  item:
+    material: nether_wart_block
+    display-name: "#B31540Generador de &lLADRILLOS"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$51,000"
+      - "&8&l● &fReparación: &c$54,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fLadrillo del nether: &a$510"
+      - "&8&l● &fLadrillo potenciado: &a$530" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 510 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzI3YmY4NzY0MzVlMDRkZGU5ZGExOTkyNDMxNWFlNTlhOGVmYzI3YWYxZGRiZWY4MTNkODljZmFmZmU5MTY0NyJ9fX0=
+        display-name: "#7a0000&lʟᴀᴅʀɪʟʟᴏ ᴅᴇʟ ɴᴇᴛʜᴇʀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$510"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 530 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzUxYzRmZGZiZWYyOTIzNjQyNDc2NmY3ZjM4MzNjYzA2OGM5MmM0NzJhYjE0ZDk0NmE1N2Y2YzMyZWQ4In19fQ==
+        display-name: "#7a0000&lʟᴀᴅʀɪʟʟᴏ ᴅᴇʟ ɴᴇᴛʜᴇʀ ᴘᴏᴛᴇɴᴄɪᴀᴅᴏ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$530"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+
+##
+
+magma_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#ff2600Generador de #ff2600&lMAGMA"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 57000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: luminoso_generator
+    upgrade-cost: 54000
+  # The generator item
+  item:
+    material: MAGMA_BLOCK
+    display-name: "#ff2600Generador de #ff2600&lMAGMA"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$54,000"
+      - "&8&l● &fReparación: &c$57,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fMagma: &a$530"
+      - "&8&l● &fRey magma: &a$550" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 530 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzIxZDA5MzBiZDYxZmVhNGNiOTAyN2IwMGU5NGUxM2Q2MjAyOWM1MjRlYTBiMzI2MGM3NDc0NTdiYTFiY2ZhMSJ9fX0=
+        display-name: "#ff2600&lᴍᴀɢᴍᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$530"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 550 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODZlZmIzZWE4ZWJkZjIzZmI3MjZiNzg2YTQxYTYyNTFmMGRmY2VlYjE5YWFhNzI3MDBhNDc3YWZlZjNjYjUyNSJ9fX0=
+        display-name: "#ff2600&lʀᴇʏ ᴍᴀɢᴍᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$550"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+
+
+##
+
+luminoso_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#fdff70Generador #fdff70&lLUMINOSO"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 60000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: escombros_generator
+    upgrade-cost: 57000
+  # The generator item
+  item:
+    material: GLOWSTONE
+    display-name: "#fdff70Generador #fdff70&lLUMINOSO"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$57,000"
+      - "&8&l● &fReparación: &c$60,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fPiedra luminosa: &a$550"
+      - "&8&l● &fPiedra potenciada: &a$570" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 550 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjgwNTdhODcyNjFkYzY0OTE0ZmYwYTQ1ZThlYjRhZjFhOWVmMjI0NzNiZmEyZTkwYWE4MGM3YzA4MmYzZmMwNiJ9fX0=
+        display-name: "#fdff70&lᴘɪᴇᴅʀᴀ ʟᴜᴍɪɴᴏꜱᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$550"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 570 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGE5N2NkZWQ0N2U5MzA5NzYzZjcyMmJkYWMxZmJlNzUyNGRmMmE1ZWFjNTI1NzkyZDdlMTQzMGYyNDRiNjU5ZCJ9fX0=
+        display-name: "#fdff70&lᴘɪᴇᴅʀᴀ ʟᴜᴍɪɴᴏꜱᴀ ᴘᴏᴛᴇɴᴄɪᴀᴅᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$570"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+
+##
+
+escombros_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#63241dGenerador de #63241d&lESCOMBROS"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 63000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: prismarina_generator
+    upgrade-cost: 60000
+  # The generator item
+  item:
+    material: ANCIENT_DEBRIS
+    display-name: "#63241dGenerador de #63241d&lESCOMBROS"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$60,000"
+      - "&8&l● &fReparación: &c$63,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fEscombro antigui: &a$570"
+      - "&8&l● &fCabeza de satanas: &a$590" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 570 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmI0NzMxMDE3ZThjYTI0ODBlM2RmYTA0ZjE4OTIzYzM4NWQ1ZTNjYWZiYzA3ZDdkOWU0OTczYzgyNjQ2OTA3OCJ9fX0=
+        display-name: "#63241d&lᴇꜱᴄᴏᴍʙʀᴏꜱ ᴀɴᴛɪɢᴜᴏꜱ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$570"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 590 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTIwYTMzODZiODEzYWExNWNlMDllMmM5MmEyYTY3ZGIxMzE0MmU1N2Q1Zjc5MzE2N2RmMTcwNDg4ZGY0MDI3MSJ9fX0=
+        display-name: "#63241d&lᴄᴀʙᴇᴢᴀ ᴅᴇ ꜱᴀᴛᴀɴᴀꜱ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$590"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+
+##
+
+prismarina_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#2ac0a2Generador de #2ac0a2&lPRISMARINA"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 66000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: agua_generator
+    upgrade-cost: 63000
+  # The generator item
+  item:
+    material: PRISMARINE
+    display-name: "#2ac0a2Generador de #2ac0a2&lPRISMARINA"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$63,000"
+      - "&8&l● &fReparación: &c$66,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fPrismarina: &a$590"
+      - "&8&l● &fPrismarina gremial: &a$610" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 590 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGYxNmQwNzk5ZDIwOTJhNGUyOWE0NjI4YjUyMmM1Y2E2NWI0MmVkMGQ3NGI2MWVmZDNiYmFhNzI4ZTQwOTA3OSJ9fX0=
+        display-name: "#2ac0a2&lᴘʀɪsᴍᴀʀɪɴᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$590"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 610 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTE5ZTkzNmFlN2I0MmQ2NjZlZWQ5ODFjOGY0NGNjN2YxODcyYjQ1ZjVkM2ZhYWMzOGUzNGZhMjI2ODAwZjNlZiJ9fX0=
+        display-name: "#2ac0a2&lᴘʀɪꜱᴍᴀʀɪɴᴀ ɢʀᴇᴍɪᴀʟ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$610"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+
+
+##
+
+agua_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#9bffa8G#93f7a3e#8bf09dn#83e898e#7be192r#73d98da#6bd187d#63ca82o#5bc27cr #53bb77d#4bb371e #9bffa8&lA#80e696&lG#66cc83&lU#4bb371&lA"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 69000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: profundo_generator
+    upgrade-cost: 66000
+  # The generator item
+  item:
+    material: cyan_concrete
+    display-name: "#9bffa8G#93f7a3e#8bf09dn#83e898e#7be192r#73d98da#6bd187d#63ca82o#5bc27cr #53bb77d#4bb371e #9bffa8&lA#80e696&lG#66cc83&lU#4bb371&lA"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$66,000"
+      - "&8&l● &fReparación: &c$69,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fLadrillo de prismarina: &a$610"
+      - "&8&l● &fGuardian: &a$630" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 610 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzU5YzlmZGFmMzBiM2I0ZjYzMzlhOWEwNTVlNTA0YmRjOTU2YjIzN2VjZjEyY2FhZGE3Mjg5YTVkNGYyNzkyZCJ9fX0=
+        display-name: "#13757c&lʟᴀᴅʀɪʟʟᴏ ᴅᴇ ᴘʀɪꜱᴍᴀʀɪɴᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$610"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 630 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThkMmE3ZmVhN2YyZTBkOTE2YzdjNmQ3OTE0OTM3YmI4ZGQzZmJmZDdmOTQ4M2E0YTM5MTJmNWEwZmM2M2QzIn19fQ==
+        display-name: "#13757c&lɢᴜᴀʀᴅɪᴀɴ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$630"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+
+##
+
+profundo_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#2e5067G#2e5067e#2e5067n#2e5168e#2e5168r#2f5168a#2f5168d#2f5168o#2f5269r #2e5067&lP#2e5067&lR#2e5168&lO#2e5168&lF#2f5168&lU#2f5168&lN#2f5269&lD#2f5269&lO"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 72000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: linterna_generator
+    upgrade-cost: 69000
+  # The generator item
+  item:
+    material: black_concrete
+    display-name: "#2e5067G#2e5067e#2e5067n#2e5168e#2e5168r#2f5168a#2f5168d#2f5168o#2f5269r #2e5067&lP#2e5067&lR#2e5168&lO#2e5168&lF#2f5168&lU#2f5168&lN#2f5269&lD#2f5269&lO"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$69,000"
+      - "&8&l● &fReparación: &c$72,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fPrismarina oscura: &a$630"
+      - "&8&l● &fGuardian mayor: &a$650" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 630 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmZhMjQ2NzBkZjJhZjdkMTVmNjU5ZDliNmMxNzZiZWUwNzdhZmJiMmM4NWViZTdhM2RkNWYwYTFjNGM4MTZkZiJ9fX0=
+        display-name: "#13757c&lᴘʀɪꜱᴍᴀʀɪɴᴀ ᴏꜱᴄᴜʀᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$630"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 650 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDM0MGEyNjhmMjVmZDVjYzI3NmNhMTQ3YTg0NDZiMjYzMGE1NTg2N2EyMzQ5ZjdjYTEwN2MyNmViNTg5OTEifX19
+        display-name: "#13757c&lɢᴜᴀʀᴅɪᴀɴ ᴍᴀʏᴏʀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$650"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+
+##
+
+linterna_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#94ffedGenerador de #94ffed&lLINTERNA"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 75000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: hielo_generator
+    upgrade-cost: 72000
+  # The generator item
+  item:
+    material: SEA_LANTERN
+    display-name: "#94ffedGenerador de #94ffed&lLINTERNA"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$72,000"
+      - "&8&l● &fReparación: &c$75,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fLinterna de mar: &a$650"
+      - "&8&l● &fKraken: &a$670" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 650 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODI0YzZmZjE3MTRlYjJjM2I4NDRkNDZkMmU1ZWEyZjI2ZDI3M2EzM2VhYWE3NDRhYmY2NDViMDYwYjQ3ZDcifX19
+        display-name: "#94ffed&lʟɪɴᴛᴇʀɴᴀ ᴅᴇ ᴍᴀʀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$650"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 670 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjRkNjJhNDAyY2I2YjA3OTQzNzFiMDI0MDgyYjdlNDhjMTY5ZTI0ZTY0MzU2YzRlMGYwNmRiNzE0MTVhYzcyZCJ9fX0=
+        display-name: "#94ffed&lᴋʀᴀᴋᴇɴ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$670"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+
+##
+
+hielo_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#39cdfeGenerador de #39cdfe&lHIELO"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 78000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: esponja_generator
+    upgrade-cost: 75000
+  # The generator item
+  item:
+    material: BLUE_ICE
+    display-name: "#39cdfeGenerador de #39cdfe&lHIELO"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$75,000"
+      - "&8&l● &fReparación: &c$78,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fHielo azul: &a$670"
+      - "&8&l● &fCabeza congelada: &a$690" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 670 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODI0YzZmZjE3MTRlYjJjM2I4NDRkNDZkMmU1ZWEyZjI2ZDI3M2EzM2VhYWE3NDRhYmY2NDViMDYwYjQ3ZDcifX19
+        display-name: "#39cdfe&lʜɪᴇʟᴏ ᴀᴢᴜʟ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$670"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 690 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWE0ZmE3ZWYzYmMzYzJkMTUzYWUwNGI5NjQwMjE0ZDI5ZTg3MWVmZDhkY2MzYjRiZDg3MDljNTk0MmJhMmNjOSJ9fX0=
+        display-name: "#39cdfe&lᴄᴀʙᴇᴢᴀ ᴄᴏɴɢᴇʟᴀᴅᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$690"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+
+##
+
+esponja_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#fed234Generador de #fed234&lESPONJA"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 81000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: coral_generator
+    upgrade-cost: 78000
+  # The generator item
+  item:
+    material: SPONGE
+    display-name: "#fed234Generador de #fed234&lESPONJA"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$78,000"
+      - "&8&l● &fReparación: &c$81,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fEsponja: &a$690"
+      - "&8&l● &fEsponja potenciada: &a$710" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 690 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjA3YThlZDJiZDIzMGZkNzliZjA3Y2VhMmMzOTIzNDAxNjZlNjA2YTg4NzE5MGQ1OThkNmU1YmM5YTYyYzZhNCJ9fX0=
+        display-name: "#fed234&lᴇꜱᴘᴏɴᴊᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$690"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 710 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWQ3YjJhMGQ4MTUxMzZjZDhjNmFkZGI0Y2RkNTYwMDQ4NTk3ODkzNzA5ZDY0MjU4NDNmOWViNmUzZmE4NjY0NiJ9fX0=
+        display-name: "#fed234&lᴇꜱᴘᴏɴᴊᴀ ᴘᴏᴛᴇɴᴄɪᴀᴅᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$710"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+
+##
+
+coral_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#0a3cd1Generador de #0a3cd1&lCORAL"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 84000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: end_generator
+    upgrade-cost: 81000
+  # The generator item
+  item:
+    material: TUBE_CORAL_BLOCK
+    display-name: "#0a3cd1Generador de #0a3cd1&lCORAL"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$81,000"
+      - "&8&l● &fReparación: &c$84,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fCoral: &a$710"
+      - "&8&l● &fRey ahogado: &a$730" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 710 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzlmYzNjZjU1MDhkNDBjMTQ2OTlkNWJmN2YyNTI3NTllMTk1NmFmOWE2NmQxNWE2YzM4NTQzNzhjNjFmNmQ5YSJ9fX0=
+        display-name: "#0a3cd1&lᴄᴏʀᴀʟ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$710"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 730 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWMyODE4ZmIxNjNmZGFhMzE2MjM3MWU3OWQyMThmNDZiM2QxZThkYTYzMmRjYzk1MzJiYjVlY2E4OWRlNDMyIn19fQ==
+        display-name: "#0a3cd1&lʀᴇʏ ᴀʜᴏɢᴀᴅᴏ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$730"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+
+##
+end_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#E0FCFFGenerador del #E0FCFF&lEND"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 87000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: purpura_generator
+    upgrade-cost: 84000
+  # The generator item
+  item:
+    material: END_STONE
+    display-name: "#E0FCFFGenerador del #E0FCFF&lEND"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$84,000"
+      - "&8&l● &fReparación: &c$87,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fPiedra del end: &a$730"
+      - "&8&l● &fPiedra del end encantada: &a$750" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 730 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTQ4ZDc5NjhjMjNkNTM3YmZlYWVkNmRlN2NkYmU3MzMwYWZlNDA1ZTAwYzViZDNlZWQ4YWIyOTFmZDU5YzVlZCJ9fX0=
+        display-name: "#fbffc2&lᴘɪᴇᴅʀᴀ ᴅᴇʟ ᴇɴᴅ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$730"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 750 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDYyN2NkMzFjYjc2ZTc2OGM5MmI2ZjQ3YjdmZDJiZDljNzg3ZTk1MDdjZDk0NjlhNjhjZGQyMzdiNWI0Y2FlYSJ9fX0=
+        display-name: "#fbffc2&lᴘɪᴇᴅʀᴀ ᴅᴇʟ ᴇɴᴅ ᴇɴᴄᴀɴᴛᴀᴅᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$750"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+purpura_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#A03F9AGenerador #A03F9A&lPURPURA"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 93000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: netherite_generator
+    upgrade-cost: 90000
+  # The generator item
+  item:
+    material: PURPUR_BLOCK
+    display-name: "#A03F9AGenerador #A03F9A&lPURPURA"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$90,000"
+      - "&8&l● &fReparación: &c$93,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fDropeo purpura: &a$770"
+      - "&8&l● &fGeoda corrupta: &a$790" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 770 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzA4ZjM4MzJiYzE1ZmFjNDE1MjJjZTZlZDFkODhmOTU0M2RkNTcxZjkzNDA3Mzg3NGVmMGNiOWJmY2NlYSJ9fX0=
+        display-name: "#de86fe&lᴅʀᴏᴘᴇᴏ ᴘᴜʀᴘᴜʀᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$770"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 790 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzU0OGJhNDEzNjQ2YzJjM2Y2YTIwN2I4ZTNhZWY5MzU4ZmU3NGY4MTExN2EzZTFmZDE1YjBlNjUxN2UyZjY1OCJ9fX0=
+        display-name: "#de86fe&lɢᴇᴏᴅᴀ ᴄᴏʀʀᴜᴘᴛᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e790"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+netherite_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#695353Generador de &lNETHERITE"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 95000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: obsidiana_generator
+    upgrade-cost: 93000
+  # The generator item
+  item:
+    material: NETHERITE_BLOCK
+    display-name: "#695353Generador de &lNETHERITE"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$93,000"
+      - "&8&l● &fReparación: &c$95,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fNetherita pulida: &a$790"
+      - "&8&l● &fAnillos de netherita: &a$810"
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 790 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzQ4YjQ5ZThiYWZiMWZlZmI0OTUzOWJlNGU4MmNjN2UyYTI0NGJmMDQyODEzNGI5YTgwNTkxYTE3YzFhZTNjYiJ9fX0=
+        display-name: "#695353&lɴᴇᴛʜᴇʀɪᴛᴀ ᴘᴜʟɪᴅᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$790"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 810 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTlkYmE2Y2JlNzZjZDcyYTc4MmMxY2QyOWE0MmE1N2Y0MmVhM2QwYmFiZjU4ZDQzNWZhY2M5MTg1OGFhMjRmOCJ9fX0=
+        display-name: "#483939&lᴀɴɪʟʟᴏꜱ ᴅᴇ ɴᴇᴛʜᴇʀɪᴛᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$810"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+          
+obsidiana_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#4A0845Generador de #4A0845&lOBSIDIANA"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 98000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: bedrock_generator
+    upgrade-cost: 96000
+  # The generator item
+  item:
+    material: OBSIDIAN
+    display-name: "#4A0845Generador de #4A0845&lOBSIDIANA"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$96,000"
+      - "&8&l● &fReparación: &c$98,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fObsidiana: &a$810"
+      - "&8&l● &fObsidiana infectada: &a$830" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 810 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU3NjBiYmMxMTNjMjczZmFjNDA4OTZmYTIwODlhNTZjYzc0NmE3OWE3YTgyNzVmNjM4NTdlNjllNmY3NzAzYSJ9fX0=
+        display-name: "#360750&lᴏʙsɪᴅɪᴀɴᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$810"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 830 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWE5NTM4NjlhMGM1M2U3YzVjMDEyMTE1YzJhNDMwM2NjYmZmOWQyZmI3OGJhZDRlMjhkMDY2ZWQxNmQwZjkxIn19fQ==
+        display-name: "#360750&lᴏʙsɪᴅɪᴀɴᴀ ɪɴꜰᴇᴄᴛᴀᴅᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$830"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+bedrock_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#909090Generador de #909090&lBEDROCK"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 104000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: volcan_generator
+    upgrade-cost: 101000
+  # The generator item
+  item:
+    material: BEDROCK
+    display-name: "#909090Generador de #909090&lBEDROCK"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$101,000"
+      - "&8&l● &fReparación: &c$104,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fBedrock: &a$850"
+      - "&8&l● &fTalisman final: &a$870" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 850 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmY3YTQyMmRiMzVkMjhjZmI2N2U2YzE2MTVjZGFjNGQ3MzAwNzI0NzE4Nzc0MGJhODY1Mzg5OWE0NGI3YjUyMCJ9fX0=
+        display-name: "#454545&lʙᴇᴅʀᴏᴄᴋ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$850"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 870 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzc2MzhjMzhkMzlhNjdkODk2MjY3NDNmMDZiOWM3YmU1YzUwY2Y4MzM1ZDJlOGYzOWViMWRhZDBkZjBmNzNkNiJ9fX0=
+        display-name: "&5&lᴛᴀʟɪꜱᴍᴀɴ ꜰɪɴᴀʟ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$870"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+volcan_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#ff591bG#fb5721e#f75526n#f4532ce#f05131r#ec4f37a#e84d3cd#e44b42o#e14947r #dd474dd#d94552e #ff591b&lV#f75526&lO#f05131&lL#e84d3c&lC#e14947&lA#d94552&lN"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 101000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: demonios_generator
+    upgrade-cost: 99000
+  # The generator item
+  item:
+    material: gilded_blackstone
+    display-name: "#ff591bG#fb5721e#f75526n#f4532ce#f05131r#ec4f37a#e84d3cd#e44b42o#e14947r #dd474dd#d94552e #ff591b&lV#f75526&lO#f05131&lL#e84d3c&lC#e14947&lA#d94552&lN"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$99,000"
+      - "&8&l● &fReparación: &c$101,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fFuego de volcan: &a$830"
+      - "&8&l● &fGólem final: &a$850" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 830 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzk1YTdhNjdmN2E0YjM4ZjgyN2YxYmNhODBlNjFmNDg2MDZiNjljZTVmNjQzNDQxMmJiZmQ4YTU3NjU2YWQyZCJ9fX0=
+        display-name: "#ff591b&lꜰᴜᴇɢᴏ ᴅᴇ ᴠᴏʟᴄᴀɴ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$830"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 10 # The chance that this drop will be chosen
+      sell-value: 850 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzc5ZTllOGVmYjRlOTMwYzlkY2MwODNmZGRiZjkzZjE2YTZmZTM0NTBhZWMyMzgyYjU1ZWU5NTY2ODZjOGQ3NCJ9fX0=
+        display-name: "#9A2506&lɢᴏʟᴇᴍ ꜰɪɴᴀʟ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$850"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+demonios_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#60637bG#5d6377e#5a6273n#576270e#54616cr#516168a#4d6164d#4a6060o#47605dr #445f59d#415f55e #60637b&lD#5f6779&lE#5d6a78&lM#5c6e76&lO#5a7275&lN#597673&lI#577972&lO#567d70&lS"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 90000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: huesos_generator
+    upgrade-cost: 87000
+  # The generator item
+  item:
+    material: polished_basalt
+    display-name: "#60637bG#5d6377e#5a6273n#576270e#54616cr#516168a#4d6164d#4a6060o#47605dr #445f59d#415f55e #60637b&lD#5f6779&lE#5d6a78&lM#5c6e76&lO#5a7275&lN#597673&lI#577972&lO#567d70&lS"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$87,000"
+      - "&8&l● &fReparación: &c$90,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fLakhey: &a$770"
+      - "&8&l● &fLucifer: &a$790" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 750 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTlkZTYyODYyNWMzODg5MmQ3NmQyN2I2ZDAwNzc1OWEwN2MxOGE2YjM2MGQ5YmYyMzdiZmFlYWE0YzAzZGY5In19fQ==
+        display-name: "#60637B&lʟᴀᴋʜᴇʏ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$750"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 770 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2QyNTVmZWU1ZjdjZjkwODFmMmMwZDVhMDQ0MmFjM2YzZmQxZmMyNGNiOTU2ZTNmMWQzMzE4NjNkMTFkZTE3NiJ9fX0=
+        display-name: "#7b151e&lʟ#7b151e&lᴜ#7c151e&lᴄ#7c151e&lɪ#7c141d&lꜰ#7d141d&lᴇ#7d141d&lʀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$770"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+          
+huesos_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#ADFADFGenerador de #ADFADF&lHUESOS"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 107000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: infierno_generator
+    upgrade-cost: 104000
+  # The generator item
+  item:
+    material: Bone_Block
+    display-name: "#ADFADFGenerador de #ADFADF&lHUESOS"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$104,000"
+      - "&8&l● &fReparación: &c$107,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fHuesos de dragón: &a$870"
+      - "&8&l● &fCabeza de dragón: &a$890" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 870 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODZjZTliMThjYTIzOGVhZDY1MTViMDE3MzUzNGE3ZjM0ZDI4YmM1MWMwMTg4ZTJkYjA2ODQ1YzE3ZTYyZjEwYSJ9fX0=
+        display-name: "&f&lʜᴜᴇꜱᴏꜱ ᴅᴇ ᴅʀᴀɢᴏɴ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$870"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 890 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTA0YzQ3MDU4YTQ4NDdhMGI2NjhkZDg1ZWI0OTQ2MzFlYzI0MDRlN2I4MzE5YjRhOGI1ODc3NDYzODI1NjE4YSJ9fX0=
+        display-name: "&f&lᴄᴀʙᴇᴢᴀ ᴅᴇ ᴅʀᴀɢᴏɴ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$890"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+infierno_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#FF856DGenerador del #FF856D&lINFIERNO"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 110000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: fantasma_generator
+    upgrade-cost: 107000
+  # The generator item
+  item:
+    material: Black_Concrete
+    display-name: "#FF856DGenerador del #FF856D&lINFIERNO"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$107,000"
+      - "&8&l● &fReparación: &c$110,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fCabeza del rey: &a$890"
+      - "&8&l● &fRey: &a$910" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 890 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTMxMzkyMGJkYWIwZmFhMTI4OTk5MjE5NWRjNjRhMjE0OTA5OGIxNTNjMzVjNmJhZTc2NWJhM2IwODQyZDFhOSJ9fX0=
+        display-name: "&8&lᴄᴀʙᴇᴢᴀ ᴅᴇʟ ʀᴇʏ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$890"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 910 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTdhMzlhZmMzYTkzNjUyYjZlYTM2OTI1ZjgxYjQ1YTRiODIzNWYxNzBjZjJjNTQxNjg4ZjFjM2ZiYmI1OTRlNiJ9fX0=
+        display-name: "&8&lʀᴇʏ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$910"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+          
+fantasma_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#B2FFD5Generador #B2FFD5&lFANTASMA"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 110000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: pulpo_generator
+    upgrade-cost: 12500000
+  # The generator item
+  item:
+    material: Snow_Block
+    display-name: "#B2FFD5Generador #B2FFD5&lFANTASMA"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$110,000"
+      - "&8&l● &fReparación: &c$113,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fPulpo de mar: &a$930"
+      - "&8&l● &fPulpo de oro: &a$950" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 910 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWJmYWNlN2RmNDk1MWQwMzdhODA5N2RhYjUyNjExMWRlZTI0ZDI5MmNmM2QzYTNjYWFlY2I2NTg5NzZlODRmOCJ9fX0=
+        display-name: "&7&lꜰᴀɴᴛᴀꜱᴍᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$910"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 930 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzRhYmI3MjdmMjgyMzUwZDEwYjkwMGE2OWNhYTQxYjk0MzI4MTI5ZWVjNDBiZTc3NzJhN2I3NDQ3OTU5NmM5MSJ9fX0=
+        display-name: "&0&lꜰᴍᴜᴇʀᴛᴇ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$930"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+##
+###nuevos gen 1
+pulpo_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#f3375fG#e8365be#dd3557n#d33452e#c8334er#bd324aa#b23146d#a73042o#9d2f3dr #922e39d#872d35e #f3375f&lP#dd3557&lU#c8334e&lL#b23146&lP#9d2f3d&lO#872d35&lS"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 113000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: peces_generator
+    upgrade-cost: 110000
+  # The generator item
+  item:
+    material: fire_coral_block
+    display-name: "#f3375fG#e8365be#dd3557n#d33452e#c8334er#bd324aa#b23146d#a73042o#9d2f3dr #922e39d#872d35e #f3375f&lP#dd3557&lU#c8334e&lL#b23146&lP#9d2f3d&lO#872d35&lS"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$110,000"
+      - "&8&l● &fReparación: &c$113,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fPulpo de mar: &a$930"
+      - "&8&l● &fPulpo de oro: &a$950" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 930 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjNmZTkzNTA0ODYyNDg4MWNhYzM0NzliZjgzZWYxZDRiNDBlOGQyNzdiYWQxZGYyNWI0NTRhMzhjYzA3ZDk1YSJ9fX0=
+        display-name: "#FF5733&lᴘᴜʟᴘᴏ ᴅᴇ ᴍᴀʀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$930"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 950 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjQ3YmFkODIyNDlhNWEyNWZlZjhiNTM3MWRhMWMwNDBlNDhmNzZjNTVmZGQ4ZGExOGIyZjRiOTliNzU1NzFjNCJ9fX0=
+        display-name: "&6&lᴘᴜʟᴘᴏ ᴅᴇ ᴏʀᴏ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$950"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+##
+## gen 2
+peces_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#50f33cG#4be836e#46dd30n#41d32ae#3cc824r#38bd1ea#33b218d#2ea712o#299d0cr #249206d#1f8700e #50f33c&lP#44d82d&lE#38bd1e&lC#2ba20f&lE#1f8700&lS"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 116000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: camaron_generator
+    upgrade-cost: 113000
+  # The generator item
+  item:
+    material: lime_glazed_terracotta
+    display-name: "#50f33cG#4be836e#46dd30n#41d32ae#3cc824r#38bd1ea#33b218d#2ea712o#299d0cr #249206d#1f8700e #50f33c&lP#44d82d&lE#38bd1e&lC#2ba20f&lE#1f8700&lS"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$113,000"
+      - "&8&l● &fReparación: &c$116,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fPez azul: &a$950"
+      - "&8&l● &fPez rojo: &a$970" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 950 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODVlYWY4N2NmYmMyM2NjZmNkYWUwZmM4ZGY4NDc3MTFhNmJlMDRiYjNjZWFmODBlMjcxZmRlZGZkMjUzNWU4In19fQ==
+        display-name: "&9&lᴘᴇᴢ ᴀᴢᴜʟ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$950"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 970 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGU1YTg0ODAyMDVmYTczNTgxMzM0OTViYjAxZjRjZDFmM2NmNzJjODY1ZGM1ZTNhMTNjYmY5Y2YzOGZhNGNiZSJ9fX0=
+        display-name: "&4&lᴘᴇᴢ ʀᴏᴊᴏ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$970"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+#gen 3 33333
+camaron_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#b17a1cG#b97f1de#c1851en#c88a20e#d08f21r#d89522a#e09a23d#e89f24o#efa426r #f7aa27d#ffaf28e #b17a1c&lC#be831e&lA#cb8c20&lM#d89522&lA#e59d24&lR#f2a626&lÓ#ffaf28&lN"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 119000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: cangrejo_generator
+    upgrade-cost: 116000
+  # The generator item
+  item:
+    material: orange_glazed_terracotta
+    display-name: "#b17a1cG#b97f1de#c1851en#c88a20e#d08f21r#d89522a#e09a23d#e89f24o#efa426r #f7aa27d#ffaf28e #b17a1c&lC#be831e&lA#cb8c20&lM#d89522&lA#e59d24&lR#f2a626&lÓ#ffaf28&lN"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$116,000"
+      - "&8&l● &fReparación: &c$119,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fCamarón: &a$970"
+      - "&8&l● &fCamarón prehistorico: &a$990" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 970 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODRjYjE5MTRkMTBhYjdkOWFiMGRhNzQ5ODM0ZGFjZGE1MDBiYThhZjNkODJjMWYzNmFlMmUyM2EzYjRmZjllMiJ9fX0=
+        display-name: "#A25288&lᴄᴀᴍᴀʀᴏɴ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$970"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 990 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmYyODRmNzQ0MDhiNGJmNzU4NzU5NDgzOTM4NDg1ZTcyMjJiY2Y5NmRjYzQyM2QyMWQ5YTAzMWRiNmIyMTUwYSJ9fX0=
+        display-name: "&b&lᴄᴀᴍᴀʀᴏɴ ᴘʀᴇʜɪꜱᴛᴏʀɪᴄᴏ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$990"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+#gen 4  4 4
+cangrejo_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#D14819Generador de &lCANGREJO"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 113000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: platano_generator
+    upgrade-cost: 110000
+  # The generator item
+  item:
+    material: red_glazed_terracotta
+    display-name: "#D14819Generador de &lCANGREJO"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$119,000"
+      - "&8&l● &fReparación: &c$122,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fCangrejo: &a$990"
+      - "&8&l● &fCangrejo prehistorico: &a$1,010" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 990 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWQ2MjA2ZGZlMzRkMmVkYzM4MmI1NWI2MDU2ODI1ODRlOWQ4ZWVhMGFjMzVmN2M0NzM4ZGRlY2ZjZmQ5NTlmNyJ9fX0=
+        display-name: "#E1B68B&lᴄᴀɴɢʀᴇᴊᴏ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$990"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 1010 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDc5NDFlMDE4YWRlNGQxNzRmZmZhMmQ5YzM4MTMwNDlmOTdhZTAzMjQzNDMzNTcwOTY5NmI3MGM4MDUzNTFiYSJ9fX0=
+        display-name: "#B0651A&lᴄᴀɴɢʀᴇᴊᴏ ᴘʀᴇʜɪꜱᴛᴏʀɪᴄᴏ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$1,010"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+#gen 5 5 5
+platano_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#a0b14fG#aab748e#b3bd40n#bdc339e#c6c931r#d0cf2aa#d9d523d#e3db1bo#ece114r #f6e70cd#ffed05e #a1b11f&lP#b1bb1b&lL#c0c516&lÁ#d0cf12&lT#e0d90e&lA#efe309&lN#ffed05&lO"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 125000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: abejas_generator
+    upgrade-cost: 122000
+  # The generator item
+  item:
+    material: yellow_glazed_terracotta
+    display-name: "#a0b14fG#aab748e#b3bd40n#bdc339e#c6c931r#d0cf2aa#d9d523d#e3db1bo#ece114r #f6e70cd#ffed05e #a1b11f&lP#b1bb1b&lL#c0c516&lÁ#d0cf12&lT#e0d90e&lA#efe309&lN#ffed05&lO"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$122,000"
+      - "&8&l● &fReparación: &c$125,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fBanana: &a$1,010"
+      - "&8&l● &fRacimo de banana: &a$1,030" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 1010 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjBhYWExNDI1ZDJiOTkzODM2OTdkNTcxOTNmMjdkODcyNDQyYmNiOTk1NTA4ZjQyZDE5ZGU0YWYxZjg2MTIifX19
+        display-name: "#FFE800&lʙᴀɴᴀɴᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$1010"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 1030 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjliZGFlNTFmNTc2YjIzYTZmMGQyNjk1ZWQxZmQ1NzM5ODEyYzNiYTgzMjUyZjBjODc2ODQ0ZDI4YTEzYyJ9fX0=
+        display-name: "#EAE081&lʀᴀᴄɪᴍᴏ ᴅᴇ ʙᴀɴᴀɴᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$1,030"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+#gen 66 6 
+abejas_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#7c8c56G#83975ce#8aa361n#91ae67e#98b96cr#9fc572a#a5d078d#acdb7do#b3e683r #baf288d#c1fd8ee #7c8c56&lA#8aa361&lB#98b96c&lE#a5d078&lJ#b3e683&lA#c1fd8e&lS"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 131000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: bebidas_generator
+    upgrade-cost: 128000
+  # The generator item
+  item:
+    material: composter
+    display-name: "#7c8c56G#83975ce#8aa361n#91ae67e#98b96cr#9fc572a#a5d078d#acdb7do#b3e683r #baf288d#c1fd8ee #7c8c56&lA#8aa361&lB#98b96c&lE#a5d078&lJ#b3e683&lA#c1fd8e&lS"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$128,000"
+      - "&8&l● &fReparación: &c$131,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fMiel: &a$1,030"
+      - "&8&l● &fAbeja: &a$1,050" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 1030 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWFhMGFjYWQ3MDk0ZmJlOWU2NDZlZWU4Y2JhMWMwNjg5MmZhMWY4ZmIzODVlMzQ4Njk2MzM2NDViY2FiMWVmNCJ9fX0=
+        display-name: "#9E9749&lᴍɪᴇʟ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$1030"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 1050 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2U5NDE5ODdlODI1YTI0ZWE3YmFhZmFiOTgxOTM0NGI2YzI0N2M3NWM1NGE2OTE5ODdjZDI5NmJjMTYzYzI2MyJ9fX0=
+        display-name: "#D3CD89&lᴀʙᴇᴊᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$1,050"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+#gen 777
+bebidas_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#7a6522G#786424e#756427n#736329e#71622cr#6f622ea#6c6130d#6a6033o#685f35r #655f38d#635e3ae #a3872e&lB#9f8634&lE#9a8539&lB#96853f&lI#928445&lD#8d834a&lA#898250&lS"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 134000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: null
+    upgrade-cost: 131000
+  # The generator item
+  item:
+    material: barrel
+    display-name: "#7a6522G#786424e#756427n#736329e#71622cr#6f622ea#6c6130d#6a6033o#685f35r #655f38d#635e3ae #a3872e&lB#9f8634&lE#9a8539&lB#96853f&lI#928445&lD#8d834a&lA#898250&lS"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$131,000"
+      - "&8&l● &fReparación: &c$134,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fCerveza: &a$1,050"
+      - "&8&l● &fBebida pepsi: &a$1,070" 
+      - "&7"
+      - "&e▸ ¡Colocalo en el suelo! &e&l✔"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 1050 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDA1M2UyNjg2N2JiNTc1MzhlOTc4OTEzN2RiYmI1Mzc3NGUxOGVkYTZmZWY1MWNiMmVkZjQyNmIzNzI2NCJ9fX0=
+        display-name: "#CFCBA3&lᴄᴇʀᴠᴇᴢᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$1050"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 1070 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTNiMDFmYjJmNmJhNDdjOWQ3NjM4NDkxZjM3Y2Q4NTgyYTkzNzczMTE4NmRmNGQxZWNjZDU5YjY1YmYzNyJ9fX0=
+        display-name: "#F76952&lʙᴇʙɪᴅᴀ ᴘᴇᴘꜱɪ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$1,070"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+suerte_generator:
+  # The display name of the generator that will be used across messages
+  display-name: "#FFDE11Generador de la #F1B71C&lSUERTE"
+  # How often should the generator drop? (in seconds)
+  interval: 20
+  # Is the generator corrupted?
+  # If the generator is corrupted, it will break occasionally and player need
+  # to fix them by shift + right-clicking the generator and pay set amount of money
+  # Set the corrupted algorithm on "config.yml"
+  corrupted:
+    enabled: true
+    cost: 250000 # The cost to fix the corruption
+    chance: 2.5 # Chance that the generator will be broken
+  # The upgrade system for the generator
+  upgrade:
+    # The generator that will be used upon upgrading
+    # If you don't want the generator to be upgradeable, simply put "null"
+    next-generator: null
+    upgrade-cost: 12500000
+  # The generator item
+  item:
+    material: yellow_concrete
+    display-name: "#FFDE11Generador de la #F1B71C&lSUERTE"
+    enchantments:
+     - DURABILITY;1
+    flags:
+     - HIDE_ATTRIBUTES
+     - HIDE_ENCHANTS
+    custom-model-data: 0
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e10&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &c&l✘"
+      - "&8&l● &fReparación: &c$250,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fSuerte: &a$2,200"
+      - "&8&l● &fSuerte única: &a$4,000" 
+      - "&7"
+      - "&e▸ ¡Este gen es nivel maximo!"
+  # List of drops that can be dropped from the generators
+  drops:
+    # Unique identifier, could be anything
+    '0':
+      chance: 70 # The chance that this drop will be chosen
+      sell-value: 2200 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmZkY2ZiNDAwOTc2YmY3M2VjMzJjMWI5OTYyYzgzMGZjM2Q3MDA2ZDc0OWY4ZjNkYTNiNmUwZmI4MjkwOWIyOCJ9fX0=
+        display-name: "&e&lꜱᴜᴇʀᴛᴇ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$2,200"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"
+    '1':
+      chance: 30 # The chance that this drop will be chosen
+      sell-value: 4000 # The sell value of the drop item (only for dropped items)
+      commands: [] # Commands that will be executed
+      item:
+        material: head;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzEyNjExNjU2M2U5MDRjZGU3ZjUyYWUwZmI1ZTA3NjZlNjBhYmY0NzU3OTU3ZGU5ZGQzYjA2ZWRmMWY4YmQ4ZSJ9fX0=
+        display-name: "&6&lꜱᴜᴇʀᴛᴇ ᴜɴɪᴄᴀ &8(&7/sell&8)"
+        enchantments: [ ]
+        flags: [ ]
+        custom-model-data: 0
+        lore:
+          - "&8Artículo de venta"
+          - ""
+          - "&fObtuviste un item de venta qué"
+          - "&fpodrás venderlo por un precio"
+          - "&fúnico y fijo, mucha suerte"
+          - "&7"
+          - " &8&l●&f Se vende por: &e$4,000"
+          - "&7"
+          - "&e▸ ¡Vendelo ahora mismo!"

@@ -1,0 +1,1198 @@
+menu_title: '&nRacha de conexión diaria&r&r | &n2/2'
+open_command: []
+size: 54
+update_interval: 1
+open_commands:
+- "[sound] UI_TOAST_IN"
+close_commands:
+- "[sound] UI_TOAST_OUT"
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: streakrewards.gui
+      deny_commands:
+      # &#ff9aa2&lS&#ffa6a9&lt&#ffb2af&lr&#ffc0b6&le&#ffcebc&la&#fddcc2&lk &#f1e5c6&lR&#e4eeca&le&#d3eecf&lw&#c0ecd4&la&#b8e5da&lr&#c0dae2&ld&#c7ceea&ls
+        - "[message] &cYou don't have permission to open this menu! &7(streakrewards.gui)"
+items:
+  "close":
+    slot: 49
+    material: NAUTILUS_SHELL
+    display_name: "&#CDFF00¡No pierdas el ritmo!"
+    view_requirement:
+      requirements:
+        perm:
+          type: 'has permission'
+          permission: streakrewards.gui
+          success_commands:
+          - "[refresh]<delay=20>" # Refreshes the menu every 20 ticks (1 second) to make sure the materials are also getting updated
+    click_commands:
+    - "[close]"
+    - "[sound] UI_BUTTON_CLICK"
+  "previousPage":
+    slot: 45
+    material: ARROW
+    display_name: "&cPágina anterior"
+    click_commands:
+    - "[openguimenu] streakRewards1"
+    - "[sound] UI_BUTTON_CLICK"
+  "black_filler":
+    slots:
+    - 0
+    - 8
+    - 9
+    - 17
+    - 18
+    - 26
+    - 27
+    - 35
+    - 36
+    - 44
+    - 45
+    - 53
+    material: BLACK_STAINED_GLASS_PANE
+    display_name: "&r"
+    priority: 5
+  "gray_filler":
+    slots:
+    - 1-7
+    - 46-52
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: "&r"
+    priority: 5
+  "15":
+    slot: 37
+    amount: 20
+    material: placeholder-%streak_material_15%
+    display_name: "&#DEF486Racha de conexión&7 (#20)&8 | &7%streak_status_15% "
+    update: true
+    lore:
+    - "&8Recompensas por conexión"
+    - ""
+    - " &#DEF486Obtendrás "
+    - "  &8&l●&f 1 x Silk Touch Book "
+    - "  &8&l●&f 1 x Fire Aspect II Book "
+    - "  &8&l●&f 1 x Looting III Book "
+    - "  &8&l●&f 4 x Enchanted Golden Apple "
+    - "  &8&l●&f 2 x Totem of Undying "
+    - "  &8&l●&f +10 Levels "
+    - "  &8&l●&f $5000 "
+    - ""
+    - " &#DEF486Estado"
+    - "  &8&l●&f %streak_lore_15% "
+    - ""
+    click_requirement:
+      requirements:
+        alreadyClaimed:
+          type: '!has permission'
+          permission: 'streakrewards.claimed.15'
+          deny_commands:
+          - "[sound] ENTITY_VILLAGER_NO"
+        cooldownWornOff:
+          type: '!has permission'
+          permission: 'streakrewards.cooldown.15'
+          deny_commands:
+          - "[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM"
+        timeframeAvailable:
+          type: 'has permission'
+          permission: 'streakrewards.timeframe.15'
+          deny_commands:
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+    click_commands:
+    - "[message]"
+    - "[message] &a&l ✔&f Successfully claimed rewards for &aday 20\n   &f Come back tomorrow for more!"
+    - "[message]"
+    - "[console] minecraft:give %player_name% enchanted_book{StoredEnchantments:[{id:silk_touch,lvl:1}]} 1"
+    - "[console] minecraft:give %player_name% enchanted_book{StoredEnchantments:[{id:fire_aspect,lvl:2}]} 1"
+    - "[console] minecraft:give %player_name% enchanted_book{StoredEnchantments:[{id:looting,lvl:3}]} 1"
+    - "[console] minecraft:give %player_name% enchanted_golden_apple 4"
+    - "[console] minecraft:give %player_name% totem_of_undying 2"
+    - "[giveexp] 10L"
+    - "[givemoney] 5000"
+    - "[sound] ENTITY_PLAYER_LEVELUP"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.1 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.2 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.3 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.4 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.5 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.6 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.7 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.8 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.9 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.10 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.11 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.12 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.13 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.14 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.15 true 48h replace"
+
+    - "[console] lp user %player_name% permission unsettemp streakrewards.timeframe.15"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.cooldown.16 true 24h"
+    - "[console] lp user %player_name% permission settemp streakrewards.timeframe.16 true 48h"
+    - "[close]"
+  "16":
+    slot: 38
+    amount: 21
+    material: placeholder-%streak_material_16%
+    display_name: "&#DEF486Racha de conexión&7 (#21)&8 | &7%streak_status_16% "
+    update: true
+    lore:
+    - "&8Recompensas por conexión"
+    - ""
+    - " &#DEF486Obtendrás "
+    - "  &8&l●&f 1 x Beacon "
+    - "  &8&l●&f 5 x Panda Spawn Egg "
+    - "  &8&l●&f 5 x Turtle Spawn Egg "
+    - "  &8&l●&f 5 x Villager Spawn Egg "
+    - "  &8&l●&f 5 x Fox Spawn Egg "
+    - "  &8&l●&f 5 x Bee Spawn Egg "
+    - "  &8&l●&f $4000 "
+    - ""
+    - " &#DEF486Estado"
+    - "  &8&l●&f %streak_lore_16% "
+    - ""
+    click_requirement:
+      requirements:
+        alreadyClaimed:
+          type: '!has permission'
+          permission: 'streakrewards.claimed.16'
+          deny_commands:
+          - "[sound] ENTITY_VILLAGER_NO"
+        cooldownWornOff:
+          type: '!has permission'
+          permission: 'streakrewards.cooldown.16'
+          deny_commands:
+          - "[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM"
+        timeframeAvailable:
+          type: 'has permission'
+          permission: 'streakrewards.timeframe.16'
+          deny_commands:
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+    click_commands:
+    - "[message]"
+    - "[message] &a&l ✔&f Successfully claimed rewards for &aday 21\n   &f Come back tomorrow for more!"
+    - "[message]"
+    - "[console] minecraft:give %player_name% beacon 1"
+    - "[console] minecraft:give %player_name% panda_spawn_egg 1"
+    - "[console] minecraft:give %player_name% turtle_spawn_egg 1"
+    - "[console] minecraft:give %player_name% villager_spawn_egg 1"
+    - "[console] minecraft:give %player_name% fox_spawn_egg 1"
+    - "[console] minecraft:give %player_name% bee_spawn_egg 1"
+    - "[givemoney] 4000"
+    - "[sound] ENTITY_PLAYER_LEVELUP"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.1 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.2 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.3 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.4 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.5 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.6 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.7 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.8 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.9 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.10 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.11 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.12 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.13 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.14 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.15 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.16 true 48h replace"
+
+    - "[console] lp user %player_name% permission unsettemp streakrewards.timeframe.16"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.cooldown.17 true 24h"
+    - "[console] lp user %player_name% permission settemp streakrewards.timeframe.17 true 48h"
+    - "[close]"
+  "17":
+    slot: 29
+    amount: 22
+    material: placeholder-%streak_material_17%
+    display_name: "&#DEF486Racha de conexión&7 (#22)&8 | &7%streak_status_17% "
+    update: true
+    lore:
+    - "&8Recompensas por conexión"
+    - ""
+    - " &#DEF486Obtendrás "
+    - "  &8&l●&f 64 x Block of Redstone "
+    - "  &8&l●&f 32 x Block of Iron "
+    - "  &8&l●&f 32 x Block of Gold "
+    - "  &8&l●&f 16 x Block of Emerald "
+    - "  &8&l●&f 16 x Block of Diamond "
+    - "  &8&l●&f $5500 "
+    - ""
+    - " &#DEF486Estado"
+    - "  &8&l●&f %streak_lore_17% "
+    - ""
+    click_requirement:
+      requirements:
+        alreadyClaimed:
+          type: '!has permission'
+          permission: 'streakrewards.claimed.17'
+          deny_commands:
+          - "[sound] ENTITY_VILLAGER_NO"
+        cooldownWornOff:
+          type: '!has permission'
+          permission: 'streakrewards.cooldown.17'
+          deny_commands:
+          - "[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM"
+        timeframeAvailable:
+          type: 'has permission'
+          permission: 'streakrewards.timeframe.17'
+          deny_commands:
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+    click_commands:
+    - "[message]"
+    - "[message] &a&l ✔&f Successfully claimed rewards for &aday 22\n   &f Come back tomorrow for more!"
+    - "[message]"
+    - "[console] minecraft:give %player_name% redstone_block 64"
+    - "[console] minecraft:give %player_name% iron_block 32"
+    - "[console] minecraft:give %player_name% gold_block 32"
+    - "[console] minecraft:give %player_name% emerald_block 16"
+    - "[console] minecraft:give %player_name% diamond_block 16"
+    - "[givemoney] 5500"
+    - "[sound] ENTITY_PLAYER_LEVELUP"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.1 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.2 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.3 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.4 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.5 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.6 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.7 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.8 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.9 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.10 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.11 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.12 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.13 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.14 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.15 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.16 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.17 true 48h replace"
+
+    - "[console] lp user %player_name% permission unsettemp streakrewards.timeframe.17"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.cooldown.18 true 24h"
+    - "[console] lp user %player_name% permission settemp streakrewards.timeframe.18 true 48h"
+    - "[close]"
+  "18":
+    slot: 20
+    amount: 23
+    material: placeholder-%streak_material_18%
+    display_name: "&#DEF486Racha de conexión&7 (#23)&8 | &7%streak_status_18% "
+    update: true
+    lore:
+    - "&8Recompensas por conexión"
+    - ""
+    - " &#DEF486Obtendrás "
+    - "  &8&l●&f 2 x Curse of Vanishing Book "
+    - "  &8&l●&f 2 x Curse of Binding Book "
+    - "  &8&l●&f 5 x Efficiency V Book "
+    - "  &8&l●&f 64 x Block of Lapis Lazuli "
+    - "  &8&l●&f 64 x Bookshelf "
+    - "  &8&l●&f +15 Levels "
+    - "  &8&l●&f $7500 "
+    - ""
+    - " &#DEF486Estado"
+    - "  &8&l●&f %streak_lore_18% "
+    - ""
+    click_requirement:
+      requirements:
+        alreadyClaimed:
+          type: '!has permission'
+          permission: 'streakrewards.claimed.18'
+          deny_commands:
+          - "[sound] ENTITY_VILLAGER_NO"
+        cooldownWornOff:
+          type: '!has permission'
+          permission: 'streakrewards.cooldown.18'
+          deny_commands:
+          - "[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM"
+        timeframeAvailable:
+          type: 'has permission'
+          permission: 'streakrewards.timeframe.18'
+          deny_commands:
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+    click_commands:
+    - "[message]"
+    - "[message] &a&l ✔&f Successfully claimed rewards for &aday 23\n   &f Come back tomorrow for more!"
+    - "[message]"
+    - "[console] minecraft:give %player_name% enchanted_book{StoredEnchantments:[{id:vanishing_curse,lvl:1}]} 2"
+    - "[console] minecraft:give %player_name% enchanted_book{StoredEnchantments:[{id:binding_curse,lvl:1}]} 2"
+    - "[console] minecraft:give %player_name% enchanted_book{StoredEnchantments:[{id:efficiency,lvl:5}]} 5"
+    - "[console] minecraft:give %player_name% lapis_block 64"
+    - "[console] minecraft:give %player_name% bookshelf 64"
+    - "[giveexp] 15L"
+    - "[givemoney] 7500"
+    - "[sound] ENTITY_PLAYER_LEVELUP"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.1 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.2 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.3 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.4 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.5 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.6 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.7 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.8 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.9 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.10 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.11 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.12 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.13 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.14 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.15 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.16 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.17 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.18 true 48h replace"
+
+    - "[console] lp user %player_name% permission unsettemp streakrewards.timeframe.18"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.cooldown.19 true 24h"
+    - "[console] lp user %player_name% permission settemp streakrewards.timeframe.19 true 48h"
+    - "[close]"
+  "19":
+    slot: 11
+    amount: 24
+    material: placeholder-%streak_material_19%
+    display_name: "&#DEF486Racha de conexión&7 (#24)&8 | &7%streak_status_19% "
+    update: true
+    lore:
+    - "&8Recompensas por conexión"
+    - ""
+    - " &#DEF486Obtendrás "
+    - "  &8&l●&f Access to /feed&f (24h) "
+    - "  &8&l●&f Access to /fly&f (24h) "
+    - "  &8&l●&f Kit VIP "
+    - "  &8&l●&f +5 Levels "
+    - "  &8&l●&f $8750 "
+    - ""
+    - " &#DEF486Estado"
+    - "  &8&l●&f %streak_lore_19% "
+    - ""
+    click_requirement:
+      requirements:
+        alreadyClaimed:
+          type: '!has permission'
+          permission: 'streakrewards.claimed.19'
+          deny_commands:
+          - "[sound] ENTITY_VILLAGER_NO"
+        cooldownWornOff:
+          type: '!has permission'
+          permission: 'streakrewards.cooldown.19'
+          deny_commands:
+          - "[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM"
+        timeframeAvailable:
+          type: 'has permission'
+          permission: 'streakrewards.timeframe.19'
+          deny_commands:
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+    click_commands:
+    - "[message]"
+    - "[message] &a&l ✔&f Successfully claimed rewards for &aday 24\n   &f Come back tomorrow for more!"
+    - "[message]"
+    - "[console] lp user %player_name% permission settemp essentials.fly true 24h"
+    - "[console] lp user %player_name% permission settemp essentials.feed true 24h"
+    - "[console] kit VIP %player_name%"
+    - "[giveexp] 5L"
+    - "[givemoney] 8750"
+    - "[sound] ENTITY_PLAYER_LEVELUP"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.1 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.2 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.3 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.4 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.5 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.6 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.7 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.8 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.9 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.10 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.11 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.12 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.13 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.14 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.15 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.16 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.17 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.18 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.19 true 48h replace"
+
+    - "[console] lp user %player_name% permission unsettemp streakrewards.timeframe.19"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.cooldown.20 true 24h"
+    - "[console] lp user %player_name% permission settemp streakrewards.timeframe.20 true 48h"
+    - "[close]"
+  "20":
+    slot: 12
+    amount: 25
+    material: placeholder-%streak_material_20%
+    display_name: "&#DEF486Racha de conexión&7 (#25)&8 | &7%streak_status_20% "
+    update: true
+    lore:
+    - "&8Recompensas por conexión"
+    - ""
+    - " &#DEF486Obtendrás "
+    - "  &8&l●&f Access to /invsee (2w) "
+    - "  &8&l●&f Access to /hat (2w) "
+    - "  &8&l●&f Access to /fly (1w) "
+    - "  &8&l●&f Access to /feed (1w) "
+    - "  &8&l●&f Access to /ptime (1w) "
+    - "  &8&l●&f $10000 "
+    - ""
+    - " &#DEF486Estado"
+    - "  &8&l●&f %streak_lore_20% "
+    - ""
+    click_requirement:
+      requirements:
+        alreadyClaimed:
+          type: '!has permission'
+          permission: 'streakrewards.claimed.20'
+          deny_commands:
+          - "[sound] ENTITY_VILLAGER_NO"
+        cooldownWornOff:
+          type: '!has permission'
+          permission: 'streakrewards.cooldown.20'
+          deny_commands:
+          - "[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM"
+        timeframeAvailable:
+          type: 'has permission'
+          permission: 'streakrewards.timeframe.20'
+          deny_commands:
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+    click_commands:
+    - "[message]"
+    - "[message] &a&l ✔&f Successfully claimed rewards for &aday 25\n   &f Come back tomorrow for more!"
+    - "[message]"
+    - "[console] lp user %player_name% permission settemp essentials.invsee true 2w"
+    - "[console] lp user %player_name% permission settemp essentials.hat true 2w"
+    - "[console] lp user %player_name% permission settemp essentials.fly true 1w"
+    - "[console] lp user %player_name% permission settemp essentials.feed true 1w"
+    - "[console] lp user %player_name% permission settemp essentials.ptime true 1w"
+    - "[givemoney] 10000"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.1 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.2 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.3 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.4 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.5 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.6 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.7 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.8 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.9 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.10 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.11 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.12 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.13 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.14 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.15 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.16 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.17 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.18 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.19 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.20 true 48h replace"
+
+    - "[console] lp user %player_name% permission unsettemp streakrewards.timeframe.20"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.cooldown.21 true 24h"
+    - "[console] lp user %player_name% permission settemp streakrewards.timeframe.21 true 48h"
+    - "[close]"
+  "21":
+    slot: 13
+    amount: 26
+    material: placeholder-%streak_material_21%
+    display_name: "&#DEF486Racha de conexión&7 (#26)&8 | &7%streak_status_21% "
+    update: true
+    lore:
+    - "&8Recompensas por conexión"
+    - ""
+    - " &#DEF486Obtendrás "
+    - "  &8&l●&f Access to /nick (2w) "
+    - "  &8&l●&f Access to /ci (1w) "
+    - "  &8&l●&f Access to /fix (3d) "
+    - "  &8&l●&f $12500 "
+    - ""
+    - " &#DEF486Estado"
+    - "  &8&l●&f %streak_lore_21% "
+    - ""
+    click_requirement:
+      requirements:
+        alreadyClaimed:
+          type: '!has permission'
+          permission: 'streakrewards.claimed.21'
+          deny_commands:
+          - "[sound] ENTITY_VILLAGER_NO"
+        cooldownWornOff:
+          type: '!has permission'
+          permission: 'streakrewards.cooldown.21'
+          deny_commands:
+          - "[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM"
+        timeframeAvailable:
+          type: 'has permission'
+          permission: 'streakrewards.timeframe.21'
+          deny_commands:
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+    click_commands:
+    - "[message]"
+    - "[message] &a&l ✔&f Successfully claimed rewards for &aday 26\n   &f Come back tomorrow for more!"
+    - "[message]"
+    - "[console] lp user %player_name% permission settemp essentials.nick true 2w"
+    - "[console] lp user %player_name% permission settemp essentials.clearinventory true 1w"
+    - "[console] lp user %player_name% permission settemp essentials.clearinventoryconfirmtoggle true 1w"
+    - "[console] lp user %player_name% permission settemp essentials.repair true 3d"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.1 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.2 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.3 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.4 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.5 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.6 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.7 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.8 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.9 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.10 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.11 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.12 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.13 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.14 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.15 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.16 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.17 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.18 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.19 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.20 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.21 true 48h replace"
+
+    - "[console] lp user %player_name% permission unsettemp streakrewards.timeframe.21"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.cooldown.22 true 24h"
+    - "[console] lp user %player_name% permission settemp streakrewards.timeframe.22 true 48h"
+    - "[close]"
+  "22":
+    slot: 22
+    amount: 27
+    material: placeholder-%streak_material_22%
+    display_name: "&#DEF486Racha de conexión&7 (#27)&8 | &7%streak_status_22% "
+    update: true
+    lore:
+    - "&8Recompensas por conexión"
+    - ""
+    - " &#DEF486Obtendrás "
+    - "  &8&l●&f Man... "
+    - ""
+    - " &#DEF486Estado"
+    - "  &8&l●&f %streak_lore_22% "
+    - ""
+    click_requirement:
+      requirements:
+        alreadyClaimed:
+          type: '!has permission'
+          permission: 'streakrewards.claimed.22'
+          deny_commands:
+          - "[sound] ENTITY_VILLAGER_NO"
+        cooldownWornOff:
+          type: '!has permission'
+          permission: 'streakrewards.cooldown.22'
+          deny_commands:
+          - "[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM"
+        timeframeAvailable:
+          type: 'has permission'
+          permission: 'streakrewards.timeframe.22'
+          deny_commands:
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+    click_commands:
+    - "[message]"
+    - "[message] &a&l ✔&f Successfully claimed rewards for &aday 27\n   &f Come back tomorrow for more!"
+    - "[message]"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.1 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.2 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.3 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.4 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.5 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.6 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.7 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.8 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.9 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.10 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.11 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.12 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.13 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.14 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.15 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.16 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.17 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.18 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.19 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.20 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.21 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.22 true 48h replace"
+
+    - "[console] lp user %player_name% permission unsettemp streakrewards.timeframe.22"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.cooldown.23 true 24h"
+    - "[console] lp user %player_name% permission settemp streakrewards.timeframe.23 true 48h"
+    - "[close]"
+  "23":
+    slot: 31
+    amount: 28
+    material: placeholder-%streak_material_23%
+    display_name: "&#DEF486Racha de conexión&7 (#28)&8 | &7%streak_status_23% "
+    update: true
+    lore:
+    - "&8Recompensas por conexión"
+    - ""
+    - " &#DEF486Obtendrás "
+    - "  &8&l●&f this sure took "
+    - ""
+    - " &#DEF486Estado"
+    - "  &8&l●&f %streak_lore_23% "
+    - ""
+    click_requirement:
+      requirements:
+        alreadyClaimed:
+          type: '!has permission'
+          permission: 'streakrewards.claimed.23'
+          deny_commands:
+          - "[sound] ENTITY_VILLAGER_NO"
+        cooldownWornOff:
+          type: '!has permission'
+          permission: 'streakrewards.cooldown.23'
+          deny_commands:
+          - "[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM"
+        timeframeAvailable:
+          type: 'has permission'
+          permission: 'streakrewards.timeframe.23'
+          deny_commands:
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+    click_commands:
+    - "[message]"
+    - "[message] &a&l ✔&f Successfully claimed rewards for &aday 28\n   &f Come back tomorrow for more!"
+    - "[message]"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.1 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.2 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.3 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.4 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.5 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.6 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.7 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.8 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.9 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.10 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.11 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.12 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.13 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.14 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.15 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.16 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.17 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.18 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.19 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.20 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.21 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.22 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.23 true 48h replace"
+
+    - "[console] lp user %player_name% permission unsettemp streakrewards.timeframe.23"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.cooldown.24 true 24h"
+    - "[console] lp user %player_name% permission settemp streakrewards.timeframe.24 true 48h"
+    - "[close]"
+  "24":
+    slot: 40
+    amount: 29
+    material: placeholder-%streak_material_24%
+    display_name: "&#DEF486Racha de conexión&7 (#29)&8 | &7%streak_status_24% "
+    update: true
+    lore:
+    - "&8Recompensas por conexión"
+    - ""
+    - " &#DEF486Obtendrás "
+    - "  &8&l●&f me a long time "
+    - ""
+    - " &#DEF486Estado"
+    - "  &8&l●&f %streak_lore_24% "
+    - ""
+    click_requirement:
+      requirements:
+        alreadyClaimed:
+          type: '!has permission'
+          permission: 'streakrewards.claimed.24'
+          deny_commands:
+          - "[sound] ENTITY_VILLAGER_NO"
+        cooldownWornOff:
+          type: '!has permission'
+          permission: 'streakrewards.cooldown.24'
+          deny_commands:
+          - "[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM"
+        timeframeAvailable:
+          type: 'has permission'
+          permission: 'streakrewards.timeframe.24'
+          deny_commands:
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+    click_commands:
+    - "[message]"
+    - "[message] &a&l ✔&f Successfully claimed rewards for &aday 29\n   &f Come back tomorrow for more!"
+    - "[message]"
+    - "[console] give %player_name% GOLD_INGOT 1"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.1 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.2 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.3 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.4 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.5 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.6 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.7 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.8 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.9 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.10 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.11 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.12 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.13 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.14 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.15 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.16 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.17 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.18 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.19 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.20 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.21 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.22 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.23 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.24 true 48h replace"
+
+    - "[console] lp user %player_name% permission unsettemp streakrewards.timeframe.24"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.cooldown.25 true 24h"
+    - "[console] lp user %player_name% permission settemp streakrewards.timeframe.25 true 48h"
+    - "[close]"
+  "25":
+    slot: 41
+    amount: 30
+    material: placeholder-%streak_material_25%
+    display_name: "&#DEF486Racha de conexión&7 (#30)&8 | &7%streak_status_25% "
+    update: true
+    lore:
+    - "&8Recompensas por conexión"
+    - ""
+    - " &#DEF486Obtendrás "
+    - "  &8&l●&f to make. "
+    - ""
+    - " &#DEF486Estado"
+    - "  &8&l●&f %streak_lore_25% "
+    - ""
+    click_requirement:
+      requirements:
+        alreadyClaimed:
+          type: '!has permission'
+          permission: 'streakrewards.claimed.25'
+          deny_commands:
+          - "[sound] ENTITY_VILLAGER_NO"
+        cooldownWornOff:
+          type: '!has permission'
+          permission: 'streakrewards.cooldown.25'
+          deny_commands:
+          - "[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM"
+        timeframeAvailable:
+          type: 'has permission'
+          permission: 'streakrewards.timeframe.25'
+          deny_commands:
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+    click_commands:
+    - "[message]"
+    - "[message] &a&l ✔&f Successfully claimed rewards for &aday 30\n   &f Come back tomorrow for more!"
+    - "[message]"
+    - "[console] give %player_name% GOLD_INGOT 1"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.1 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.2 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.3 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.4 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.5 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.6 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.7 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.8 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.9 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.10 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.11 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.12 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.13 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.14 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.15 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.16 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.17 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.18 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.19 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.20 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.21 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.22 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.23 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.24 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.25 true 48h replace"
+
+    - "[console] lp user %player_name% permission unsettemp streakrewards.timeframe.25"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.cooldown.26 true 24h"
+    - "[console] lp user %player_name% permission settemp streakrewards.timeframe.26 true 48h"
+    - "[close]"
+  "26":
+    slot: 42
+    amount: 31
+    material: placeholder-%streak_material_26%
+    display_name: "&#DEF486Racha de conexión&7 (#31)&8 | &7%streak_status_26% "
+    update: true
+    lore:
+    - "&8Recompensas por conexión"
+    - ""
+    - " &#DEF486Obtendrás "
+    - "  &8&l●&f Anyway, "
+    - ""
+    - " &#DEF486Estado"
+    - "  &8&l●&f %streak_lore_26% "
+    - ""
+    click_requirement:
+      requirements:
+        alreadyClaimed:
+          type: '!has permission'
+          permission: 'streakrewards.claimed.26'
+          deny_commands:
+          - "[sound] ENTITY_VILLAGER_NO"
+        cooldownWornOff:
+          type: '!has permission'
+          permission: 'streakrewards.cooldown.26'
+          deny_commands:
+          - "[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM"
+        timeframeAvailable:
+          type: 'has permission'
+          permission: 'streakrewards.timeframe.26'
+          deny_commands:
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+    click_commands:
+    - "[message]"
+    - "[message] &a&l ✔&f Successfully claimed rewards for &aday 31\n   &f Come back tomorrow for more!"
+    - "[message]"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.1 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.2 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.3 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.4 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.5 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.6 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.7 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.8 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.9 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.10 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.11 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.12 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.13 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.14 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.15 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.16 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.17 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.18 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.19 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.20 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.21 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.22 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.23 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.24 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.25 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.26 true 48h replace"
+
+    - "[console] lp user %player_name% permission unsettemp streakrewards.timeframe.26"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.cooldown.27 true 24h"
+    - "[console] lp user %player_name% permission settemp streakrewards.timeframe.27 true 48h"
+    - "[close]"
+  "27":
+    slot: 33
+    amount: 32
+    material: placeholder-%streak_material_27%
+    display_name: "&#DEF486Racha de conexión&7 (#32)&8 | &7%streak_status_27% "
+    update: true
+    lore:
+    - "&8Recompensas por conexión"
+    - ""
+    - " &#DEF486Obtendrás "
+    - "  &8&l●&f thank you "
+    - ""
+    - " &#DEF486Estado"
+    - "  &8&l●&f %streak_lore_27% "
+    - ""
+    click_requirement:
+      requirements:
+        alreadyClaimed:
+          type: '!has permission'
+          permission: 'streakrewards.claimed.27'
+          deny_commands:
+          - "[sound] ENTITY_VILLAGER_NO"
+        cooldownWornOff:
+          type: '!has permission'
+          permission: 'streakrewards.cooldown.27'
+          deny_commands:
+          - "[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM"
+        timeframeAvailable:
+          type: 'has permission'
+          permission: 'streakrewards.timeframe.27'
+          deny_commands:
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+    click_commands:
+    - "[message]"
+    - "[message] &a&l ✔&f Successfully claimed rewards for &aday 32\n   &f Come back tomorrow for more!"
+    - "[message]"
+    - "[console] give %player_name% GOLD_INGOT 1"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.1 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.2 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.3 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.4 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.5 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.6 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.7 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.8 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.9 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.10 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.11 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.12 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.13 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.14 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.15 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.16 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.17 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.18 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.19 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.20 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.21 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.22 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.23 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.24 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.25 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.26 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.27 true 48h replace"
+
+    - "[console] lp user %player_name% permission unsettemp streakrewards.timeframe.27"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.cooldown.28 true 24h"
+    - "[console] lp user %player_name% permission settemp streakrewards.timeframe.28 true 48h"
+    - "[close]"
+  "28":
+    slot: 24
+    amount: 33
+    material: placeholder-%streak_material_28%
+    display_name: "&#DEF486Racha de conexión&7 (#33)&8 | &7%streak_status_28% "
+    update: true
+    lore:
+    - "&8Recompensas por conexión"
+    - ""
+    - " &#DEF486Obtendrás "
+    - "  &8&l●&f for taking a look "
+    - ""
+    - " &#DEF486Estado"
+    - "  &8&l●&f %streak_lore_28% "
+    - ""
+    click_requirement:
+      requirements:
+        alreadyClaimed:
+          type: '!has permission'
+          permission: 'streakrewards.claimed.28'
+          deny_commands:
+          - "[sound] ENTITY_VILLAGER_NO"
+        cooldownWornOff:
+          type: '!has permission'
+          permission: 'streakrewards.cooldown.28'
+          deny_commands:
+          - "[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM"
+        timeframeAvailable:
+          type: 'has permission'
+          permission: 'streakrewards.timeframe.28'
+          deny_commands:
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+    click_commands:
+    - "[message]"
+    - "[message] &a&l ✔&f Successfully claimed rewards for &aday 33\n   &f Come back tomorrow for more!"
+    - "[message]"
+    - "[console] give %player_name% GOLD_INGOT 1"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.1 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.2 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.3 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.4 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.5 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.6 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.7 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.8 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.9 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.10 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.11 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.12 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.13 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.14 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.15 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.16 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.17 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.18 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.19 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.20 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.21 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.22 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.23 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.24 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.25 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.26 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.27 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.28 true 48h replace"
+
+    - "[console] lp user %player_name% permission unsettemp streakrewards.timeframe.28"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.cooldown.29 true 24h"
+    - "[console] lp user %player_name% permission settemp streakrewards.timeframe.29 true 48h"
+    - "[close]"
+  "29":
+    slot: 15
+    amount: 34
+    material: placeholder-%streak_material_29%
+    display_name: "&#DEF486Racha de conexión&7 (#34)&8 | &7%streak_status_29% "
+    update: true
+    lore:
+    - "&8Recompensas por conexión"
+    - ""
+    - " &#DEF486Obtendrás "
+    - "  &8&l●&f at this config! "
+    - ""
+    - " &#DEF486Estado"
+    - "  &8&l●&f %streak_lore_29% "
+    - ""
+    click_requirement:
+      requirements:
+        alreadyClaimed:
+          type: '!has permission'
+          permission: 'streakrewards.claimed.29'
+          deny_commands:
+          - "[sound] ENTITY_VILLAGER_NO"
+        cooldownWornOff:
+          type: '!has permission'
+          permission: 'streakrewards.cooldown.29'
+          deny_commands:
+          - "[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM"
+        timeframeAvailable:
+          type: 'has permission'
+          permission: 'streakrewards.timeframe.29'
+          deny_commands:
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+    click_commands:
+    - "[message]"
+    - "[message] &a&l ✔&f Successfully claimed rewards for &aday 34\n   &f Come back tomorrow for more!"
+    - "[message]"
+    - "[console] give %player_name% GOLD_INGOT 1"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.1 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.2 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.3 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.4 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.5 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.6 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.7 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.8 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.9 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.10 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.11 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.12 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.13 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.14 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.15 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.16 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.17 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.18 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.19 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.20 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.21 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.22 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.23 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.24 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.25 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.26 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.27 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.28 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.29 true 48h replace"
+
+    - "[console] lp user %player_name% permission unsettemp streakrewards.timeframe.29"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.cooldown.30 true 24h"
+    - "[console] lp user %player_name% permission settemp streakrewards.timeframe.30 true 48h"
+    - "[close]"
+  "30":
+    slot: 16
+    amount: 35
+    material: placeholder-%streak_material_30%
+    display_name: "&#DEF486Racha de conexión&7 (#35)&8 | &7%streak_status_30% "
+    update: true
+    lore:
+    - "&8Recompensas por conexión"
+    - ""
+    - " &#DEF486Obtendrás "
+    - "  &8&l●&f Committed Rank (1mo) "
+    - ""
+    - " &#DEF486Estado"
+    - "  &8&l●&f %streak_lore_30% "
+    - ""
+    click_requirement:
+      requirements:
+        alreadyClaimed:
+          type: '!has permission'
+          permission: 'streakrewards.claimed.30'
+          deny_commands:
+          - "[sound] ENTITY_VILLAGER_NO"
+        cooldownWornOff:
+          type: '!has permission'
+          permission: 'streakrewards.cooldown.30'
+          deny_commands:
+          - "[sound] ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM"
+        timeframeAvailable:
+          type: 'has permission'
+          permission: 'streakrewards.timeframe.30'
+          deny_commands:
+          - "[sound] ENTITY_ZOMBIE_INFECT"
+    click_commands:
+    - "[message]"
+    - "[message] &a&l ✔&f Successfully claimed rewards for &aday 35\n   &f Thank you for staying with us for a whole month!\n   &f Your journey has been reset!"
+    - "[message]"
+    - "[console] lp user %player_name% parent addtemp committed 1mo"
+
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.1 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.2 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.3 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.4 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.5 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.6 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.7 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.8 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.9 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.10 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.11 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.12 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.13 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.14 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.15 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.16 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.17 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.18 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.19 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.20 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.21 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.22 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.23 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.24 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.25 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.26 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.27 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.28 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.29 true 48h replace"
+    - "[console] lp user %player_name% permission settemp streakrewards.claimed.30 true 48h replace"
+
+    - "[console] lp user %player_name% permission unsettemp streakrewards.timeframe.30"
+
+    # - "[console] lp user %player_name% permission settemp streakrewards.cooldown.30 true 24h"
+    # - "[console] lp user %player_name% permission settemp streakrewards.timeframe.30 true 48h"
+    - "[close]"

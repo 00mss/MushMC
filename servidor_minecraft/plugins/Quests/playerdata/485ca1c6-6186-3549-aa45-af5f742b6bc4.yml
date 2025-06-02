@@ -1,0 +1,10 @@
+quest-progress:
+  farming1:
+    started: true
+    started-date: 1729660733798
+    completed: false
+    completed-before: false
+    completion-date: 0
+    task-progress:
+      farming:
+        completed: false

@@ -1,0 +1,50 @@
+location: Spawn:10,500:70,000:0,500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: WHEAT'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '#FF6800&lGENS'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f¡Hola! <#ANIM:wave:&#FF6800,&#FFB900>%player_name%</#ANIM>&f!'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fPara comenzar... ¿Qué te parece conocer nuestras zonas?'
+    height: 0.3
+  - content: '&fSimplemente avanza y comienza a conocer'
+    height: 0.3
+  - content: '&fnuestras zonas e interactua.'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f¿Sigues sin saber que hacer?'
+    height: 0.3
+  - content: '&fContacta a nuestro soporte de ayuda.'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '#FF6800¿Quieres ver las zonas del serivodr?'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '#FF6800¡Golpea la infomación!'
+    height: 0.3
+  actions:
+    LEFT:
+    - COMMAND:/warps
+    - SOUND:BLOCK_COMPARATOR_CLICK
+    RIGHT:
+    - COMMAND:/warps
+    - SOUND:BLOCK_COMPARATOR_CLICK

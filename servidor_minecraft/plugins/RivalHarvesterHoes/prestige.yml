@@ -1,0 +1,92 @@
+Prestige:
+  main-menu-item:
+    enabled: true
+    material: SIGN
+    base64:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmExNGE0ZDJkMDJkY2QyNmExNzU1ZWI4NTYxYjcxYjM0ZDU5ZjQ1MThkOTk0NGExNDJjMmUxMTU2ODg2NzdkMSJ9fX0=
+    slot: 33
+    name: '&aPrestigios de la azada'
+    lore:
+      - '&8Acceso directo'
+      - ''
+      - '&fUsa este item para informarte'
+      - '&fsobre los prestigios de tu'
+      - '&fazada de recolección'
+      - ''
+      - '&e▸ ¡Ir al menú de prestigios!'
+  prestige-info-menu-item:
+    slot: 3
+    material: SIGN
+    base64:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2RjOTg1YTdhNjhjNTc0ZjY4M2MwYjg1OTUyMWZlYjNmYzNkMmZmYTA1ZmEwOWRiMGJhZTQ0YjhhYzI5YjM4NSJ9fX0=
+    name: '&aInformación de prestigios'
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&a&lBENEFICIOS ACTUALES'
+      - ''
+      - ' &8●&l &fAumento de Esencia: &ax{essence-boost}'
+      - ' &8●&l &fAumento de Dinero: &ax{money-boost}'
+      - ' &8●&l &fAumento de Encantamientos: &ax{enchant-proc-boost}'
+      - ' &8●&l &fAumento de Rendimiento de Cosecha: &ax{crop-boost}'
+      - ''
+      - '&e▸ ¡Mejora tu azada para avanzar! '
+  prestige-button-no-requirement:
+    slot: 5
+    material: SIGN
+    base64:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWQ3OGNjMzkxYWZmYjgwYjJiMzVlYjczNjRmZjc2MmQzODQyNGMwN2U3MjRiOTkzOTZkZWU5MjFmYmJjOWNmIn19fQ==
+    name: '&cRequerimientos de prestigio'
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fPara avanzar de prestigio necesitas'
+      - '&fllevar a tu azada al nivel &e{requirement-level} &fy volver'
+      - '&fde nuevo para avanzar de prestigio'
+      - ''
+      - '&e▸ ¡Vuelve una vez mejorada tu azada! '
+  prestige-button-available:
+    material: SIGN
+    base64:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzExMDFjNDk4YWFhYzkzZTc2YjhmMTZkMjljYmZhNDczZWQyNGQ5YzZjNzU1NjNjMjdlZWRkNDljOTYzZTk4YiJ9fX0=
+    name: '&aNueva mejora de prestigio'
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fObten nuevos beneficios en tu'
+      - '&fazada de recolección'
+      - ''
+      - '&aNuevo prestigio'
+      - ' &8●&l &fAumento de Esencia: &ax{essence-boost}'
+      - ' &8●&l &fAumento de Dinero: &ax{money-boost}'
+      - ' &8●&l &fAumento de Encantamientos: &ax{enchant-proc-boost}'
+      - ' &8●&l &fAumento de velocidad de Cosecha: &ax{crop-boost}'
+      - ''
+      - '&e▸ ¡Clic izq para mejorar!'
+Prestige-Menu:
+  size: 9
+  name: '&nPrestigios'
+Prestige-Settings:
+  money-boost-per-prestige: 0.2
+  essence-boost-per-prestige: 0.2
+  crop-boost-per-prestige: 0.15
+  enchant-proc-boost-per-prestige: 0.05
+  max-prestige: 10
+  xp-requirement-boost-per-prestige: 0.2
+  reset-all-enchants-on-prestige: true
+  reset-autosell: false
+Messages:
+  max-prestige: '&x&E&7&D&B&9&4☀ ¡Bien hecho! &fHas alcanzado el nivel de prestigio maximo.'
+  need-level: '&x&F&F&B&E&1&E⚠ ¡Surgió un problema! &fTu azada recolectora debe estar en el nivel &x&F&F&B&E&1&E&n{required-level}&r &fpara avanzar de prestigio.'
+  hoe-prestiged:
+    - '&x&E&7&D&B&9&4☀ ¡Bien hecho! &fHas mejorada tu azada al prestigio nivel: &x&E&7&D&B&9&4{prestige-level}'
+    - ''
+    - '         &x&E&7&D&B&9&4&L¡NUEVA MEJORA!'
+    - ''
+    - ' &8●&l &fAumento de Esencia: &ax{essence-boost}'
+    - ' &8●&l &fAumento de Dinero: &ax{money-boost}'
+    - ' &8●&l &fAumento de Encantamientos: &ax{enchant-proc-boost}'
+    - ' &8●&l &fAumento de Rendimiento de Cosecha: &ax{crop-boost}'
+    - ''
+    - '  &x&E&7&D&B&9&4¡Mejora tu azada al nivel 15 de nuevo!'
+    - ''

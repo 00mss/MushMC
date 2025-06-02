@@ -1,0 +1,688 @@
+menu_title: '&8&nSistema de niveles&r&r | &n1/4'
+open_command:
+- levels info
+- levels
+- level
+size: 54
+items:
+
+  'Level-1-yes':
+    material: LIME_STAINED_GLASS_PANE
+    slot: 12
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #1'
+    priority: 1
+    view_requirement:
+      requirements:
+        check-level:
+          type: '>='
+          input: '%clv_player_level%'
+          output: '1'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEste nivel fue completado con éxito'
+    - '&fcomienza a subir nuevos niveles'
+    - ''
+    - '&e&e▸ ¡Nivel completado!'
+
+  'Level-1-no':
+    material: RED_STAINED_GLASS_PANE
+    slot: 12
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #1'
+    priority: 2
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fComienza a completar el nivel'
+    - '&fy obten recompensas únicas'
+    - ''
+    - '&funa vez completado el nivel'
+    - '&fobtendrás lo siguiente:'
+    - ''
+    - '&8&l● &fBrocha de venta: &#C8F39Ax1&#B6F98D ⌛'
+    - '&8&l● &fDinero: &#FEF5991k ⛃'
+    - '&8&l● &fLlave: &#CCFFADx1 Vote ☃'
+    - ''
+    - '&e&e▸ ¡Aún no desbloqueado!'
+
+####################??????????? +++++++++++++ ======================= +++++++++++++++++++
+####################??????????? +++++++++++++ ======================= +++++++++++++++++++
+
+  'Level-2-Yes':
+    material: LIME_STAINED_GLASS_PANE
+    slot: 13
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #2'
+    priority: 1
+    view_requirement:
+      requirements:
+        check-level:
+          type: '>='
+          input: '%clv_player_level%'
+          output: '2'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEste nivel fue completado con éxito'
+    - '&fcomienza a subir nuevos niveles'
+    - ''
+    - '&e&e▸ ¡Nivel completado!'
+
+  'Level-2-No':
+    material: RED_STAINED_GLASS_PANE
+    slot: 13
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #2'
+    priority: 2
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fComienza a completar el nivel'
+    - '&fy obten recompensas únicas'
+    - ''
+    - '&funa vez completado el nivel'
+    - '&fobtendrás lo siguiente:'
+    - ''
+    - '&8&l● &fBrocha de venta: &#C8F39Ax1&#B6F98D ⌛'
+    - '&8&l● &fDinero: &#FEF5992k ⛃'
+    - '&8&l● &fLlave: &#CCFFADx1 Vote ☃'
+    - ''
+    - '&e&e▸ ¡Aún no desbloqueado!'
+
+
+
+  'Level-3-Yes':
+    material: LIME_STAINED_GLASS_PANE
+    slot: 14
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #3'
+    priority: 1
+    view_requirement:
+      requirements:
+        check-level:
+          type: '>='
+          input: '%clv_player_level%'
+          output: '3'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEste nivel fue completado con éxito'
+    - '&fcomienza a subir nuevos niveles'
+    - ''
+    - '&e&e▸ ¡Nivel completado!'
+
+  'Level-3-No':
+    material: RED_STAINED_GLASS_PANE
+    slot: 14
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #3'
+    priority: 2
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fComienza a completar el nivel'
+    - '&fy obten recompensas únicas'
+    - ''
+    - '&funa vez completado el nivel'
+    - '&fobtendrás lo siguiente:'
+    - ''
+    - '&8&l● &fBrocha de venta: &#C8F39Ax1&#B6F98D ⌛'
+    - '&8&l● &fDinero: &#FEF5993k ⛃'
+    - '&8&l● &fLlave: &#CCFFADx1 Vote ☃'
+    - ''
+    - '&e&e▸ ¡Aún no desbloqueado!'
+
+
+
+  'Level-4-Yes':
+    material: LIME_STAINED_GLASS_PANE
+    slot: 15
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #4'
+    priority: 1
+    view_requirement:
+      requirements:
+        check-level:
+          type: '>='
+          input: '%clv_player_level%'
+          output: '4'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEste nivel fue completado con éxito'
+    - '&fcomienza a subir nuevos niveles'
+    - ''
+    - '&e&e▸ ¡Nivel completado!'
+
+  'Level-4-No':
+    material: RED_STAINED_GLASS_PANE
+    slot: 15
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #4'
+    priority: 2
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fComienza a completar el nivel'
+    - '&fy obten recompensas únicas'
+    - ''
+    - '&funa vez completado el nivel'
+    - '&fobtendrás lo siguiente:'
+    - ''
+    - '&8&l● &fBrocha de venta: &#C8F39Ax1&#B6F98D ⌛'
+    - '&8&l● &fDinero: &#FEF5994k ⛃'
+    - '&8&l● &fLlave: &#CCFFADx1 Vote ☃'
+    - ''
+    - '&e&e▸ ¡Aún no desbloqueado!'
+
+
+  'Level-5-Yes':
+    material: LIME_STAINED_GLASS_PANE
+    slot: 16
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #5'
+    priority: 1
+    view_requirement:
+      requirements:
+        check-level:
+          type: '>='
+          input: '%clv_player_level%'
+          output: '5'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEste nivel fue completado con éxito'
+    - '&fcomienza a subir nuevos niveles'
+    - ''
+    - '&e&e▸ ¡Nivel completado!'
+
+  'Level-5-No':
+    material: RED_STAINED_GLASS_PANE
+    slot: 16
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #5'
+    priority: 2
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fComienza a completar el nivel'
+    - '&fy obten recompensas únicas'
+    - ''
+    - '&funa vez completado el nivel'
+    - '&fobtendrás lo siguiente:'
+    - ''
+    - '&8&l● &fBrocha de venta: &#C8F39Ax1&#B6F98D ⌛'
+    - '&8&l● &fDinero: &#FEF5995k ⛃'
+    - '&8&l● &fLlave: &#CCFFADx1 Vote ☃'
+    - ''
+    - '&e&e▸ ¡Aún no desbloqueado!'
+    
+
+
+  'Level-6-Yes':
+    material: LIME_STAINED_GLASS_PANE
+    slot: 21
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #6'
+    priority: 1
+    view_requirement:
+      requirements:
+        check-level:
+          type: '>='
+          input: '%clv_player_level%'
+          output: '6'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEste nivel fue completado con éxito'
+    - '&fcomienza a subir nuevos niveles'
+    - ''
+    - '&e&e▸ ¡Nivel completado!'
+
+  'Level-6-No':
+    material: RED_STAINED_GLASS_PANE
+    slot: 21
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #6'
+    priority: 2
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fComienza a completar el nivel'
+    - '&fy obten recompensas únicas'
+    - ''
+    - '&funa vez completado el nivel'
+    - '&fobtendrás lo siguiente:'
+    - ''
+    - '&8&l● &fBrocha de venta: &#C8F39Ax1&#B6F98D ⌛'
+    - '&8&l● &fDinero: &#FEF5996k ⛃'
+    - '&8&l● &fLlave: &#CCFFADx1 Vote ☃'
+    - ''
+    - '&e&e▸ ¡Aún no desbloqueado!'
+
+
+  'Level-7-Yes':
+    material: LIME_STAINED_GLASS_PANE
+    slot: 22
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #7'
+    priority: 1
+    view_requirement:
+      requirements:
+        check-level:
+          type: '>='
+          input: '%clv_player_level%'
+          output: '7'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEste nivel fue completado con éxito'
+    - '&fcomienza a subir nuevos niveles'
+    - ''
+    - '&e&e▸ ¡Nivel completado!'
+
+  'Level-7-No':
+    material: RED_STAINED_GLASS_PANE
+    slot: 22
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #7'
+    priority: 2
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fComienza a completar el nivel'
+    - '&fy obten recompensas únicas'
+    - ''
+    - '&funa vez completado el nivel'
+    - '&fobtendrás lo siguiente:'
+    - ''
+    - '&8&l● &fBrocha de venta: &#C8F39Ax1&#B6F98D ⌛'
+    - '&8&l● &fDinero: &#FEF5997k ⛃'
+    - '&8&l● &fLlave: &#CCFFADx1 Vote ☃'
+    - ''
+    - '&e&e▸ ¡Aún no desbloqueado!' 
+
+
+  'Level-8-Yes':
+    material: LIME_STAINED_GLASS_PANE
+    slot: 23
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #8'
+    priority: 1
+    view_requirement:
+      requirements:
+        check-level:
+          type: '>='
+          input: '%clv_player_level%'
+          output: '8'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEste nivel fue completado con éxito'
+    - '&fcomienza a subir nuevos niveles'
+    - ''
+    - '&e&e▸ ¡Nivel completado!'
+
+  'Level-8-No':
+    material: RED_STAINED_GLASS_PANE
+    slot: 23
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #8'
+    priority: 2
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fComienza a completar el nivel'
+    - '&fy obten recompensas únicas'
+    - ''
+    - '&funa vez completado el nivel'
+    - '&fobtendrás lo siguiente:'
+    - ''
+    - '&8&l● &fBrocha de venta: &#C8F39Ax1&#B6F98D ⌛'
+    - '&8&l● &fDinero: &#FEF5998k ⛃'
+    - '&8&l● &fLlave: &#CCFFADx1 Vote ☃'
+    - ''
+    - '&e&e▸ ¡Aún no desbloqueado!'  
+
+
+  'Level-9-Yes':
+    material: LIME_STAINED_GLASS_PANE
+    slot: 24
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #9'
+    priority: 1
+    view_requirement:
+      requirements:
+        check-level:
+          type: '>='
+          input: '%clv_player_level%'
+          output: '9'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEste nivel fue completado con éxito'
+    - '&fcomienza a subir nuevos niveles'
+    - ''
+    - '&e&e▸ ¡Nivel completado!'
+
+  'Level-9-No':
+    material: RED_STAINED_GLASS_PANE
+    slot: 24
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #9'
+    priority: 2
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fComienza a completar el nivel'
+    - '&fy obten recompensas únicas'
+    - ''
+    - '&funa vez completado el nivel'
+    - '&fobtendrás lo siguiente:'
+    - ''
+    - '&8&l● &fBrocha de venta: &#C8F39Ax1&#B6F98D ⌛'
+    - '&8&l● &fDinero: &#FEF5999k ⛃'
+    - '&8&l● &fLlave: &#CCFFADx1 Vote ☃'
+    - ''
+    - '&e&e▸ ¡Aún no desbloqueado!'  
+
+
+  'Level-10-Yes':
+    material: LIME_STAINED_GLASS_PANE
+    slot: 25
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #10'
+    priority: 1
+    view_requirement:
+      requirements:
+        check-level:
+          type: '>='
+          input: '%clv_player_level%'
+          output: '10'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEste nivel fue completado con éxito'
+    - '&fcomienza a subir nuevos niveles'
+    - ''
+    - '&e&e▸ ¡Nivel completado!'
+
+  'Level-10-No':
+    material: RED_STAINED_GLASS_PANE
+    slot: 25
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #10'
+    priority: 2
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fComienza a completar el nivel'
+    - '&fy obten recompensas únicas'
+    - ''
+    - '&funa vez completado el nivel'
+    - '&fobtendrás lo siguiente:'
+    - ''
+    - '&8&l● &fBrocha de venta: &#C8F39Ax1&#B6F98D ⌛'
+    - '&8&l● &fDinero: &#FEF59910k ⛃'
+    - '&8&l● &fLlave: &#CCFFADx1 Vote ☃'
+    - ''
+    - '&e&e▸ ¡Aún no desbloqueado!'  
+
+
+  'Level-11-Yes':
+    material: LIME_STAINED_GLASS_PANE
+    slot: 30
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #11'
+    priority: 1
+    view_requirement:
+      requirements:
+        check-level:
+          type: '>='
+          input: '%clv_player_level%'
+          output: '11'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEste nivel fue completado con éxito'
+    - '&fcomienza a subir nuevos niveles'
+    - ''
+    - '&e&e▸ ¡Nivel completado!'
+
+  'Level-11-No':
+    material: RED_STAINED_GLASS_PANE
+    slot: 30
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #11'
+    priority: 2
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fComienza a completar el nivel'
+    - '&fy obten recompensas únicas'
+    - ''
+    - '&funa vez completado el nivel'
+    - '&fobtendrás lo siguiente:'
+    - ''
+    - '&8&l● &fBrocha de venta: &#C8F39Ax1&#B6F98D ⌛'
+    - '&8&l● &fDinero: &#FEF59911k ⛃'
+    - '&8&l● &fLlave: &#CCFFADx1 Vote ☃'
+    - ''
+    - '&e&e▸ ¡Aún no desbloqueado!'
+
+
+  'Level-12-Yes':
+    material: LIME_STAINED_GLASS_PANE
+    slot: 31
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #12'
+    priority: 1
+    view_requirement:
+      requirements:
+        check-level:
+          type: '>='
+          input: '%clv_player_level%'
+          output: '12'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEste nivel fue completado con éxito'
+    - '&fcomienza a subir nuevos niveles'
+    - ''
+    - '&e&e▸ ¡Nivel completado!'
+
+  'Level-12-No':
+    material: RED_STAINED_GLASS_PANE
+    slot: 31
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #12'
+    priority: 2
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fComienza a completar el nivel'
+    - '&fy obten recompensas únicas'
+    - ''
+    - '&funa vez completado el nivel'
+    - '&fobtendrás lo siguiente:'
+    - ''
+    - '&8&l● &fBrocha de venta: &#C8F39Ax1&#B6F98D ⌛'
+    - '&8&l● &fDinero: &#FEF59912k ⛃'
+    - '&8&l● &fLlave: &#CCFFADx1 Vote ☃'
+    - ''
+    - '&e&e▸ ¡Aún no desbloqueado!'
+
+
+  'Level-13-Yes':
+    material: LIME_STAINED_GLASS_PANE
+    slot: 32
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #13'
+    priority: 1
+    view_requirement:
+      requirements:
+        check-level:
+          type: '>='
+          input: '%clv_player_level%'
+          output: '13'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEste nivel fue completado con éxito'
+    - '&fcomienza a subir nuevos niveles'
+    - ''
+    - '&e&e▸ ¡Nivel completado!'
+
+  'Level-13-No':
+    material: RED_STAINED_GLASS_PANE
+    slot: 32
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #13'
+    priority: 2
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fComienza a completar el nivel'
+    - '&fy obten recompensas únicas'
+    - ''
+    - '&funa vez completado el nivel'
+    - '&fobtendrás lo siguiente:'
+    - ''
+    - '&8&l● &fBrocha de venta: &#C8F39Ax1&#B6F98D ⌛'
+    - '&8&l● &fDinero: &#FEF59913k ⛃'
+    - '&8&l● &fLlave: &#CCFFADx1 Vote ☃'
+    - ''
+    - '&e&e▸ ¡Aún no desbloqueado!' 
+
+
+  'Level-14-Yes':
+    material: LIME_STAINED_GLASS_PANE
+    slot: 33
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #14'
+    priority: 1
+    view_requirement:
+      requirements:
+        check-level:
+          type: '>='
+          input: '%clv_player_level%'
+          output: '14'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEste nivel fue completado con éxito'
+    - '&fcomienza a subir nuevos niveles'
+    - ''
+    - '&e&e▸ ¡Nivel completado!'
+
+  'Level-14-No':
+    material: RED_STAINED_GLASS_PANE
+    slot: 33
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #14'
+    priority: 2
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fComienza a completar el nivel'
+    - '&fy obten recompensas únicas'
+    - ''
+    - '&funa vez completado el nivel'
+    - '&fobtendrás lo siguiente:'
+    - ''
+    - '&8&l● &fBrocha de venta: &#C8F39Ax1&#B6F98D ⌛'
+    - '&8&l● &fDinero: &#FEF59914k ⛃'
+    - '&8&l● &fLlave: &#CCFFADx1 Vote ☃'
+    - ''
+    - '&e&e▸ ¡Aún no desbloqueado!'    
+
+
+  'Level-15-Yes':
+    material: LIME_STAINED_GLASS_PANE
+    slot: 34
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #15'
+    priority: 1
+    view_requirement:
+      requirements:
+        check-level:
+          type: '>='
+          input: '%clv_player_level%'
+          output: '15'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEste nivel fue completado con éxito'
+    - '&fcomienza a subir nuevos niveles'
+    - ''
+    - '&e&e▸ ¡Nivel completado!'
+
+  'Level-15-No':
+    material: RED_STAINED_GLASS_PANE
+    slot: 34
+    hide_attributes: true
+    display_name: '&#C1FE7FNivel #15'
+    priority: 2
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fComienza a completar el nivel'
+    - '&fy obten recompensas únicas'
+    - ''
+    - '&funa vez completado el nivel'
+    - '&fobtendrás lo siguiente:'
+    - ''
+    - '&8&l● &fBrocha de venta: &#C8F39Ax1&#B6F98D ⌛'
+    - '&8&l● &fDinero: &#FEF59915k ⛃'
+    - '&8&l● &fLlave: &#CCFFADx1 Vote ☃'
+    - ''
+    - '&e&e▸ ¡Aún no desbloqueado!'
+
+
+
+  'Fill':
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: "&r"
+    slots: 
+    - 10
+    - 19
+    - 28
+  'siguiente':
+    material: arrow
+    slots:
+    - 50
+    display_name: '&aSiguiente página'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEstá es nuestra lista amplia de'
+    - '&fniveles de juego disponibles'
+    - ''
+    - '&e▸ ¡Juega para subir de nivel! ' 
+    left_click_commands:
+    - '[openguimenu] levels-2'
+    - '[sound] BLOCK_WOODEN_TRAPDOOR_OPEN'
+    - '[sound] BLOCK_WATER_AMBIENT'   
+  'sobre':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ0NTJiZmNkYzNlYTE0ZjllNjEyYjFjOTZhYmVmOTdjMTBlOTZjNzExNmVhMmE0YjFhNWRmOGQ0YWExNzJmOSJ9fX0=
+    slots:
+    - 18
+    display_name: '&aSobre los niveles'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fPodrás mejorar conseguir niveles'
+    - '&fjugando diariamente en el servidor'
+    - ''
+    - '&fmiemtras más niveles alcanzes mas'
+    - '&fmejores serán las recompensas'
+    - ''
+    - '&8&l● &fNiveles: &a50'
+    - ''
+    - '&e▸ ¡Comienza a subir de nivel! '     
+  'inforrmacion':
+    display_name: '&a¡Sube de niveles!'
+    material: nautilus_shell
+    slot: 49

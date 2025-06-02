@@ -1,0 +1,18 @@
+location: Spawn:73,529:67,234:0,445
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&#F9AF84&lCREAR ISLA'
+    height: 0.3
+  - content: '&fCrea tu isla principal y'
+    height: 0.3
+  - content: '&fcomienza tu aventura'
+    height: 0.3
+  - content: '&e▸ ¡Clic para abrir!'
+    height: 0.3
+  actions: {}

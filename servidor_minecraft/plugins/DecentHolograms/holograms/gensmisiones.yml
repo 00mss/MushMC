@@ -1,0 +1,18 @@
+location: Spawn:104,515:67,224:-20,502
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&#ffc516&lM&#ffc51c&lI&#ffc522&lS&#ffc528&lI&#ffc42d&lO&#ffc433&lN&#ffc439&lE&#ffc43f&lS'
+    height: 0.3
+  - content: '&fCompleto los diferentes'
+    height: 0.3
+  - content: '&ftipos de misiones'
+    height: 0.3
+  - content: '&e▸ ¡Clic para abrir!'
+    height: 0.3
+  actions: {}

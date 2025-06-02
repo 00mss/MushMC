@@ -1,0 +1,180 @@
+# Categories are a way of grouping up quests.
+# When a player uses /quests, a menu of categories will be presented to them.
+# When a player clicks ona category, a list of quests under that category will show.
+# If categories are disabled, all quests will be shown under one big GUI.
+# Players can access specific categories by command using /quests c [category].
+# If a quest does not have a category, it will not be shown.
+categories:
+  blockbreak:
+    display:
+      type: "PLAYER_HEAD"
+      owner-base64: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWI4MGRkMzkzM2UwMjhiMWE4OWFlNWQxOGM0NTZiNWEyZTRmOWZmMTNlMzY2NmFmZjQxM2FmYTAyYWE5ZmIzZiJ9fX0="
+      name: "&aObjetivo de destruir bloques."
+      itemflags:
+      - "HIDE_ATTRIBUTES"
+      lore:
+        - '&8Artículo de infomación'
+        - ''
+        - '&fRompe algún tipo de bloques o estructuras'
+        - '&fy consigue recompensas personalizadas'
+        - ''
+        - '&8&l&8&l● &fDificultad: &aFacil'
+        - ''
+        - '&e▸ ¡Click izquiedo para comenzar!'       
+  breeding:
+    display:
+      type: "BONE"
+      name: "&aObjetivo de criar animales"
+      itemflags:
+      - "HIDE_ATTRIBUTES"
+      lore:
+        - '&8Artículo de infomación'
+        - ''
+        - '&fPastorea a tus animales y consigue'
+        - '&frecompensas personalizadas'
+        - ''
+        - '&8&l&8&l● &fDificultad: &aFacil'
+        - ''
+        - '&e▸ ¡Click izquiedo para comenzar!'
+  playtime:
+    display:
+      type: "PLAYER_HEAD"
+      owner-base64: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTllMzIyY2ExMGIwOTRkMzRjY2FmNzg5NmQxMjgxZDUxZDRlYjdjZjBkZmI5MjYzZGQ0NjA1YTQ0YzI1MTM4YiJ9fX0="
+      name: "&aObjetivo de jugar por tiempo"
+      itemflags:
+      - "HIDE_ATTRIBUTES"
+      lore:
+        - '&8Artículo de infomación'
+        - ''
+        - '&fCompleta algún tiempo de juego  obtén'
+        - '&frecompensas personalizadas'
+        - ''
+        - '&8&l&8&l● &fDificultad: &6Dificil'
+        - ''
+        - '&e▸ ¡Click izquiedo para comenzar!'
+  brewing:
+    display:
+      type: "PLAYER_HEAD"
+      owner-base64: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjJjNmI1N2IyZDBlNzc4YjEzOWViY2Q1MTg4MTZlNGJkMGFlYWVjZGFhMDk0NGJiM2ZlZjZmZjdlMWYzZDJmMSJ9fX0="
+      name: "&aObjetivo de elaboración de pociones"
+      itemflags:
+      - "HIDE_ATTRIBUTES"
+      lore:
+        - '&8Artículo de infomación'
+        - ''
+        - '&fCrea tus pociones  consigue '
+        - '&frecompensas personalizadas '
+        - ''
+        - '&8&l&8&l● &fDificultad: &aFacil'
+        - ''
+        - '&e▸ ¡Click izquiedo para comenzar! '
+  enchanting:
+    display:
+      type: "PLAYER_HEAD"
+      owner-base64: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjZmNDQ4ZTNhMzViZWRkYjI1MmVlN2IzMGZlZDY3MTUzYjhhMzI0NTA2NTU2YjRhNzFlYWZjZTVlYjg2YjQ5In19fQ=="
+      name: "&aObjetivo de encantar objetos"
+      itemflags:
+      - "HIDE_ATTRIBUTES"
+      lore:
+        - '&8Artículo de infomación'
+        - ''
+        - '&fEncanta algunos objetos y obtén'
+        - '&frecompensas personalizadas'
+        - ''
+        - '&8&l&8&l● &fDificultad: &aFacil'
+        - ''
+        - '&e▸ ¡Click izquiedo para comenzar!'
+  farming:
+    display:
+      type: "PLAYER_HEAD"
+      owner-base64: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmRmZGU5MDE1ZDdiMTZmY2RhZGY4MDkwZTc0NDNiZGI5YTdmNjc0ODg2MGI1YWUyNzE4YjQ0YWIwNjI4ZjRkNyJ9fX0="
+      name: "&aObjetivo de cosechador"
+      itemflags:
+      - "HIDE_ATTRIBUTES"
+      lore:
+        - '&8Artículo de infomación'
+        - ''
+        - '&fCultiva algunos artículos y obtén'
+        - '&frecompensas personalizadas'
+        - ''
+        - '&8&l&8&l● &fDificultad: &aFacil'
+        - ''
+        - '&e▸ ¡Click izquiedo para comenzar!'
+  fishing:
+    display:
+      type: "PLAYER_HEAD"
+      owner-base64: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDAxZDg5OTI2YWJhYThmNjcxMzQxOWUyNWU5Njk1MjAyNWU1NjI2ZDlkZTk4NjMyOGYzMTIyMTE3YTYxMDI3In19fQ=="
+      name: "&aObjetivo de pescador"
+      itemflags:
+      - "HIDE_ATTRIBUTES"
+      lore:
+        - '&8Artículo de infomación'
+        - ''
+        - '&fPesca algunos artículos y obtén'
+        - '&frecompensas personalizadas'
+        - ''
+        - '&8&l&8&l● &fDificultad: &aFacil'
+        - ''
+        - '&e▸ ¡Click izquiedo para comenzar!'
+  playerkilling:
+    display:
+      type: "NETHERITE_SWORD"
+      name: "&aObjetivo de asesinar jugadores"
+      itemflags:
+      - "HIDE_ATTRIBUTES"
+      lore:
+        - '&8Artículo de infomación'
+        - ''
+        - '&fMata a algunos jugadores y obtén'
+        - '&frecompensas personalizadas'
+        - ''
+        - '&8&l&8&l● &fDificultad: &cExtremo'
+        - ''
+        - '&e▸ ¡Click izquiedo para comenzar!'
+  taming:
+    display:
+      type: "PLAYER_HEAD"
+      owner-base64: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzc2N2EwM2NlMWJhZmRlNjlkNjFmNWMxOTNkMmEyYTA5ZGJkZTczNDhmN2RiOTMyYmI1YWE0NDdhOTViMjM0YSJ9fX0="
+      name: "&aObjetivo de domesticar animales"
+      itemflags:
+      - "HIDE_ATTRIBUTES"
+      lore:
+        - '&8Artículo de infomación'
+        - ''
+        - '&fDomestica algunos animales y obtén'
+        - '&frecompensas personalizadas'
+        - ''
+        - '&8&l&8&l● &fDificultad: &aFacil'
+        - ''
+        - '&e▸ ¡Click izquiedo para comenzar!'
+  walking:
+    display:
+      type: "GOLDEN_BOOTS"
+      name: "&aObjetivo de caminar bloques"
+      itemflags:
+      - "HIDE_ATTRIBUTES"
+      lore:
+        - '&8Artículo de infomación'
+        - ''
+        - '&fCamina por todas las partes del mundo'
+        - '&fy obten recompensas personalizadas'
+        - ''
+        - '&8&l&8&l● &fDificultad: &aFacil'
+        - ''
+        - '&e▸ ¡Click izquiedo para comenzar!'
+  smelting:
+    display:
+      type: "PLAYER_HEAD"
+      owner-base64: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjkyZDVkZjgwNWMyMzkwMjJmZTFiNDVmOTQwODgyYmY0MGI1NTk2NzE5MzdkYzcxZmJjOTZmNjMwMjUwZWJjNCJ9fX0="
+      name: "&aObjetivo de fundición"
+      itemflags:
+      - "HIDE_ATTRIBUTES"
+      lore:
+        - '&8Artículo de infomación'
+        - ''
+        - '&fComienza a fundir objetos y obten'
+        - '&frecompensas personalizadas'
+        - ''
+        - '&8&l&8&l● &fDificultad: &aFacil'
+        - ''
+        - '&e▸ ¡Click izquiedo para comenzar!'

@@ -1,0 +1,48 @@
+# DeluxeMenus 1.14.0-Release main configuration file
+#
+# A full wiki on how to use this plugin can be found at:
+# https://wiki.helpch.at/clips-plugins/deluxemenus
+
+debug: false
+check_updates: false
+gui_menus:
+  StreakRewards1:
+    file: StreakRewards/streakRewards1.yml
+  StreakRewards2:
+    file: StreakRewards/streakRewards2.yml
+  island:
+    file: island.yml
+  is_settings:
+    file: is_settings.yml
+  Trabajos:
+    file: Trabajos.yml
+  kits:
+    file: kits.yml
+  kits2:
+    file: kits2.yml
+  kits3:
+    file: kits3.yml
+  gen:
+    file: gen.yml
+  gen2:
+    file: gen2.yml
+  gen3:
+    file: gen3.yml
+  guia:
+    file: guia.yml
+  levels-1:
+    file: levels-1.yml
+  levels-2:
+    file: levels-2.yml
+  levels-3:
+    file: levels-3.yml
+  levels-4:
+    file: levels-4.yml
+  azada:
+    file: azada.yml
+  Zonas:
+    file: Zonas.yml
+  cultivos:
+    file: cultivos.yml
+  articulos:
+    file: articulos.yml

@@ -1,0 +1,48 @@
+location: cultivos:-29,500:96,000:7,500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: POTATO'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '#E2C693&lZONA DE CULTIVOS'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f¡Hola! <#ANIM:wave:&#E2C693,&#EAE88F>%player_name%</#ANIM>&f!'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fTe encuentras en nuestra zona de cultivos'
+    height: 0.3
+  - content: '&fComienza a cosechar &#E2C693&n&lPATATAS&f para mejorar tu azada'
+    height: 0.3
+  - content: '&fvende tus cosechas para obtener ganancias.'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&8&l● &fNivel de azada req: &#E2C69315'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f¿Quieres dirigirte al spawn?'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&#E2C693&n¡Golpea la Información!'
+    height: 0.3
+  actions:
+    LEFT:
+    - COMMAND:/spawn
+    - SOUND:BLOCK_COMPARATOR_CLICK
+    RIGHT:
+    - COMMAND:/spawn
+    - SOUND:BLOCK_COMPARATOR_CLICK

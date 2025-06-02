@@ -1,0 +1,702 @@
+rewards:
+  1:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1 5'
+      - '[console] tab player %player_name% tabsuffix   &8『&#D5DF801♻&8』'
+      - '[console] eco give %player_name% 1000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '1'
+
+  2:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1 10'
+      - '[console] tab player %player_name% tabsuffix   &8『&#D5DF802♻&8』'
+      - '[console] eco give %player_name% 2000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '2'
+
+  3:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 15'
+      - '[console] tab player %player_name% tabsuffix   &8『&#D5DF803♻&8』'
+      - '[console] eco give %player_name% 3000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '3'
+
+  4:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 20'
+      - '[console] tab player %player_name% tabsuffix   &8『&#D5DF804♻&8』'
+      - '[console] eco give %player_name% 4000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '4'
+
+  5:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 25'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#F6FFAF5♲&8』'
+      - '[console] eco give %player_name% 5000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '5'
+
+  6:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#F6FFAF6♲&8』'
+      - '[console] eco give %player_name% 6000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '6'
+
+  7:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#F6FFAF7♲&8』'
+      - '[console] eco give %player_name% 7000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '7'
+
+  8:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#F6FFAF8♲&8』'
+      - '[console] eco give %player_name% 8000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '8'
+
+  9:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#F6FFAF9♲&8』'
+      - '[console] eco give %player_name% 9000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '9'
+
+  10:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#E2F35310✿&8』'
+      - '[console] eco give %player_name% 10000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '10'
+
+  11:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#E2F35311✿&8』'
+      - '[console] eco give %player_name% 11000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '11'
+
+  12:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#E2F35312✿&8』'
+      - '[console] eco give %player_name% 12000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '12'
+
+  13:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#E2F35313✿&8』'
+      - '[console] eco give %player_name% 13000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '13'
+
+  14:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#E2F35314✿&8』'
+      - '[console] eco give %player_name% 14000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '14'
+
+  15:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#B2FF0015❆&8』'
+      - '[console] eco give %player_name% 15000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '15'
+
+  16:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#B2FF0016❆&8』'
+      - '[console] eco give %player_name% 16000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '16'
+
+  17:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#B2FF0017❆&8』'
+      - '[console] eco give %player_name% 17000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '17'
+
+  18:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#B2FF0018❆&8』'
+      - '[console] eco give %player_name% 18000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '18'
+
+  19:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#B2FF0019❆&8』'
+      - '[console] eco give %player_name% 19000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '19'
+
+  20:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#1DCEAB20⸙&8』'
+      - '[console] eco give %player_name% 20000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '20'
+
+  21:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#1DCEAB21⸙&8』'
+      - '[console] eco give %player_name% 21000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '21'
+
+  22:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#1DCEAB22⸙&8』'
+      - '[console] eco give %player_name% 22000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '22'
+
+  23:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#1DCEAB23⸙&8』'
+      - '[console] eco give %player_name% 23000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '23'
+
+  24:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#1DCEAB24⸙&8』'
+      - '[console] eco give %player_name% 24000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '24'
+
+  25:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#76FFE425✵&8』'
+      - '[console] eco give %player_name% 25000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '25'
+
+  26:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#76FFE426✵&8』'
+      - '[console] eco give %player_name% 26000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '26'
+
+  27:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#76FFE427✵&8』'
+      - '[console] eco give %player_name% 27000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '27'
+
+  28:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#76FFE428✵&8』'
+      - '[console] eco give %player_name% 28000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '28'
+
+  29:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#76FFE429✵&8』'
+      - '[console] eco give %player_name% 29000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '29'
+
+  30:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#83181830⚘&8』'
+      - '[console] eco give %player_name% 30000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '30'
+
+  31:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#83181831⚘&8』'
+      - '[console] eco give %player_name% 31000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '31'
+
+  32:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#83181832⚘&8』'
+      - '[console] eco give %player_name% 32000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '32'
+
+  33:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#83181833⚘&8』'
+      - '[console] eco give %player_name% 33000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '33'
+
+  34:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#83181834⚘&8』'
+      - '[console] eco give %player_name% 34000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '34'
+
+  35:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#A45D0135✪&8』'
+      - '[console] eco give %player_name% 35000'
+      
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '35'
+
+  36:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#A45D0136✪&8』'
+      - '[console] eco give %player_name% 36000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '36'
+
+  37:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#A45D0137✪&8』'
+      - '[console] eco give %player_name% 37000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '37'
+
+  38:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#A45D0138✪&8』'
+      - '[console] eco give %player_name% 38000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '38'
+
+  39:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#A45D0139✪&8』'
+      - '[console] eco give %player_name% 39000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '39'
+
+  40:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#FF960F40♨&8』'
+      - '[console] eco give %player_name% 40000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '40'
+
+  41:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#FF960F41♨&8』'
+      - '[console] eco give %player_name% 41000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '41'
+
+  42:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#FF960F42♨&8』'
+      - '[console] eco give %player_name% 42000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '42'
+
+  43:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#FF960F43♨&8』'
+      - '[console] eco give %player_name% 43000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '43'
+
+  44:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#FF960F44♨&8』'
+      - '[console] eco give %player_name% 44000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '44'
+
+  45:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#FE259845🔥&8』'
+      - '[console] eco give %player_name% 45000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '45'
+
+  46:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#FE259846🔥&8』'
+      - '[console] eco give %player_name% 46000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '46'
+
+  47:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#FE259847🔥&8』'
+      - '[console] eco give %player_name% 47000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '47'
+
+  48:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#FE259848🔥&8』'
+      - '[console] eco give %player_name% 48000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '48'
+
+  49:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#FE259849🔥&8』'
+      - '[console] eco give %player_name% 49000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '49'
+
+  50:
+    commands:
+      - '[console] excellentcrates key give %player_name% vote 1'
+      - '[console] gens sellwand %player_name% 1.1 30'
+      - '[console] tab player %player_name% tabsuffix   &8 『&#FF000050☠&8』'
+      - '[console] eco give %player_name% 50000'
+    messages:
+      - '[player] [title] &#E0EA74🔥 &l¡NUEVO NIVEL! &#E0EA74🔥<n>&7Subiste un escalon más, sigue haci &#E0EA74{level}'
+    sound:
+      sound-effect: ''
+      volume: 1
+      pitch: 1
+    levels: '50'
+

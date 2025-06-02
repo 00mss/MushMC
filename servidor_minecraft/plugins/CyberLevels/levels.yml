@@ -1,0 +1,78 @@
+levels:
+
+  # What level and experience should players start with? This will
+  # also be treated as the minimum level/exp a player can get to.
+  starting:
+    level: 0
+    experience: 0
+
+  # Maximum level a player can achieve.
+  maximum:
+    level: 50
+
+  # {level} {playerEXP} {maxLevel} {minLevel} {minEXP}
+  experience:
+
+    # What general formula should each level's requirements follow?
+    # Can be a formula or just a number. Refer to internal placeholder
+    # mentioned above experience.
+    general-formula: '25 * {level}'
+
+    # Specific level requirements. Overrides general formula for
+    # specific levels. All levels without specific formulas/values
+    # will follow the general formula.
+    level:
+      1: 2500
+      2: 5000
+      3: 7000
+      4: 8000
+      5: 9000
+      6: 10000
+      7: 11000
+      8: 12000
+      9: 13000
+      10: 14000
+      11: 15000
+      12: 16000
+      13: 17000
+      14: 18000
+      15: 19000
+      16: 20000
+      17: 21000
+      18: 22000
+      19: 23000
+      20: 24000
+      21: 25000
+##########################
+      22: 26000
+      23: 27000
+      24: 28000
+      25: 29000
+      26: 30000
+      27: 31000
+      28: 32000
+      29: 33000
+      30: 34000
+      31: 35000
+      32: 36000
+      33: 37000
+      34: 38000
+      35: 39000
+      36: 40000
+      37: 41000
+      38: 42000
+      39: 43000
+      40: 44000
+      41: 45000
+      42: 46000
+##########################
+      43: 47000
+      44: 48000
+      45: 49000
+      46: 50000
+      47: 51000
+      48: 52000
+      49: 53000
+      50: 54000
+
+

@@ -1,0 +1,163 @@
+gens:
+  name: "&nModalidad gens - Página (%page%/1)"
+  items:
+    1:
+      type: item
+      item:
+        material: HOPPER
+        quantity: 1
+      buyPrice: 6000000
+      sellPrice: 2
+      slot: 10
+    2:
+      type: item
+      item:
+        material: ICE
+        quantity: 1
+      buyPrice: 50
+      sellPrice: 5
+      slot: 11    
+    3:
+      type: item
+      item:
+        material: PACKED_ICE
+        quantity: 1
+      buyPrice: 50
+      sellPrice: 5
+      slot: 12
+    4:
+      type: item
+      item:
+        material: CHEST
+        quantity: 1
+      buyPrice: 50
+      sellPrice: 5
+      slot: 13
+    5:
+      type: item
+      item:
+        material: COMPARATOR
+        quantity: 1
+      buyPrice: 50
+      sellPrice: 5
+      slot: 14
+    6:
+      type: item
+      item:
+        material: blue_shulker_box
+        quantity: 1
+      buyPrice: 50
+      sellPrice: 5
+      slot: 15
+    7:
+      type: item
+      item:
+        material: brewing_stand
+        quantity: 1
+      buyPrice: 50
+      sellPrice: 5
+      slot: 16
+    8:
+      type: item
+      item:
+        material: cauldron
+        quantity: 1
+      buyPrice: 50
+      sellPrice: 5
+      slot: 19
+    9:
+      type: item
+      item:
+        material: glass
+        quantity: 1
+      buyPrice: 50
+      sellPrice: 5
+      slot: 20
+    10:
+      type: item
+      item:
+        material: repeater
+        quantity: 1
+      buyPrice: 20
+      sellPrice: 2
+      slot: 21
+    11:
+      type: item
+      item:
+        material: water_bucket
+        quantity: 1
+      buyPrice: 20
+      sellPrice: 2
+      slot: 22
+    12:
+      type: item
+      item:
+        material: lava_bucket
+        quantity: 1
+      buyPrice: 20
+      sellPrice: 2
+      slot: 23
+    13:
+      type: item
+      item:
+        material: iron_hoe
+        quantity: 1
+      buyPrice: 20
+      sellPrice: 2
+      slot: 24
+    14:
+      type: item
+      item:
+        material: beacon
+        quantity: 1
+      buyPrice: 20
+      sellPrice: 2
+      slot: 25
+    15:
+      type: item
+      item:
+        material: dropper
+        quantity: 1
+      buyPrice: 20
+      sellPrice: 2
+      slot: 29
+    16:
+      type: item
+      item:
+        material: activator_rail
+        quantity: 1
+      buyPrice: 50
+      sellPrice: 5
+      slot: 30
+    17:
+      type: item
+      item:
+        material: redstone_block
+        quantity: 1
+      buyPrice: 50
+      sellPrice: 5
+      slot: 31
+    19:
+      type: item
+      item:
+        material: redstone_torch
+        quantity: 1
+      buyPrice: 50
+      sellPrice: 5
+      slot: 20    
+    20:
+      type: item
+      item:
+        material: piston
+        quantity: 1
+      buyPrice: 50
+      sellPrice: 5
+      slot: 32  
+    21:
+      type: item
+      item:
+        material: sponge
+        quantity: 1
+      buyPrice: 50
+      sellPrice: 5
+      slot: 33

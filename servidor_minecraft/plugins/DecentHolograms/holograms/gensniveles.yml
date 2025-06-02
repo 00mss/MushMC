@@ -1,0 +1,18 @@
+location: Spawn:112,389:67,118:-17,495
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&#8B44F8&lNIVELES'
+    height: 0.3
+  - content: '&fSube de niveles jugando y'
+    height: 0.3
+  - content: '&fobten beneficios'
+    height: 0.3
+  - content: '&e▸ ¡Clic para abrir!'
+    height: 0.3
+  actions: {}

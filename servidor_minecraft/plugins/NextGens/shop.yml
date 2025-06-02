@@ -1,0 +1,17 @@
+# The title of the gui
+title: "&r"
+# The size of the gui
+size: 54
+
+# List of all items in the gui
+items:
+  xd_generator:
+    type: GENERATOR
+    generator: xd_generator
+    cost: -1
+    material: barrier
+    display-name: "&r"
+    glowing: false
+    slots: [0]
+    lore:
+      - '&r'

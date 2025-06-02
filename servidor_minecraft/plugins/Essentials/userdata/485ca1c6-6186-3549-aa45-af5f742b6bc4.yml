@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1729660876950
+  login: 1729659957135
+money: '5582.187499999999999'
+last-account-name: uWrap
+lastlocation:
+  world: 14767f7f-9279-4ea5-b8b9-1a855a5f717b
+  world-name: Spawn
+  x: 0.39168570990675966
+  y: 65.0
+  z: 0.48816687449415375
+  yaw: -89.10060119628906
+  pitch: -5.250089645385742
+logoutlocation:
+  world: ed055d91-2dfd-4525-a826-7b1b62e7f8ee
+  world-name: Islas
+  x: 600.5
+  y: 100.1875
+  z: 600.5
+  yaw: -86.31462097167969
+  pitch: 1.982017159461975

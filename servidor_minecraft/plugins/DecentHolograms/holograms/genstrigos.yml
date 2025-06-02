@@ -1,0 +1,48 @@
+location: cultivos:-29,477:96,000:0,527
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: WHEAT'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '#FAFF65&lZONA DE CULTIVOS'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f¡Hola! <#ANIM:wave:&#FAFF65,&#FFF809>%player_name%</#ANIM>&f!'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fTe encuentras en nuestra zona de cultivos'
+    height: 0.3
+  - content: '&fComienza a cosechar &#FAFF65&n&lTRIGO&f para mejorar tu azada'
+    height: 0.3
+  - content: '&fvende tus cosechas para obtener ganancias.'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&8&l● &fNivel de azada req: &#FAFF65&l✘'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f¿Quieres dirigirte al spawn?'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&#FAFF65&n¡Golpea la Información!'
+    height: 0.3
+  actions:
+    LEFT:
+    - COMMAND:/spawn
+    - SOUND:BLOCK_COMPARATOR_CLICK
+    RIGHT:
+    - COMMAND:/spawn
+    - SOUND:BLOCK_COMPARATOR_CLICK

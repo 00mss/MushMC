@@ -1,0 +1,185 @@
+cooldown: 5600
+one_time: false
+auto_armor: false
+permission_required: true
+display:
+  default:
+    id: STONE_SWORD
+    name: '&c&l%kit_name% &cKit'
+    amount: 1
+    lore:
+    - '&fThis is a description of the kit.'
+    - ''
+    - '&7Edit it on the &c%kit_name%.yml &7file'
+    - '&7or using &c/kit edit %kit_name%'
+    item_flags:
+    - HIDE_ATTRIBUTES
+  no_permission:
+    id: BARRIER
+    name: '&c&l%kit_name% &cKit'
+    amount: 1
+    lore:
+    - '&cYou don''t have permissions to claim'
+    - '&cthis kit.'
+  cooldown:
+    id: STONE_SWORD
+    name: '&c&l%kit_name% &cKit'
+    amount: 1
+    lore:
+    - '&cYou need to wait &7%time%'
+    - '&cto claim this kit again.'
+items:
+  '1':
+    id: IRON_SWORD
+    amount: 1
+    enchants:
+    - DAMAGE_ALL;1
+    preview_slot: 0
+  '2':
+    id: CHAINMAIL_HELMET
+    name: '&x&3&9&F&B&8&1E&x&3&D&F&B&8&1q&x&4&0&F&B&8&0u&x&4&4&F&C&8&0i&x&4&7&F&C&8&0p&x&4&B&F&C&8&0a&x&4&E&F&C&7&Fm&x&5&2&F&C&7&Fi&x&5&5&F&C&7&Fe&x&5&9&F&D&7&Fn&x&5&C&F&D&7&Et&x&6&0&F&D&7&Eo
+      &x&3&9&F&B&8&1&lN&x&4&1&F&B&8&0&lU&x&4&9&F&C&8&0&lE&x&5&0&F&C&7&F&lV&x&5&8&F&D&7&F&lO&x&6&0&F&D&7&E&lS'
+    amount: 1
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;1
+    preview_slot: 1
+  '3':
+    id: CHAINMAIL_CHESTPLATE
+    name: '&x&3&9&F&B&8&1E&x&3&D&F&B&8&1q&x&4&0&F&B&8&0u&x&4&4&F&C&8&0i&x&4&7&F&C&8&0p&x&4&B&F&C&8&0a&x&4&E&F&C&7&Fm&x&5&2&F&C&7&Fi&x&5&5&F&C&7&Fe&x&5&9&F&D&7&Fn&x&5&C&F&D&7&Et&x&6&0&F&D&7&Eo
+      &x&3&9&F&B&8&1&lN&x&4&1&F&B&8&0&lU&x&4&9&F&C&8&0&lE&x&5&0&F&C&7&F&lV&x&5&8&F&D&7&F&lO&x&6&0&F&D&7&E&lS'
+    amount: 1
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;1
+    preview_slot: 2
+  '4':
+    id: CHAINMAIL_LEGGINGS
+    name: '&x&3&9&F&B&8&1E&x&3&D&F&B&8&1q&x&4&0&F&B&8&0u&x&4&4&F&C&8&0i&x&4&7&F&C&8&0p&x&4&B&F&C&8&0a&x&4&E&F&C&7&Fm&x&5&2&F&C&7&Fi&x&5&5&F&C&7&Fe&x&5&9&F&D&7&Fn&x&5&C&F&D&7&Et&x&6&0&F&D&7&Eo
+      &x&3&9&F&B&8&1&lN&x&4&1&F&B&8&0&lU&x&4&9&F&C&8&0&lE&x&5&0&F&C&7&F&lV&x&5&8&F&D&7&F&lO&x&6&0&F&D&7&E&lS'
+    amount: 1
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;1
+    preview_slot: 3
+  '5':
+    id: CHAINMAIL_BOOTS
+    name: '&x&3&9&F&B&8&1E&x&3&D&F&B&8&1q&x&4&0&F&B&8&0u&x&4&4&F&C&8&0i&x&4&7&F&C&8&0p&x&4&B&F&C&8&0a&x&4&E&F&C&7&Fm&x&5&2&F&C&7&Fi&x&5&5&F&C&7&Fe&x&5&9&F&D&7&Fn&x&5&C&F&D&7&Et&x&6&0&F&D&7&Eo
+      &x&3&9&F&B&8&1&lN&x&4&1&F&B&8&0&lU&x&4&9&F&C&8&0&lE&x&5&0&F&C&7&F&lV&x&5&8&F&D&7&F&lO&x&6&0&F&D&7&E&lS'
+    amount: 1
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;1
+    preview_slot: 4
+  '6':
+    id: COOKED_PORKCHOP
+    amount: 64
+    preview_slot: 5
+  '7':
+    id: HAY_BLOCK
+    name: '&x&F&F&A&E&0&0Generador de &x&F&F&A&E&0&0&lTRIGO'
+    amount: 20
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEste objeto podrá generar'
+    - '&fitems cada &e20&f segundos.'
+    - '&7'
+    - '&8&l● &fMejora: &a$2,000'
+    - '&8&l● &fReparación: &c$1,000'
+    - '&7'
+    - '&aCatálogo de items'
+    - '&8&l● &fFardo de heno: &e$100'
+    - '&8&l● &fRebanada de pan: &e$150'
+    - '&7'
+    - '&e▸ ¡Colocalo en el suelo! &e&l✔'
+    enchants:
+    - DURABILITY;1
+    item_flags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
+    nbt:
+    - PublicBukkitValues|{"nextgens:nextgens_generator_id":"trigo_generator"}|compound
+    preview_slot: 6
+  '8':
+    id: SPYGLASS
+    name: '&x&2&6&B&E&F&BVara de &x&2&6&B&E&F&B&lVENTA &b⚗'
+    amount: 1
+    lore:
+    - '&8Artículo exclusivo'
+    - '&7'
+    - '&fUsa este artículo para vender'
+    - '&fde manera más facil y rapida.'
+    - ''
+    - '&aInformación'
+    - '&8&l● &fUsos: &x&A&F&E&6&F&C10 ⚡'
+    - '&8&l● &fMultiplicador: &x&F&A&E&E&8&7x1'
+    - '&7'
+    - '&aEstadísticas'
+    - '&8&l● &fTotal ganado: &x&8&B&C&8&2&1$0'
+    - '&8&l● &fitems vendidos: &x&B&5&D&F&6&C0 items'
+    - '&7'
+    - '&e▸ ¡Clic der para vender!'
+    enchants:
+    - DURABILITY;1
+    item_flags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
+    nbt:
+    - PublicBukkitValues|{"nextgens:nextgens_sellwand_global":"b8c9f3b1-ec5d-4536-b3b1-339d710dddce","nextgens:nextgens_sellwand_multiplier":1.0d,"nextgens:nextgens_sellwand_total_items":0,"nextgens:nextgens_sellwand_total_sold":0.0d,"nextgens:nextgens_sellwand_uses":10}|compound
+    preview_slot: 7
+  '9':
+    id: PLAYER_HEAD
+    name: '&x&E&E&F&5&A&5Asistente &x&E&E&F&5&A&5&lAGRÍCOLA'
+    amount: 1
+    lore:
+    - '&8Atículo de información'
+    - ''
+    - '&fConviértete en el granjero definitivo'
+    - '&fcon la ayuda de esta asistente qué es '
+    - '&funa experta en temas de agricultura'
+    - ''
+    - '&x&3&3&F&F&3&3Estadísticas generales'
+    - '&8&l● &fNombre: &x&A&A&F&F&A&ANayla'
+    - '&8&l● &fNivel: &x&A&A&F&F&A&A20'
+    - '&8&l● &fItems extraidos general: &x&A&A&F&F&A&A0'
+    - ''
+    - '&e▸ ¡Coloca este item en tu isla!'
+    nbt:
+    - PublicBukkitValues|{"axminions:level":20,"axminions:minion_type":"farmer","axminions:statistics":0L}|compound
+    skull_data:
+      texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODMzNmUzMTVlMWFlOTk1NzJkYzljNzJhNjJhMTRiODU3Nzc0MWRjMzQ3MmM3NDEzZDdlYWE2NjdhMzA3YTNkNyJ9fX0=
+      id: 406ea691-60d5-4376-9a88-f1c7982415e8
+      owner: skull
+    preview_slot: 8
+  '10':
+    id: PLAYER_HEAD
+    name: '&x&F&F&D&D&0&3Asistente &x&F&F&D&D&0&3&lPULVERIZADORA'
+    amount: 1
+    lore:
+    - '&8Atículo de información'
+    - ''
+    - '&fUna experta en el campo que'
+    - '&fdestaca por su habilidad de'
+    - '&frecolectar objetos caidos'
+    - ''
+    - '&x&3&3&F&F&3&3Estadísticas generales'
+    - '&8&l● &fNombre: &x&A&A&F&F&A&ANathaly'
+    - '&8&l● &fNivel: &x&A&A&F&F&A&A20'
+    - '&8&l● &fItems extraidos general: &x&A&A&F&F&A&A0'
+    - ''
+    - '&e▸ ¡Coloca este item en tu isla!'
+    nbt:
+    - PublicBukkitValues|{"axminions:level":20,"axminions:minion_type":"collector","axminions:statistics":0L}|compound
+    skull_data:
+      texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTE0M2UyZDRhMDc3MzY4NGNiNGEyY2E1ODY2Y2MzOGYwYjc5ZTE4YTNhMzhhZDVmODQ1ODNiODdjZTdiZWViZSJ9fX0=
+      id: 7de0d039-28a8-44d1-9fc8-44fae91bba22
+      owner: skull
+    preview_slot: 9
+actions:
+  claim:
+    '1':
+      action: 'playsound: BLOCK_NOTE_BLOCK_PLING;10;2'
+      execute_before_items: false
+      count_as_item: false
+  error:
+    '1':
+      action: 'playsound: BLOCK_NOTE_BLOCK_PLING;10;0.1'
+      execute_before_items: false
+      count_as_item: false

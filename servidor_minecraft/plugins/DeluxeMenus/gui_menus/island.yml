@@ -1,0 +1,327 @@
+menu_title: "&nPanel de gestión principal"
+open_command:
+  - is
+  - is create
+  - island
+  - islans
+  - island menu
+  - is panel
+size: 44
+items:
+  "A1":
+    material: "GRAY_STAINED_GLASS_PANE"
+    display_name: "&r"
+    priority: 2
+    slots:
+      - 0-44
+  "Profilex":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTlkODA2Yjc1ZWM5NTAwNmM1ZWMzODY2YzU0OGM1NTcxYWYzZTc4OGM3ZDE2MjllZGU2NGJjMWI3NDg4NTljZCJ9fX0=
+    priority: 2
+    slot: 39
+    display_name: "&aInformación de la isla "
+    lore:
+    - "&8Gestión de la isla"
+    - ''
+    - '&8&l● &fMiembros: &6%superior_island_team_size%/%superior_island_team_limit%'
+    - '&8&l● &fRadio: &a%superior_island_radius%'
+    - '&8&l● &fCreación: &b%superior_island_creation_time%'
+    - '&8&l● &fNivel: &#FFF600%superior_island_level% &6✯'
+    - '&7'
+    - '&e▸ ¡Información de tu isla!    '
+    left_click_commands:
+      - "[refresh]"
+  "setting":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWQwNzQyMTZiZDA2NTdjMjQxMDA1Y2JjNDBiZDJmOTQzYzBmOGIzMDU3M2NkOWM5MDMzZDgyOWEwMTZmNmIwZiJ9fX0=
+    priority: 2
+    slots:
+      - 41
+    display_name: "&aGestión de la isla principal"
+    lore:
+    - "&8Gestión de la isla"
+    - "&7"
+    - '&fGestiona los permisos de la islas'
+    - '&fy otras configuraciones'
+    - '&7'
+    - '&e▸ ¡Personalización de la isla!    '
+    left_click_commands:
+      - "[openguimenu] is_settings"
+      - "[refresh]"
+    right_click_commands:
+      - "[openguimenu] is_settings"
+      - "[refresh]"
+  "a1":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWQ5NzMxNWFmNTc2ODRlYzRiYjBkYWFkYTgyNDA3NTU1M2ZmMGIwYTkzYzRiNzI0ZWY4NTRjNjA0ZjgxM2E3YSJ9fX0=
+    priority: 2
+    slots:
+      - 21
+    display_name: "&aVolver a mi isla "
+    lore:
+    - '&8Acceso directo'
+    - '&f'
+    - '&8&fDeseas volver al punto de inicio'
+    - '&8&fde tu isla.'
+    - ''
+    - '&e▸ ¡Click izq para ir!'
+    left_click_commands:
+      - "[player] island go"
+      - "[close]"
+    right_click_commands:
+      - "[player] island go"
+      - "[close]"
+    view_requirement:
+      requirements:
+        anything:
+          type: string equals ignorecase
+          input: "%skp_check_superior-island-exists%"
+          output: "yes"
+
+  "a2":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTI1YmMwZjBkYjRhZDMxMGFhOTZjMTc5ZDVlNmM3MzJhY2QyNjJkOTkyOTM5NDExN2QzZTQ0NTEzYWUwYzFmYyJ9fX0=
+    priority: 2
+    slots:
+      - 22
+    display_name: "&aMiembros de la isla "
+    lore:
+    - '&8Acceso directo'
+    - '&f'
+    - '&8&fDeseas visualizar los miembros'
+    - '&8&fde tu isla.'
+    - ''
+    - '&e▸ ¡Click izq para abrir!'
+    left_click_commands:
+      - "[player] island members"
+      - "[close]"
+    right_click_commands:
+      - "[player] island members"
+      - "[close]"
+    view_requirement:
+      requirements:
+        anything:
+          type: string equals ignorecase
+          input: "%skp_check_superior-island-exists%"
+          output: "yes"
+  "leaveLeader":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU0YjhiOGQyMzYyYzg2NGUwNjIzMDE0ODdkOTRkMzI3MmE2YjU3MGFmYmY4MGMyYzViMTQ4Yzk1NDU3OWQ0NiJ9fX0="
+    priority: 2
+    slot: 23
+    display_name: "&cEliminar mi isla "
+    lore:
+    - '&8Acceso directo'
+    - '&f'
+    - '&8&fQuieres eliminar tu isla, esto'
+    - '&8&fsera de forma permanente'
+    - '&8&fy no hay vuelta atras.'
+    - ''
+    - '&e▸ ¡Remover ahora mismo!'
+    left_click_commands:
+      - "[player] island delete"
+      - "[sound] ENTITY_CHICKEN_EGG"
+    view_requirement:
+      requirements:
+        anything:
+          type: string equals ignorecase
+          input: "%superior_island_leader%"
+          output: "%player_name%"
+  "leave":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU0YjhiOGQyMzYyYzg2NGUwNjIzMDE0ODdkOTRkMzI3MmE2YjU3MGFmYmY4MGMyYzViMTQ4Yzk1NDU3OWQ0NiJ9fX0="
+    priority: 3
+    slot: 23
+    display_name: "&cAbandonar la isla "
+    lore:
+    - '&8Acceso directo'
+    - '&f'
+    - '&8&fQuieres salir de esta isla al'
+    - '&8&fmomento de salir de la isla'
+    - '&8&fya no perteneceras más.'
+    - ''
+    - '&e▸ ¡Salir de esta isla!'
+    left_click_commands:
+      - "[player] island leave"
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[close]"  
+  "kit":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGZhMDU2ZDdhZTMwMzYwNzZmYzJhYTE0MTk4Y2U1ZWVlMTUxMGEzMDlmNDMyNDU4MDEwYWMwM2ZjMDZkNGUwOCJ9fX0=
+    priority: 2
+    slot: 24
+    display_name: "&aEquipamientos públicos "
+    lore:
+    - '&8Acceso directo'
+    - '&f'
+    - '&8&fLista de complementos qué '
+    - '&8&fdispones ahora mismo.'
+    - ''
+    - '&e▸ ¡Click izq para abrir!'
+    left_click_commands:
+      - "[player] kits"
+      - "[sound] ENTITY_CHICKEN_EGG"  
+  "trabajos":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjg0MmE2NzdkZjlhNjg5YmYyOTViYjRiY2ZmMTBhMmI2YjNiMzJhNGU1OTM0NDVjM2ZkMWM2NGU3ZTQ4MjU0NiJ9fX0=
+    priority: 2
+    slot: 20
+    display_name: "&aSistema de trabajos "
+    lore:
+    - '&8Acceso directo'
+    - '&f'
+    - '&8&fListado de todos los tipos de '
+    - '&8&ftrabajos disponibles.'
+    - ''
+    - '&e▸ ¡Click izq para abrir!'
+    left_click_commands:
+      - "[openguimenu] trabajos"
+      - "[sound] ENTITY_CHICKEN_EGG"  
+  "misiones":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGM3NmU0ZDMxYmM4YWQwNDA2ZjllZmYxYjllZTQ5YWQ4NzZjZjcwNzNmOTQwY2FjM2MyYTM2MDZkNmE3NzU1ZCJ9fX0=
+    priority: 2
+    slot: 19
+    display_name: "&aSistema de misiones "
+    lore:
+    - '&8Acceso directo'
+    - '&f'
+    - '&8&fListado de todos los tipos de '
+    - '&8&fmisiones disponibles.'
+    - ''
+    - '&e▸ ¡Click izq para abrir!'
+    left_click_commands:
+      - "[player] quest"
+      - "[sound] ENTITY_CHICKEN_EGG"   
+  "subasta":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTg5ZGFiMWFhNmU0M2FkOTE5ZGFlMDFiNzg1NDQ1MjM4Yzc4ZDRhNzc1OGFkZGZlNWNkNWI2ODAwZmUxN2U3MyJ9fX0=
+    priority: 2
+    slot: 12
+    display_name: "&aSubastas públicas "
+    lore:
+    - '&8Acceso directo'
+    - '&f'
+    - '&8&fDeseas subastar cosas con '
+    - '&8&fotros usuarios.'
+    - ''
+    - '&e▸ ¡Click izq para abrir!'
+    left_click_commands:
+      - "[player] ah"
+      - "[sound] ENTITY_CHICKEN_EGG"  
+  "generadores":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjMDI5YzkxNDRkOTZmYzRhMDZmYWUwNTk5NjMwZDJkYWMwZjcxNTE2NmYxYzRlYzExZTczMWFlZDdiM2Q3ZiJ9fX0=
+    slot: 13
+    hide_attributes: true
+    priority: 2
+    display_name: "&aTienda de generadores "
+    lore:
+    - '&8Acceso directo'
+    - '&f'
+    - '&8&fDeseas comprar generadores '
+    - '&8&fpara mejorar tu isla.'
+    - ''
+    - '&e▸ ¡Click izq para abrir!'
+    left_click_commands:
+      - "[openguimenu] gen"
+      - "[sound] ENTITY_CHICKEN_EGG"  
+  "clanes":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWI4ZWM5ZTcyYTI5NjJkOWMxMmI3ODUzYWFjODcyMTc3MDg0MGY1MTQ1Y2RmZTFlNDdhNTgwZmQ4YmQ3ZjEzNiJ9fX0=
+    slot: 25
+    hide_attributes: true
+    priority: 2
+    display_name: "&aSistema de clanes "
+    lore:
+    - '&8Acceso directo'
+    - '&f'
+    - '&8&fSi tienes un clan interactua '
+    - '&8&fcon este item para saber más.'
+    - ''
+    - '&e▸ ¡Click izq para abrir!'
+    left_click_commands:
+      - "[player] clan"
+      - "[sound] ENTITY_CHICKEN_EGG"
+  "close":
+    material: barrier
+    slot: 40
+    priority: 2
+    display_name: "&cCerrar menú"
+    lore:
+    - '&8Acceso directo'
+    - '&f'
+    - '&8&fSi deseas cerrar el menú de la '
+    - '&8&fisla principal interactua aquí.'
+    - ''
+    - '&e▸ ¡Click izq cerrar!'
+    left_click_commands:
+      - "[close]"
+    right_click_commands:
+      - "[close]"
+  "status-close":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2Q2MDUzNGUyMmUzNzE0NzVkNTQzNGQwZjQ5YWUwNThkMzk0MWIwM2E3YzUwYTZlZWYyOTYyMGM2OTI3NzhlMCJ9fX0=
+    slot: 14
+    priority: 2
+    display_name: "&#FFB900Isla privada "
+    lore:
+    - '&8Acceso directo'
+    - '&f'
+    - '&fUtiliza este item para colocar '
+    - '&ftu isla privada al publico.'
+    - ''
+    - '&#FFB900▸ ¡Click izq para cambiar!'
+    left_click_commands:
+      - "[player] island open"
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        anything:
+          type: string equals ignorecase
+          input: "%skp_check_superior-island-locked%"
+          output: "yes"
+  "status-close1":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmVkYTZhNjczYmE3NjUzMWQzMmYyZTM1OGMxMGI3YzllOWNkNjYxNWQxYjc3NjU0Zjk4YWFiNDRhMGQ3YzE3ZiJ9fX0=
+    slot: 14
+    priority: 3
+    display_name: "&#FFB900Isla publica "
+    lore:
+    - '&8Acceso directo'
+    - '&f'
+    - '&fUtiliza este item para colocar '
+    - '&ftu isla abierta al publico.'
+    - ''
+    - '&#FFB900▸ ¡Click izq para cambiar!'
+    left_click_commands:
+      - "[player] island lock"
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        anything:
+          type: string equals ignorecase
+          input: "%skp_check_superior-island-locked%"
+          output: "no"
+
+  "create-island":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWQzNGZiOGVkNzZmNTVkMWQ1NTljMzNhYWE1MGY4M2ZlMzYxZjFlNGJlZTkxNWRlNTJlYjg2MDJhZWZmMmE5NyJ9fX0=
+    priority: 0
+    slots:
+      - 22
+    display_name: "&aCreación de la isla "
+    lore:
+    - "&8Gestión de la isla"
+    - "&7"
+    - '&fComienza una nueva aventura'
+    - '&fcreando tu isla principal'
+    - '&7'
+    - '&e▸ ¡Comienzar la creación!    '  
+    left_click_commands:
+      - "[player] is create %player_name%"
+      - "[sound] ENTITY_CHICKEN_EGG"
+    view_requirement:
+      requirements:
+        anything:
+          type: string equals ignorecase
+          input: "%skp_check_superior-island-exists%"
+          output: "No"
+
+  "fill_none_is":
+    material: "GRAY_STAINED_GLASS_PANE"
+    priority: 1
+    slots:
+      - 0-44
+    display_name: "&r"
+    view_requirement:
+      requirements:
+        anything:
+          type: string equals ignorecase
+          input: "%skp_check_superior-island-exists%"
+          output: "No"

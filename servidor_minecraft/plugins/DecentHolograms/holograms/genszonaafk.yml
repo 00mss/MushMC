@@ -1,0 +1,42 @@
+location: Spawn:-13,477:69,000:0,528
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&e⌛ &e&lZONA AFK &e⌛'
+    height: 0.45
+  - content: ''
+    height: 0.25
+  - content: '&a¿Que es esta zona'
+    height: 0.25
+  - content: '&fEn esta zona podrás ganar'
+    height: 0.25
+  - content: '&fcosas por estar &e&lAFK'
+    height: 0.25
+  - content: ''
+    height: 0.25
+  - content: '&fAl momento de entrar a la zona de cultivos'
+    height: 0.25
+  - content: '&fdurante &e&n2 horas&f obtendrás lo siguiente:'
+    height: 0.25
+  - content: ''
+    height: 0.25
+  - content: ''
+    height: 0.25
+  - content: '&d x100 Experiencia de niveles'
+    height: 0.25
+  - content: '&a x2 &aLlave &lVOTE'
+    height: 0.25
+  - content: '&7 x1 Varita x1.2 (5 Usos) '
+    height: 0.25
+  - content: '&6 100k &7de dinero'
+    height: 0.25
+  - content: ''
+    height: 0.45
+  - content: '&e¡Entra a la zona de cultivos!'
+    height: 0.45
+  actions: {}

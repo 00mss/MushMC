@@ -1,0 +1,26 @@
+Name: '#FFBC15Llave #FFBC15&lFARM'
+Virtual: false
+Item:
+  Material: YELLOW_DYE
+  Name: '#FFBC15Llave #FFBC15&lFARM'
+  Lore:
+  - '&8Artículo de eventos'
+  - ''
+  - '#FFBC15ℹ &fPodrás usar este item en'
+  - '&flas cajas qué se encuentran'
+  - '&fen el spawn principal. #FFBC15✔'
+  - ''
+  - '&fAdquiere más llaves desde:'
+  - '#FFBC15&ntienda.mineluxe.us'
+  - ''
+  Enchants:
+    sharpness: 1
+  Item_Flags:
+  - HIDE_ENCHANTS
+  - HIDE_ATTRIBUTES
+  - HIDE_UNBREAKABLE
+  - HIDE_DESTROYS
+  - HIDE_PLACED_ON
+  - HIDE_POTION_EFFECTS
+  - HIDE_DYE
+  - HIDE_ARMOR_TRIM

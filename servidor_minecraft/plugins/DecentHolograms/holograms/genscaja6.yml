@@ -1,0 +1,28 @@
+location: Spawn:104,500:69,000:21,500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#FF6800&lBAÚL ESENCIAS'
+    height: 0.3
+  - content: '&7Probabilidad &8┇ (55)%'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fAdquiére llaves desde'
+    height: 0.3
+  - content: '#FF9140&nᴛɪᴇɴᴅᴀ.ᴍɪɴᴇʟᴜxᴇ.ᴜꜱ'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fCalidad del baúl: #FF6800★★★★★&7★'
+    height: 0.3
+  - content: <#ANIM:wave:&#FF9140,&#FF6800>¡Clic der para abrir!</#ANIM>
+    height: 0.3
+  - content: '#ICON: ORANGE_DYE'
+    height: 0.3
+  actions: {}

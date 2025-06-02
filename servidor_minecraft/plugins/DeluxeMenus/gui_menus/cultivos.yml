@@ -1,0 +1,101 @@
+menu_title: '&8&nCultivos&r&r | &n1/1'
+open_command:
+- cultivos222
+size: 54
+items:
+
+
+  'zonas-7-':
+    material: wheat
+    slot: 22
+    hide_attributes: true
+    display_name: '&7Zonas - &#C1FE7FTrigos'
+    priority: 2
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&f• &fDirigite a esta zona donde podrás'
+    - ' &fcosechar los cultivos de trigo'
+    - ''
+    - '&e&e▸ ¡Dirigirme a esta zona!' 
+    left_click_commands:
+    - '[player] warp trigos'
+    - '[sound] BLOCK_WOODEN_TRAPDOOR_OPEN'
+    - '[sound] BLOCK_WATER_AMBIENT'
+
+  'zonas-8-':
+    material: carrot
+    slot: 23
+    hide_attributes: true
+    display_name: '&7Zonas - &#C1FE7FZanahorias'
+    priority: 2
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&f• &fDirigite a esta zona donde podrás'
+    - ' &fcosechar los cultivos de zanahorias'
+    - ''
+    - '&e&e▸ ¡Dirigirme a esta zona!' 
+    left_click_commands:
+    - '[player] warp zanahorias'
+    - '[sound] BLOCK_WOODEN_TRAPDOOR_OPEN'
+    - '[sound] BLOCK_WATER_AMBIENT'
+
+  'zonas-9-':
+    material: potato
+    slot: 24
+    hide_attributes: true
+    display_name: '&7Zonas - &#C1FE7FPatatas'
+    priority: 2
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&f• &fDirigite a esta zona donde podrás'
+    - ' &fcosechar los cultivos de patatas'
+    - ''
+    - '&e&e▸ ¡Dirigirme a esta zona!' 
+    left_click_commands:
+    - '[player] warp patatas'
+    - '[sound] BLOCK_WOODEN_TRAPDOOR_OPEN'
+    - '[sound] BLOCK_WATER_AMBIENT'
+
+
+  'Fill':
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: "&r"
+    slots: 
+    - 10
+    - 19
+    - 28
+  'anterior':
+    material: arrow
+    slots:
+    - 48
+    display_name: '&cPágina anterior'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEstá es nuestra lista amplia de'
+    - '&fzonas de juego disponibles'
+    - ''
+    - '&e▸ ¡Dirigirme al menú de zonas! ' 
+    left_click_commands:
+    - '[openguimenu] Zonas'
+    - '[sound] BLOCK_WOODEN_TRAPDOOR_OPEN'
+    - '[sound] BLOCK_WATER_AMBIENT'   
+  'sobre':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTBhYzkyZTdhYjc2OGM2ODc0NjA0NjY4Y2I3ODAzNDhkZmEwYjNmNzRhNDU3NjM4ZDZjZWZkMDQyYmM4ZTA0MCJ9fX0=
+    slots:
+    - 18
+    display_name: '&aSobre las zonas'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fDirigete de una forma muy sencilla'
+    - '&fa las diferentes zonas de cosecha'
+    - ''
+    - '&e▸ ¡Comienza a explorar! '     
+  'inforrmacion':
+    display_name: '&a¡Zonas de cosecha!'
+    material: nautilus_shell
+    slot: 49

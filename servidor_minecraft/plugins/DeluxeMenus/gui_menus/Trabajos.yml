@@ -1,0 +1,232 @@
+menu_title: '&nTrabajos disponibles&r&r | &n1/1'
+size: 54
+open_command: 
+- jobs
+- jobs browse
+- jobs join
+- jobs:jobs
+items:
+  'Fill':
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: "&r"
+    slots: 
+    - 10
+    - 19
+    - 28
+  'siguiente':
+    material: arrow
+    slots:
+    - 50
+    display_name: '&aSiguiente página'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEstá es nuestra lista amplia'
+    - '&fde trabajos disponibles'
+    - ''
+    - '&e▸ ¡Solo únirte a dos! ' 
+    left_click_commands:
+    - '[sound] BLOCK_WOODEN_TRAPDOOR_OPEN'
+    - '[sound] BLOCK_WATER_AMBIENT'     
+  'sobre':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjhjNmFjNDdhMDJmY2ZmZDZmNzA1MjNlZGU4MjQ0OGNiMDQwZjIyZGNjYWVkODFjODhjYzA2Yjg0ZDFlYzRjMyJ9fX0=
+    slots:
+    - 18
+    display_name: '&aSobre los trabjos'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fInicia eligiendo un trabajo para '
+    - '&fpoder progresar en ellos'
+    - ''
+    - '&8&l● &fTrabajos:&a %changeoutput_equals_input:_matcher:{jobsr_user_archived_jobs}_ifmatch:&e&lNinguno!_else:{jobsr_user_jobs}% '
+    - ''
+    - '&e▸ ¡Comienza a trabajar! '     
+  'inforrmacion':
+    display_name: '&#ECF074¡Elige un trabajo!'
+    material: nautilus_shell
+    slot: 49
+    
+  'miner':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTIzODJjMmFkYjU1MGI5MzE1MzQ2NjRlMTE3NjgxNGQwY2VkNzUxZTY0MzY0YWVkNDk1NTc3NTRlODZjODE3YiJ9fX0=
+    slots: 
+    - 12
+    display_name: '&#C1F6F4Minero ⚒'
+    lore:
+    - '&8Trabajadores: &7%jobsr_totalplayers_miner%'
+    - ''
+    - '&fEn este trabajo tendras qué romper'
+    - '&fbloques y más para obtener dinero'
+    - ''
+    - '%changeoutput_equals_input:_matcher:{jobsr_user_job_miner}_ifmatch:&c⚠ ¡Aún no te unes!_else:{jobsr_description_miner}%'
+    - ''
+    - '%changeoutput_equals_input:_matcher:{jobsr_user_job_miner}_ifmatch:&e▸ ¡Clic para unirte ahora!_else:{jobsr_shortname_miner}%'
+  
+    left_click_commands:
+    - '[close]'
+    - '[sound] UI_TOAST_CHALLENGE_COMPLETE'
+    - '[player] jobs join miner'
+    right_click_commands:
+    - '[close]'
+    - '[sound] ENTITY_WARDEN_LISTENING_ANGRY'
+    - '[player] jobs leave miner'
+  'fisherman':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDgwNGU0MmVjOWIwN2ZjZTFjZTAwNThiNzhkZjU3NjNmNmU0MTBkOWNlODJlZjFlYmI5NTk3YTE1MmI2ZDRjOCJ9fX0=
+    slots: 
+    - 13
+    display_name: '&#7FDDF9Pescador ⚆'
+    lore:
+    - '&8Trabajadores: &7%jobsr_totalplayers_Fisherman%'
+    - ''
+    - '&fEn este trabajo tendras qué pescar'
+    - '&fobjetos y más para obtener dinero'
+    - ''
+    - '%changeoutput_equals_input:_matcher:{jobsr_user_job_fisherman}_ifmatch:&c⚠ ¡Aún no te unes!_else:{jobsr_description_fisherman}%'
+    - ''
+    - '%changeoutput_equals_input:_matcher:{jobsr_user_job_fisherman}_ifmatch:&e▸ ¡Clic para unirte ahora!_else:{jobsr_shortname_fisherman}%'
+    left_click_commands:
+    - '[close]'
+    - '[sound] UI_TOAST_CHALLENGE_COMPLETE'
+    - '[player] jobs join fisherman'
+    right_click_commands:
+    - '[close]'
+    - '[sound] ENTITY_WARDEN_LISTENING_ANGRY'
+    - '[player] jobs leave fisherman'
+  'farmer':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjlmOGY0MDcxNGVkM2FhYjE2YjA2NjkxMTA3N2E1MjJmNTMzNDRlMDVlOTgzNzAzOWQ4ZDkyNzEwOGM2MGRhYiJ9fX0=
+    slots:
+    - 14
+    display_name: '&#FFFEBAFarmero ⊅'
+    lore:
+    - '&8Trabajadores: &7%jobsr_totalplayers_farmer%'
+    - ''
+    - '&fEn este trabajo tendras qué cosechar'
+    - '&fobjetos y más para obtener dinero'
+    - ''
+    - '%changeoutput_equals_input:_matcher:{jobsr_user_job_farmer}_ifmatch:&c⚠ ¡Aún no te unes!_else:{jobsr_description_farmer}%'
+    - ''
+    - '%changeoutput_equals_input:_matcher:{jobsr_user_job_farmer}_ifmatch:&e▸ ¡Clic para unirte ahora!_else:{jobsr_shortname_farmer}%'
+
+    left_click_commands:
+    - '[close]'
+    - '[sound] UI_TOAST_CHALLENGE_COMPLETE'
+    - '[player] jobs join farmer'
+    right_click_commands:
+    - '[close]'
+    - '[sound] ENTITY_WARDEN_LISTENING_ANGRY'
+    - '[player] jobs leave farmer'
+  'woodcutter':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzY4ODMyYzA1NjRkOWFiNTk0MDczNDBlNDUxOTBjN2VlNDM5NTFhNzc2Zjg1YmQ3MzEzYTIyYzE1YTllIn19fQ==
+    slots: 
+    - 15
+    display_name: '&#786F40Leñador 🪓'
+    lore:
+    - '&8Trabajadores: &7%jobsr_totalplayers_Woodcutter%'
+    - ''
+    - '&fEn este trabajo tendras qué romper objetos'
+    - '&fde arboles y más para obtener dinero'
+    - ''
+    - '%changeoutput_equals_input:_matcher:{jobsr_user_job_Woodcutter}_ifmatch:&c⚠ ¡Aún no te unes!_else:{jobsr_description_Woodcutter}%'
+    - ''
+    - '%changeoutput_equals_input:_matcher:{jobsr_user_job_Woodcutter}_ifmatch:&e▸ ¡Clic para unirte ahora!_else:{jobsr_shortname_Woodcutter}%'
+  
+    left_click_commands:
+    - '[close]'
+    - '[sound] UI_TOAST_CHALLENGE_COMPLETE'
+    - '[player] jobs join woodcutter'
+    right_click_commands:
+    - '[close]'
+    - '[sound] ENTITY_WARDEN_LISTENING_ANGRY'
+    - '[player] jobs leave woodcutter'   
+  'hunter':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTA2YzE2ODE3YzczZmY2NGE0YTQ5YjU5MGQyY2RiMjViY2ZhNTJjNjMwZmU3MjgxYTE3N2VhYmFjZGFhODU3YiJ9fX0=
+    slots: 
+    - 16
+    display_name: '&cCazador 🏹'
+    lore:
+    - '&8Trabajadores: &7%jobsr_totalplayers_Hunter%'
+    - ''
+    - '&fEn este trabajo tendras qué cazar tipos'
+    - '&fde mobs, animales para obtener dinero'
+    - ''
+    - '%changeoutput_equals_input:_matcher:{jobsr_user_job_Hunter}_ifmatch:&c⚠ ¡Aún no te unes!_else:{jobsr_description_Hunter}%'
+    - ''
+    - '%changeoutput_equals_input:_matcher:{jobsr_user_job_Hunter}_ifmatch:&e▸ ¡Clic para unirte ahora!_else:{jobsr_shortname_Hunter}%'
+      
+    left_click_commands:
+    - '[close]'
+    - '[sound] UI_TOAST_CHALLENGE_COMPLETE'
+    - '[player] jobs join hunter'
+    right_click_commands:
+    - '[close]'
+    - '[sound] ENTITY_WARDEN_LISTENING_ANGRY'
+    - '[player] jobs leave hunter'
+  'builder':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTE2MzQ4NmZkNTMyYjIyYzQzYjVjMmVkYjg1ZTc4N2JiODU4NjAxZmMzN2EyZWQwZDYyODc3ZjRjNTM2ZWJjZiJ9fX0=
+    slots:
+    - 21
+    display_name: '&eConstructor ⛏'
+    lore:
+    - '&8Trabajadores: &7%jobsr_totalplayers_Builder%'
+    - ''
+    - '&fEn este trabajo tendras qué romper'
+    - '&fobjetos y más para obtener dinero'
+    - ''
+    - '%changeoutput_equals_input:_matcher:{jobsr_user_job_Builder}_ifmatch:&c⚠ ¡Aún no te unes!_else:{jobsr_description_Builder}%'
+    - ''
+    - '%changeoutput_equals_input:_matcher:{jobsr_user_job_Builder}_ifmatch:&e▸ ¡Clic para unirte ahora!_else:{jobsr_shortname_Builder}%'
+      
+    left_click_commands:
+    - '[close]'
+    - '[sound] UI_TOAST_CHALLENGE_COMPLETE'
+    - '[player] jobs join builder'
+    right_click_commands:
+    - '[close]'
+    - '[sound] ENTITY_WARDEN_LISTENING_ANGRY'
+    - '[player] jobs leave builder'
+  'enchanter':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmFkNzA3NzIyNmU5ZTU5Y2U4NzJjZmUxODFlM2VjYzJmNGNlMWJmZDIwMmI2MTRkZDRjZDQ1NjBlODZhMjc1MyJ9fX0=
+    slots:
+    - 22
+    display_name: '&#85536EEncantador 🧪'
+    lore:
+    - '&8Trabajadores: &7%jobsr_totalplayers_enchanter%'
+    - ''
+    - '&fEn este trabajo tendras qué encantar'
+    - '&fobjetos y más para obtener dinero'
+    - ''
+    - '%changeoutput_equals_input:_matcher:{jobsr_user_job_enchanter}_ifmatch:&c⚠ ¡Aún no te unes!_else:{jobsr_description_enchanter}%'
+    - ''
+    - '%changeoutput_equals_input:_matcher:{jobsr_user_job_enchanter}_ifmatch:&e▸ ¡Clic para unirte ahora!_else:{jobsr_shortname_enchanter}%'
+      
+    left_click_commands:
+    - '[close]'
+    - '[sound] UI_TOAST_CHALLENGE_COMPLETE'
+    - '[player] jobs join enchanter'
+    right_click_commands:
+    - '[close]'
+    - '[sound] ENTITY_WARDEN_LISTENING_ANGRY'
+    - '[player] jobs leave enchanter'
+  'explorer':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGFhNmMyZDFiZDgwZmRkNmE2MzJjYzdjYWZkMjVmMDllZjIwM2VlYzJhNjkzYjdjYmEwM2QxNzZiMmNjMDcxYiJ9fX0=
+    slots:
+    - 23
+    display_name: '&#A5FBB8Explorador ☽'
+    lore:
+    - '&8Trabajadores: &7%jobsr_totalplayers_explorer%'
+    - ''
+    - '&fEn este trabajo tendras qué explorar'
+    - '&fun mundo y más para obtener dinero'
+    - ''
+    - '%changeoutput_equals_input:_matcher:{jobsr_user_job_explorer}_ifmatch:&c⚠ ¡Aún no te unes!_else:{jobsr_description_explorer}%'
+    - ''
+    - '%changeoutput_equals_input:_matcher:{jobsr_user_job_explorer}_ifmatch:&e▸ ¡Clic para unirte ahora!_else:{jobsr_shortname_explorer}%'
+      
+    left_click_commands:
+    - '[close]'
+    - '[sound] UI_TOAST_CHALLENGE_COMPLETE'
+    - '[player] jobs join explorer'
+    right_click_commands:
+    - '[close]'
+    - '[sound] ENTITY_WARDEN_LISTENING_ANGRY'
+    - '[player] jobs leave explorer'

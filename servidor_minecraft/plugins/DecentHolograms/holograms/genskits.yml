@@ -1,0 +1,18 @@
+location: Spawn:40,500:67,377:-19,500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&#78F176&lEQUIPAMIENTOS'
+    height: 0.3
+  - content: '&fSelecciona equipamientos'
+    height: 0.3
+  - content: '&fppublicos y comienza'
+    height: 0.3
+  - content: '&e▸ ¡Clic para abrir!'
+    height: 0.3
+  actions: {}

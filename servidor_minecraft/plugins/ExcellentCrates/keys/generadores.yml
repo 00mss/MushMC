@@ -1,0 +1,26 @@
+Name: '#FFB87CLlave #FFB87C&lGENERADOR'
+Virtual: false
+Item:
+  Material: brown_dye
+  Name: '#FFB87CLlave #FFB87C&lGENERADOR'
+  Lore:
+  - '&8Artículo de eventos'
+  - ''
+  - '#FFB87Cℹ &fPodrás usar este item en'
+  - '&flas cajas qué se encuentran'
+  - '&fen el spawn principal. #FFB87C✔'
+  - ''
+  - '&fAdquiere más llaves desde:'
+  - '#FFB87C&ntienda.mineluxe.us'
+  - ''
+  Enchants:
+    sharpness: 1
+  Item_Flags:
+  - HIDE_ENCHANTS
+  - HIDE_ATTRIBUTES
+  - HIDE_UNBREAKABLE
+  - HIDE_DESTROYS
+  - HIDE_PLACED_ON
+  - HIDE_POTION_EFFECTS
+  - HIDE_DYE
+  - HIDE_ARMOR_TRIM

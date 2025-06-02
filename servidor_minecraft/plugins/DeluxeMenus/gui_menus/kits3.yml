@@ -1,0 +1,133 @@
+menu_title: '&nPaquetes de la tienda&r&r | &n3/3'
+open_command:
+- kits3
+- playerkits3
+- playerkits:kit3
+- playerkits:kits3
+- playerkits:kits3
+- kit3
+update_interval: 2
+size: 54
+items:    
+  'Fill':
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: "&r"
+    slots: 
+    - 10
+    - 19
+    - 28
+  'anterior':
+    material: arrow
+    slots:
+    - 48
+    display_name: '&cPágina anterior'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEstá es nuestra lista amplia de'
+    - '&fequipamientos disponibles'
+    - ''
+    - '&e▸ ¡Adquiére paquetes! ' 
+    left_click_commands:
+    - '[openguimenu] kits2'
+    - '[sound] BLOCK_WOODEN_TRAPDOOR_OPEN'
+    - '[sound] BLOCK_WATER_AMBIENT'     
+  'inforrmacion':
+    display_name: '&#ECF074¡Equipamientos!'
+    material: nautilus_shell
+    slot: 49  
+    left_click_commands:
+    - '[sound] BLOCK_BAMBOO_BREAK'
+  'mineluxe':
+    material: yellow_concrete
+    enchantments:
+    - damage_all;1
+    hide_enchantments: true
+    slot: 22
+    display_name: '&#FFDE11Generador de la &#F1B71C&lSUERTE'
+    priority: 1
+    lore: 
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &c&l✘"
+      - "&8&l● &fReparación: &c$250,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fSuerte: &a$2,200"
+      - "&8&l● &fSuerte única: &a$4,000" 
+      - "&7"
+      - "&e▸ ¡Este gen es nivel maximo!"
+  '1-disp':
+    display_name: '&#70fba4P&#74fba1a&#77fc9fq&#7bfc9cu&#7ffc99e&#82fc96t&#86fd94e &#89fd91d&#8dfd8ee &#70fba4&lG&#73fba2&lE&#76fba0&lN&#79fc9d&lE&#7cfc9b&lR&#7ffc99&lA&#81fc97&lD&#84fc95&lO&#87fd92&lR&#8afd90&lE&#8dfd8e&lS'
+    material: CHEST_MINECART
+    slot: 23
+    lore:
+    - '&8Acceso externo'
+    - ''
+    - '&fAdquiere este paquete desde'
+    - '&fnuestra tienda oficial.'
+    - ''
+    - '&7Información '
+    - '&a&lℹ &fPaquete único exclusivo'
+    - '    &fpara donadores'
+    - ''
+    - ' &#3ed938▸ ¡Clic der para ver!'          
+    right_click_commands:
+    - '[player] kit preview Plus'       
+  '2-disp':
+    display_name: '&#96affbP&#93b9f8a&#91c3f5q&#8eccf2u&#8cd6efe&#89e0ect&#86eae9e &#84f3e6d&#81fde3e &#96affb&lL&#92bff6&lL&#8ecef1&lA&#89deed&lV&#85ede8&lE&#81fde3&lS'
+    material: knowledge_book
+    slot: 18
+    lore:
+    - '&8Acceso externo'
+    - ''
+    - '&fAdquiere este paquete desde'
+    - '&fnuestra tienda oficial.'
+    - ''
+    - '&7Información '
+    - '&a&lℹ &fPaquete único exclusivo'
+    - '    &fpara donadores'
+    - ''
+    - ' &#3ed938▸ ¡Clic der para ver!'          
+    right_click_commands:
+    - '[player] kit preview Crystal'        
+  '3-disp':
+    display_name: '&#fb417eP&#fb3e7ca&#fc3a7aq&#fc3778u&#fc3476e&#fd3074t&#fd2d72e &#fb417e&lM&#fb3e7c&lA&#fc3a7a&lE&#fc3778&lS&#fc3476&lT&#fd3074&lR&#fd2d72&lO'
+    material: crossbow
+    slot: 24
+    lore:
+    - '&8Acceso externo'
+    - ''
+    - '&fAdquiere este paquete desde'
+    - '&fnuestra tienda oficial.'
+    - ''
+    - '&7Información '
+    - '&a&lℹ &fPaquete único exclusivo'
+    - '    &fpara donadores'
+    - ''
+    - ' &#3ed938▸ ¡Clic der para ver!'          
+    right_click_commands:
+    - '[player] kit preview Deluxio'   
+  '4-disp':
+    display_name: '&eBrocha de &lVENTA &nx3'
+    material: shears
+    enchantments:
+    - damage_all;1
+    hide_enchantments: true
+    slot: 32
+    lore:
+    - '&8Acceso externo'
+    - ''
+    - '&fAdquiere este paquete desde'
+    - '&fnuestra tienda oficial.'
+    - ''
+    - '&7Información '
+    - '&a&lℹ &fPaquete único exclusivo'
+    - '    &fpara donadores'
+    - ''
+    - ' &#3ed938▸ ¡Clic der para ver!'      
+    right_click_commands:
+    - '[player] kit preview Deluxio'          

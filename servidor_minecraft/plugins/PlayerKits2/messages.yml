@@ -1,0 +1,46 @@
+prefix: ''
+kitDoesNotExists: '&c⚠ ¡Oye! &cEse kit no existe.'
+kitNoPermissions: '&c⚠ ¡Oye! &c¡Permisos Insuficientes!'
+noSpaceError: '&c⚠ ¡Oye! &c¡No tienes suficiente espacio en tu inventario!'
+commandReload: '#F0F085 ¡Todo correcto! &a¡Configuración recargada!.'
+commandGiveError: '&c⚠ ¡Oye! &fNecesitas usar: &a/kit give <kit> <jugador>'
+commandGiveError2: '&cThere was an error giving the kit: &7%error%'
+commandGiveCorrect: '&aKit &7%kit% &agiven to &e%player%&a!'
+commandClaimError: '&c⚠ ¡Oye! &fNecesitas usar: &a/kit claim <kit>'
+commandCreateError: '&c⚠ ¡Oye! &fNecesitas usar: &a/kit create <nombre>'
+commandDeleteError: '&c⚠ ¡Oye! &fNecesitas usar: &a/kit delete <nombre>'
+commandResetError: '&c⚠ ¡Oye! &fNecesitas usar: &a/kit reset <kit> <jugador>'
+commandEditError: '&c⚠ ¡Oye! &fNecesitas usar: &a/kit edit <kit>'
+commandDoesNotExists: '&c⚠ ¡Oye! &cComando inexistente.'
+playerNotOnline: '&c⚠ ¡Oye! &fEl jugador &c%player% &fno está conectado.'
+oneTimeError: '&c⚠ ¡Oye! &cNo puedes reclamar este kit de nuevo.'
+cooldownError: '&c⚠ ¡Oye! &f¡Necesitas esperar &c%time% &fpara reclamar este kit!'
+kitReceived: '#F0F085☂ ¡Todo correcto! &fHas recibido el kit: #F0F085%kit%'
+kitAlreadyExists: '&c⚠ ¡Oye! &fEse kit ya existe.'
+inventoryEmpty: '&c⚠ ¡Oye! &cNecesitas tener minimo 1 objeto en tu inventario'
+kitCreated: '#F0F085☂ ¡Todo correcto! &aKit %kit% &acreado con éxito.'
+kitNotAddedToInventory: '&eIt was not possible to automatically add the kit to the
+  inventory. There is no more space left.'
+kitAddedToInventory: '&eKit item added to the &7%inventory% &edefault inventory on
+  slot &7%slot%&e!'
+noPermissions: '&cYou don''t have permissions for that.'
+kitDeleted: '#F0F085☂ ¡Todo correcto! &aKit %kit% eliminado con éxito.'
+playerDataNotFound: '&cNo data found for player &7%player%&c.'
+kitResetCorrect: '&aKit &7%kit% &areset for &7%player%&a!'
+cantPreviewError: '&cYou can''t preview this kit.'
+requirementsMessageStatusSymbolTrue: '&a&l✔'
+requirementsMessageStatusSymbolFalse: '&c&l✖'
+requirementsError: '&cYou dont''t have the necessary requirements to buy this!'
+seconds: s
+minutes: m
+hours: h
+days: d
+cooldownPlaceholderReady: ¡Listo!
+pluginCriticalErrors: '&cThe plugin has detected some errors. Check them using &a/kit
+  verify'
+commandPreviewError: '&cYou need to use: &7/kit preview <kit>'
+kitPreviewDisabled: '&cKit preview is disabled.'
+commandOpenError: '&cYou need to use: &7/kit open <inventory> <player>'
+inventoryNotExists: '&cThat inventory doesn''t exists.'
+
+

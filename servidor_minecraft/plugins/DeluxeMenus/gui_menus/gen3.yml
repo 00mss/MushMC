@@ -1,0 +1,402 @@
+menu_title: '&8&nTienda de generadores&r&r | &n3/3'
+open_command: genshop3
+size: 54
+items:   
+  'Fill':
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: "&r"
+    slots: 
+    - 10
+    - 19
+    - 28
+  'anterior':
+    material: arrow
+    slots:
+    - 48
+    display_name: '&cPágina anterior'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fEstá es nuestra lista amplia de'
+    - '&fgeneradores disponibles'
+    - ''
+    - '&e▸ ¡Solo podras adquirir uno! ' 
+    left_click_commands:
+    - '[openguimenu] gen2'
+    - '[sound] BLOCK_WOODEN_TRAPDOOR_OPEN'
+    - '[sound] BLOCK_WATER_AMBIENT'    
+  'sobre':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjdjMzNjZDBjMTRiYTgzMGRhMTQ5OTA3ZjdhNmFhZTgzNWI2YTM1YWVhMDFlMGNlMDczZmIzYzU5Y2M0NjMyNiJ9fX0=
+    slots:
+    - 18
+    display_name: '&aSobre los generadores'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fAl comprar el generador de &6&lTRIGO'
+    - '&fdeberás mejorarlo de forma parcial'
+    - '&fcon el dinero qué obtendrás'
+    - ''
+    - '&e▸ ¡Ey, intentare ayudarte! '          
+  'inforrmacion':
+    display_name: '&#ECF074Artículos de generadores'
+    material: nautilus_shell
+    slot: 49
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&fNuestro listado amplio cuenta con'
+    - '&fun maxímo de &#ECF07445&f generadores'
+    - ''
+    - '&fMejora tus generadores para poder'
+    - '&favanzar nuevas mejoras y obtener'
+    - '&fmejores recompensas de items'
+    - ''
+    - '&e▸ ¡Lista amplia de generadores! '   
+    left_click_commands:
+    - '[sound] BLOCK_BAMBOO_BREAK'
+  
+  'bloque-netherita':
+    material: netherite_block
+    slot: 12
+    hide_attributes: true
+    enchantments:
+    - damage_all;1
+    hide_enchantments: true
+    display_name: '&#695353Generador de &lNETHERITE'
+    priority: 1
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$93,000"
+      - "&8&l● &fReparación: &c$95,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fNetherita pulida: &a$790"
+      - "&8&l● &fAnillos de netherita: &a$810" 
+      - "&7"
+      - "&e▸ ¡Mejora tu generador!"
+  
+  'obsidiana':
+    material: OBSIDIAN
+    slot: 13
+    hide_attributes: true
+    enchantments:
+    - damage_all;1
+    hide_enchantments: true
+    display_name: '&#4A0845Generador de &#4A0845&lOBSIDIANA'
+    priority: 1
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$96,000"
+      - "&8&l● &fReparación: &c$98,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fObsidiana: &a$810"
+      - "&8&l● &fObsidiana infectada: &a$830" 
+      - "&7"
+      - "&e▸ ¡Mejora tu generador!"
+  
+  
+  'bedrocks':
+    material: BEDROCK
+    slot: 14
+    hide_attributes: true
+    enchantments:
+    - damage_all;1
+    hide_enchantments: true
+    display_name: '&#909090Generador de &#909090&lBEDROCK'
+    priority: 1
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$101,000"
+      - "&8&l● &fReparación: &c$104,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fBedrock: &a$850"
+      - "&8&l● &fTalisman final: &a$870" 
+      - "&7"
+      - "&e▸ ¡Mejora tu generador!"
+  'volcan':
+    material: gilded_blackstone
+    slot: 15
+    hide_attributes: true
+    enchantments:
+    - damage_all;1
+    hide_enchantments: true
+    display_name: '&#ff591bG&#fb5721e&#f75526n&#f4532ce&#f05131r&#ec4f37a&#e84d3cd&#e44b42o&#e14947r &#dd474dd&#d94552e &#ff591b&lV&#f75526&lO&#f05131&lL&#e84d3c&lC&#e14947&lA&#d94552&lN'
+    priority: 1
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$99,000"
+      - "&8&l● &fReparación: &c$101,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fFuego de volcan: &a$830"
+      - "&8&l● &fGólem final: &a$850" 
+      - "&7"
+      - "&e▸ ¡Mejora tu generador!"
+  'demonios':
+    material: polished_basalt
+    slot: 16
+    hide_attributes: true
+    enchantments:
+    - damage_all;1
+    hide_enchantments: true
+    display_name: '&#60637bG&#5d6377e&#5a6273n&#576270e&#54616cr&#516168a&#4d6164d&#4a6060o&#47605dr &#445f59d&#415f55e &#60637b&lD&#5f6779&lE&#5d6a78&lM&#5c6e76&lO&#5a7275&lN&#597673&lI&#577972&lO&#567d70&lS'
+    priority: 1
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$90,000"
+      - "&8&l● &fReparación: &c$93,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fLakhey: &a$770"
+      - "&8&l● &fLucifer: &a$790" 
+      - "&7"
+      - "&e▸ ¡Mejora tu generador!"
+  
+  'dragondehuesos':
+    material: bone_block
+    slot: 21
+    hide_attributes: true
+    enchantments:
+    - damage_all;1
+    hide_enchantments: true
+    display_name: '&#ADFADFGenerador de &#ADFADF&lHUESOS'
+    priority: 1
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$104,000"
+      - "&8&l● &fReparación: &c$107,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fHuesos de dragón: &a$870"
+      - "&8&l● &fCabeza de dragón: &a$890" 
+      - "&7"
+      - "&e▸ ¡Mejora tu generador!"
+  
+  'reydelinfierno':
+    material: black_concrete
+    slot: 22
+    hide_attributes: true
+    enchantments:
+    - damage_all;1
+    hide_enchantments: true
+    display_name: '&#FF856DGenerador del &#FF856D&lINFIERNO'
+    priority: 1
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$107,000"
+      - "&8&l● &fReparación: &c$110,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fCabeza del rey: &a$890"
+      - "&8&l● &fRey: &a$910" 
+      - "&7"
+      - "&e▸ ¡Mejora tu generador!"
+  
+  'fantasma':
+    material: SNOW_BLOCK
+    slot: 23
+    hide_attributes: true
+    enchantments:
+    - damage_all;1
+    hide_enchantments: true
+    display_name: '&#B2FFD5Generador &#B2FFD5&lFANTASMA'
+    priority: 1
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$107,000"
+      - "&8&l● &fReparación: &c$110,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fFantasma: &a$910"
+      - "&8&l● &fMuerte: &a$930" 
+      - "&7"
+      - "&e▸ ¡Mejora tu generador!"
+  'pulpo':
+    material: fire_coral_block
+    enchantments:
+    - damage_all;1
+    hide_enchantments: true
+    slot: 24
+    display_name: '&#f3375fG&#e8365be&#dd3557n&#d33452e&#c8334er&#bd324aa&#b23146d&#a73042o&#9d2f3dr &#922e39d&#872d35e &#f3375f&lP&#dd3557&lU&#c8334e&lL&#b23146&lP&#9d2f3d&lO&#872d35&lS'
+    priority: 1
+    lore: 
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$110,000"
+      - "&8&l● &fReparación: &c$113,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fPulpo de mar: &a$930"
+      - "&8&l● &fPulpo de oro: &a$950" 
+      - "&7"
+      - "&e▸ ¡Mejora tu generador!"
+  'peces':
+    material: lime_glazed_terracotta
+    enchantments:
+    - damage_all;1
+    hide_enchantments: true
+    slot: 25
+    display_name: '&#50f33cG&#4be836e&#46dd30n&#41d32ae&#3cc824r&#38bd1ea&#33b218d&#2ea712o&#299d0cr &#249206d&#1f8700e &#50f33c&lP&#44d82d&lE&#38bd1e&lC&#2ba20f&lE&#1f8700&lS'
+    priority: 1
+    lore: 
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$113,000"
+      - "&8&l● &fReparación: &c$116,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fPez azul: &a$950"
+      - "&8&l● &fPez rojo: &a$970" 
+      - "&7"
+      - "&e▸ ¡Mejora tu generador!"
+  'camaron':
+    material: orange_glazed_terracotta
+    enchantments:
+    - damage_all;1
+    hide_enchantments: true
+    slot: 30
+    display_name: '&#b17a1cG&#b97f1de&#c1851en&#c88a20e&#d08f21r&#d89522a&#e09a23d&#e89f24o&#efa426r &#f7aa27d&#ffaf28e &#b17a1c&lC&#be831e&lA&#cb8c20&lM&#d89522&lA&#e59d24&lR&#f2a626&lÓ&#ffaf28&lN'
+    priority: 1
+    lore: 
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$116,000"
+      - "&8&l● &fReparación: &c$119,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fCamarón: &a$970"
+      - "&8&l● &fCamarón prehistorico: &a$990" 
+      - "&7"
+      - "&e▸ ¡Mejora tu generador!"  
+  'cangrejo':
+    material: red_glazed_terracotta
+    enchantments:
+    - damage_all;1
+    hide_enchantments: true
+    slot: 31
+    display_name: '&#D14819Generador de &lCANGREJO'
+    priority: 1
+    lore: 
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$119,000"
+      - "&8&l● &fReparación: &c$122,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fCangrejo: &a$990"
+      - "&8&l● &fCangrejo prehistorico: &a$1,010" 
+      - "&7"
+      - "&e▸ ¡Mejora tu generador!"   
+  'platano':
+    material: yellow_glazed_terracotta
+    enchantments:
+    - damage_all;1
+    hide_enchantments: true
+    slot: 32
+    display_name: '&#a0b14fG&#aab748e&#b3bd40n&#bdc339e&#c6c931r&#d0cf2aa&#d9d523d&#e3db1bo&#ece114r &#f6e70cd&#ffed05e &#a1b11f&lP&#b1bb1b&lL&#c0c516&lÁ&#d0cf12&lT&#e0d90e&lA&#efe309&lN&#ffed05&lO'
+    priority: 1
+    lore: 
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$122,000"
+      - "&8&l● &fReparación: &c$125,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fBanana: &a$1,010"
+      - "&8&l● &fRacimo de banana: &a$1,030" 
+      - "&7"
+      - "&e▸ ¡Mejora tu generador!"      
+  'abejas':
+    material: composter
+    enchantments:
+    - damage_all;1
+    hide_enchantments: true
+    slot: 33
+    display_name: '&#7c8c56G&#83975ce&#8aa361n&#91ae67e&#98b96cr&#9fc572a&#a5d078d&#acdb7do&#b3e683r &#baf288d&#c1fd8ee &#7c8c56&lA&#8aa361&lB&#98b96c&lE&#a5d078&lJ&#b3e683&lA&#c1fd8e&lS'
+    priority: 1
+    lore: 
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$128,000"
+      - "&8&l● &fReparación: &c$131,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fMiel: &a$1,030"
+      - "&8&l● &fAbeja: &a$1,050" 
+      - "&7"
+      - "&e▸ ¡Mejora tu generador!"
+  'bebidas':
+    material: barrel
+    enchantments:
+    - damage_all;1
+    hide_enchantments: true
+    slot: 34
+    display_name: '&#7a6522G&#786424e&#756427n&#736329e&#71622cr&#6f622ea&#6c6130d&#6a6033o&#685f35r &#655f38d&#635e3ae &#a3872e&lB&#9f8634&lE&#9a8539&lB&#96853f&lI&#928445&lD&#8d834a&lA&#898250&lS'
+    priority: 1
+    lore: 
+      - '&8Artículo de información'
+      - ''
+      - '&fEste objeto podrá generar'
+      - '&fitems cada &e20&f segundos.'
+      - ""
+      - "&8&l● &fMejora: &a$131,000"
+      - "&8&l● &fReparación: &c$134,000"
+      - "&7"
+      - "&aCatálogo de items"
+      - "&8&l● &fCerveza: &a$1,050"
+      - "&8&l● &fBebida pepsi: &a$1,070" 
+      - "&7"
+      - "&e▸ ¡Mejora tu generador!"

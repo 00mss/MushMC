@@ -1,0 +1,433 @@
+Users:
+  8aa13c5f-c2ed-325f-ad76-c288670b20a8:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  b65991a9-6b44-34df-b34e-a785ce224082:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  2b5ae896-d0b5-3d05-b66b-46a598dc0011:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  86374a40-ac2c-36fa-9e08-3c046744cca6:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  4900653c-32c1-3766-acdd-e8c8b4691483:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  a85df2ec-3d2f-383e-916c-8b831232284b:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  8021337b-713f-310c-9166-d258738a0e10:
+    autosellchat: false
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  227e55be-705a-3149-8e8d-6aa2f3b26aae:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  055621eb-09c6-3997-82cf-619d5c9a536e:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  bf041e6a-e48c-3698-ae5c-114bce869f6a:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  230dc440-8945-334d-ba93-298c4fb259ca:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  90707ede-de22-3eaf-9ac5-c5c52832f7f0:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  7db85796-8916-3066-9adb-ea59285aff6f:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  46aa87b4-95f0-3842-af73-f98375657483:
+    autosellchat: false
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  61cba5fc-11a1-3293-b4ce-e875fca2f0c7:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  5f70c442-cdbf-39b0-beda-37f3326f0462:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  5031eba3-42d4-3f5f-b819-a67a3bf85886:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  e13062f9-06ff-3ae1-92a0-13d3364bf58b:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  46c6849c-e3d0-317f-8719-a41fb7745427:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: false
+    essencepouch: true
+    actionbar: true
+    titles: true
+  d050033d-d943-35db-933f-15700cf9924e:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: false
+    essencepouch: true
+    actionbar: true
+    titles: true
+  2dac5ccf-0cba-3ed5-859a-8532ee63ab62:
+    autosellchat: false
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  81cc4696-c459-3f79-ae3e-a85c85d729c2:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  2e3b4adf-ae4f-37bb-ae1b-904f577ca36f:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  7b46d1d0-99f7-39d8-a71e-c1333be90215:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  8ed0ffd6-8784-3f91-a485-eb7a657db9f4:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  493463c3-ae8f-3705-a49a-abcfe85da2b9:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  f1435dfc-f668-3bdd-9fd8-0367d33ff4c4:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  5031bf1b-f64e-3c2c-986a-928851557c1d:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  70a5a782-2025-39a5-b422-4ca2dd20dd4d:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  fd26000f-0e6c-3acb-9c74-5d30dfd1c02a:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  394be33e-573b-3724-811d-e7b0bec192ca:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  ca3241af-5e38-336e-9124-dba4a6fe595a:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  fa1438ef-e469-36a3-ae3a-558ed1267857:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  1e00f2f2-ebd2-3fb6-a8c6-421c04aaccaa:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  8207bf28-50ac-3c6a-a7fa-ffa7b188e581:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  27053e1e-a20f-3300-b95c-dc629f45b9f0:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  cbe9c665-6336-3a8b-8538-688d825fdd8b:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  b017a258-a041-3b5c-a709-2b008a6b330a:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  067c1654-ea72-3a11-9ff0-afe12f6a2a93:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  06bfa28f-4307-33fb-bc17-a724caa05539:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  592316b4-ffab-3c01-a86e-fe91df91451e:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  f26dfa1c-8206-3141-a738-8da9db7f58bd:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  741df991-7281-3ea9-8d42-215c8aa45126:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  4d258a81-2358-3084-8166-05b9faccad80:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  f02cdc6d-723c-3641-aa54-e8a2175162dd:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  7f1624c2-d84a-3d6f-a125-f3d35c08ddab:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  c9b88e94-099c-379a-9020-76a5433946af:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  f21ec464-c940-3358-9a24-df89d3b3f812:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  18cdd0db-295e-386a-9796-bdbbb2a76df9:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  a430924f-a43b-31ba-b82d-6dc8a38be684:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  e6c17330-2f5b-33e2-a3cc-e0c7d4b9da28:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  67835cd9-95dd-3f44-9678-937044740853:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  7082290b-1227-3279-a50f-f1e4da2bc57d:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
+  485ca1c6-6186-3549-aa45-af5f742b6bc4:
+    autosellchat: true
+    keyfinder: true
+    spawnerfinder: true
+    moneypouch: true
+    essencepouch: true
+    actionbar: true
+    titles: true
