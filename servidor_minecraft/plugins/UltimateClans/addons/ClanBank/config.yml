@@ -1,0 +1,75 @@
+Config:
+  version: '1'
+  # available: [EN, TR, BR, RU, PL]
+  language: ES
+   
+  Bank:
+    enabled: true
+    forge_open-gui: true
+    format: '#,##0'
+    limit: 2147483646
+    values:
+      init: 0
+      min: 1000
+      max: 100000
+      add: 1000
+      add2: 10000
+      remove: 1000
+      remove2: 10000
+   
+  Icon:
+    click_sound: ''
+    material: PLAYER_HEAD
+    name: <green>Banco del clan
+    texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjA5Mjk5YTExN2JlZTg4ZDMyNjJmNmFiOTgyMTFmYmEzNDRlY2FlMzliNDdlYzg0ODEyOTcwNmRlZGM4MWU0ZiJ9fX0=
+    lore:
+    - ''
+    - ' <dark_gray>● <white>Dinero Total: <green>%uclans_money_currency%%uclans_bank_balance%'
+    - ''
+    - <yellow>► ¡Haga click para abrir en menú!
+    glow: false
+    slot: 28
+    # avaliable: TOP, BOTTOM, BORDER, ALL or numeric list
+    mimeslots: [
+      ]
+    nbt:
+      string: [
+        ]
+    model: 0
+    left_click_action:
+    - /{_clan} {_bank} {_view} -gui
+    right_click_action:
+    - /{_clan} {_bank} {_view} -gui
+   
+  #Permissions are for advanced connoisseurs, be careful when editing this!
+  Permissions:
+    withdraw:
+      name: Bank-Withdraw
+      default_value: true
+      applicable_roles:
+      - moderator
+      - coleader
+    add:
+      name: Bank-Add
+      default_value: true
+      applicable_roles:
+      - member
+      - trainee
+      - moderator
+      - coleader
+    view:
+      name: Bank-View
+      default_value: true
+      applicable_roles:
+      - member
+      - trainee
+      - moderator
+      - coleader
+   
+  logger:
+    enable_colors: true
+    plugin_material: SUNFLOWER
+    plugin_name: Bank
+    events:
+      ClanBankAddEvent: true
+      ClanBankWithdrawEvent: true

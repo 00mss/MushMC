@@ -1,0 +1,10 @@
+{
+  "items": [],
+  "buyingItems": [
+    "{\n  \"seller\": \"2b5ae896-d0b5-3d05-b66b-46a598dc0011\",\n  \"item\": \"H4sIAAAAAAAA/+NiYOBgYMpMYZDMzcxLTS5KTCuxSs7Pz05NiS/IL8pOzsgvYGRgdc4vzSvhZwAAmWuUhi0AAAA=\",\n  \"price\": 133,\n  \"expire\": 1705459593669,\n  \"sellerName\": \"AlejandroUxl\",\n  \"id\": \"f143949f-0000-73b8-1873-4c45f143949f\",\n  \"economy\": \"vault\",\n  \"type\": \"DEFAULT\",\n  \"priority\": 0,\n  \"buyer\": \"8aa13c5f-c2ed-325f-ad76-c288670b20a8\"\n}"
+  ],
+  "expiredItems": [],
+  "transactions": [
+    "{\n  \"seller\": \"2b5ae896-d0b5-3d05-b66b-46a598dc0011\",\n  \"date\": 1704854793683,\n  \"is_read\": true,\n  \"item\": \"H4sIAAAAAAAA/+NiYOBgYMpMYZDMzcxLTS5KTCuxSs7Pz05NiS/IL8pOzsgvYGRgdc4vzSvhZwAAmWuUhi0AAAA=\",\n  \"need_money\": false,\n  \"price\": 133,\n  \"id\": 0,\n  \"economy\": \"vault\",\n  \"buyer\": \"8aa13c5f-c2ed-325f-ad76-c288670b20a8\"\n}"
+  ]
+}
