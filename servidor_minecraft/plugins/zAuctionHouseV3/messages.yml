@@ -1,0 +1,513 @@
+messages:
+  prefix:
+    type: TCHAT
+    message: ''
+  time:
+    day:
+      type: TCHAT
+      message: '%2dd %2dh %2dm %2ds'
+    hour:
+      type: TCHAT
+      message: '%2dh %2dm %2ds'
+    minute:
+      type: TCHAT
+      message: '%2dm %2ds'
+    second:
+      type: TCHAT
+      message: '%2ds'
+  command:
+    syntaxe:
+      error:
+        type: TCHAT
+        message: '&x&f&b&c&a&7&8☀ ¡Oye! &fDebes ejecutar el comando así&f: &b/ah sell
+          (precio) &8&l- &fItem en mano'
+      help:
+        type: TCHAT
+        message: '&x&f&b&c&a&7&8» &f%syntaxe% &8- &f%description%'
+    'no':
+      permission:
+        type: TCHAT
+        message: '&c⚠ &c¡Oye! &fSin los permisos suficientes, si crees qué esto es
+          un problema contáctanos: &c&ndiscord.gg/mineluxe'
+      console:
+        type: TCHAT
+        message: '&c⚠ &c¡Oye! &fSólo el jugador puede usar este comando.'
+      arg:
+        type: TCHAT
+        message: '&c⚠ &c¡Oye! &fEste argumento no existe.'
+    help:
+      custom:
+        type: TCHAT
+        messages:
+        - '&6• &e/ah sell <args> &f- &fComando de venta..'
+        - '&6• &e/ah sellinventory <args> &f- &fComando de venta de inventario..'
+    reload:
+      type: TCHAT
+      message: '&x&f&b&c&a&7&8☀ ¡Bien hecho! &fPlugin recargado correctamente.'
+    sell:
+      argument:
+        price:
+          type: TCHAT
+          message: price
+        amount:
+          type: TCHAT
+          message: amount
+      custom:
+        helping:
+          message: '&cYou must execute the command like this&7: &f/hdv vendre &a<price>
+            &b[<amount>]'
+          type: TCHAT
+    is:
+      disable:
+        type: TCHAT
+        message: '&cThe command is disabled.'
+    cooldown:
+      message: '&cYou must wait a few seconds between each command.'
+      type: TCHAT
+    search:
+      custom:
+        helping:
+          message: '&cYou must execute the command like this&7: &f/hdv search &a<word>'
+    open:
+      custom:
+        helping:
+          message: '&cYou must execute the command like this&7: &f/ah'
+          type: TCHAT
+  description:
+    auction:
+      type: TCHAT
+      message: Opens the auction house
+    sub:
+      items:
+        type: TCHAT
+        message: Opens the items inventory
+      categories:
+        type: TCHAT
+        message: Opens the categories inventory
+      buying:
+        type: TCHAT
+        message: Opens the buying inventory
+      expire:
+        type: TCHAT
+        message: Opens the expire inventory
+    blacklist:
+      list:
+        type: TCHAT
+        message: See the blacklist players.
+      add:
+        type: TCHAT
+        message: Ajouter un joueur dans la blacklist
+      remove:
+        type: TCHAT
+        message: Retirer un joueur dans la blacklist
+    version:
+      type: TCHAT
+      message: Show plugin version
+    reload:
+      type: TCHAT
+      message: Reload plugin
+    sell:
+      type: TCHAT
+      message: Sell an item
+      inventory:
+        type: TCHAT
+        message: Sell an inventory
+    help:
+      type: TCHAT
+      message: See the list of commands.
+    config:
+      type: TCHAT
+      message: Config plugin ingame
+    claim:
+      type: TCHAT
+      message: Claim your money
+    search:
+      type: TCHAT
+      message: Search a item
+    lang:
+      type: TCHAT
+      message: See the list of translations.
+    convert:
+      type: TCHAT
+      message: Convert items form another plugin to zauctionhouse
+    history:
+      type: TCHAT
+      message: View your history
+    transaction:
+      type: TCHAT
+      message: View a player's transactions.
+    open:
+      message: Open auction to a player
+      type: TCHAT
+    purge:
+      message: Remove old transaction
+      type: TCHAT
+    addon:
+      message: Show addon list
+      type: TCHAT
+  'no':
+    holding:
+      item:
+        type: TCHAT
+        message: '&c⚠ &c¡Oye! &fNo tienes algun item en la mano para poder vender
+          en el sistema de subastas.'
+    money:
+      button:
+        type: ITEMSTACK
+        itemstack:
+          material: BARRIER
+          data: 0
+          amount: 1
+          durability: 0
+          name: '&c&l✘ &f¡Sin dinero suficiente!'
+    enought:
+      money:
+        type: TCHAT
+        message: '&cNo tienes suficiente dinero para comprar este articulo.'
+      place:
+        message: '&cYou don''t have enough room in your inventory to buy this item.'
+        type: TCHAT
+  plugin:
+    disable:
+      type: TCHAT
+      message: '&c⚠ &c¡Oye! &fEsta casa de subastas esta desactivada.'
+    not:
+      ready:
+        type: TCHAT
+        message: '&c⚠ &c¡Oye! &fEl plugin no ha terminado de inicializarse, por favor
+          sea paciente...'
+        hdb:
+          message: '&cThe &fHeadDataBase &cplugin is not yet active, the plugin inventories
+            have not yet loaded, please wait until HDB is working.'
+          type: TCHAT
+  sell:
+    cooldown:
+      type: TCHAT
+      message: '&c⚠ &c¡Oye! &fPara volver usar esto debes esperar &c%time%&c.'
+    max:
+      price:
+        type: TCHAT
+        message: '&c⚠ &c¡Oye! &fNo puedes poner un item en venta por &c$9&f como su
+          precio base.&f'
+    min:
+      price:
+        type: TCHAT
+        message: '&c⚠ &c¡Oye! &fNo puedes poner un item en venta por &c$9&f como su
+          precio base.&f'
+    message:
+      default:
+        type: TCHAT
+        message: '&x&f&b&c&a&7&8☀ ¡Muy bien! &fHas añadido una &x&f&b&c&a&7&8venta
+          de item&f al sistema de subastas por el precio de &x&f&b&c&a&7&8%price%&f.'
+      inventory:
+        type: TCHAT
+        message: '&x&f&b&c&a&7&8☀ ¡Muy bien! &fHas añadido una &x&f&b&c&a&7&8venta
+          de inventario&f al sistema de subastas por el precio de &x&f&b&c&a&7&8%price%&f.'
+    creative:
+      error:
+        type: TCHAT
+        message: '&c⚠ &c¡Oye! &fNo puedes vender un objeto en modo creativo.'
+    item:
+      error:
+        type: TCHAT
+        message: '&c⚠ &c¡Oye! &fNo puedes vender este artículo, está prohibido en
+          las subastas.'
+      break:
+        type: TCHAT
+        message: '&c⚠ &c¡Oye! &fNo se puede vender un artículo roto.'
+      tax:
+        default:
+          message: '&cYou need &f%tax%%currency% &cto be able to sell this item.'
+          type: TCHAT
+      whitelist:
+        message: '&cYou do not have permission to add this item.'
+        type: TCHAT
+    world:
+      error:
+        type: TCHAT
+        message: '&c⚠ &c¡Oye! &cNo se puede vender en este mundo'
+    items:
+      error:
+        type: TCHAT
+        message: '&c⚠ &c¡Oye! &fNo puedes vender más de &c%max% &fartículos.'
+    inventory:
+      error:
+        type: TCHAT
+        message: '&cYou did not put any item, sale canceled.'
+      item:
+        type: ITEMSTACK
+        itemstack:
+          material: CHEST
+          data: 0
+          amount: 1
+          durability: 0
+          name: '&6Venta de inventario'
+  item:
+    purchased:
+      type: TCHAT
+      message: '&x&f&b&c&a&7&8☀ ¡Bien hecho! &fHas comprado el item: &x&f&b&c&a&7&8%item% '
+    remove:
+      admin:
+        type: TCHAT
+        message: '&x&f&b&c&a&7&8☀ ¡Todo correcto! &fHas eliminado el item &x&f&b&c&a&7&8%item%&f
+          de las subastas.'
+      seller:
+        get:
+          type: TCHAT
+          message: '&fAn administrator has just removed &a%item%&f, you can retrieve
+            it from the list of expired items.'
+        delete:
+          type: TCHAT
+          message: '&fAn administrator has just removed &a%item%&f, You cannot retrieve
+            your item.'
+    lore:
+      default:
+        type: TCHAT
+        messages:
+        - '&8-----&m----------------&8----&m'
+        - '&8&l● &fVendedor &x&f&b&c&a&7&8%seller%'
+        - '&8&l● &fPrecio&7: &x&f&f&a&0&0&0%price% ⛃        '
+        - '&8&l● &fVencerá en&7:&x&f&f&e&0&0&0%time% '
+        - ''
+        - '&x&f&a&f&0&a&4▸ ¡Comprar este articulo!'
+      expire:
+        type: TCHAT
+        messages:
+        - '&8-----&m----------------&8----&m'
+        - '&8&l● &fVencerá en&7:&x&f&f&e&0&0&0%time% '
+        - ''
+        - '&x&f&a&f&0&a&4▸ ¡Recuperar inmediatamente!'
+      buying:
+        type: TCHAT
+        messages:
+        - '&8-----&m----------------&8----&m'
+        - ''
+        - '&8&l● &fVencerá en&7:&x&f&f&e&0&0&0%time% '
+        - ''
+        - '&a▸ ¡Recuperar inmediatamente!'
+      items:
+        type: TCHAT
+        messages:
+        - '&8-----&m----------------&8----&m'
+        - '&fEstas vendiendo este item'
+        - '&fen la casa de subastas'
+        - ''
+        - '&x&f&a&f&0&a&4▸ ¡Elimarlo de las subastas!'
+      inventory:
+        type: TCHAT
+        messages:
+        - '&8-----&m----------------&8----&m'
+        - '&fEstá es una venta de inventario'
+        - '&fsi deseas vender todos tus en'
+        - '&funa venta de inventario utiliza:'
+        - ''
+        - '&e₪ &f/ah &8‣ &7(sellinventory)'
+        - ''
+        - '&fInformación sobre este articulo'
+        - '&fqué fue puesto a la venta:'
+        - ''
+        - '&8&l● &fVendedor &x&f&b&c&a&7&8%seller%'
+        - '&8&l● &fPrecio&7: &x&f&f&a&0&0&0%price% ⛃        '
+        - '&8&l● &fTiempo restante&7:&x&f&f&e&0&0&0%time% '
+        - ''
+        - '&x&f&a&f&0&a&4▸ ¡Comprar este articulo!'
+    economy:
+      full:
+        type: TCHAT
+        message: '&c⚠ &c¡Oye! &fTienes el inventario muy lleno, sus artículos se han
+          ido en el inventario de artículos caducados en el apartado de subastas.'
+  buyer:
+    purchased:
+      type: TCHAT
+      message: '&x&f&b&c&a&7&8☀ ¡Bien hecho! &fEl jugador &x&f&b&c&a&7&8%buyer%&f
+        te acaba de comprar una subasta por el precio de &x&f&b&c&a&7&8%price%'
+  remove:
+    message:
+      type: TCHAT
+      message: '&x&f&b&c&a&7&8☀ ¡Bien hecho! &fAcabas de eliminar este artículo de
+        las ventas.'
+  ascending:
+    price:
+      type: TCHAT
+      message: Ascending price
+    date:
+      type: TCHAT
+      message: Ascending date
+  decreasing:
+    date:
+      type: TCHAT
+      message: Decreasing date
+    price:
+      type: TCHAT
+      message: Decreasing price
+  price:
+    format:
+      item:
+        type: TCHAT
+        message: '%price%'
+  status:
+    player:
+      type: TCHAT
+      message: Click to retrieve this item
+    buyer:
+      type: TCHAT
+      message: Click to buy this item
+  error:
+    buy:
+      type: TCHAT
+      message: '&cNo puede comprar este artículo'
+      error:
+        message: '&cYou can''t buy this item.'
+        type: TCHAT
+      money:
+        message: '&cYou don’t have enough money to buy this.'
+        type: TCHAT
+  broadcast:
+    sell:
+      annonce:
+        type: TCHAT
+        message: '&fPlayer &x&f&b&c&a&7&8%player% &fhas added &f%item% &ffor &d%price%&o%currency%
+          &fto the auction!'
+    buy:
+      annonce:
+        message: '&fPlayer &b%player% &fhas just bought &7%item% &ffor &d%price%&o%currency%
+          &fto the auction!'
+        type: TCHAT
+  world:
+    is:
+      banned:
+        type: TCHAT
+        message: '&cYou can''t use the auction house here.'
+  inventory:
+    full:
+      type: TCHAT
+      message: '&c⚠ &c¡Oye! &fTu inventario está muy lleno para recibir objetos de
+        subastas.'
+  blacklist:
+    information:
+      type: TCHAT
+      message: '&cYou are blacklisted, you cannot use the auction house.'
+    list:
+      type: TCHAT
+      message: '&fList of blacklis playerst&8: &f%players%'
+    empty:
+      type: TCHAT
+      message: '&cNo blacklist players'
+    add:
+      type: TCHAT
+      message: '&fYou have just added the player &f%player% &f to the blacklist.'
+    remove:
+      type: TCHAT
+      message: '&fYou come to remove the player &f%player% &f from the blacklist.'
+  transaction:
+    empty:
+      purchase:
+        type: TCHAT
+        message: '&cYou have not made any purchase transactions.'
+      sale:
+        type: TCHAT
+        message: '&cYou have not made any sales transactions.'
+      both:
+        type: TCHAT
+        message: '&cYou have not made any transactions.'
+    message:
+      list:
+        type: TCHAT
+        messages:
+        - '&8(&x&f&b&c&a&7&8zAuctionHouse&8) &fTransactions &f%type% &8(&a%page%&8/&a%maxPage%&8)'
+        - '%content%'
+        - '&8(&x&f&b&c&a&7&8?&8) &f&oDo &f&o/ah history %nextPage% %type% &f&oto go
+          to the next page.'
+      show:
+        type: TCHAT
+        messages:
+        - '&8(&x&f&b&c&a&7&8zAuctionHouse&8) &fTransactions &f%type% &fof &x&f&b&c&a&7&8%player%
+          &8(&a%page%&8/&a%maxPage%&8)'
+        - '%content%'
+        - '&8(&x&f&b&c&a&7&8?&8) &f&oDo &f&o/ah transaction %player% %nextPage% %type%
+          &f&oto go to the next page.'
+      content:
+        sale:
+          type: TCHAT
+          message: '&f%seller% have sold x&a%amount% &o%item% &fto the player &x&f&b&c&a&7&8%buyer%
+            for &f%price%%currency% &8(&f%date%&8)'
+        purchase:
+          type: TCHAT
+          message: '&f%buyer% have purchased x&a%amount% &o%item% &fto the player
+            &x&f&b&c&a&7&8%seller% for &f%price%%currency% &8(&f%date%&8)'
+        you:
+          type: TCHAT
+          message: You
+  connect:
+    claim:
+      type: TCHAT
+      message: '&aYou have money to recover, make &x&f&b&c&a&7&8/ah claim &ato recover
+        for your money.'
+    transactions:
+      type: TCHAT
+      message: '&aYou sold %item% during your absence.'
+  claim:
+    money:
+      error:
+        type: TCHAT
+        message: '&cYou have no pending transactions.'
+      success:
+        type: TCHAT
+        message: '&aYou just got your money back on hold.'
+      wait:
+        message: '&7Wait few seconds...'
+        type: TCHAT
+      cooldown:
+        message: '&cYou have to wait a few minutes before you can do this command
+          again.'
+        type: TCHAT
+      crash:
+        message: '&7Unable to retrieve transactions at this time, please contact an
+          administrator.'
+        type: TCHAT
+  cooldown:
+    message:
+      type: ACTION
+      message: ' &cYou must wait &f%cooldown% &cbefore you can do this action.'
+  player:
+    lag:
+      ping:
+        message: '&cYou cannot sell items at this time. (its disableSaleIfPlayerIsLagging
+          in config.json)'
+        type: TCHAT
+      tps:
+        message: '&cYou cannot sell items at this time. (its disableSaleIfServerIsLagging
+          in config.json)'
+        type: TCHAT
+  purge:
+    start:
+      message: '&aPurge start. &8(&7Wait few seconds&8)'
+      type: TCHAT
+    end:
+      message: '&aThe purge of transactions is over.'
+      type: TCHAT
+  click:
+    cooldown:
+      type: ACTION
+      message: '&c⚠ &c¡Oye! &fDebes esperar antes de poder realizar esta acción..'
+  force:
+    open:
+      message: '&aYou have just opened the auction house for the player &f%player%&a.'
+      type: TCHAT
+  priority:
+    message: No priority
+    type: TCHAT
+  economy:
+    not:
+      found:
+        message: '&cImpossible de trouver l''&conomy avec le nom &f%name%&c.'
+        type: TCHAT
+  dupe:
+    info:
+      message: '&aThe player &f%player% &ahas just put on sale and removed 3 items
+        in less than 60 seconds !'
+      type: TCHAT
+    infodiscord:
+      message: The player **%player%** has just put on sale and removed 3 items in
+        less than 60 seconds !
+      type: TCHAT

@@ -1,0 +1,97 @@
+# Monde d�sactiv�
+disableWorlds:
+- world_the_end
+
+bannedItems:
+  goldenappel:
+    material: netherite_chestplate
+
+bannedItemsWithMaterial:
+- BEDROCK
+
+permissions:
+  zauctionhouse_max_5: 5
+  zauctionhouse_max_10: 10
+  zauctionhouse_max_15: 150
+
+# SQL
+sql:
+  user: homestead
+  password: secret
+  port: 3306
+  host: 192.168.10.10
+  database: zauctionhouse
+
+citizen:
+  '1':
+    name: Auction
+    inventory: auction
+enableDebug: false
+enableDebugTime: false
+enableExpirationPermission: false
+enablePlugin: true
+enableCreateSell: true
+sellCooldown:
+  enable: true
+noMoneyItem:
+  enable: true
+log:
+  enable: true
+  isFile: false
+enableCustomMessage:
+  help: false
+  sell: false
+  search: false
+  open: false
+enablePrioritySort: false
+enablePrioritySortLimit: false
+tax:
+  globalTax: false
+  perItemTax: false
+  enableByPass: false
+antiLag:
+  player:
+    enable: true
+  server:
+    enable: true
+optimisation:
+  enablePapiInLore: true
+  cache:
+    enable: false
+  enableLogAutoSaveInformation: true
+  openSyncInventory: false
+itemFlags:
+  enable: false
+price:
+  betterPrice: true
+  betterPriceReduction: false
+  enableMinMaxPricePerItems: false
+enableSellAnnonce: false
+displayErrorBuyMessage: false
+enableBuyAnnonce: false
+enableClaimMoney: false
+enableClaimMoneyMessageOnJoin: false
+enableTransactionMessageOnJoin: false
+disableSellBreakItem: false
+giveItemAfterPurchase: false
+sendItemToPurchaseInventoryIfIsFull: true
+openInventoryAfterRemoveConfirm: true
+needPriceForSellInventory: true
+disablePriceErrorDefault: true
+enableCommandInventories: false
+enableVersionChecker: true
+redis:
+  autoUpdateInventory: false
+  autoGiveMoney: false
+disableDefaultSellPriceFormatError: false
+categoryCheckOnlyMaterial: true
+displayCooldownMessage: true
+enableCooldownClick: false
+enableCooldownCommand: true
+enableBackup: true
+antiDupe:
+  enable: true
+  consoleLog:
+    enable: true
+  discordWebhook:
+    enable: true
