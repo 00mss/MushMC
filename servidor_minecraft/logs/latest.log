@@ -1,0 +1,266 @@
+[00:15:38] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[00:15:41] [ServerMain/INFO]: Loaded 7 recipes
+[00:15:42] [Server thread/INFO]: Starting minecraft server version 1.20.1
+[00:15:42] [Server thread/INFO]: Loading properties
+[00:15:42] [Server thread/INFO]: This server is running Paper version git-Paper-196 (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT) (Git: 773dd72)
+[00:15:42] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[00:15:42] [Server thread/INFO]: Using 4 threads for Netty based IO
+[00:15:43] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[00:15:43] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[00:15:43] [Server thread/INFO]: Default game type: SURVIVAL
+[00:15:43] [Server thread/INFO]: Generating keypair
+[00:15:43] [Server thread/INFO]: Starting Minecraft server on *:25565
+[00:15:43] [Server thread/INFO]: Using epoll channel type
+[00:15:43] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[00:15:43] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
+[00:15:43] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load 'plugins/RivalHarvesterHoes.jar' in 'plugins'
+org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins: [NBTAPI]. Please download and install these plugins to run 'RivalHarvesterHoes'.
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:82) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.loadPlugins(CraftServer.java:510) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:273) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1100) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:317) ~[paper-1.20.1.jar:git-Paper-196]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[00:15:44] [Server thread/WARN]: [ViaVersion Config] Invalid blocked version protocol found in config: '[<1.9, >1.20]'
+[00:15:44] [Server thread/INFO]: [SpigotLibraryLoader] [SuperiorSkyblock2] Loading 1 libraries... please wait
+[00:15:44] [Server thread/INFO]: [SpigotLibraryLoader] [SuperiorSkyblock2] Loaded library /workspaces/MushMC/servidor_minecraft/libraries/org/openjdk/nashorn/nashorn-core/15.4/nashorn-core-15.4.jar
+[00:15:44] [Server thread/INFO]: [SpigotLibraryLoader] [SuperiorSkyblock2] Loaded library /workspaces/MushMC/servidor_minecraft/libraries/org/ow2/asm/asm/7.3.1/asm-7.3.1.jar
+[00:15:44] [Server thread/INFO]: [SpigotLibraryLoader] [SuperiorSkyblock2] Loaded library /workspaces/MushMC/servidor_minecraft/libraries/org/ow2/asm/asm-commons/7.3.1/asm-commons-7.3.1.jar
+[00:15:44] [Server thread/INFO]: [SpigotLibraryLoader] [SuperiorSkyblock2] Loaded library /workspaces/MushMC/servidor_minecraft/libraries/org/ow2/asm/asm-analysis/7.3.1/asm-analysis-7.3.1.jar
+[00:15:44] [Server thread/INFO]: [SpigotLibraryLoader] [SuperiorSkyblock2] Loaded library /workspaces/MushMC/servidor_minecraft/libraries/org/ow2/asm/asm-tree/7.3.1/asm-tree-7.3.1.jar
+[00:15:44] [Server thread/INFO]: [SpigotLibraryLoader] [SuperiorSkyblock2] Loaded library /workspaces/MushMC/servidor_minecraft/libraries/org/ow2/asm/asm-util/7.3.1/asm-util-7.3.1.jar
+[00:15:45] [Server thread/WARN]: [org.bukkit.craftbukkit.v1_20_R1.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[00:15:48] [Server thread/WARN]: Legacy plugin BCommons v0.3.0 does not specify an api-version.
+[00:15:48] [Server thread/INFO]: [SpigotLibraryLoader] [NexEngine] Loading 2 libraries... please wait
+[00:15:48] [Server thread/INFO]: [SpigotLibraryLoader] [NexEngine] Loaded library /workspaces/MushMC/servidor_minecraft/libraries/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar
+[00:15:48] [Server thread/INFO]: [SpigotLibraryLoader] [NexEngine] Loaded library /workspaces/MushMC/servidor_minecraft/libraries/org/slf4j/slf4j-api/2.0.0-alpha1/slf4j-api-2.0.0-alpha1.jar
+[00:15:48] [Server thread/INFO]: [SpigotLibraryLoader] [NexEngine] Loaded library /workspaces/MushMC/servidor_minecraft/libraries/it/unimi/dsi/fastutil/8.5.11/fastutil-8.5.11.jar
+[00:15:48] [Server thread/WARN]: Legacy plugin yMito v1.1.4 does not specify an api-version.
+[00:15:48] [Server thread/INFO]: [STDOUT] [yLWdfNxk2AtbDD5] [directleaks.net] Error #006
+[00:15:48] [Server thread/INFO]: [STDOUT] [yLWdfNxk2AtbDD5] [directleaks.net] Potential Malware was detected.
+[00:15:48] [Server thread/INFO]: [STDOUT] [yLWdfNxk2AtbDD5] [directleaks.net] Please scan your server - https://github.com/OpticFusion1/MCAntiMalware
+[00:15:48] [Server thread/INFO]: [STDOUT] [yLWdfNxk2AtbDD5] [directleaks.net] If you cannot resolve this message Haizivs on site - https://directleaks.net/conversations/add
+[00:15:50] [Thread-1/INFO]: Stopping main thread (Ignore any thread death message you see! - DO NOT REPORT THREAD DEATH TO PAPER)
+[00:15:50] [Server thread/INFO]: [STDOUT] [yLWdfNxk2AtbDD5] [directleaks.net] Error #006
+[00:15:50] [Server thread/INFO]: [STDOUT] [yLWdfNxk2AtbDD5] [directleaks.net] Potential Malware was detected.
+[00:15:50] [Server thread/INFO]: [STDOUT] [yLWdfNxk2AtbDD5] [directleaks.net] Please scan your server - https://github.com/OpticFusion1/MCAntiMalware
+[00:15:50] [Server thread/INFO]: [STDOUT] [yLWdfNxk2AtbDD5] [directleaks.net] If you cannot resolve this message Haizivs on site - https://directleaks.net/conversations/add
+[00:15:50] [Server thread/INFO]: [STDOUT] [yLWdfNxk2AtbDD5] [directleaks.net] Error #006
+[00:15:50] [Server thread/INFO]: [STDOUT] [yLWdfNxk2AtbDD5] [directleaks.net] Potential Malware was detected.
+[00:15:50] [Server thread/INFO]: [STDOUT] [yLWdfNxk2AtbDD5] [directleaks.net] Please scan your server - https://github.com/OpticFusion1/MCAntiMalware
+[00:15:50] [Server thread/INFO]: [STDOUT] [yLWdfNxk2AtbDD5] [directleaks.net] If you cannot resolve this message Haizivs on site - https://directleaks.net/conversations/add
+[00:15:50] [Server thread/INFO]: [STDOUT] [yLWdfNxk2AtbDD5] [directleaks.net] Error #006
+[00:15:50] [Server thread/INFO]: [STDOUT] [yLWdfNxk2AtbDD5] [directleaks.net] Potential Malware was detected.
+[00:15:50] [Server thread/INFO]: [STDOUT] [yLWdfNxk2AtbDD5] [directleaks.net] Please scan your server - https://github.com/OpticFusion1/MCAntiMalware
+[00:15:50] [Server thread/INFO]: [STDOUT] [yLWdfNxk2AtbDD5] [directleaks.net] If you cannot resolve this message Haizivs on site - https://directleaks.net/conversations/add
+[00:15:50] [Server thread/INFO]: [STDOUT] [yLWdfNxk2AtbDD5] [directleaks.net] Error #006
+[00:15:50] [Server thread/INFO]: [STDOUT] [yLWdfNxk2AtbDD5] [directleaks.net] Potential Malware was detected.
+[00:15:50] [Server thread/INFO]: [STDOUT] [yLWdfNxk2AtbDD5] [directleaks.net] Please scan your server - https://github.com/OpticFusion1/MCAntiMalware
+[00:15:50] [Server thread/INFO]: [STDOUT] [yLWdfNxk2AtbDD5] [directleaks.net] If you cannot resolve this message Haizivs on site - https://directleaks.net/conversations/add
+[00:15:50] [Server thread/WARN]: java.lang.reflect.InvocationTargetException
+[00:15:50] [Server thread/WARN]: 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[00:15:50] [Server thread/WARN]: 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+[00:15:50] [Server thread/WARN]: 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[00:15:50] [Server thread/WARN]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+[00:15:50] [Server thread/WARN]: 	at StreakRewards 2.2.7.jar//7oS8jDVrecttPN05TWUL5aksvNwfl4GvoCQUVC.lj15odBKKEZ40JvNioix(7oS8jDVrecttPN05TWUL5aksvNwfl4GvoCQUVC.java)
+[00:15:50] [Server thread/WARN]: 	at StreakRewards 2.2.7.jar//net.gcnt.streakrewards.StreakRewards.<init>(StreakRewards.java:40)
+[00:15:50] [Server thread/WARN]: 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+[00:15:50] [Server thread/WARN]: 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+[00:15:50] [Server thread/WARN]: 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+[00:15:50] [Server thread/WARN]: 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+[00:15:50] [Server thread/WARN]: 	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128)
+[00:15:50] [Server thread/WARN]: 	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:347)
+[00:15:50] [Server thread/WARN]: 	at java.base/java.lang.Class.newInstance(Class.java:645)
+[00:15:50] [Server thread/WARN]: 	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:88)
+[00:15:50] [Server thread/WARN]: 	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:123)
+[00:15:50] [Server thread/WARN]: 	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35)
+[00:15:50] [Server thread/WARN]: 	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116)
+[00:15:50] [Server thread/WARN]: 	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39)
+[00:15:50] [Server thread/WARN]: 	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36)
+[00:15:50] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.loadPlugins(CraftServer.java:510)
+[00:15:50] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.e(DedicatedServer.java:273)
+[00:15:50] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.w(MinecraftServer.java:1100)
+[00:15:50] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:317)
+[00:15:50] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:840)
+[00:15:50] [Server thread/WARN]: Caused by: java.lang.ThreadDeath
+[00:15:50] [Server thread/WARN]: 	at java.base/java.lang.Thread.stop(Thread.java:949)
+[00:15:50] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.t(MinecraftServer.java:925)
+[00:15:50] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.t(DedicatedServer.java:813)
+[00:15:50] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:897)
+[00:15:50] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:27)
+[00:15:50] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'ajLeaderboards-2.8.0.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.ThreadDeath
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:127) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.loadPlugins(CraftServer.java:510) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:273) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1100) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:317) ~[paper-1.20.1.jar:git-Paper-196]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: java.lang.ThreadDeath
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:925) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:813) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:897) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:27) ~[paper-1.20.1.jar:git-Paper-196]
+[00:15:50] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'PlayerKits2.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.ThreadDeath
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:127) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.loadPlugins(CraftServer.java:510) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:273) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1100) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:317) ~[paper-1.20.1.jar:git-Paper-196]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: java.lang.ThreadDeath
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:925) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:813) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:897) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:27) ~[paper-1.20.1.jar:git-Paper-196]
+[00:15:50] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'SkyblockPlus-1.0.3.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.ThreadDeath
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:127) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.loadPlugins(CraftServer.java:510) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:273) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1100) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:317) ~[paper-1.20.1.jar:git-Paper-196]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: java.lang.ThreadDeath
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:925) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:813) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:897) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:27) ~[paper-1.20.1.jar:git-Paper-196]
+[00:15:50] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'Quests-3.15-b636bef.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.ThreadDeath
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:127) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.loadPlugins(CraftServer.java:510) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:273) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1100) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:317) ~[paper-1.20.1.jar:git-Paper-196]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: java.lang.ThreadDeath
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:925) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:813) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:897) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:27) ~[paper-1.20.1.jar:git-Paper-196]
+[00:15:50] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'VoxelAFK.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.ThreadDeath
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:127) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.loadPlugins(CraftServer.java:510) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:273) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1100) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:317) ~[paper-1.20.1.jar:git-Paper-196]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: java.lang.ThreadDeath
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:925) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:813) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:897) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:27) ~[paper-1.20.1.jar:git-Paper-196]
+[00:15:50] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'zAuctionHouseV3-3.1.4.1.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.ThreadDeath
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:127) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.loadPlugins(CraftServer.java:510) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:273) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1100) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:317) ~[paper-1.20.1.jar:git-Paper-196]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: java.lang.ThreadDeath
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:925) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:813) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:897) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:27) ~[paper-1.20.1.jar:git-Paper-196]
+[00:15:50] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'AxVaults-1.2.0.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.ThreadDeath
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:127) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.loadPlugins(CraftServer.java:510) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:273) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1100) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:317) ~[paper-1.20.1.jar:git-Paper-196]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: java.lang.ThreadDeath
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:925) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:813) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:897) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:27) ~[paper-1.20.1.jar:git-Paper-196]
+[00:15:50] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v4.9.2
+[00:15:50] [Server thread/INFO]: [ViaVersion] ViaVersion 4.9.2 is now loaded. Registering protocol transformers and injecting...
+[00:15:50] [Server thread/ERROR]: [ViaVersion] Error initializing plugin 'ViaVersion-4.9.2.jar' in folder 'plugins' (Is it up to date?)
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:925) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:813) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:897) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:27) ~[paper-1.20.1.jar:git-Paper-196]
+[00:15:50] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.119
+[00:15:50] [Server thread/ERROR]: [LuckPerms] Error initializing plugin 'LuckPerms-Bukkit-5.4.119.jar' in folder 'plugins' (Is it up to date?)
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:925) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:813) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:897) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:27) ~[paper-1.20.1.jar:git-Paper-196]
+[00:15:50] [Server thread/INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
+[00:15:50] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.11.5
+[00:15:50] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.21.0-dev+68-993d7ed
+[00:15:50] [Server thread/ERROR]: [Essentials] Error initializing plugin 'EssentialsX-2.21.0-dev+68-993d7ed.jar' in folder 'plugins' (Is it up to date?)
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:925) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:813) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:897) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:27) ~[paper-1.20.1.jar:git-Paper-196]
+[00:15:50] [Server thread/INFO]: [FastAsyncWorldEdit] Loading server plugin FastAsyncWorldEdit v2.9.1-SNAPSHOT-666;b6d691d
+[00:15:50] [Server thread/ERROR]: Main thread terminated by WatchDog due to hard crash
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:925) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:813) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:897) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:27) ~[paper-1.20.1.jar:git-Paper-196]
+[00:15:50] [Thread-1/INFO]: Stopping server
+[00:15:50] [Thread-1/INFO]: Saving players
+[00:15:50] [Thread-1/WARN]: Asynchronous Save Players! Blocking thread until it returns 
+java.lang.IllegalStateException: null
+	at io.papermc.paper.util.MCUtil.ensureMain(MCUtil.java:367) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.players.PlayerList.saveAll(PlayerList.java:1219) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.players.PlayerList.saveAll(PlayerList.java:1215) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:953) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:813) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:897) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:27) ~[paper-1.20.1.jar:git-Paper-196]

@@ -1,0 +1,5 @@
+#These settings are shared across an entire server.  If multiworld is enabled, they act as the default values for the individual world properties; otherwise, they are used directly.
+#Tue Mar 12 20:59:12 COT 2024
+LinkedWorlds=
+MapGenerator=flat
+RandomSeed=
