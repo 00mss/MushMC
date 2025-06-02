@@ -1,0 +1,18 @@
+data:
+  485ca1c6-6186-3549-aa45-af5f742b6bc4:
+    name: uWrap
+    uuid: 485ca1c6-6186-3549-aa45-af5f742b6bc4
+    clan_id: ''
+    kills: 0
+    deaths: 0
+    souls: 0
+    kdr: 0.0
+    join_date: 1729659956
+    last_seen: 1729659956
+    cache: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWVmZmJkZDY0NTQ5YmJmNjAwMTkxNTk1NTkxZDk5MjIzNGUyMjc5MDIxYTQ4MjA2YWQxZjQzYTUxYzc4NzdmMSJ9fX0=
+    nickname: ''
+    custom_skin: ''
+    settings:
+      invitations: 1
+      clan_role: member
+      locked_chat: false
