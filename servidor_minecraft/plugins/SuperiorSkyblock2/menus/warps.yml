@@ -1,0 +1,88 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&X&2&7&2&7&2&7Island Warps'
+previous-menu: true
+
+pattern:
+  - '1 1 2 2 2 2 2 2 2'
+  - '1 @ @ @ @ @ @ @ 2'
+  - '2 @ @ @ @ @ @ @ 2'
+  - '2 1 1 1 1 1 1 1 1'
+  - '2 2 2 % * ^ 1 1 1'
+
+slots: '@'
+previous-page: '%'
+current-page: '*'
+next-page: '^'
+
+# This lore is added to warp icons.
+edit-lore:
+  - '&X&6&A&6&A&6&A'
+
+items:
+  '1':
+    type: GRAY_STAINED_GLASS_PANE
+    name: ''
+  '2':
+    type: BLACK_STAINED_GLASS_PANE
+    name: ''
+  '@':
+    type: BOOK
+    name: '&X&4&C&C&2&E&2{0} &X&E&B&E&B&E&B{2}'
+    lore:
+      - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+      - ''
+      - '  &X&E&B&E&B&E&Bᴛʜᴇ ɪꜱʟᴀɴᴅ ᴡᴀʀᴘ ɪᴛ''ꜱ'
+      - '  &X&E&B&E&B&E&Bᴏɴ ᴛʜᴇ ʟᴏᴄᴀᴛɪᴏɴ'
+      - ''
+      - '  &X&4&C&C&2&E&2❙ &X&E&B&E&B&E&Bʟᴏᴄᴀᴛᴇᴅ ᴀᴛ: {1}.'
+      - ''
+      - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ᴡᴀʀᴘ ᴛᴏ ᴛʜᴇ ʟᴏᴄᴀᴛɪᴏɴ'
+      - '  &X&0&0&A&2&1&5▶ ʀɪɢʜᴛ-ᴄʟɪᴄᴋ ᴛᴏ ᴇᴅɪᴛ ᴡᴀʀᴘ'   
+  '%':
+    type: PLAYER_HEAD
+    skull: PAPER
+    name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴘʀᴇᴠɪᴏᴜꜱ ᴘᴀɢᴇ'
+    lore:
+    - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+    - ''
+    - '  &X&E&B&E&B&E&Bɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴄᴏᴍᴇ ʙᴀᴄᴋ'
+    - '  &X&E&B&E&B&E&Bᴜꜱᴇ ᴛʜɪꜱ ɪᴛᴇᴍ ᴛᴏ ʀᴇᴛᴜʀɴ'
+    - ''
+    - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+    - ''
+  '*':
+    type: PLAYER_HEAD
+    skull: BOOK
+    name: '&X&6&A&6&A&6&A● &X&0&0&C&E&D&Cᴄᴜʀʀᴇɴᴛ ᴘᴀɢᴇ'
+    lore:
+    - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+    - ''
+    - '  &X&E&B&E&B&E&Bʏᴏᴜ''ʀᴇ ᴄᴜʀʀᴇɴᴛʟʏ'
+    - '  &X&E&B&E&B&E&Bᴏɴ ᴛʜᴇ ᴘᴀɢᴇ &X&0&0&C&E&D&C{0}'
+    - ''
+  '^':
+    type: PLAYER_HEAD
+    skull: PAPER
+    name: '&X&6&A&6&A&6&A● &X&F&F&2&B&2&Bɴᴇxᴛ ᴘᴀɢᴇ'
+    lore:
+    - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+    - ''
+    - '  &X&E&B&E&B&E&Bɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴏ ᴛᴏ ᴛʜᴇ ɴᴇxᴛ'
+    - '  &X&E&B&E&B&E&Bᴘᴀɢᴇ ᴜꜱᴇ ᴛʜɪꜱ ɪᴛᴇᴍ ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ'
+    - ''
+    - '  &X&F&F&2&B&2&B▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+    - ''
+
+sounds:
+  '@':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 0.2
+    pitch: 0.2
+
+# 570549AE4Z8RO2JQ

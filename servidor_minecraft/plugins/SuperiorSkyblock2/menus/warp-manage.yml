@@ -1,0 +1,83 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&X&2&7&2&7&2&7Warp: {0}'
+previous-menu: true
+
+pattern:
+  - '1 1 2 1 1 1 2 2 2'
+  - '1 2 2 % 2 $ 2 2 1'
+  - '2 2 2 2 1 2 2 1 1'
+
+success-update-sound:
+  type: ENTITY_EXPERIENCE_ORB_PICKUP
+  volume: 1.0
+
+warp-rename: '!'
+warp-icon: '~'
+warp-location: '$'
+warp-private: '%'
+
+items:
+  '1':
+    type: BLACK_STAINED_GLASS_PANE
+    name: ''
+  '2':
+    type: GRAY_STAINED_GLASS_PANE
+    name: ''
+  '!':
+    type: BOOK
+    name: '&6Rename Warp'
+    lore:
+      - '&f '
+      - '&f '
+      - '&7&o(( &f&oClick &7&oto rename the warp. ))'
+  '~':
+    type: STONE
+    lore:
+      - '&f '
+      - '&f '
+      - '&7&oYou can use the following placeholders:'
+      - '&7&o{0} is used for the warp''s name.'
+      - '&7&o{1} is used for the warp''s location.'
+      - '&7&o{2} is used for the warp''s public status.'
+      - '&7&o(( &f&oClick &7&oto edit the icon. ))'
+  '$':
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDA0NGRkOTEzYTRlMDdmMWZlMzc4NmM1Y2Q5YTVmZmRiODQxNThmNDViN2I0ZWI1YTE0OTFhOWI2MzlmYjE5YSJ9fX0='
+    name: '&X&6&A&6&A&6&A● &X&B&D&0&0&F&Fᴡᴀʀᴘ ʟᴏᴄᴀᴛɪᴏɴ'
+    lore:
+      - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+      - ''
+      - '  &X&E&B&E&B&E&Bɪɴ ᴛʜɪꜱ ɪᴛᴇᴍ ʏᴏᴜ ᴄᴀɴ'
+      - '  &X&E&B&E&B&E&Bᴄʜᴀɴɢᴇ ᴛʜᴇ ᴘᴏꜱɪᴛɪᴏɴ'
+      - '  &X&E&B&E&B&E&Bᴏꜰ ᴛʜᴇ ᴡᴀʀᴘ'
+      - ''
+      - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+      - ''
+  '%':
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTAzZmE3NzdlYTk1OWM5N2M0NDkzMmZkZGFiZjFhZTRmNDNhZTdkN2ZlMmZkNmM2MWQyZWNmM2VjYzViYWFkMSJ9fX0='
+    name: '&X&6&A&6&A&6&A● &X&F&F&D&1&0&0ᴘʀɪᴠᴀᴛᴇ ᴡᴀʀᴘ'
+    lore:
+      - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+      - ''
+      - '  &X&E&B&E&B&E&Bɪɴ ᴛʜɪꜱ ɪᴛᴇᴍ ʏᴏᴜ ᴄᴀɴ'
+      - '  &X&E&B&E&B&E&Bᴛᴏ ᴛᴏɢɢʟᴇ ᴡᴀʀᴘ ᴛᴏ ᴛʜᴇ ᴘᴜʙʟɪᴄ'
+      - ''
+      - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+      - ''
+
+sounds:
+  '$':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 1.0
+  '%':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 1.0
+
+# 570549AE4Z8RO2JQ

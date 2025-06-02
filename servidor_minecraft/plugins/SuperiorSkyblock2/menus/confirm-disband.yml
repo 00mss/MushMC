@@ -1,0 +1,55 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&nEliminación de la isla'
+previous-menu: true
+
+pattern:
+  - '1 1 2 2 2 2 2 2 2'
+  - '1 2 2 @ 2 ^ 2 2 1'
+  - '2 2 2 2 2 2 2 1 1'
+
+confirm: '@'
+cancel: '^'
+
+items:
+  '1':
+    type: BLACK_STAINED_GLASS_PANE
+    name: ''
+  '2':
+    type: GRAY_STAINED_GLASS_PANE
+    name: ''
+  '@':
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTM1ODFjMmY5Y2YzNThkN2VkYzc4ZGQ2ZmQ0YjYyNTc1MDFiYzRlNjQ1NWUzM2ZhMGNhYWUyMDdjZjAzMjFhMiJ9fX0='
+    name: '&a&l¡SÍ!, &a¡Eiminar mi isla!'
+    lore:
+    - ''
+    - '&X&E&B&E&B&E&BUsa este objeto si deseas'
+    - '&X&E&B&E&B&E&Bcontinuar esta acción'
+    - ''
+    - '&e▸ ¡Eliminar la isla ahora mismo!'
+  '^':
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjk1M2IxMmEwOTQ2YjYyOWI0YzA4ODlkNDFmZDI2ZWQyNmZiNzI5ZDRkNTE0YjU5NzI3MTI0YzM3YmI3MGQ4ZCJ9fX0='
+    name: '&c&l¡NO!, &c¡Cancelar eliminación!'
+    lore:
+      - ''
+      - '&X&E&B&E&B&E&BUsa este objeto si deseas'
+      - '&X&E&B&E&B&E&Bcancelar esta acción'
+      - ''
+      - '&e▸ ¡No, cancelar eliminación!'
+
+sounds:
+  '@':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 1.0
+  '^':
+    type: BLOCK_ANVIL_PLACE
+    volume: 1.0
+
+# 570549AE4Z8RO2JQ

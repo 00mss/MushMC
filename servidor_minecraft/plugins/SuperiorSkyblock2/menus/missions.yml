@@ -1,0 +1,86 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&X&2&7&2&7&2&7Quests'
+previous-menu: true
+
+pattern:
+  - '1 1 2 1 1 1 2 1 1'
+  - '1 2 # @ 2 % ^ 2 1'
+  - '2 2 1 1 1 1 1 2 2'
+
+items:
+  '1':
+    type: BLACK_STAINED_GLASS_PANE
+    name: ''
+  '2':
+    type: GRAY_STAINED_GLASS_PANE
+    name: ''
+  '#':
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTUxMmJlOGI5NDNkNWZiZjkxOGE1YjhlZjU3NDE3NDRkMjYxZDYwODE0NWEzZDJmMjIwM2FmZjk5MjVhYjliIn19fQ=='
+    name: '&X&6&A&6&A&6&A● &X&0&0&C&5&F&Fᴍɪɴᴇ qᴜᴇꜱᴛꜱ'
+    lore:
+      - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+      - ''
+      - '  &X&E&B&E&B&E&Bᴄʟɪᴄᴋ ᴛᴏ ꜱᴛᴀʀᴛ ʏᴏᴜʀ'
+      - '  &X&E&B&E&B&E&Bᴀᴅᴠᴇɴᴛᴜʀᴇ ᴀꜱ ᴀ ᴍɪɴᴇʀ'
+      - ''
+      - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+      - ''
+  '@':
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTIzODRjMGEyYjA2ZmQ5MDE2ZDNlNmIwZmM1ZDMxOGI4YmRkNTQ2NTQyNzIwNTUzOGQyNTUwNzQzNGJhNWVkMSJ9fX0='
+    name: '&X&6&A&6&A&6&A● &X&F&F&2&B&2&Bꜱʟᴀʏᴇʀ qᴜᴇꜱᴛꜱ'
+    lore:
+      - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+      - ''
+      - '  &X&E&B&E&B&E&Bᴄʟɪᴄᴋ ᴛᴏ ꜱᴛᴀʀᴛ ʏᴏᴜʀ'
+      - '  &X&E&B&E&B&E&Bᴀᴅᴠᴇɴᴛᴜʀᴇ ᴀꜱ ᴀ ꜱʟᴀʏᴇʀ'
+      - ''
+      - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+      - ''
+  '%':
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGQzYTZiZDk4YWMxODMzYzY2NGM0OTA5ZmY4ZDJkYzYyY2U4ODdiZGNmM2NjNWIzODQ4NjUxYWU1YWY2YiJ9fX0='
+    name: '&X&6&A&6&A&6&A● &X&F&F&D&8&0&0ꜰᴀʀᴍᴇʀ qᴜᴇꜱᴛꜱ'
+    lore:
+      - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+      - ''
+      - '  &X&E&B&E&B&E&Bᴄʟɪᴄᴋ ᴛᴏ ꜱᴛᴀʀᴛ ʏᴏᴜʀ'
+      - '  &X&E&B&E&B&E&Bᴀᴅᴠᴇɴᴛᴜʀᴇ ᴀꜱ ᴀ ꜰᴀʀᴍᴇʀ'
+      - ''
+      - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+      - ''
+  '^':
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RlOTEwOTBmY2VjZjdmZmMyNmU5NGUwMzE3ZGQyYWI3YTliZmFjMDYyYTM4YzlhODI1ZTA2NWI5NDBkYWEwNiJ9fX0='
+    name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ꜰɪꜱʜᴇʀᴍᴀɴ qᴜᴇꜱᴛꜱ'
+    lore:
+      - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+      - ''
+      - '  &X&E&B&E&B&E&Bᴄʟɪᴄᴋ ᴛᴏ ꜱᴛᴀʀᴛ ʏᴏᴜʀ'
+      - '  &X&E&B&E&B&E&Bᴀᴅᴠᴇɴᴛᴜʀᴇ ᴀꜱ ᴀ ꜰɪꜱʜᴇʀᴍᴀɴ'
+      - ''
+      - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+      - ''
+
+sounds:
+  '#':
+    type: BLOCK_CHEST_OPEN
+    volume: 1.0
+  '@':
+    type: BLOCK_CHEST_OPEN
+    volume: 1.0
+  '%':
+    type: BLOCK_CHEST_OPEN
+    volume: 1.0
+  '^':
+    type: BLOCK_CHEST_OPEN
+    volume: 1.0
+
+# 570549AE4Z8RO2JQ

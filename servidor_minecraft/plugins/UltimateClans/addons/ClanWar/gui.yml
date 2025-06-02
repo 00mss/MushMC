@@ -1,0 +1,475 @@
+Config:
+  version: '1'
+ 
+ 
+ 
+ 
+# WAR GUI
+ 
+ 
+ 
+ 
+War:
+  #War config
+  war_amount:
+    opensound: ''
+    rows: 0
+    items:
+      fill:
+        material: GRAY_STAINED_GLASS_PANE
+        amount: 1
+        glow: false
+        nbt:
+          string:
+          - example:example_nbt_string
+        # Used for CustomModelData options, just add the number. This option can be applied to all items.
+        model: 0
+        # This option can be applied to all items.
+        enabled: false
+        # This option can be applied to all items.
+        slot: 0
+        # This option can be applied to all items.
+        mimeslots:
+        - ALL
+      back:
+        clicksound: ''
+        material: BOOK
+        amount: 1
+        glow: false
+        # %player%, nicknames or base64Textures
+        texture: ''
+        slot: 9
+      select:
+        clicksound: ''
+        material: PLAYER_HEAD
+        amount: 1
+        glow: false
+        # %player%, nicknames or base64Textures
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTBlZTY4NjJmNDE4ZDY2YTViZGIwMzk2YTQyZDdjZTNlNGIyZTgxZGMzMDA2ZWIzNWI2NDRjOTNkZjQ4ZGZiMSJ9fX0=
+  #War config
+  war_select_clan:
+    opensound: ''
+    rows: 6
+    pagesize: 45
+    items:
+      fill:
+        material: GRAY_STAINED_GLASS_PANE
+        amount: 1
+        glow: false
+        nbt:
+          string:
+          - example:example_nbt_string
+        # Used for CustomModelData options, just add the number. This option can be applied to all items.
+        model: 0
+        # This option can be applied to all items.
+        enabled: true
+        # This option can be applied to all items.
+        mimeslots:
+        - BORDER
+      previous:
+        material: PLAYER_HEAD
+        amount: 1
+        glow: false
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzdhZWU5YTc1YmYwZGY3ODk3MTgzMDE1Y2NhMGIyYTdkNzU1YzYzMzg4ZmYwMTc1MmQ1ZjQ0MTlmYzY0NSJ9fX0=
+        slot: 47
+        clicksound: ''
+      next:
+        clicksound: ''
+        material: PLAYER_HEAD
+        amount: 1
+        glow: false
+        # %player%, nicknames or base64Textures
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjgyYWQxYjljYjRkZDIxMjU5YzBkNzVhYTMxNWZmMzg5YzNjZWY3NTJiZTM5NDkzMzgxNjRiYWM4NGE5NmUifX19
+        slot: 51
+      back:
+        clicksound: ''
+        material: BOOK
+        amount: 1
+        glow: false
+        # %player%, nicknames or base64Textures
+        texture: ''
+        slot: 49
+      select:
+        clicksound: ''
+        material: ''
+        amount: 1
+        glow: false
+        # %player%, nicknames or base64Textures
+        texture: '%uclans_banner%'
+      wait:
+        clicksound: ''
+        material: RED_STAINED_GLASS_PANE
+        amount: 1
+        glow: true
+        # %player%, nicknames or base64Textures
+        texture: ''
+        slot: 0
+  #War config
+  war_select_arena:
+    opensound: ''
+    rows: 6
+    pagesize: 45
+    items:
+      fill:
+        material: GRAY_STAINED_GLASS_PANE
+        amount: 1
+        glow: false
+        nbt:
+          string:
+          - example:example_nbt_string
+        # Used for CustomModelData options, just add the number. This option can be applied to all items.
+        model: 0
+        # This option can be applied to all items.
+        enabled: true
+        # This option can be applied to all items.
+        mimeslots:
+        - BOTTOM
+      previous:
+        clicksound: ''
+        material: PLAYER_HEAD
+        amount: 1
+        glow: false
+        # %player%, nicknames or base64Textures
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzdhZWU5YTc1YmYwZGY3ODk3MTgzMDE1Y2NhMGIyYTdkNzU1YzYzMzg4ZmYwMTc1MmQ1ZjQ0MTlmYzY0NSJ9fX0=
+        slot: 47
+      next:
+        clicksound: ''
+        material: PLAYER_HEAD
+        amount: 1
+        glow: false
+        # %player%, nicknames or base64Textures
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjgyYWQxYjljYjRkZDIxMjU5YzBkNzVhYTMxNWZmMzg5YzNjZWY3NTJiZTM5NDkzMzgxNjRiYWM4NGE5NmUifX19
+        slot: 51
+      back:
+        clicksound: ''
+        material: BOOK
+        amount: 1
+        glow: false
+        # %player%, nicknames or base64Textures
+        texture: ''
+        slot: 49
+      select:
+        clicksound: ''
+        material: NETHERITE_SWORD
+        amount: 1
+        glow: true
+        # %player%, nicknames or base64Textures
+        texture: ''
+  #War config
+  war_select_kit:
+    opensound: ''
+    rows: 1
+    items:
+      fill:
+        material: GRAY_STAINED_GLASS_PANE
+        amount: 1
+        glow: false
+        nbt:
+          string:
+          - example:example_nbt_string
+        # Used for CustomModelData options, just add the number. This option can be applied to all items.
+        model: 0
+        # This option can be applied to all items.
+        enabled: true
+        # This option can be applied to all items.
+        slot: 0
+        # This option can be applied to all items.
+        mimeslots:
+        - ALL
+      previous:
+        clicksound: ''
+        material: PLAYER_HEAD
+        amount: 1
+        glow: false
+        # %player%, nicknames or base64Textures
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzdhZWU5YTc1YmYwZGY3ODk3MTgzMDE1Y2NhMGIyYTdkNzU1YzYzMzg4ZmYwMTc1MmQ1ZjQ0MTlmYzY0NSJ9fX0=
+      next:
+        clicksound: ''
+        material: PLAYER_HEAD
+        amount: 1
+        glow: false
+        # %player%, nicknames or base64Textures
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjgyYWQxYjljYjRkZDIxMjU5YzBkNzVhYTMxNWZmMzg5YzNjZWY3NTJiZTM5NDkzMzgxNjRiYWM4NGE5NmUifX19
+      back:
+        clicksound: ''
+        material: BOOK
+        amount: 1
+        glow: false
+        # %player%, nicknames or base64Textures
+        texture: ''
+        slot: 8
+      nokit:
+        clicksound: ''
+        material: BARRIER
+        amount: 1
+        glow: false
+        # %player%, nicknames or base64Textures
+        texture: ''
+        slot: 1
+      yeskit:
+        clicksound: ''
+        material: CHEST
+        amount: 1
+        glow: true
+        # %player%, nicknames or base64Textures
+        texture: ''
+        slot: 5
+  #War config
+  war_select_kit_list:
+    opensound: ''
+    rows: 5
+    pagesize: 45
+    items:
+      fill:
+        material: GRAY_STAINED_GLASS_PANE
+        amount: 1
+        glow: false
+        # Used for CustomModelData options, just add the number. This option can be applied to all items.
+        model: 0
+        # This option can be applied to all items.
+        enabled: true
+        # This option can be applied to all items.
+        mimeslots:
+        - BORDER
+        nbt:
+          string:
+          - example:example_nbt_string
+      previous:
+        clicksound: ''
+        material: PLAYER_HEAD
+        amount: 1
+        glow: false
+        # %player%, nicknames or base64Textures
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzdhZWU5YTc1YmYwZGY3ODk3MTgzMDE1Y2NhMGIyYTdkNzU1YzYzMzg4ZmYwMTc1MmQ1ZjQ0MTlmYzY0NSJ9fX0=
+        slot: 38
+      next:
+        clicksound: ''
+        material: PLAYER_HEAD
+        amount: 1
+        glow: false
+        # %player%, nicknames or base64Textures
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjgyYWQxYjljYjRkZDIxMjU5YzBkNzVhYTMxNWZmMzg5YzNjZWY3NTJiZTM5NDkzMzgxNjRiYWM4NGE5NmUifX19
+        slot: 42
+      back:
+        clicksound: ''
+        material: BOOK
+        amount: 1
+        glow: false
+        # %player%, nicknames or base64Textures
+        texture: ''
+        slot: 40
+      select:
+        clicksound: ''
+        material: IRON_SWORD
+        amount: 1
+        glow: true
+        # %player%, nicknames or base64Textures
+        texture: ''
+  #War config
+  war_arenas:
+    opensound: ''
+    rows: 4
+    pagesize: 45
+    items:
+      fill:
+        material: GRAY_STAINED_GLASS_PANE
+        amount: 1
+        glow: false
+        nbt:
+          string:
+          - example:example_nbt_string
+        # Used for CustomModelData options, just add the number. This option can be applied to all items.
+        model: 0
+        # This option can be applied to all items.
+        enabled: true
+        # This option can be applied to all items.
+        mimeslots:
+        - BORDER
+      previous:
+        clicksound: ''
+        material: PLAYER_HEAD
+        amount: 1
+        glow: false
+        # %player%, nicknames or base64Textures
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzdhZWU5YTc1YmYwZGY3ODk3MTgzMDE1Y2NhMGIyYTdkNzU1YzYzMzg4ZmYwMTc1MmQ1ZjQ0MTlmYzY0NSJ9fX0=
+        slot: 29
+      next:
+        clicksound: ''
+        material: PLAYER_HEAD
+        amount: 1
+        glow: false
+        # %player%, nicknames or base64Textures
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjgyYWQxYjljYjRkZDIxMjU5YzBkNzVhYTMxNWZmMzg5YzNjZWY3NTJiZTM5NDkzMzgxNjRiYWM4NGE5NmUifX19
+        slot: 33
+      back:
+        clicksound: ''
+        material: BOOK
+        amount: 1
+        glow: false
+        # %player%, nicknames or base64Textures
+        texture: ''
+        slot: 31
+      current:
+        clicksound: ''
+        material: DIAMOND_SWORD
+        amount: 1
+        glow: true
+        # %player%, nicknames or base64Textures
+        texture: ''
+        slot: 0
+      current_inactive:
+        clicksound: ''
+        material: LADDER
+        amount: 1
+        glow: true
+        # %player%, nicknames or base64Textures
+        texture: ''
+        slot: 0
+  #War config
+  war_home:
+    opensound: ''
+    rows: 4
+    items:
+      fill:
+        material: GRAY_STAINED_GLASS_PANE
+        amount: 1
+        glow: false
+        nbt:
+          string:
+          - example:example_nbt_string
+        # Used for CustomModelData options, just add the number. This option can be applied to all items.
+        model: 0
+        # This option can be applied to all items.
+        enabled: true
+        # This option can be applied to all items.
+        slot: 0
+        # This option can be applied to all items.
+        mimeslots:
+        - ALL
+      challenge:
+        clicksound: ''
+        material: DIAMOND_SWORD
+        amount: 1
+        glow: true
+        # %player%, nicknames or base64Textures
+        texture: ''
+        slot: 11
+      arenas:
+        clicksound: ''
+        material: LADDER
+        amount: 1
+        glow: false
+        # %player%, nicknames or base64Textures
+        texture: ''
+        slot: 13
+      kits:
+        clicksound: ''
+        material: CHEST
+        amount: 1
+        glow: false
+        # %player%, nicknames or base64Textures
+        texture: ''
+        slot: 15
+      back:
+        clicksound: ''
+        material: BOOK
+        amount: 1
+        glow: false
+        # %player%, nicknames or base64Textures
+        texture: ''
+        slot: 31
+  #War config
+  war_kits:
+    opensound: ''
+    rows: 5
+    pagesize: 45
+    items:
+      fill:
+        material: GRAY_STAINED_GLASS_PANE
+        amount: 1
+        glow: false
+        # Used for CustomModelData options, just add the number. This option can be applied to all items.
+        model: 0
+        # This option can be applied to all items.
+        enabled: true
+        # This option can be applied to all items.
+        mimeslots:
+        - BORDER
+        nbt:
+          string:
+          - example:example_nbt_string
+      previous:
+        clicksound: ''
+        material: PLAYER_HEAD
+        amount: 1
+        glow: false
+        # %player%, nicknames or base64Textures
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzdhZWU5YTc1YmYwZGY3ODk3MTgzMDE1Y2NhMGIyYTdkNzU1YzYzMzg4ZmYwMTc1MmQ1ZjQ0MTlmYzY0NSJ9fX0=
+        slot: 38
+      next:
+        clicksound: ''
+        material: PLAYER_HEAD
+        amount: 1
+        glow: false
+        # %player%, nicknames or base64Textures
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjgyYWQxYjljYjRkZDIxMjU5YzBkNzVhYTMxNWZmMzg5YzNjZWY3NTJiZTM5NDkzMzgxNjRiYWM4NGE5NmUifX19
+        slot: 42
+      back:
+        clicksound: ''
+        material: BOOK
+        amount: 1
+        glow: false
+        # %player%, nicknames or base64Textures
+        texture: ''
+        slot: 40
+      current:
+        clicksound: ''
+        material: DIAMOND_SWORD
+        amount: 1
+        glow: true
+        # %player%, nicknames or base64Textures
+        texture: ''
+        slot: 0
+  #War config
+  war_kits_preview:
+    opensound: ''
+    rows: 6
+    items:
+      fill:
+        material: GRAY_STAINED_GLASS_PANE
+        amount: 1
+        glow: false
+        nbt:
+          string:
+          - example:example_nbt_string
+        # Used for CustomModelData options, just add the number. This option can be applied to all items.
+        model: 0
+        # This option can be applied to all items.
+        enabled: true
+        # This option can be applied to all items.
+        mimeslots:
+        - BUTTON
+      previous:
+        clicksound: ''
+        material: PLAYER_HEAD
+        amount: 1
+        glow: false
+        # %player%, nicknames or base64Textures
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzdhZWU5YTc1YmYwZGY3ODk3MTgzMDE1Y2NhMGIyYTdkNzU1YzYzMzg4ZmYwMTc1MmQ1ZjQ0MTlmYzY0NSJ9fX0=
+        slot: 47
+      next:
+        clicksound: ''
+        material: PLAYER_HEAD
+        amount: 1
+        glow: false
+        # %player%, nicknames or base64Textures
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjgyYWQxYjljYjRkZDIxMjU5YzBkNzVhYTMxNWZmMzg5YzNjZWY3NTJiZTM5NDkzMzgxNjRiYWM4NGE5NmUifX19
+        slot: 51
+      back:
+        clicksound: ''
+        material: BOOK
+        amount: 1
+        glow: false
+        # %player%, nicknames or base64Textures
+        texture: ''
+        slot: 49

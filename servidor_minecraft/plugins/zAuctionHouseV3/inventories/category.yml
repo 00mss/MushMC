@@ -1,0 +1,314 @@
+name: "&7%zauctionhouse_category% #7E7E7E(#7E7E7E%page%#7E7E7E/#7E7E7E%maxPage%#7E7E7E)"
+size: 54
+type: CATEGORY
+items:
+  # Will display an item that has no action on the different slots
+  slots:
+    type: NONE_SLOT
+    isPermanent: true
+    item:
+      material: GRAY_STAINED_GLASS_PANE
+      name: "&f"
+    slots:
+      - 1
+      - 10
+      - 19
+      - 28
+      - 37
+      - 38
+      - 39
+      - 40
+      - 41
+      - 42
+      - 43
+      - 44
+      - 46
+      - 49
+      - 53
+  auction:
+    type: INVENTORY
+    inventory: "auction"
+    isPermanent: true
+    item:
+      material: netherite_chestplate
+      name: "#FFE000Subastas &7(%zauctionhouse_counts% Items)"
+      lore:
+        - "&8Categoria"
+        - ""
+        - "&fEn este menú podrás encontrar"
+        - "&ftodas las subastas del servidor"
+        - ""
+        - "#FAF0A4▸ ¡Seleccionar menú!"
+  playerItems:
+    type: INVENTORY
+    inventory: "items"
+    isPermanent: true
+    slot: 47
+    item:
+      material: tnt_minecart
+      name: "#FFE000Tus items &7(%zauctionhouse_currents_item% Items)"
+      lore:
+        - "&8Categoria"
+        - ""
+        - "&fEn este menú podrás encontrar"
+        - "&ftodos los tipos de objetos qué"
+        - "&fsubastastes en la tienda"
+        - ""
+        - "#FAF0A4▸ ¡Seleccionar menú!"
+  expireItems:
+    type: INVENTORY
+    slot: 51
+    isPermanent: true
+    inventory: "expire"
+    item:
+      material: FURNACE_MINECART
+      name: "#FFE000Items expirados &7(%zauctionhouse_expired_item% Items)"
+      lore:
+        - "&8Categoria"
+        - ""
+        - "&fEn este menú podrás encontrar"
+        - "&ftodos los tipos de objetos qué"
+        - "&fexpiraron de tus ventas"
+        - ""
+        - "#FAF0A4▸ ¡Seleccionar menú!"
+
+  # Go open the "buying" inventory
+  buyItem:
+    type: INVENTORY
+    slot: 48
+    isPermanent: true
+    inventory: "buying"
+    item:
+      material: CHEST_MINECART
+      name: "#FFE000Items comprados &7(%zauctionhouse_buying_item% Items)"
+      lore:
+        - "&8Categoria"
+        - ""
+        - "&fEn este menú podrás encontrar"
+        - "&ftodos los tipos de objetos qué"
+        - "&fadquiriste de las subastas"
+        - ""
+        - "#FAF0A4▸ ¡Seleccionar menú!"
+  items:
+    type: AUCTION_ITEM
+    isPermanent: true
+    slots:
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 11
+      - 12
+      - 13
+      - 14
+      - 15
+      - 16
+      - 17
+      - 20
+      - 21
+      - 22
+      - 23
+      - 24
+      - 25
+      - 26
+      - 29
+      - 30
+      - 31
+      - 32
+      - 33
+      - 34
+      - 35
+  next:
+    type: NEXT
+    isPermanent: true
+    slot: 52
+    item:
+      material: ARROW
+      name: "&aPagina siguiente"
+      lore:
+        - "&8Subastas"
+        - ""
+        - "&fCon este item podrás dirigirte"
+        - "&fa la siguiente página de la"
+        - "&ftienda de subastas"
+        - ""
+        - "#FAF0A4▸ ¡Siguiente página!"
+  # Allows you to go to the previous page
+  previous:
+    type: PREVIOUS
+    isPermanent: true
+    slot: 50
+    item:
+      material: ARROW
+      name: "&cPágina anterior"
+      lore:
+        - "&8Subastas"
+        - ""
+        - "&fCon este item podrás dirigirte"
+        - "&fa la página anterior de la"
+        - "&ftienda de subastas"
+        - ""
+        - "#FAF0A4▸ ¡Página anterior!"
+  block:
+    type: NONE
+    slot: 9
+    placeHolder: "%zauctionhouse_category%"
+    value: "Blocks"
+    action: EQUALS_STRING
+    isPermanent: true
+    item:
+      material: HAY_BLOCK
+      name: "#FFE000Bloques &7(%zauctionhouse_category_item_blocks% Items)"
+      lore:
+      - "&8Categoria"
+      - ""
+      - "&fEn este menú podrás encontrar"
+      - "&ftodos los tipos de bloques qué"
+      - "&ffueron subastados"
+      - ""
+      - "#FAF0A4▸ ¡Seleccionar menú!"
+    else:
+      type: CATEGORIES
+      category: "blocks"
+      item:
+        material: HAY_BLOCK
+        name: "#FFE000Bloques &7(%zauctionhouse_category_item_blocks% Items)"
+        lore:
+        - "&8Categoria"
+        - ""
+        - "&fEn este menú podrás encontrar"
+        - "&ftodos los tipos de bloques qué"
+        - "&ffueron subastados por otros"
+        - ""
+        - "&e▸ ¡Selecciona otro menú!"
+  weapons:
+    type: NONE
+    slot: 18
+    placeHolder: "%zauctionhouse_category%"
+    value: "Weapons"
+    action: EQUALS_STRING
+    isPermanent: true
+    item:
+      material: nautilus_shell
+      name: "#FFE000Armas &7(%zauctionhouse_category_item_weapons% Items)"
+      lore:
+        - "&8Categoria"
+        - ""
+        - "&fEn este menú podrás encontrar"
+        - "&ftodos los tipos de armas qué"
+        - "&ffueron subastados por otros"
+        - ""
+        - "#FAF0A4▸ ¡Seleccionar menú!"
+    else:
+      type: CATEGORIES
+      category: "weapons"
+      item:
+        material: nautilus_shell
+        name: "#FFE000Armas &7(%zauctionhouse_category_item_weapons% Items)"
+        lore:
+        - "&8Categoria"
+        - ""
+        - "&fEn este menú podrás encontrar"
+        - "&ftodos los tipos de armas qué"
+        - "&ffueron subastados por otros"
+        - ""
+        - "&e▸ ¡Selecciona otro menú!"
+  tools:
+    type: NONE
+    slot: 27
+    placeHolder: "%zauctionhouse_category%"
+    value: "Tools"
+    action: EQUALS_STRING
+    isPermanent: true
+    item:
+      material: netherite_hoe
+      name: "#FFE000Herramientas &7(%zauctionhouse_category_item_tools% Items)"
+      lore:
+        - "&8Categoria"
+        - ""
+        - "&fEn este menú podrás encontrar"
+        - "&ftodos los tipos de herramientas"
+        - "&fsubastadas por otras personas"
+        - ""
+        - "#FAF0A4▸ ¡Seleccionar menú!"
+    else:
+      type: CATEGORIES
+      category: "tools"
+      item:
+        material: netherite_hoe
+        name: "#FFE000Herramientas &7(%zauctionhouse_category_item_tools% Items)"
+        lore:
+        - "&8Categoria"
+        - ""
+        - "&fEn este menú podrás encontrar"
+        - "&ftodos los tipos de herramientas"
+        - "&fsubastadas por otras personas"
+        - ""
+        - "&e▸ ¡Selecciona otro menú!"
+  potions:
+    slot: 36
+    type: NONE
+    placeHolder: "%zauctionhouse_category%"
+    value: "Potions"
+    action: EQUALS_STRING
+    isPermanent: true
+    item:
+      material: end_crystal
+      name: "#FFE000Pócimas &7(%zauctionhouse_category_item_potions% Items)"
+      lore:
+        - "&8Categoria"
+        - ""
+        - "&fEn este menú podrás encontrar"
+        - "&ftodos los tipos de Pócimas qué"
+        - "&ffueron subastadas por otros"
+        - ""
+        - "#FAF0A4▸ ¡Seleccionar menú!"
+    else:
+      type: CATEGORIES
+      category: "potions"
+      item:
+        material: end_crystal
+        name: "#FFE000Pócimas &7(%zauctionhouse_category_item_potions% Items)"
+        lore:
+        - "&8Categoria"
+        - ""
+        - "&fEn este menú podrás encontrar"
+        - "&ftodos los tipos de Pócimas qué"
+        - "&ffueron subastadas por otros"
+        - ""
+        - "&e▸ ¡Selecciona otro menú!"
+  misc:
+    slot: 45
+    type: NONE
+    placeHolder: "%zauctionhouse_category%"
+    value: "Misc"
+    action: EQUALS_STRING
+    isPermanent: true
+    item:
+      material: barrel
+      name: "#FFE000Variado &7(%zauctionhouse_category_item_misc% Items)"
+      lore:
+        - "&8Categoria"
+        - ""
+        - "&fEn este menú podrás encontrar"
+        - "&ftodos los tipos de objetos qué"
+        - "&ffueron subastadas por otros"
+        - ""
+        - "#FAF0A4▸ ¡Seleccionar menú!"
+    else:
+      type: CATEGORIES
+      category: "misc"
+      item:
+        material: barrel
+        name: "#FFE000Variado &7(%zauctionhouse_category_item_misc% Items)"
+        lore:
+        - "&8Categoria"
+        - ""
+        - "&fEn este menú podrás encontrar"
+        - "&ftodos los tipos de objetos qué"
+        - "&ffueron subastadas por otros"
+        - ""
+        - "&e▸ ¡Selecciona otro menú!"

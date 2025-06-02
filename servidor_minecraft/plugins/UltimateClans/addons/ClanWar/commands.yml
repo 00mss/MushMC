@@ -1,0 +1,201 @@
+ 
+#permissions and alias
+Commands:
+   
+  admin:
+    # NOT RECOMMENDED: Use empty for don't need permissions
+    permission: clanwar.admin
+    # Alias for command.
+    alias: clanwar
+   
+  player:
+    # Use empty for don't need permissions
+    permission: uclans.player.land
+    # Alias for command.
+    alias: war
+    # Command cooldown.
+    cooldown: 0
+    # Value to use.
+    value: 0.0
+    disabled_worlds: [
+      ]
+    disabled_regions: [
+      ]
+   
+  # player command
+  war:
+    help:
+      aliases: help
+      show: <click:run_command:"/{_clan} {_war} "><hover:show_text:'<green>Haz clic para ampliar.'> <yellow>/{_clan} {_war} <dark_gray>-<white> Guerra de clanes.</hover></click> <hover:show_text:'<green>Con subcomandos.'><green>[!]</hover>
+      usage: '%tag% <red>Error, utiliza: <aqua>/{_clan} {_war} {_help}'
+      error: '%tag% <red>Error al utilizar.'
+      success: '%tag% <green>Ejecución exitosa.'
+    challenge:
+      aliases: challenge
+      show: <click:suggest_command:"/{_clan} {_war} {_challenge} "><hover:show_text:'<green>Haz clic para iniciar el desafío.'> <yellow>/{_clan} {_war} {_challenge} <light_purple>(-gui) <gray>/ <light_purple><clan> <arena> <amount> <kit> <dark_gray>-<white> Iniciar el proceso de duelo.</hover></click>
+      usage: '%tag% <red>Error, utiliza: <aqua>/{_clan} {_war} {_challenge} <light_purple>(-gui) <gray>/ <light_purple><clan> <arena> <cantidad> <kit>'
+      error: '%tag% <red>Hubo un error al desafiar el desafío'
+      success: '%tag% <green>Desafío enviado, espera a que el clan acepte o rechace.'
+    accept:
+      aliases: accept
+      show: <click:suggest_command:"/{_clan} {_war} {_accept} "><hover:show_text:'<green>Haga clic para aceptar.'> <yellow>/{_clan} {_war} {_accept} <dark_gray>-<white> Acepta un duel.</hover></click>
+      usage: '%tag% <red>Error, utiliza: <aqua>/{_clan} {_war} {_accept}'
+      error: '%tag% <red>Hubo un error al aceptar el desafío'
+      success: '%tag% <green>¡Has aceptado el desafío y ahora tu clan está en guerra!'
+    deny:
+      aliases: deny
+      show: <click:suggest_command:"/{_clan} {_war} {_deny} "><hover:show_text:'<green>Haga clic para denegar.'> <yellow>/{_clan} {_war} {_deny} <dark_gray>-<white> Denegar un duelo.</hover></click>
+      usage: '%tag% <red>Error, utiliza: <aqua>/{_clan} {_war} {_deny}'
+      error: '%tag% <red>Hubo un error al denegar el desafío'
+      success: '%tag% <green>El desafío fue denegado correctamente.'
+    cancel:
+      aliases: cancel
+      show: <click:suggest_command:"/{_clan} {_war} {_cancel} "><hover:show_text:'<green>Haz clic para cancelar un reto.'> <yellow>/{_clan} {_war} {_cancel} <dark_gray>-<white> Cancel un duelo.</hover></click>
+      usage: '%tag% <red>Error, utiliza: <aqua>/{_clan} {_war} {_cancel}'
+      error: '%tag% <red>Hubo un error al cancelar el desafío'
+      success: '%tag% <green>El desafío se canceló correctamente'
+    view:
+      aliases: view
+      show: <click:suggest_command:"/{_clan} {_war} {_view} "><hover:show_text:'<green>Haga clic para ver.'> <yellow>/{_clan} {_war} {_view} <light_purple>(-gui) <dark_gray>-<white> Ver guerras activas.</hover></click>
+      usage: '%tag% <red>Error, utiliza: <aqua>/{_clan} {_war} {_view} <light_purple>(-gui)'
+      error: '%tag% <red>Error'
+      success: '%tag% <green>Éxito'
+    spectate:
+      aliases: spectate
+      show: <click:suggest_command:"/{_clan} {_war} {_spectate} "><hover:show_text:'<green>Haga clic para ver.'> <yellow>/{_clan} {_war} {_spectate} <red><arena> <dark_gray>-<white> Espectear una guerra.</hover></click>
+      usage: '%tag% <red>Error, utiliza: <aqua>/{_clan} {_war} {_spectate} <red><arena>'
+      error: '%tag% <red>Hubo un error al espiar la guerra'
+      success: '%tag% <green>Ahora estás espiando la guerra.'
+    join:
+      aliases: join
+      show: <click:suggest_command:"/{_clan} {_war} {_join} "><hover:show_text:'<green>Haz clic para unirte.'> <yellow>/{_clan} {_war} {_join} <dark_gray>-<white> Ir a la guerra.</hover></click>
+      usage: '%tag% <red>Error, utiliza: <aqua>/{_clan} {_war} {_join}'
+      error: '%tag% <red>Hubo un error al ingresar al desafío, ¡tal vez se acabó el tiempo!'
+      success: '%tag% <green>Te uniste a las guerras de clanes.'
+    kits:
+      aliases: kits
+      show: <click:suggest_command:"/{_clan} {_war} {_kits} "><hover:show_text:'<green>Haga clic en los kits.'> <yellow>/{_clan} {_war} {_kits} <light_purple>(-gui) <dark_gray>-<white> Lista de kits.</hover></click>
+      usage: '%tag% <red>Error, utiliza: <aqua>/{_clan} {_war} {_kits} <light_purple>(-gui)'
+      error: '%tag% <red>Error'
+      success: '%tag% <green>Éxito.'
+  #command
+  clanwar:
+    help:
+      aliases:
+      - help
+      show: ' <click:run_command:"/clanwar help"><hover:show_text:"<green>Click to show."><green>/clanwar help <gray>- <yellow>Show help menu.</hover></click>'
+      usage: '%tag% <red>Error, utiliza: <green>/clanwar help'
+      error: '%tag% <red>Error al ejecutar.'
+      success: '%tag% <green>Éxito al ejecutar.'
+    reload:
+      aliases:
+      - recargar
+      show: ' <green>/clanwar reload <gray>- <yellow>Reload settings.'
+      usage: '%tag% <red>Error, utiliza: <green>/clanwar reload'
+      error: '%tag% <red>Se produjo un error al recargar.'
+      success: '%tag% <green>Plugin recargado exitosamente.'
+    wand:
+      aliases:
+      - wand
+      show: ' <green>/clanwar wand <gray>- <yellow>Obtener una varita.'
+      usage: '%tag% <red>Error, utiliza: <green>/clanwar wand'
+      error: '%tag% <red>Hubo un error al recibir la varita.'
+      success: '%tag% <green>¡Recibiste la varita exitosamente!'
+    createarena:
+      aliases:
+      - criararena
+      show: ' <green>/clanwar arena create <nombre> <gray>- <yellow>Agregar una arena.'
+      usage: '%tag% <red>Error, utiliza: <green>/clanwar arena create <nombre>'
+      error: '%tag% <red>Se produjo un error al crear.'
+      success: '%tag% <green>La arena se creó exitosamente, utiliza <aqua>/clanwar arena point <arena> <punto> <green>para establecer los puntos de la arena.'
+    deletearena:
+      aliases:
+      - deletararena
+      show: ' <green>/clanwar arena delete <nombre> <gray>- <yellow>Eliminar una arena.'
+      usage: '%tag% <red>Error, utiliza: <green>/clanwar arena delete <nombre>'
+      error: '%tag% <red>Se produjo un error al eliminar la arena.'
+      success: '%tag% <green>¡La arena se eliminó exitosamente!.'
+    listarenas:
+      aliases:
+      - listararenas
+      show: ' <green>/clanwar arena list <gray>- <yellow>Listar arenas.'
+      usage: '%tag% <red>Error, utiliza: <green>/clanwar arena list'
+      error: '%tag% <red>Se produjo un error al enumerar las arenas'
+      success: '%tag% <green>¡Éxito!'
+    pointarena:
+      aliases:
+      - pointarena
+      show: ' <green>/clanwar arena point <arena> <SPAWN1|SPAWN2|SALIDA|LOBBY> <gray>- <yellow>Establecer los puntos de la arena.'
+      usage: '%tag% <red>Error, utiliza: <green>/clanwar arena point <arena> <SPAWN1|SPAWN2|SALIDA|LOBBY>'
+      error: '%tag% <red>Se produjo un error al guardar el punto.'
+      success: '%tag% <green>El punto <aqua>%punto% <green>de la arena <aqua>%nombre_arena% <green>se ha guardado correctamente en tu ubicación.'
+    togglearena:
+      aliases:
+      - togglearena
+      show: ' <green>/clanwar arena toggle <nombre> <gray>- <yellow>Alternar la arena.'
+      usage: '%tag% <red>Error, utiliza: <green>/clanwar arena toggle <nombre>'
+      error: '%tag% <red>No se puede cambiar la arena, verifica los puntos utilizando <aqua>/clanwar arena point %nombre_arena% <punto>'
+      success: '%tag% <yellow>La arena ahora está %estado_arena%'
+    arena_seticon:
+      aliases:
+      - arena_seticon
+      show: ' <green>/clanwar arena seticon <arena> <material> <gray>- <yellow>Cambiar el ícono de la arena.'
+      usage: '%tag% <red>Error, utiliza: <green>/clanwar arena seticon <arena> <material>'
+      error: '%tag% <red>Hubo un error al cambiar el ícono.'
+      success: '%tag% <green>¡El ícono de la arena se ha actualizado exitosamente!'
+    arena_desc:
+      aliases:
+      - desc
+      show: ' <green>/clanwar arena desc <arena> <descripción> <gray>- <yellow>Establecer la descripción de la arena.'
+      usage: '%tag% <red>Error, utiliza: <green>/clanwar arena desc <arena> <descripción>'
+      error: '%tag% <red>Hubo un error al actualizar la descripción.'
+      success: '%tag% <green>La descripción de la arena se ha cambiado exitosamente.'
+    arena_setspectator:
+      aliases:
+      - spectador
+      show: ' <green>/clanwar arena setspectator <arena> <gray>- <yellow>Establecer la ubicación de espectador de la arena.'
+      usage: '%tag% <red>Error, utiliza: <green>/clanwar arena setspectator <arena>'
+      error: '%tag% <red>Hubo un error al establecer la ubicación del espectador.'
+      success: '%tag% <green>Has establecido la ubicación del espectador del evento.'
+    arena_setmode:
+      aliases:
+      - modo
+      show: ' <green>/clanwar arena setmode <arena> <modo> <gray>- <yellow>Seleccionar el modo de la arena.'
+      usage: '%tag% <red>Error, utiliza: <green>/clanwar arena setmode <arena> <modo>'
+      error: '%tag% <red>Se produjo un error al cambiar el modo de la arena.'
+      success: '%tag% <green>Se ha cambiado exitosamente el modo de juego de la arena.'
+    createkit:
+      aliases:
+      - createkit
+      show: ' <green>/clanwar kit create <nombre> <descripción> <gray>- <yellow>Crear un nuevo kit.'
+      usage: '%tag% <red>Error, utiliza: <green>/clanwar kit create <nombre> <descripción>'
+      error: '%tag% <red>Se produjo un error al crear el kit.'
+      success: '%tag% <yellow>Se ha creado el kit <aqua>%name%<yellow>.'
+    deletekit:
+      aliases:
+      - deletekit
+      show: ' <green>/clanwar kit delete <nombre> <gray>- <yellow>Eliminar un kit.'
+      usage: '%tag% <red>Error, utiliza: <green>/clanwar kit delete <nombre>'
+      error: '%tag% <red>Se produjo un error al eliminar el kit.'
+      success: '%tag% <yellow>Se ha eliminado el kit <aqua>%name%<yellow>.'
+    listkits:
+      aliases:
+      - listkits
+      show: ' <green>/clanwar kit list <gray>- <yellow>Listar todos los kits.'
+      usage: '%tag% <red>Error, utiliza: <green>/clanwar kit list'
+      error: '%tag% <red>Se produjo un error al enumerar los kits'
+      success: '%tag% <green>¡Éxito!'
+    givekit:
+      aliases:
+      - givekit
+      show: ' <green>/clanwar kit give <nombre> <gray>- <yellow>Dar un kit.'
+      usage: '%tag% <red>Error, utiliza: <green>/clanwar kit give <nombre>'
+      error: '%tag% <red>Se produjo un error al recibir el objeto'
+      success: '%tag% <green>¡Kit recibido exitosamente!'
+    seticon:
+      aliases:
+      - seticon
+      show: ' <green>/clanwar kit seticon <nombre> <material> <gray>- <yellow>Establecer un ícono de kit.'
+      usage: '%tag% <red>Error, utiliza: <green>/clanwar kit seticon <nombre> <material>'
+      error: '%tag% <red>Se produjo un error al cambiar el ícono del kit.'
+      success: '%tag% <green>¡Se ha cambiado exitosamente el ícono del kit!'

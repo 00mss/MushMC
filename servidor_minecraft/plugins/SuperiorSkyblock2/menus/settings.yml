@@ -1,0 +1,689 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&X&2&7&2&7&2&7Island Settings'
+previous-menu: true
+
+pattern:
+  - '1 1 2 2 2 2 2 2 2'
+  - '1 @ @ @ @ @ @ @ 2'
+  - '2 @ @ @ @ @ @ @ 2'
+  - '2 1 1 1 1 1 1 1 1'
+  - '2 2 2 % * ^ 1 1 1'
+
+slots: '@'
+previous-page: '%'
+current-page: '*'
+next-page: '^'
+
+items:
+  '1':
+    type: GRAY_STAINED_GLASS_PANE
+    name: ''
+  '2':
+    type: BLACK_STAINED_GLASS_PANE
+    name: ''
+  '%':
+    type: PAPER
+    name: '&cPágina Anterior'
+
+  '*':
+    type: BOOK
+    name: '&b&nmc.mineluxe.us'
+
+  '^':
+    type: PAPER
+    name: '&aSiguiente página'
+
+sounds:
+  '%':
+    type: UI_BUTTON_CLICK
+    volume: 1.0
+  '*':
+    type: UI_BUTTON_CLICK
+    volume: 1.0
+  '^':
+    type: UI_BUTTON_CLICK
+    volume: 1.0    
+
+settings:
+  always_day:
+    settings-enabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODc4NzI4OTEyNDE0ODUzYTU2M2M5NWNkZjExOWFjNmIyZDQ4NmUzNzg0ZWNlNmJiMTc0NWZhNGI3ZDZjNDAwMiJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴀʟᴡᴀʏꜱ ᴅᴀʏ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bꜱᴇᴛ ᴀ ᴅᴀʏ ᴛɪᴍᴇ ᴏɴ'
+        - '  &X&E&B&E&B&E&Bʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&0&5&E&5&2&0❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&0&5&E&5&2&0ᴇɴᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    settings-disabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODc4NzI4OTEyNDE0ODUzYTU2M2M5NWNkZjExOWFjNmIyZDQ4NmUzNzg0ZWNlNmJiMTc0NWZhNGI3ZDZjNDAwMiJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴀʟᴡᴀʏꜱ ᴅᴀʏ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bꜱᴇᴛ ᴀ ᴅᴀʏ ᴛɪᴍᴇ ᴏɴ'
+        - '  &X&E&B&E&B&E&Bʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&F&F&2&B&2&B❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&F&F&2&B&2&Bᴅɪꜱᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 1.0
+
+  always_middle_day:
+    settings-enabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGFlYjA0ZGU4MTljMTc3NjY4YzUxMzkyNjQzN2QwZWNjMTY4NGUwMjRkMWQ4NjdhZjQ1OTAxY2I0NjFiYjQ3NSJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴀʟᴡᴀʏꜱ ᴍɪᴅᴅʟᴇ ᴅᴀʏ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bꜱᴇᴛ ᴀ ᴍɪᴅᴅʟᴇ ᴅᴀʏ ᴛɪᴍᴇ'
+        - '  &X&E&B&E&B&E&Bᴏɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&0&5&E&5&2&0❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&0&5&E&5&2&0ᴇɴᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    settings-disabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGFlYjA0ZGU4MTljMTc3NjY4YzUxMzkyNjQzN2QwZWNjMTY4NGUwMjRkMWQ4NjdhZjQ1OTAxY2I0NjFiYjQ3NSJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴀʟᴡᴀʏꜱ ᴍɪᴅᴅʟᴇ ᴅᴀʏ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bꜱᴇᴛ ᴀ ᴍɪᴅᴅʟᴇ ᴅᴀʏ ᴛɪᴍᴇ'
+        - '  &X&E&B&E&B&E&Bᴏɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&F&F&2&B&2&B❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&F&F&2&B&2&Bᴅɪꜱᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 1.0
+
+  always_night:
+    settings-enabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjgxZTM3NjMyMjE4OGIxZTk4ODMwOWY5OWEwMTVkOTQ5YjY4ZmZlOWM5ZDczY2I5NzgxMzUzOGQwODY0ODk3ZSJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴀʟᴡᴀʏꜱ ɴɪɢʜᴛ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bꜱᴇᴛ ᴀ ɴɪɢʜᴛ ᴛɪᴍᴇ'
+        - '  &X&E&B&E&B&E&Bᴏɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&0&5&E&5&2&0❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&0&5&E&5&2&0ᴇɴᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    settings-disabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjgxZTM3NjMyMjE4OGIxZTk4ODMwOWY5OWEwMTVkOTQ5YjY4ZmZlOWM5ZDczY2I5NzgxMzUzOGQwODY0ODk3ZSJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴀʟᴡᴀʏꜱ ɴɪɢʜᴛ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bꜱᴇᴛ ᴀ ɴɪɢʜᴛ ᴛɪᴍᴇ'
+        - '  &X&E&B&E&B&E&Bᴏɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&F&F&2&B&2&B❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&F&F&2&B&2&Bᴅɪꜱᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 1.0
+
+  always_middle_night:
+    settings-enabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzFjODk1OTM1MTc0YWM1ZjY0ZWRhZDIxNWNlMGI2YjM4MDEzN2NjNGQxZjM5OWEzZGYxN2RjM2IyZGU0MGJkZSJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴀʟᴡᴀʏꜱ ᴍɪᴅᴅʟᴇ ɴɪɢʜᴛ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bꜱᴇᴛ ᴀ ᴍɪᴅᴅʟᴇ ɴɪɢʜᴛ ᴅᴀʏ ᴛɪᴍᴇ'
+        - '  &X&E&B&E&B&E&Bᴏɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&0&5&E&5&2&0❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&0&5&E&5&2&0ᴇɴᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    settings-disabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzFjODk1OTM1MTc0YWM1ZjY0ZWRhZDIxNWNlMGI2YjM4MDEzN2NjNGQxZjM5OWEzZGYxN2RjM2IyZGU0MGJkZSJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴀʟᴡᴀʏꜱ ᴍɪᴅᴅʟᴇ ɴɪɢʜᴛ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bꜱᴇᴛ ᴀ ᴍɪᴅᴅʟᴇ ɴɪɢʜᴛ ᴅᴀʏ ᴛɪᴍᴇ'
+        - '  &X&E&B&E&B&E&Bᴏɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&F&F&2&B&2&B❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&F&F&2&B&2&Bᴅɪꜱᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 1.0
+
+  always_rain:
+    settings-enabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2I4ZjA3Mjg5Y2M2Mjc3ZGEzYWIxY2YxMDNkMTc3NmMwYTA3N2YzMzkzZTVkYWE4ODg1NWJiYTVjODVhYjIzMCJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴀʟᴡᴀʏꜱ ʀᴀɪɴ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bꜱᴇᴛ ᴀ ʀᴀɪɴʏ ᴡᴇᴀᴛʜᴇʀ'
+        - '  &X&E&B&E&B&E&Bᴏɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&0&5&E&5&2&0❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&0&5&E&5&2&0ᴇɴᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    settings-disabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2I4ZjA3Mjg5Y2M2Mjc3ZGEzYWIxY2YxMDNkMTc3NmMwYTA3N2YzMzkzZTVkYWE4ODg1NWJiYTVjODVhYjIzMCJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴀʟᴡᴀʏꜱ ʀᴀɪɴ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bꜱᴇᴛ ᴀ ʀᴀɪɴʏ ᴡᴇᴀᴛʜᴇʀ'
+        - '  &X&E&B&E&B&E&Bᴏɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&F&F&2&B&2&B❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&F&F&2&B&2&Bᴅɪꜱᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 1.0
+
+  always_shiny:
+    settings-enabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTRlOGRjMDg2NWNlZDM4N2QxZjRlYzA5ZWUzMmFjZGZmNjk5ZmYyNjczMDZhNWViOWI3NDVkMTMxYzRiZWZlYSJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴀʟᴡᴀʏꜱ ꜱʜɪɴʏ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bꜱᴇᴛ ᴀ ꜱᴇᴛ ᴀ ꜱʜɪɴʏ ᴡᴇᴀᴛʜᴇʀ'
+        - '  &X&E&B&E&B&E&Bᴏɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&0&5&E&5&2&0❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&0&5&E&5&2&0ᴇɴᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    settings-disabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTRlOGRjMDg2NWNlZDM4N2QxZjRlYzA5ZWUzMmFjZGZmNjk5ZmYyNjczMDZhNWViOWI3NDVkMTMxYzRiZWZlYSJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴀʟᴡᴀʏꜱ ꜱʜɪɴʏ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bꜱᴇᴛ ᴀ ꜱᴇᴛ ᴀ ꜱʜɪɴʏ ᴡᴇᴀᴛʜᴇʀ'
+        - '  &X&E&B&E&B&E&Bᴏɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&F&F&2&B&2&B❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&F&F&2&B&2&Bᴅɪꜱᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 1.0
+
+  creeper_explosion:
+    settings-enabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjAzMTYwN2YyNGU2M2Y0NTEwMzAyODNiZmQxYjhmOTlkNTJmMThmNDc3OGNkNmM5NWZlMzAzYzZjYTIxZGNiMiJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴄʀᴇᴇᴘᴇʀ ᴇxᴘʟᴏꜱɪᴏɴ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ᴄʀᴇᴇᴘᴇʀꜱ ᴛᴏ ᴇxᴘʟᴏᴅᴇ'
+        - '  &X&E&B&E&B&E&Bʙʟᴏᴄᴋꜱ ɪɴꜱɪᴅᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&0&5&E&5&2&0❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&0&5&E&5&2&0ᴇɴᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    settings-disabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjAzMTYwN2YyNGU2M2Y0NTEwMzAyODNiZmQxYjhmOTlkNTJmMThmNDc3OGNkNmM5NWZlMzAzYzZjYTIxZGNiMiJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴄʀᴇᴇᴘᴇʀ ᴇxᴘʟᴏꜱɪᴏɴ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ᴄʀᴇᴇᴘᴇʀꜱ ᴛᴏ ᴇxᴘʟᴏᴅᴇ'
+        - '  &X&E&B&E&B&E&Bʙʟᴏᴄᴋꜱ ɪɴꜱɪᴅᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&F&F&2&B&2&B❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&F&F&2&B&2&Bᴅɪꜱᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 1.0
+
+  crops_growth:
+    settings-enabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWZlMDc4MzYzYWI5ZWM4NTBmNWE5YTNiNjE5MWEyNDBhNmUzYmUzNjk1YWEwOGY4Zjg5YzI0NTg2MTg3Njg0MCJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴄʀᴏᴘꜱ ɢʀᴏᴡᴛʜ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ɢʀᴏᴡᴛʜ ᴏꜰ ᴄʀᴏᴘꜱ'
+        - '  &X&E&B&E&B&E&Bɪɴꜱɪᴅᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&0&5&E&5&2&0❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&0&5&E&5&2&0ᴇɴᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    settings-disabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWZlMDc4MzYzYWI5ZWM4NTBmNWE5YTNiNjE5MWEyNDBhNmUzYmUzNjk1YWEwOGY4Zjg5YzI0NTg2MTg3Njg0MCJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴄʀᴏᴘꜱ ɢʀᴏᴡᴛʜ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ɢʀᴏᴡᴛʜ ᴏꜰ ᴄʀᴏᴘꜱ'
+        - '  &X&E&B&E&B&E&Bɪɴꜱɪᴅᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&F&F&2&B&2&B❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&F&F&2&B&2&Bᴅɪꜱᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 1.0
+
+  egg_lay:
+    settings-enabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzAyYjI3YTJlNmVmZjg0YjA0M2Q2OGMzYzNlYTY2NDdiZWYxZmEwNzYzOTVjZWMwODk4YTYxOTY3M2ExMTZmOSJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴇɢɢ ʟᴀʏ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ᴄʜɪᴄᴋᴇɴꜱ ᴛᴏ ʟᴀʏ'
+        - '  &X&E&B&E&B&E&Bᴇɢɢꜱ ɪɴꜱɪᴅᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&0&5&E&5&2&0❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&0&5&E&5&2&0ᴇɴᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    settings-disabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzAyYjI3YTJlNmVmZjg0YjA0M2Q2OGMzYzNlYTY2NDdiZWYxZmEwNzYzOTVjZWMwODk4YTYxOTY3M2ExMTZmOSJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴇɢɢ ʟᴀʏ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ᴄʜɪᴄᴋᴇɴꜱ ᴛᴏ ʟᴀʏ'
+        - '  &X&E&B&E&B&E&Bᴇɢɢꜱ ɪɴꜱɪᴅᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&F&F&2&B&2&B❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&F&F&2&B&2&Bᴅɪꜱᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 1.0
+
+  enderman_grief:
+    settings-enabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODhhYThlNzdhNDFlNTk0MTk4ZWFjMGRjYmRiMGU2NWUxMTRjNzI5ODE5NjQ1MWRiN2I2OTY2MjYwMDA5NGM4NyJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴇɴᴅᴇʀᴍᴀɴ ɢʀɪᴇꜰ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ᴇɴᴅᴇʀᴍᴀɴ ᴛᴏ ɢʀɪᴇꜰ'
+        - '  &X&E&B&E&B&E&Bʙʟᴏᴄᴋꜱ ɪɴꜱɪᴅᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ'
+        - ''
+        - '  &X&0&5&E&5&2&0❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&0&5&E&5&2&0ᴇɴᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    settings-disabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODhhYThlNzdhNDFlNTk0MTk4ZWFjMGRjYmRiMGU2NWUxMTRjNzI5ODE5NjQ1MWRiN2I2OTY2MjYwMDA5NGM4NyJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴇɴᴅᴇʀᴍᴀɴ ɢʀɪᴇꜰ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ᴇɴᴅᴇʀᴍᴀɴ ᴛᴏ ɢʀɪᴇꜰ'
+        - '  &X&E&B&E&B&E&Bʙʟᴏᴄᴋꜱ ɪɴꜱɪᴅᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ'
+        - ''
+        - '  &X&F&F&2&B&2&B❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&F&F&2&B&2&Bᴅɪꜱᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+
+  fire_spread:
+    settings-enabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTA4NTk2NzUyZGU0MWYyMGY0ZTkxMzFkNTQxZDBjNDA2NGU0MGRkYzIyMWY2YjJhNGNjYmIyOWQ4ZDU1NDgyYyJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ꜰɪʀᴇ ꜱᴘʀᴇᴀᴅ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ꜰɪʀᴇ ᴛᴏ ꜱᴘʀᴇᴀᴅ'
+        - '  &X&E&B&E&B&E&Bɪɴꜱɪᴅᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&0&5&E&5&2&0❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&0&5&E&5&2&0ᴇɴᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    settings-disabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTA4NTk2NzUyZGU0MWYyMGY0ZTkxMzFkNTQxZDBjNDA2NGU0MGRkYzIyMWY2YjJhNGNjYmIyOWQ4ZDU1NDgyYyJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ꜰɪʀᴇ ꜱᴘʀᴇᴀᴅ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ꜰɪʀᴇ ᴛᴏ ꜱᴘʀᴇᴀᴅ'
+        - '  &X&E&B&E&B&E&Bɪɴꜱɪᴅᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&F&F&2&B&2&B❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&F&F&2&B&2&Bᴅɪꜱᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 1.0
+
+  ghast_fireball:
+    settings-enabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjI1MjNlMTVlOTk4NjM1NWExZjg1MWY0M2Y3NTBlZTNmMjNjODlhZTEyMzYzMWRhMjQxZjg3MmJhN2E3ODEifX19'
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ɢʜᴀꜱᴛ ꜰɪʀᴇʙᴀʟʟ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ꜰɪʀᴇʙᴀʟʟꜱ ᴛᴏ ʙʀᴇᴀᴋ'
+        - '  &X&E&B&E&B&E&Bʙʟᴏᴄᴋꜱ ɪɴꜱɪᴅᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&0&5&E&5&2&0❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&0&5&E&5&2&0ᴇɴᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    settings-disabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjI1MjNlMTVlOTk4NjM1NWExZjg1MWY0M2Y3NTBlZTNmMjNjODlhZTEyMzYzMWRhMjQxZjg3MmJhN2E3ODEifX19'
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ɢʜᴀꜱᴛ ꜰɪʀᴇʙᴀʟʟ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ꜰɪʀᴇʙᴀʟʟꜱ ᴛᴏ ʙʀᴇᴀᴋ'
+        - '  &X&E&B&E&B&E&Bʙʟᴏᴄᴋꜱ ɪɴꜱɪᴅᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&F&F&2&B&2&B❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&F&F&2&B&2&Bᴅɪꜱᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 1.0
+
+  lava_flow:
+    settings-enabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODkxMTgzZWZiOTQxYzU3YzZhMzdmNjFjOTRlMjViNDRiNjdhODA0NDUyZTAyYTBkMjk5NmRlZGE2ZDIwZDdjNiJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ʟᴀᴠᴀ ꜰʟᴏᴡ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ʟᴀᴠᴀ ᴛᴏ ꜰʟᴏᴡ'
+        - '  &X&E&B&E&B&E&Bɪɴꜱɪᴅᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&0&5&E&5&2&0❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&0&5&E&5&2&0ᴇɴᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    settings-disabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODkxMTgzZWZiOTQxYzU3YzZhMzdmNjFjOTRlMjViNDRiNjdhODA0NDUyZTAyYTBkMjk5NmRlZGE2ZDIwZDdjNiJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ʟᴀᴠᴀ ꜰʟᴏᴡ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ʟᴀᴠᴀ ᴛᴏ ꜰʟᴏᴡ'
+        - '  &X&E&B&E&B&E&Bɪɴꜱɪᴅᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&F&F&2&B&2&B❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&F&F&2&B&2&Bᴅɪꜱᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 1.0
+
+  natural_animals_spawn:
+    settings-enabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjZhMDI0OWE3OGE5OTkwMzdmZjc4MDYzMzhiYzBiM2M4ZGJhYzY3OTNkYzMxMmMzNzZkN2U5ZGRmNDZiYzYxNCJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ɴᴀᴛᴜʀᴀʟ ᴀɴɪᴍᴀʟꜱ ꜱᴘᴀᴡɴ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ɴᴀᴛᴜʀᴀʟ ꜱᴘᴀᴡɴɪɴɢ ᴏꜰ'
+        - '  &X&E&B&E&B&E&Bᴀɴɪᴍᴀʟꜱ ɪɴꜱɪᴅᴇ ᴛʜᴇ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&0&5&E&5&2&0❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&0&5&E&5&2&0ᴇɴᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    settings-disabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjZhMDI0OWE3OGE5OTkwMzdmZjc4MDYzMzhiYzBiM2M4ZGJhYzY3OTNkYzMxMmMzNzZkN2U5ZGRmNDZiYzYxNCJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ɴᴀᴛᴜʀᴀʟ ᴀɴɪᴍᴀʟꜱ ꜱᴘᴀᴡɴ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ɴᴀᴛᴜʀᴀʟ ꜱᴘᴀᴡɴɪɴɢ ᴏꜰ'
+        - '  &X&E&B&E&B&E&Bᴀɴɪᴍᴀʟꜱ ɪɴꜱɪᴅᴇ ᴛʜᴇ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&F&F&2&B&2&B❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&F&F&2&B&2&Bᴅɪꜱᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 1.0
+
+  natural_monster_spawn:
+    settings-enabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmY1MGQwNzVhM2M0NTkyODFhMDgxMGJjYzVlZGJhZGRhYThkOWM3OTdjNDI5MjY0ODBhOGIxMzg4NWJlOTY0MiJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ɴᴀᴛᴜʀᴀʟ ᴍᴏɴꜱᴛᴇʀ ꜱᴘᴀᴡɴ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ɴᴀᴛᴜʀᴀʟ ꜱᴘᴀᴡɴɪɴɢ ᴏꜰ'
+        - '  &X&E&B&E&B&E&Bᴍᴏɴꜱᴛᴇʀꜱ ɪɴꜱɪᴅᴇ ᴛʜᴇ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&0&5&E&5&2&0❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&0&5&E&5&2&0ᴇɴᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    settings-disabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmY1MGQwNzVhM2M0NTkyODFhMDgxMGJjYzVlZGJhZGRhYThkOWM3OTdjNDI5MjY0ODBhOGIxMzg4NWJlOTY0MiJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ɴᴀᴛᴜʀᴀʟ ᴍᴏɴꜱᴛᴇʀ ꜱᴘᴀᴡɴ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ɴᴀᴛᴜʀᴀʟ ꜱᴘᴀᴡɴɪɴɢ ᴏꜰ'
+        - '  &X&E&B&E&B&E&Bᴍᴏɴꜱᴛᴇʀꜱ ɪɴꜱɪᴅᴇ ᴛʜᴇ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&F&F&2&B&2&B❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&F&F&2&B&2&Bᴅɪꜱᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 1.0
+
+  pvp:
+    settings-enabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzk5MzI4MWU1Yzg0MjAwODMxNDYzODY3OGQzMjhhOGNlMTk5NDk2OGU1YzQxZDAxYmEzMGI5NGFlOTNjYThmNiJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴘᴠᴘ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ᴘʟᴀʏᴇʀꜱ ᴛᴏ'
+        - '  &X&E&B&E&B&E&Bᴘᴠᴘ ɪɴꜱɪᴅᴇ ᴛʜᴇ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&0&5&E&5&2&0❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&0&5&E&5&2&0ᴇɴᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    settings-disabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzk5MzI4MWU1Yzg0MjAwODMxNDYzODY3OGQzMjhhOGNlMTk5NDk2OGU1YzQxZDAxYmEzMGI5NGFlOTNjYThmNiJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴘᴠᴘ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ᴘʟᴀʏᴇʀꜱ ᴛᴏ'
+        - '  &X&E&B&E&B&E&Bᴘᴠᴘ ɪɴꜱɪᴅᴇ ᴛʜᴇ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&F&F&2&B&2&B❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&F&F&2&B&2&Bᴅɪꜱᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 1.0
+
+  spawner_animals_spawn:
+    settings-enabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTdiMjE4OTMwMGYzMzliYTA1MGUwMWFlMmE1NDBiN2U4OWVmODk2YTU1Yzc5MTZkY2M5ZTU4NTFhZjg2NDExZSJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ꜱᴘᴀᴡɴᴇʀ ᴀɴɪᴍᴀʟꜱ ꜱᴘᴀᴡɴ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ꜱᴘᴀᴡɴᴇʀ ꜱᴘᴀᴡɴɪɴɢ ᴏꜰ'
+        - '  &X&E&B&E&B&E&Bᴀɴɪᴍᴀʟꜱ ɪɴꜱɪᴅᴇ ᴛʜᴇ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&0&5&E&5&2&0❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&0&5&E&5&2&0ᴇɴᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    settings-disabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTdiMjE4OTMwMGYzMzliYTA1MGUwMWFlMmE1NDBiN2U4OWVmODk2YTU1Yzc5MTZkY2M5ZTU4NTFhZjg2NDExZSJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ꜱᴘᴀᴡɴᴇʀ ᴀɴɪᴍᴀʟꜱ ꜱᴘᴀᴡɴ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ꜱᴘᴀᴡɴᴇʀ ꜱᴘᴀᴡɴɪɴɢ ᴏꜰ'
+        - '  &X&E&B&E&B&E&Bᴀɴɪᴍᴀʟꜱ ɪɴꜱɪᴅᴇ ᴛʜᴇ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&F&F&2&B&2&B❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&F&F&2&B&2&Bᴅɪꜱᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 1.0
+
+  spawner_monster_spawn:
+    settings-enabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTdiMjE4OTMwMGYzMzliYTA1MGUwMWFlMmE1NDBiN2U4OWVmODk2YTU1Yzc5MTZkY2M5ZTU4NTFhZjg2NDExZSJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ꜱᴘᴀᴡɴᴇʀ ᴍᴏɴꜱᴛᴇʀ ꜱᴘᴀᴡɴ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ꜱᴘᴀᴡɴᴇʀ ꜱᴘᴀᴡɴɪɴɢ ᴏꜰ'
+        - '  &X&E&B&E&B&E&Bᴍᴏɴꜱᴛᴇʀꜱ ɪɴꜱɪᴅᴇ ᴛʜᴇ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&0&5&E&5&2&0❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&0&5&E&5&2&0ᴇɴᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    settings-disabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTdiMjE4OTMwMGYzMzliYTA1MGUwMWFlMmE1NDBiN2U4OWVmODk2YTU1Yzc5MTZkY2M5ZTU4NTFhZjg2NDExZSJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ꜱᴘᴀᴡɴᴇʀ ᴍᴏɴꜱᴛᴇʀ ꜱᴘᴀᴡɴ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ꜱᴘᴀᴡɴᴇʀ ꜱᴘᴀᴡɴɪɴɢ ᴏꜰ'
+        - '  &X&E&B&E&B&E&Bᴍᴏɴꜱᴛᴇʀꜱ ɪɴꜱɪᴅᴇ ᴛʜᴇ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&F&F&2&B&2&B❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&F&F&2&B&2&Bᴅɪꜱᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 1.0
+
+  tnt_explosion:
+    settings-enabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg4ZmI2YjJiM2VmYTZhYjI5OWY5ZjRlN2Q4YzFhMWQ3MzM4NzUzYmRmOGZlZjgxMDc1ZjIxNTU5NDNiYzY5In19fQ=='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴛɴᴛ ᴇxᴘʟᴏꜱɪᴏɴ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ᴛɴᴛ ᴛᴏ ᴇxᴘʟᴏᴅᴇ ʙʟᴏᴄᴋꜱ'
+        - '  &X&E&B&E&B&E&Bɪɴꜱɪᴅᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&0&5&E&5&2&0❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&0&5&E&5&2&0ᴇɴᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    settings-disabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg4ZmI2YjJiM2VmYTZhYjI5OWY5ZjRlN2Q4YzFhMWQ3MzM4NzUzYmRmOGZlZjgxMDc1ZjIxNTU5NDNiYzY5In19fQ=='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴛɴᴛ ᴇxᴘʟᴏꜱɪᴏɴ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ᴛɴᴛ ᴛᴏ ᴇxᴘʟᴏᴅᴇ ʙʟᴏᴄᴋꜱ'
+        - '  &X&E&B&E&B&E&Bɪɴꜱɪᴅᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&F&F&2&B&2&B❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&F&F&2&B&2&Bᴅɪꜱᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 1.0
+
+  tree_growth:
+    settings-enabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTEyODlkOGFkYjgzYmYyNTMyOTIzMTMwYWNiMzFlMGE4NmZjM2E1ZGM3N2I1ZWRiZTU1NTY3ZGI5ZjBmMzk2ZCJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴛʀᴇᴇ ɢʀᴏᴡᴛʜ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ɢʀᴏᴡᴛʜ ᴏꜰ ᴛʀᴇᴇꜱ'
+        - '  &X&E&B&E&B&E&Bɪɴꜱɪᴅᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&0&5&E&5&2&0❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&0&5&E&5&2&0ᴇɴᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    settings-disabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTEyODlkOGFkYjgzYmYyNTMyOTIzMTMwYWNiMzFlMGE4NmZjM2E1ZGM3N2I1ZWRiZTU1NTY3ZGI5ZjBmMzk2ZCJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴛʀᴇᴇ ɢʀᴏᴡᴛʜ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ɢʀᴏᴡᴛʜ ᴏꜰ ᴛʀᴇᴇꜱ'
+        - '  &X&E&B&E&B&E&Bɪɴꜱɪᴅᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&F&F&2&B&2&B❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&F&F&2&B&2&Bᴅɪꜱᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 1.0
+
+  water_flow:
+    settings-enabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTA3YTk3YzhjMTRlOTZiNGViMmEwZjg0NDAxOTU5ZDc2NjExZTc1NDdlZWIyYjZkM2E2YTYyZGQ3ODk0YzJlIn19fQ=='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴡᴀᴛᴇʀ ꜰʟᴏᴡ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ᴡᴀᴛᴇʀ ᴛᴏ ꜰʟᴏᴡ'
+        - '  &X&E&B&E&B&E&Bɪɴꜱɪᴅᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&0&5&E&5&2&0❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&0&5&E&5&2&0ᴇɴᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    settings-disabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTA3YTk3YzhjMTRlOTZiNGViMmEwZjg0NDAxOTU5ZDc2NjExZTc1NDdlZWIyYjZkM2E2YTYyZGQ3ODk0YzJlIn19fQ=='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴡᴀᴛᴇʀ ꜰʟᴏᴡ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ᴡᴀᴛᴇʀ ᴛᴏ ꜰʟᴏᴡ'
+        - '  &X&E&B&E&B&E&Bɪɴꜱɪᴅᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&F&F&2&B&2&B❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&F&F&2&B&2&Bᴅɪꜱᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 1.0
+
+  wither_explosion:
+    settings-enabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTVkOTJlODllNDczN2RjZmFlNWU1NzFjNzZmNzYwNGE3YWI3YzllMDNmNzhjMTgyMTcxZDEwOTU3MTQxNTZkMSJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴡɪᴛʜᴇʀ ᴇxᴘʟᴏꜱɪᴏɴ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ᴡɪᴛʜᴇʀꜱ ᴛᴏ ᴇxᴘʟᴏᴅᴇ'
+        - '  &X&E&B&E&B&E&Bʙʟᴏᴄᴋꜱ ɪɴꜱɪᴅᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&0&5&E&5&2&0❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&0&5&E&5&2&0ᴇɴᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    settings-disabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTVkOTJlODllNDczN2RjZmFlNWU1NzFjNzZmNzYwNGE3YWI3YzllMDNmNzhjMTgyMTcxZDEwOTU3MTQxNTZkMSJ9fX0='
+      name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴡɪᴛʜᴇʀ ᴇxᴘʟᴏꜱɪᴏɴ'
+      lore:
+        - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+        - ''
+        - '  &X&E&B&E&B&E&Bᴀʟʟᴏᴡ ᴡɪᴛʜᴇʀꜱ ᴛᴏ ᴇxᴘʟᴏᴅᴇ'
+        - '  &X&E&B&E&B&E&Bʙʟᴏᴄᴋꜱ ɪɴꜱɪᴅᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+        - ''
+        - '  &X&F&F&2&B&2&B❙ &X&E&B&E&B&E&Bᴄᴜʀʀᴇɴᴛʟʏ &X&F&F&2&B&2&Bᴅɪꜱᴀʙʟᴇᴅ&X&E&B&E&B&E&B.'
+        - ''
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 1.0
+
+# 570549AE4Z8RO2JQ

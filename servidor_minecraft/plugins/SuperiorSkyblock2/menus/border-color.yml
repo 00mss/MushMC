@@ -1,0 +1,106 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&nBordes de la isla'
+previous-menu: true
+
+pattern:
+  - '1 1 2 1 1 1 2 1 1'
+  - '1 2 2 @ ^ $ 2 2 1'
+  - '1 2 2 2 3 2 2 2 1'
+  - '1 1 2 1 1 1 2 1 1'
+
+green-color: '@'
+red-color: '^'
+blue-color: '$'
+
+items:
+  '1':
+    type: BLACK_STAINED_GLASS_PANE
+    name: '&r'
+  '2':
+    type: GRAY_STAINED_GLASS_PANE
+    name: '&r'
+  '3':
+    enable-border:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzc0NzJkNjA4ODIxZjQ1YTg4MDUzNzZlYzBjNmZmY2I3ODExNzgyOWVhNWY5NjAwNDFjMmEwOWQxMGUwNGNiNCJ9fX0='
+      name: '&a&l¡Sí!, &a¡activar borde!'
+      lore:
+      - '&8Artículo de información'
+      - ''
+      - '&X&E&B&E&B&E&BEn este objeto puedes habilitar'
+      - '&X&E&B&E&B&E&Bel borde de tu isla.'
+      - ''
+      - '&e▸ ¡Cambiar ahora mismo!'
+
+    disable-border:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTkxMjdjYjdiZDNhOTg5ZDcyYzJlNWM0MjZlMWNjMTQ0NmI1ZTZkZTc0MTRkNDI3ODNmMmZlNmJhZGIxNzdkNCJ9fX0='
+      name: '&4&l¡Sí!, &4¡Desactivar borde!'
+      lore:
+      - '&8Artículo de información'
+      - ''
+      - '&X&E&B&E&B&E&BEn este objeto puedes desahabilitar'
+      - '&X&E&B&E&B&E&Bel borde de tu isla.'
+      - ''
+      - '&e▸ ¡Desactivar ahora mismo!'
+  '@':
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTM1ODFjMmY5Y2YzNThkN2VkYzc4ZGQ2ZmQ0YjYyNTc1MDFiYzRlNjQ1NWUzM2ZhMGNhYWUyMDdjZjAzMjFhMiJ9fX0='
+    name: '&2&l¡Sí!, &2¡activar borde verde!'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&X&E&B&E&B&E&BEn este objeto puedes activar'
+    - '&X&E&B&E&B&E&Bel borde de tu isla en color.'
+    - ''
+    - '&8&l● &fColor: &2Verde'
+    - ''
+    - '&e▸ ¡Cambiar ahora mismo!'
+  '^':
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjk1M2IxMmEwOTQ2YjYyOWI0YzA4ODlkNDFmZDI2ZWQyNmZiNzI5ZDRkNTE0YjU5NzI3MTI0YzM3YmI3MGQ4ZCJ9fX0='
+    name: '&c&l¡Sí!, &c¡activar borde rojo!'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&X&E&B&E&B&E&BEn este objeto puedes activar'
+    - '&X&E&B&E&B&E&Bel borde de tu isla en color.'
+    - ''
+    - '&8&l● &fColor: &cRojo'
+    - ''
+    - '&e▸ ¡Cambiar ahora mismo!'
+  '$':
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTYzZTY2NDZmMWMwZDQxZmQzYmY1NTg0YTFjZTA0NGY1YzQ2ZDU5ODI1OGRiNDYyMTYxMTc4NTlmNTdhZjE5NyJ9fX0='
+    name: '&b&l¡Sí!, &b¡activar borde celeste!'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&X&E&B&E&B&E&BEn este objeto puedes activar'
+    - '&X&E&B&E&B&E&Bel borde de tu isla en color.'
+    - ''
+    - '&8&l● &fColor: &bCeleste'
+    - ''
+    - '&e▸ ¡Cambiar ahora mismo!'   
+
+sounds:
+  '3':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 1.0
+  '@':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 1.0
+  '^':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 1.0
+  '$':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 1.0
+
+# 570549AE4Z8RO2JQ

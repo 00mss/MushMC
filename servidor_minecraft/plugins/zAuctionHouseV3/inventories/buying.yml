@@ -1,0 +1,148 @@
+name: "&8&nItems comprados&r #7E7E7E(#7E7E7E%page%#7E7E7E/#7E7E7E%maxPage%#7E7E7E)"
+size: 54
+type: BUYING
+items:
+  # Will display an item that has no action on the different slots
+  slots:
+    type: NONE_SLOT
+    isPermanent: true
+    item:
+      material: GRAY_STAINED_GLASS_PANE
+      name: "&f"
+    slots:
+      - 1
+      - 10
+      - 19
+      - 28
+      - 37
+      - 38
+      - 39
+      - 40
+      - 41
+      - 42
+      - 43
+      - 44
+      - 46
+      - 48
+      - 49
+      - 50
+      - 53
+  auction:
+    type: INVENTORY
+    inventory: "auction"
+    isPermanent: true
+    slot: 47
+    item:
+      material: nautilus_shell
+      name: "#FFE000Subastas globales &7(%zauctionhouse_counts% Items)"
+      lore:
+        - "&8Categoria"
+        - ""
+        - "&fEn este menú podrás encontrar"
+        - "&ftodas las subastas del servidor"
+        - ""
+        - "#FAF0A4▸ ¡Seleccionar menú!"
+  back:
+    type: BACK
+    item:
+    isPermanent: true
+    slot: 51
+    item:
+      material: dark_oak_door
+      name: "#FFE000Volver al menú"
+      lore:
+        - "&8Categoria"
+        - ""
+        - "&fEn este menú podrás encontrar"
+        - "&ftodas las subastas del servidor"
+        - ""
+        - "#FAF0A4▸ ¡Seleccionar menú!"
+  items:
+    type: AUCTION_ITEM
+    isPermanent: true
+    slots:
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 11
+      - 12
+      - 13
+      - 14
+      - 15
+      - 16
+      - 17
+      - 20
+      - 21
+      - 22
+      - 23
+      - 24
+      - 25
+      - 26
+      - 29
+      - 30
+      - 31
+      - 32
+      - 33
+      - 34
+      - 35
+  next:
+    type: NEXT
+    isPermanent: true
+    slot: 52
+    item:
+      material: SPECTRAL_ARROW
+      name: "&aPagina siguiente"
+      lore:
+        - "&8Subastas"
+        - ""
+        - "&fCon este item podrás dirigirte"
+        - "&fa la siguiente página de la"
+        - "&ftienda de subastas"
+        - ""
+        - "#FAF0A4▸ ¡Siguiente página!"
+    else:
+      type: NEXT
+      item:
+        material: SPECTRAL_ARROW
+        name: "&aPagina siguiente"
+        lore:
+          - "&8Subastas"
+          - ""
+          - "&fCon este item podrás dirigirte"
+          - "&fa la siguiente página de la"
+          - "&ftienda de subastas"
+          - ""
+          - "#FAF0A4▸ ¡Siguiente página!"
+  # Allows you to go to the previous page
+  previous:
+    type: PREVIOUS
+    isPermanent: true
+    slot: 50
+    item:
+      material: SPECTRAL_ARROW
+      name: "&cPágina anterior"
+      lore:
+        - "&8Subastas"
+        - ""
+        - "&fCon este item podrás dirigirte"
+        - "&fa la página anterior de la"
+        - "&ftienda de subastas"
+        - ""
+        - "#FAF0A4▸ ¡Página anterior!"
+    else:
+      type: PREVIOUS
+      item:
+        material: SPECTRAL_ARROW
+        name: "&cPágina anterior"
+        lore:
+          - "&8Subastas"
+          - ""
+          - "&fCon este item podrás dirigirte"
+          - "&fa la página anterior de la"
+          - "&ftienda de subastas"
+          - ""
+          - "#FAF0A4▸ ¡Página anterior!"

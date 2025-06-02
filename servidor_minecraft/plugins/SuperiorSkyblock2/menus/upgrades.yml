@@ -1,0 +1,1285 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&X&2&7&2&7&2&7Island Upgrades'
+previous-menu: true
+
+pattern:
+  - '1 1 2 2 2 2 2 1 1'
+  - '1 2 @ # ^ * ~ 2 1'
+  - '2 2 2 ! + & 2 2 2'
+  - '1 1 2 1 2 1 2 1 1'
+
+items:
+  '1':
+    type: BLACK_STAINED_GLASS_PANE
+    name: ''
+  '2':
+    type: GRAY_STAINED_GLASS_PANE
+    name: ''
+
+upgrades:
+  hoppers-limit:
+    item: '@'
+    '1':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjhlODRmYTYzMTJlMDViZmY0OGNlZWM3NTBjZTViODUyNjkzOWNlZjYzYjZlZmE3YTUzOWE1YjFkMjVkMDViMCJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ʜᴏᴘᴘᴇʀ ɪɴᴄʀᴇᴀꜱᴇ &X&E&B&E&B&E&B(ᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ʜᴏᴘᴘᴇʀ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ''ꜱ'
+          - '  &X&E&B&E&B&E&Bᴍᴀx ʜᴏᴘᴘᴇʀꜱ ʟɪᴍɪᴛ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F2'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴀᴍᴏᴜɴᴛ: &X&0&0&D&C&F&F16x ʜᴏᴘᴘᴇʀꜱ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$1,000,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjhlODRmYTYzMTJlMDViZmY0OGNlZWM3NTBjZTViODUyNjkzOWNlZjYzYjZlZmE3YTUzOWE1YjFkMjVkMDViMCJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ʜᴏᴘᴘᴇʀ ɪɴᴄʀᴇᴀꜱᴇ &X&E&B&E&B&E&B(ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ʜᴏᴘᴘᴇʀ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ''ꜱ'
+          - '  &X&E&B&E&B&E&Bᴍᴀx ʜᴏᴘᴘᴇʀꜱ ʟɪᴍɪᴛ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F2'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴀᴍᴏᴜɴᴛ: &X&0&0&D&C&F&F16x ʜᴏᴘᴘᴇʀꜱ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$1,000,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+    '2':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjhlODRmYTYzMTJlMDViZmY0OGNlZWM3NTBjZTViODUyNjkzOWNlZjYzYjZlZmE3YTUzOWE1YjFkMjVkMDViMCJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ʜᴏᴘᴘᴇʀ ɪɴᴄʀᴇᴀꜱᴇ &X&E&B&E&B&E&B(ᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ʜᴏᴘᴘᴇʀ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ''ꜱ'
+          - '  &X&E&B&E&B&E&Bᴍᴀx ʜᴏᴘᴘᴇʀꜱ ʟɪᴍɪᴛ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F3'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴀᴍᴏᴜɴᴛ: &X&0&0&D&C&F&F32x ʜᴏᴘᴘᴇʀꜱ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$3,000,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjhlODRmYTYzMTJlMDViZmY0OGNlZWM3NTBjZTViODUyNjkzOWNlZjYzYjZlZmE3YTUzOWE1YjFkMjVkMDViMCJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ʜᴏᴘᴘᴇʀ ɪɴᴄʀᴇᴀꜱᴇ &X&E&B&E&B&E&B(ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ʜᴏᴘᴘᴇʀ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ''ꜱ'
+          - '  &X&E&B&E&B&E&Bᴍᴀx ʜᴏᴘᴘᴇʀꜱ ʟɪᴍɪᴛ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F3'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴀᴍᴏᴜɴᴛ: &X&0&0&D&C&F&F32x ʜᴏᴘᴘᴇʀꜱ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$3,000,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+    '3':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjhlODRmYTYzMTJlMDViZmY0OGNlZWM3NTBjZTViODUyNjkzOWNlZjYzYjZlZmE3YTUzOWE1YjFkMjVkMDViMCJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ʜᴏᴘᴘᴇʀ ɪɴᴄʀᴇᴀꜱᴇ &X&E&B&E&B&E&B(ᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ʜᴏᴘᴘᴇʀ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ''ꜱ'
+          - '  &X&E&B&E&B&E&Bᴍᴀx ʜᴏᴘᴘᴇʀꜱ ʟɪᴍɪᴛ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F4'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴀᴍᴏᴜɴᴛ: &X&0&0&D&C&F&F64x ʜᴏᴘᴘᴇʀꜱ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$9,000,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjhlODRmYTYzMTJlMDViZmY0OGNlZWM3NTBjZTViODUyNjkzOWNlZjYzYjZlZmE3YTUzOWE1YjFkMjVkMDViMCJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ʜᴏᴘᴘᴇʀ ɪɴᴄʀᴇᴀꜱᴇ &X&E&B&E&B&E&B(ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ʜᴏᴘᴘᴇʀ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ''ꜱ'
+          - '  &X&E&B&E&B&E&Bᴍᴀx ʜᴏᴘᴘᴇʀꜱ ʟɪᴍɪᴛ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F4'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴀᴍᴏᴜɴᴛ: &X&0&0&D&C&F&F64x ʜᴏᴘᴘᴇʀꜱ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$9,000,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+    '4':
+      has-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU3NjBiYmMxMTNjMjczZmFjNDA4OTZmYTIwODlhNTZjYzc0NmE3OWE3YTgyNzVmNjM4NTdlNjllNmY3NzAzYSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&F&F&2&B&2&Bᴍᴀx ʟᴇᴠᴇʟ'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''        
+          - '  &X&E&B&E&B&E&Bʏᴏᴜ ʜᴀᴠᴇ ʀᴇᴀᴄʜᴇᴅ ᴛʜᴇ ᴍᴀxɪᴍᴜᴍ'
+          - '  &X&E&B&E&B&E&Bʟᴇᴠᴇʟ ᴏꜰ ᴛʜᴇ ʜᴏᴘᴘᴇʀꜱ ʟɪᴍɪᴛ!'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU3NjBiYmMxMTNjMjczZmFjNDA4OTZmYTIwODlhNTZjYzc0NmE3OWE3YTgyNzVmNjM4NTdlNjllNmY3NzAzYSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&F&F&2&B&2&Bᴍᴀx ʟᴇᴠᴇʟ'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''        
+          - '  &X&E&B&E&B&E&Bʏᴏᴜ ʜᴀᴠᴇ ʀᴇᴀᴄʜᴇᴅ ᴛʜᴇ ᴍᴀxɪᴍᴜᴍ'
+          - '  &X&E&B&E&B&E&Bʟᴇᴠᴇʟ ᴏꜰ ᴛʜᴇ ʜᴏᴘᴘᴇʀꜱ ʟɪᴍɪᴛ!'
+          - ''
+  crop-growth:
+    item: '#'
+    '1':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmU5NzNjNGFlOTEyZTQ3ZjcxNGZkZjg3NmU1NmIwOGNkNzI3MjdjODM0ZTg4M2I5MjYzNTJiMTBkMGMyMGEwOSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴄʀᴏᴘ ɢʀᴏᴡᴛʜ &X&E&B&E&B&E&B(ᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ɢʀᴏᴡᴛʜ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bɢɪᴠᴇꜱ ᴀʟʟ ᴄʀᴏᴘꜱ ᴡɪᴛʜɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ'
+          - '  &X&E&B&E&B&E&Bɪɴᴄʀᴇᴀꜱᴇᴅ ɢʀᴏᴡᴛʜ ꜱᴘᴇᴇᴅ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F2'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʙᴏᴏꜱᴛ: &X&0&0&D&C&F&F2x ꜱᴘᴇᴇᴅ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$100,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmU5NzNjNGFlOTEyZTQ3ZjcxNGZkZjg3NmU1NmIwOGNkNzI3MjdjODM0ZTg4M2I5MjYzNTJiMTBkMGMyMGEwOSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴄʀᴏᴘ ɢʀᴏᴡᴛʜ &X&E&B&E&B&E&B(ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ɢʀᴏᴡᴛʜ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bɢɪᴠᴇꜱ ᴀʟʟ ᴄʀᴏᴘꜱ ᴡɪᴛʜɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ'
+          - '  &X&E&B&E&B&E&Bɪɴᴄʀᴇᴀꜱᴇᴅ ɢʀᴏᴡᴛʜ ꜱᴘᴇᴇᴅ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F2'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʙᴏᴏꜱᴛ: &X&0&0&D&C&F&F2x ꜱᴘᴇᴇᴅ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$100,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+    '2':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmU5NzNjNGFlOTEyZTQ3ZjcxNGZkZjg3NmU1NmIwOGNkNzI3MjdjODM0ZTg4M2I5MjYzNTJiMTBkMGMyMGEwOSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴄʀᴏᴘ ɢʀᴏᴡᴛʜ &X&E&B&E&B&E&B(ᴀᴠᴀɪʟᴀʙʟᴇ)'        
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ɢʀᴏᴡᴛʜ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bɢɪᴠᴇꜱ ᴀʟʟ ᴄʀᴏᴘꜱ ᴡɪᴛʜɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ'
+          - '  &X&E&B&E&B&E&Bɪɴᴄʀᴇᴀꜱᴇᴅ ɢʀᴏᴡᴛʜ ꜱᴘᴇᴇᴅ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F3'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʙᴏᴏꜱᴛ: &X&0&0&D&C&F&F3x ꜱᴘᴇᴇᴅ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$500,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmU5NzNjNGFlOTEyZTQ3ZjcxNGZkZjg3NmU1NmIwOGNkNzI3MjdjODM0ZTg4M2I5MjYzNTJiMTBkMGMyMGEwOSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴄʀᴏᴘ ɢʀᴏᴡᴛʜ &X&E&B&E&B&E&B(ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ɢʀᴏᴡᴛʜ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bɢɪᴠᴇꜱ ᴀʟʟ ᴄʀᴏᴘꜱ ᴡɪᴛʜɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ'
+          - '  &X&E&B&E&B&E&Bɪɴᴄʀᴇᴀꜱᴇᴅ ɢʀᴏᴡᴛʜ ꜱᴘᴇᴇᴅ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F3'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʙᴏᴏꜱᴛ: &X&0&0&D&C&F&F3x ꜱᴘᴇᴇᴅ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$500,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+    '3':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmU5NzNjNGFlOTEyZTQ3ZjcxNGZkZjg3NmU1NmIwOGNkNzI3MjdjODM0ZTg4M2I5MjYzNTJiMTBkMGMyMGEwOSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴄʀᴏᴘ ɢʀᴏᴡᴛʜ &X&E&B&E&B&E&B(ᴀᴠᴀɪʟᴀʙʟᴇ)'        
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ɢʀᴏᴡᴛʜ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bɢɪᴠᴇꜱ ᴀʟʟ ᴄʀᴏᴘꜱ ᴡɪᴛʜɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ'
+          - '  &X&E&B&E&B&E&Bɪɴᴄʀᴇᴀꜱᴇᴅ ɢʀᴏᴡᴛʜ ꜱᴘᴇᴇᴅ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F4'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʙᴏᴏꜱᴛ: &X&0&0&D&C&F&F4x ꜱᴘᴇᴇᴅ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$1,000,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmU5NzNjNGFlOTEyZTQ3ZjcxNGZkZjg3NmU1NmIwOGNkNzI3MjdjODM0ZTg4M2I5MjYzNTJiMTBkMGMyMGEwOSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴄʀᴏᴘ ɢʀᴏᴡᴛʜ &X&E&B&E&B&E&B(ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ɢʀᴏᴡᴛʜ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bɢɪᴠᴇꜱ ᴀʟʟ ᴄʀᴏᴘꜱ ᴡɪᴛʜɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ'
+          - '  &X&E&B&E&B&E&Bɪɴᴄʀᴇᴀꜱᴇᴅ ɢʀᴏᴡᴛʜ ꜱᴘᴇᴇᴅ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F4'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʙᴏᴏꜱᴛ: &X&0&0&D&C&F&F4x ꜱᴘᴇᴇᴅ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$1,000,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+    '4':
+      has-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU3NjBiYmMxMTNjMjczZmFjNDA4OTZmYTIwODlhNTZjYzc0NmE3OWE3YTgyNzVmNjM4NTdlNjllNmY3NzAzYSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&F&F&2&B&2&Bᴍᴀx ʟᴇᴠᴇʟ'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''        
+          - '  &X&E&B&E&B&E&Bʏᴏᴜ ʜᴀᴠᴇ ʀᴇᴀᴄʜᴇᴅ ᴛʜᴇ ᴍᴀxɪᴍᴜᴍ'
+          - '  &X&E&B&E&B&E&Bʟᴇᴠᴇʟ ᴏꜰ ᴛʜᴇ ɢʀᴏᴡᴛʜ ᴜᴘɢʀᴀᴅᴇ!'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU3NjBiYmMxMTNjMjczZmFjNDA4OTZmYTIwODlhNTZjYzc0NmE3OWE3YTgyNzVmNjM4NTdlNjllNmY3NzAzYSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&F&F&2&B&2&Bᴍᴀx ʟᴇᴠᴇʟ'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''        
+          - '  &X&E&B&E&B&E&Bʏᴏᴜ ʜᴀᴠᴇ ʀᴇᴀᴄʜᴇᴅ ᴛʜᴇ ᴍᴀxɪᴍᴜᴍ'
+          - '  &X&E&B&E&B&E&Bʟᴇᴠᴇʟ ᴏꜰ ᴛʜᴇ ɢʀᴏᴡᴛʜ ᴜᴘɢʀᴀᴅᴇ!'
+          - ''
+  spawner-rates:
+    item: '^'
+    '1':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTdiMjE4OTMwMGYzMzliYTA1MGUwMWFlMmE1NDBiN2U4OWVmODk2YTU1Yzc5MTZkY2M5ZTU4NTFhZjg2NDExZSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ꜱᴘᴀᴡɴᴇʀ ʙᴏᴏꜱᴛ &X&E&B&E&B&E&B(ᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ꜱᴘᴀᴡɴᴇʀ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bɢɪᴠᴇꜱ ᴀʟʟ ꜱᴘᴀᴡɴᴇʀꜱ ᴡɪᴛʜɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ'
+          - '  &X&E&B&E&B&E&Bɪɴᴄʀᴇᴀꜱᴇᴅ ꜱᴘᴀᴡɴᴇʀ ꜱᴘᴇᴇᴅ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F2'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʙᴏᴏꜱᴛ: &X&0&0&D&C&F&F2x ꜱᴘᴇᴇᴅ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$500,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTdiMjE4OTMwMGYzMzliYTA1MGUwMWFlMmE1NDBiN2U4OWVmODk2YTU1Yzc5MTZkY2M5ZTU4NTFhZjg2NDExZSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ꜱᴘᴀᴡɴᴇʀ ʙᴏᴏꜱᴛ &X&E&B&E&B&E&B(ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ꜱᴘᴀᴡɴᴇʀ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bɢɪᴠᴇꜱ ᴀʟʟ ꜱᴘᴀᴡɴᴇʀꜱ ᴡɪᴛʜɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ'
+          - '  &X&E&B&E&B&E&Bɪɴᴄʀᴇᴀꜱᴇᴅ ꜱᴘᴀᴡɴᴇʀ ꜱᴘᴇᴇᴅ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F2'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʙᴏᴏꜱᴛ: &X&0&0&D&C&F&F2x ꜱᴘᴇᴇᴅ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$500,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+    '2':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTdiMjE4OTMwMGYzMzliYTA1MGUwMWFlMmE1NDBiN2U4OWVmODk2YTU1Yzc5MTZkY2M5ZTU4NTFhZjg2NDExZSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ꜱᴘᴀᴡɴᴇʀ ʙᴏᴏꜱᴛ &X&E&B&E&B&E&B(ᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ꜱᴘᴀᴡɴᴇʀ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bɢɪᴠᴇꜱ ᴀʟʟ ꜱᴘᴀᴡɴᴇʀꜱ ᴡɪᴛʜɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ'
+          - '  &X&E&B&E&B&E&Bɪɴᴄʀᴇᴀꜱᴇᴅ ꜱᴘᴀᴡɴᴇʀ ꜱᴘᴇᴇᴅ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F3'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʙᴏᴏꜱᴛ: &X&0&0&D&C&F&F3x ꜱᴘᴇᴇᴅ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$1,000,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTdiMjE4OTMwMGYzMzliYTA1MGUwMWFlMmE1NDBiN2U4OWVmODk2YTU1Yzc5MTZkY2M5ZTU4NTFhZjg2NDExZSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ꜱᴘᴀᴡɴᴇʀ ʙᴏᴏꜱᴛ &X&E&B&E&B&E&B(ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ꜱᴘᴀᴡɴᴇʀ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bɢɪᴠᴇꜱ ᴀʟʟ ꜱᴘᴀᴡɴᴇʀꜱ ᴡɪᴛʜɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ'
+          - '  &X&E&B&E&B&E&Bɪɴᴄʀᴇᴀꜱᴇᴅ ꜱᴘᴀᴡɴᴇʀ ꜱᴘᴇᴇᴅ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F3'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʙᴏᴏꜱᴛ: &X&0&0&D&C&F&F3x ꜱᴘᴇᴇᴅ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$1,000,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+    '3':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTdiMjE4OTMwMGYzMzliYTA1MGUwMWFlMmE1NDBiN2U4OWVmODk2YTU1Yzc5MTZkY2M5ZTU4NTFhZjg2NDExZSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ꜱᴘᴀᴡɴᴇʀ ʙᴏᴏꜱᴛ &X&E&B&E&B&E&B(ᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ꜱᴘᴀᴡɴᴇʀ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bɢɪᴠᴇꜱ ᴀʟʟ ꜱᴘᴀᴡɴᴇʀꜱ ᴡɪᴛʜɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ'
+          - '  &X&E&B&E&B&E&Bɪɴᴄʀᴇᴀꜱᴇᴅ ꜱᴘᴀᴡɴᴇʀ ꜱᴘᴇᴇᴅ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F4'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʙᴏᴏꜱᴛ: &X&0&0&D&C&F&F5x ꜱᴘᴇᴇᴅ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$2,500,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTdiMjE4OTMwMGYzMzliYTA1MGUwMWFlMmE1NDBiN2U4OWVmODk2YTU1Yzc5MTZkY2M5ZTU4NTFhZjg2NDExZSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ꜱᴘᴀᴡɴᴇʀ ʙᴏᴏꜱᴛ &X&E&B&E&B&E&B(ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ꜱᴘᴀᴡɴᴇʀ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bɢɪᴠᴇꜱ ᴀʟʟ ꜱᴘᴀᴡɴᴇʀꜱ ᴡɪᴛʜɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ'
+          - '  &X&E&B&E&B&E&Bɪɴᴄʀᴇᴀꜱᴇᴅ ꜱᴘᴀᴡɴᴇʀ ꜱᴘᴇᴇᴅ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F4'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʙᴏᴏꜱᴛ: &X&0&0&D&C&F&F5x ꜱᴘᴇᴇᴅ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$2,500,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+    '4':
+      has-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU3NjBiYmMxMTNjMjczZmFjNDA4OTZmYTIwODlhNTZjYzc0NmE3OWE3YTgyNzVmNjM4NTdlNjllNmY3NzAzYSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&F&F&2&B&2&Bᴍᴀx ʟᴇᴠᴇʟ'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''        
+          - '  &X&E&B&E&B&E&Bʏᴏᴜ ʜᴀᴠᴇ ʀᴇᴀᴄʜᴇᴅ ᴛʜᴇ ᴍᴀxɪᴍᴜᴍ'
+          - '  &X&E&B&E&B&E&Bʟᴇᴠᴇʟ ᴏꜰ ᴛʜᴇ ꜱᴘᴀᴡɴᴇʀ ᴜᴘɢʀᴀᴅᴇ!'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU3NjBiYmMxMTNjMjczZmFjNDA4OTZmYTIwODlhNTZjYzc0NmE3OWE3YTgyNzVmNjM4NTdlNjllNmY3NzAzYSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&F&F&2&B&2&Bᴍᴀx ʟᴇᴠᴇʟ'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''        
+          - '  &X&E&B&E&B&E&Bʏᴏᴜ ʜᴀᴠᴇ ʀᴇᴀᴄʜᴇᴅ ᴛʜᴇ ᴍᴀxɪᴍᴜᴍ'
+          - '  &X&E&B&E&B&E&Bʟᴇᴠᴇʟ ᴏꜰ ᴛʜᴇ ꜱᴘᴀᴡɴᴇʀ ᴜᴘɢʀᴀᴅᴇ!'
+          - ''
+  mob-drops:
+    item: '*'
+    '1':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTVkOTJlODllNDczN2RjZmFlNWU1NzFjNzZmNzYwNGE3YWI3YzllMDNmNzhjMTgyMTcxZDEwOTU3MTQxNTZkMSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴘʀᴇᴍɪᴜᴍ ᴅʀᴏᴘꜱ &X&E&B&E&B&E&B(ᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ᴅʀᴏᴘꜱ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bɢɪᴠᴇꜱ ᴀʟʟ ᴍᴏʙꜱ ᴡɪᴛʜɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ'
+          - '  &X&E&B&E&B&E&Bɪɴᴄʀᴇᴀꜱᴇᴅ ʟᴏᴏᴛ ᴅʀᴏᴘꜱ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F2'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʙᴏᴏꜱᴛ: &X&0&0&D&C&F&F2x ᴅʀᴏᴘꜱ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$1,000,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTVkOTJlODllNDczN2RjZmFlNWU1NzFjNzZmNzYwNGE3YWI3YzllMDNmNzhjMTgyMTcxZDEwOTU3MTQxNTZkMSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴘʀᴇᴍɪᴜᴍ ᴅʀᴏᴘꜱ &X&E&B&E&B&E&B(ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ᴅʀᴏᴘꜱ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bɢɪᴠᴇꜱ ᴀʟʟ ᴍᴏʙꜱ ᴡɪᴛʜɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ'
+          - '  &X&E&B&E&B&E&Bɪɴᴄʀᴇᴀꜱᴇᴅ ʟᴏᴏᴛ ᴅʀᴏᴘꜱ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F2'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʙᴏᴏꜱᴛ: &X&0&0&D&C&F&F2x ᴅʀᴏᴘꜱ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$1,000,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+    '2':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTVkOTJlODllNDczN2RjZmFlNWU1NzFjNzZmNzYwNGE3YWI3YzllMDNmNzhjMTgyMTcxZDEwOTU3MTQxNTZkMSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴘʀᴇᴍɪᴜᴍ ᴅʀᴏᴘꜱ &X&E&B&E&B&E&B(ᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ᴅʀᴏᴘꜱ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bɢɪᴠᴇꜱ ᴀʟʟ ᴍᴏʙꜱ ᴡɪᴛʜɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ'
+          - '  &X&E&B&E&B&E&Bɪɴᴄʀᴇᴀꜱᴇᴅ ʟᴏᴏᴛ ᴅʀᴏᴘꜱ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F3'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʙᴏᴏꜱᴛ: &X&0&0&D&C&F&F3x ᴅʀᴏᴘꜱ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$2,000,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTVkOTJlODllNDczN2RjZmFlNWU1NzFjNzZmNzYwNGE3YWI3YzllMDNmNzhjMTgyMTcxZDEwOTU3MTQxNTZkMSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴘʀᴇᴍɪᴜᴍ ᴅʀᴏᴘꜱ &X&E&B&E&B&E&B(ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ᴅʀᴏᴘꜱ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bɢɪᴠᴇꜱ ᴀʟʟ ᴍᴏʙꜱ ᴡɪᴛʜɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ'
+          - '  &X&E&B&E&B&E&Bɪɴᴄʀᴇᴀꜱᴇᴅ ʟᴏᴏᴛ ᴅʀᴏᴘꜱ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F3'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʙᴏᴏꜱᴛ: &X&0&0&D&C&F&F3x ᴅʀᴏᴘꜱ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$2,000,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+    '3':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTVkOTJlODllNDczN2RjZmFlNWU1NzFjNzZmNzYwNGE3YWI3YzllMDNmNzhjMTgyMTcxZDEwOTU3MTQxNTZkMSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴘʀᴇᴍɪᴜᴍ ᴅʀᴏᴘꜱ &X&E&B&E&B&E&B(ᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ᴅʀᴏᴘꜱ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bɢɪᴠᴇꜱ ᴀʟʟ ᴍᴏʙꜱ ᴡɪᴛʜɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ'
+          - '  &X&E&B&E&B&E&Bɪɴᴄʀᴇᴀꜱᴇᴅ ʟᴏᴏᴛ ᴅʀᴏᴘꜱ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F4'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʙᴏᴏꜱᴛ: &X&0&0&D&C&F&F5x ᴅʀᴏᴘꜱ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$5,000,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTVkOTJlODllNDczN2RjZmFlNWU1NzFjNzZmNzYwNGE3YWI3YzllMDNmNzhjMTgyMTcxZDEwOTU3MTQxNTZkMSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴘʀᴇᴍɪᴜᴍ ᴅʀᴏᴘꜱ &X&E&B&E&B&E&B(ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ᴅʀᴏᴘꜱ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bɢɪᴠᴇꜱ ᴀʟʟ ᴍᴏʙꜱ ᴡɪᴛʜɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ'
+          - '  &X&E&B&E&B&E&Bɪɴᴄʀᴇᴀꜱᴇᴅ ʟᴏᴏᴛ ᴅʀᴏᴘꜱ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F4'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʙᴏᴏꜱᴛ: &X&0&0&D&C&F&F5x ᴅʀᴏᴘꜱ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$5,000,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+    '4':
+      has-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU3NjBiYmMxMTNjMjczZmFjNDA4OTZmYTIwODlhNTZjYzc0NmE3OWE3YTgyNzVmNjM4NTdlNjllNmY3NzAzYSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&F&F&2&B&2&Bᴍᴀx ʟᴇᴠᴇʟ'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bʏᴏᴜ ʜᴀᴠᴇ ʀᴇᴀᴄʜᴇᴅ ᴛʜᴇ ᴍᴀxɪᴍᴜᴍ'
+          - '  &X&E&B&E&B&E&Bʟᴇᴠᴇʟ ᴏꜰ ᴛʜᴇ ʟᴏᴏᴛ ᴜᴘɢʀᴀᴅᴇ!'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU3NjBiYmMxMTNjMjczZmFjNDA4OTZmYTIwODlhNTZjYzc0NmE3OWE3YTgyNzVmNjM4NTdlNjllNmY3NzAzYSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&F&F&2&B&2&Bᴍᴀx ʟᴇᴠᴇʟ'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bʏᴏᴜ ʜᴀᴠᴇ ʀᴇᴀᴄʜᴇᴅ ᴛʜᴇ ᴍᴀxɪᴍᴜᴍ'
+          - '  &X&E&B&E&B&E&Bʟᴇᴠᴇʟ ᴏꜰ ᴛʜᴇ ʟᴏᴏᴛ ᴜᴘɢʀᴀᴅᴇ!'
+          - ''
+  members-limit:
+    item: '~'
+    '1':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGU5Njg4Yjk1MGQ4ODBiNTViN2FhMmNmY2Q3NmU1YTBmYTk0YWFjNmQxNmY3OGU4MzNmNzQ0M2VhMjlmZWQzIn19fQ=='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴍᴇᴍʙᴇʀꜱ ꜱɪᴢᴇ &X&E&B&E&B&E&B(ᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ᴍᴇᴍʙᴇʀꜱ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ᴛʜᴇ ᴍᴀxɪᴍᴜᴍ ᴀʟʟᴏᴡᴇᴅ'
+          - '  &X&E&B&E&B&E&Bᴍᴇᴍʙᴇʀꜱ ɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F2'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴀᴍᴏᴜɴᴛ: &X&0&0&D&C&F&F8x ᴍᴇᴍʙᴇʀꜱ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$100,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGU5Njg4Yjk1MGQ4ODBiNTViN2FhMmNmY2Q3NmU1YTBmYTk0YWFjNmQxNmY3OGU4MzNmNzQ0M2VhMjlmZWQzIn19fQ=='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴍᴇᴍʙᴇʀꜱ ꜱɪᴢᴇ &X&E&B&E&B&E&B(ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ᴍᴇᴍʙᴇʀꜱ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ᴛʜᴇ ᴍᴀxɪᴍᴜᴍ ᴀʟʟᴏᴡᴇᴅ'
+          - '  &X&E&B&E&B&E&Bᴍᴇᴍʙᴇʀꜱ ɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F2'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴀᴍᴏᴜɴᴛ: &X&0&0&D&C&F&F8x ᴍᴇᴍʙᴇʀꜱ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$100,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+    '2':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGU5Njg4Yjk1MGQ4ODBiNTViN2FhMmNmY2Q3NmU1YTBmYTk0YWFjNmQxNmY3OGU4MzNmNzQ0M2VhMjlmZWQzIn19fQ=='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴍᴇᴍʙᴇʀꜱ ꜱɪᴢᴇ &X&E&B&E&B&E&B(ᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ᴍᴇᴍʙᴇʀꜱ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ᴛʜᴇ ᴍᴀxɪᴍᴜᴍ ᴀʟʟᴏᴡᴇᴅ'
+          - '  &X&E&B&E&B&E&Bᴍᴇᴍʙᴇʀꜱ ɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F3'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴀᴍᴏᴜɴᴛ: &X&0&0&D&C&F&F16x ᴍᴇᴍʙᴇʀꜱ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$300,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGU5Njg4Yjk1MGQ4ODBiNTViN2FhMmNmY2Q3NmU1YTBmYTk0YWFjNmQxNmY3OGU4MzNmNzQ0M2VhMjlmZWQzIn19fQ=='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴍᴇᴍʙᴇʀꜱ ꜱɪᴢᴇ &X&E&B&E&B&E&B(ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ᴍᴇᴍʙᴇʀꜱ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ᴛʜᴇ ᴍᴀxɪᴍᴜᴍ ᴀʟʟᴏᴡᴇᴅ'
+          - '  &X&E&B&E&B&E&Bᴍᴇᴍʙᴇʀꜱ ɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F3'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴀᴍᴏᴜɴᴛ: &X&0&0&D&C&F&F16x ᴍᴇᴍʙᴇʀꜱ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$300,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+    '3':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGU5Njg4Yjk1MGQ4ODBiNTViN2FhMmNmY2Q3NmU1YTBmYTk0YWFjNmQxNmY3OGU4MzNmNzQ0M2VhMjlmZWQzIn19fQ=='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴍᴇᴍʙᴇʀꜱ ꜱɪᴢᴇ &X&E&B&E&B&E&B(ᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ᴍᴇᴍʙᴇʀꜱ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ᴛʜᴇ ᴍᴀxɪᴍᴜᴍ ᴀʟʟᴏᴡᴇᴅ'
+          - '  &X&E&B&E&B&E&Bᴍᴇᴍʙᴇʀꜱ ɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F4'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴀᴍᴏᴜɴᴛ: &X&0&0&D&C&F&F32x ᴍᴇᴍʙᴇʀꜱ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$500,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGU5Njg4Yjk1MGQ4ODBiNTViN2FhMmNmY2Q3NmU1YTBmYTk0YWFjNmQxNmY3OGU4MzNmNzQ0M2VhMjlmZWQzIn19fQ=='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴍᴇᴍʙᴇʀꜱ ꜱɪᴢᴇ &X&E&B&E&B&E&B(ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ᴍᴇᴍʙᴇʀꜱ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ᴛʜᴇ ᴍᴀxɪᴍᴜᴍ ᴀʟʟᴏᴡᴇᴅ'
+          - '  &X&E&B&E&B&E&Bᴍᴇᴍʙᴇʀꜱ ɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F4'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴀᴍᴏᴜɴᴛ: &X&0&0&D&C&F&F32x ᴍᴇᴍʙᴇʀꜱ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$500,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+    '4':
+      has-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU3NjBiYmMxMTNjMjczZmFjNDA4OTZmYTIwODlhNTZjYzc0NmE3OWE3YTgyNzVmNjM4NTdlNjllNmY3NzAzYSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&F&F&2&B&2&Bᴍᴀx ʟᴇᴠᴇʟ'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bʏᴏᴜ ʜᴀᴠᴇ ʀᴇᴀᴄʜᴇᴅ ᴛʜᴇ ᴍᴀxɪᴍᴜᴍ'
+          - '  &X&E&B&E&B&E&Bʟᴇᴠᴇʟ ᴏꜰ ᴛʜᴇ ᴍᴇᴍʙᴇʀꜱ ꜱɪᴢᴇ ᴜᴘɢʀᴀᴅᴇ!'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU3NjBiYmMxMTNjMjczZmFjNDA4OTZmYTIwODlhNTZjYzc0NmE3OWE3YTgyNzVmNjM4NTdlNjllNmY3NzAzYSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&F&F&2&B&2&Bᴍᴀx ʟᴇᴠᴇʟ'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bʏᴏᴜ ʜᴀᴠᴇ ʀᴇᴀᴄʜᴇᴅ ᴛʜᴇ ᴍᴀxɪᴍᴜᴍ'
+          - '  &X&E&B&E&B&E&Bʟᴇᴠᴇʟ ᴏꜰ ᴛʜᴇ ᴍᴇᴍʙᴇʀꜱ ꜱɪᴢᴇ ᴜᴘɢʀᴀᴅᴇ!'
+          - ''
+  border-size:
+    item: '!'
+    '1':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ=='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ʙᴏʀᴅᴇʀ ꜱɪᴢᴇ &X&E&B&E&B&E&B(ᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ᴍᴇᴍʙᴇʀꜱ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ᴛʜᴇ ᴍᴀxɪᴍᴜᴍ ᴀʟʟᴏᴡᴇᴅ'
+          - '  &X&E&B&E&B&E&Bᴍᴇᴍʙᴇʀꜱ ɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F2'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʀᴀᴅɪᴜꜱ: &X&0&0&D&C&F&F50x ʙʟᴏᴄᴋꜱ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$30,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ=='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ʙᴏʀᴅᴇʀ ꜱɪᴢᴇ &X&E&B&E&B&E&B(ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ᴍᴇᴍʙᴇʀꜱ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ᴛʜᴇ ᴍᴀxɪᴍᴜᴍ ᴀʟʟᴏᴡᴇᴅ'
+          - '  &X&E&B&E&B&E&Bᴍᴇᴍʙᴇʀꜱ ɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F2'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʀᴀᴅɪᴜꜱ: &X&0&0&D&C&F&F50x ʙʟᴏᴄᴋꜱ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$30,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+    '2':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ=='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ʙᴏʀᴅᴇʀ ꜱɪᴢᴇ &X&E&B&E&B&E&B(ᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ᴍᴇᴍʙᴇʀꜱ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ᴛʜᴇ ᴍᴀxɪᴍᴜᴍ ᴀʟʟᴏᴡᴇᴅ'
+          - '  &X&E&B&E&B&E&Bᴍᴇᴍʙᴇʀꜱ ɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F3'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʀᴀᴅɪᴜꜱ: &X&0&0&D&C&F&F75x ʙʟᴏᴄᴋꜱ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$80,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ=='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ʙᴏʀᴅᴇʀ ꜱɪᴢᴇ &X&E&B&E&B&E&B(ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ᴍᴇᴍʙᴇʀꜱ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ᴛʜᴇ ᴍᴀxɪᴍᴜᴍ ᴀʟʟᴏᴡᴇᴅ'
+          - '  &X&E&B&E&B&E&Bᴍᴇᴍʙᴇʀꜱ ɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F3'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʀᴀᴅɪᴜꜱ: &X&0&0&D&C&F&F75x ʙʟᴏᴄᴋꜱ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$80,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+    '3':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ=='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ʙᴏʀᴅᴇʀ ꜱɪᴢᴇ &X&E&B&E&B&E&B(ᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ᴍᴇᴍʙᴇʀꜱ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ᴛʜᴇ ᴍᴀxɪᴍᴜᴍ ᴀʟʟᴏᴡᴇᴅ'
+          - '  &X&E&B&E&B&E&Bᴍᴇᴍʙᴇʀꜱ ɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F4'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʀᴀᴅɪᴜꜱ: &X&0&0&D&C&F&F125x ʙʟᴏᴄᴋꜱ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$150,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ=='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ʙᴏʀᴅᴇʀ ꜱɪᴢᴇ &X&E&B&E&B&E&B(ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ᴍᴇᴍʙᴇʀꜱ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ᴛʜᴇ ᴍᴀxɪᴍᴜᴍ ᴀʟʟᴏᴡᴇᴅ'
+          - '  &X&E&B&E&B&E&Bᴍᴇᴍʙᴇʀꜱ ɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F4'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʀᴀᴅɪᴜꜱ: &X&0&0&D&C&F&F125x ʙʟᴏᴄᴋꜱ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$150,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+    '4':
+      has-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU3NjBiYmMxMTNjMjczZmFjNDA4OTZmYTIwODlhNTZjYzc0NmE3OWE3YTgyNzVmNjM4NTdlNjllNmY3NzAzYSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&F&F&2&B&2&Bᴍᴀx ʟᴇᴠᴇʟ'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bʏᴏᴜ ʜᴀᴠᴇ ʀᴇᴀᴄʜᴇᴅ ᴛʜᴇ ᴍᴀxɪᴍᴜᴍ'
+          - '  &X&E&B&E&B&E&Bʟᴇᴠᴇʟ ᴏꜰ ᴛʜᴇ ʙᴏʀᴅᴇʀ ꜱɪᴢᴇ ᴜᴘɢʀᴀᴅᴇ!'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU3NjBiYmMxMTNjMjczZmFjNDA4OTZmYTIwODlhNTZjYzc0NmE3OWE3YTgyNzVmNjM4NTdlNjllNmY3NzAzYSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&F&F&2&B&2&Bᴍᴀx ʟᴇᴠᴇʟ'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bʏᴏᴜ ʜᴀᴠᴇ ʀᴇᴀᴄʜᴇᴅ ᴛʜᴇ ᴍᴀxɪᴍᴜᴍ'
+          - '  &X&E&B&E&B&E&Bʟᴇᴠᴇʟ ᴏꜰ ᴛʜᴇ ʙᴏʀᴅᴇʀ ꜱɪᴢᴇ ᴜᴘɢʀᴀᴅᴇ!'
+          - ''
+  generator-rates:
+    item: '+'
+    '1':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWU1NGFiYmM2NWIxM2E0MmMyOTU5MGEwY2Y5ZDNlMDA3MDJkMWU2MGQ5NzRmOTI4NmE3YzE3MjY3ZjIyODJjOSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴏꜱᴛ &X&E&B&E&B&E&B(ᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ɢᴇɴᴇʀᴀᴛᴏʀ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ʀᴀᴛᴇꜱ ᴏꜰ ᴏʀᴇꜱ ꜰʀᴏᴍ'
+          - '  &X&E&B&E&B&E&Bᴄᴏʙʙʟᴇꜱᴛᴏɴᴇ ɢᴇɴᴇʀᴀᴛᴏʀꜱ ɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F2'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʀᴀᴛᴇꜱ:'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B92% ꜱᴛᴏɴᴇ'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B5% ᴄᴏᴀʟ ᴏʀᴇ'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B5% ʀᴇᴅꜱᴛᴏɴᴇ ᴏʀᴇ'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$25,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWU1NGFiYmM2NWIxM2E0MmMyOTU5MGEwY2Y5ZDNlMDA3MDJkMWU2MGQ5NzRmOTI4NmE3YzE3MjY3ZjIyODJjOSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴏꜱᴛ &X&E&B&E&B&E&B(ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ɢᴇɴᴇʀᴀᴛᴏʀ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ʀᴀᴛᴇꜱ ᴏꜰ ᴏʀᴇꜱ ꜰʀᴏᴍ'
+          - '  &X&E&B&E&B&E&Bᴄᴏʙʙʟᴇꜱᴛᴏɴᴇ ɢᴇɴᴇʀᴀᴛᴏʀꜱ ɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F2'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʀᴀᴛᴇꜱ:'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B92% ꜱᴛᴏɴᴇ'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B5% ᴄᴏᴀʟ ᴏʀᴇ'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B5% ʀᴇᴅꜱᴛᴏɴᴇ ᴏʀᴇ'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$25,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+    '2':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWU1NGFiYmM2NWIxM2E0MmMyOTU5MGEwY2Y5ZDNlMDA3MDJkMWU2MGQ5NzRmOTI4NmE3YzE3MjY3ZjIyODJjOSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴏꜱᴛ &X&E&B&E&B&E&B(ᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ɢᴇɴᴇʀᴀᴛᴏʀ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ʀᴀᴛᴇꜱ ᴏꜰ ᴏʀᴇꜱ ꜰʀᴏᴍ'
+          - '  &X&E&B&E&B&E&Bᴄᴏʙʙʟᴇꜱᴛᴏɴᴇ ɢᴇɴᴇʀᴀᴛᴏʀꜱ ɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F3'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʀᴀᴛᴇꜱ:'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B80% ꜱᴛᴏɴᴇ'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B8% ᴄᴏᴀʟ ᴏʀᴇ'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B6% ʀᴇᴅꜱᴛᴏɴᴇ ᴏʀᴇ'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B4% ʟᴀᴘɪꜱ ᴏʀᴇ'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B2% ɪʀᴏɴ ᴏʀᴇ'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$75,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWU1NGFiYmM2NWIxM2E0MmMyOTU5MGEwY2Y5ZDNlMDA3MDJkMWU2MGQ5NzRmOTI4NmE3YzE3MjY3ZjIyODJjOSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴏꜱᴛ &X&E&B&E&B&E&B(ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ɢᴇɴᴇʀᴀᴛᴏʀ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ʀᴀᴛᴇꜱ ᴏꜰ ᴏʀᴇꜱ ꜰʀᴏᴍ'
+          - '  &X&E&B&E&B&E&Bᴄᴏʙʙʟᴇꜱᴛᴏɴᴇ ɢᴇɴᴇʀᴀᴛᴏʀꜱ ɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F3'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʀᴀᴛᴇꜱ:'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B80% ꜱᴛᴏɴᴇ'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B8% ᴄᴏᴀʟ ᴏʀᴇ'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B6% ʀᴇᴅꜱᴛᴏɴᴇ ᴏʀᴇ'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B4% ʟᴀᴘɪꜱ ᴏʀᴇ'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B2% ɪʀᴏɴ ᴏʀᴇ'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$75,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+    '3':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWU1NGFiYmM2NWIxM2E0MmMyOTU5MGEwY2Y5ZDNlMDA3MDJkMWU2MGQ5NzRmOTI4NmE3YzE3MjY3ZjIyODJjOSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴏꜱᴛ &X&E&B&E&B&E&B(ᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ɢᴇɴᴇʀᴀᴛᴏʀ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ʀᴀᴛᴇꜱ ᴏꜰ ᴏʀᴇꜱ ꜰʀᴏᴍ'
+          - '  &X&E&B&E&B&E&Bᴄᴏʙʙʟᴇꜱᴛᴏɴᴇ ɢᴇɴᴇʀᴀᴛᴏʀꜱ ɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F4'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʀᴀᴛᴇꜱ:'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B65% ꜱᴛᴏɴᴇ'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B10% ᴄᴏᴀʟ ᴏʀᴇ'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B9% ʀᴇᴅꜱᴛᴏɴᴇ ᴏʀᴇ'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B6% ʟᴀᴘɪꜱ ᴏʀᴇ'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B4% ɪʀᴏɴ ᴏʀᴇ'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B3% ɢᴏʟᴅ ᴏʀᴇ'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B2% ᴅɪᴀᴍᴏɴᴅ ᴏʀᴇ'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B1% ᴇᴍᴇʀᴀʟᴅ ᴏʀᴇ'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$150,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWU1NGFiYmM2NWIxM2E0MmMyOTU5MGEwY2Y5ZDNlMDA3MDJkMWU2MGQ5NzRmOTI4NmE3YzE3MjY3ZjIyODJjOSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴏꜱᴛ &X&E&B&E&B&E&B(ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ɢᴇɴᴇʀᴀᴛᴏʀ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ʀᴀᴛᴇꜱ ᴏꜰ ᴏʀᴇꜱ ꜰʀᴏᴍ'
+          - '  &X&E&B&E&B&E&Bᴄᴏʙʙʟᴇꜱᴛᴏɴᴇ ɢᴇɴᴇʀᴀᴛᴏʀꜱ ɪɴ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F4'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bʀᴀᴛᴇꜱ:'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B65% ꜱᴛᴏɴᴇ'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B10% ᴄᴏᴀʟ ᴏʀᴇ'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B9% ʀᴇᴅꜱᴛᴏɴᴇ ᴏʀᴇ'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B6% ʟᴀᴘɪꜱ ᴏʀᴇ'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B4% ɪʀᴏɴ ᴏʀᴇ'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B3% ɢᴏʟᴅ ᴏʀᴇ'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B2% ᴅɪᴀᴍᴏɴᴅ ᴏʀᴇ'
+          - '  &X&6&A&6&A&6&A- &X&E&B&E&B&E&B1% ᴇᴍᴇʀᴀʟᴅ ᴏʀᴇ'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$150,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+    '4':
+      has-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWU1NGFiYmM2NWIxM2E0MmMyOTU5MGEwY2Y5ZDNlMDA3MDJkMWU2MGQ5NzRmOTI4NmE3YzE3MjY3ZjIyODJjOSJ9fX0='
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU3NjBiYmMxMTNjMjczZmFjNDA4OTZmYTIwODlhNTZjYzc0NmE3OWE3YTgyNzVmNjM4NTdlNjllNmY3NzAzYSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&F&F&2&B&2&Bᴍᴀx ʟᴇᴠᴇʟ'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bʏᴏᴜ ʜᴀᴠᴇ ʀᴇᴀᴄʜᴇᴅ ᴛʜᴇ ᴍᴀxɪᴍᴜᴍ'
+          - '  &X&E&B&E&B&E&Bʟᴇᴠᴇʟ ᴏꜰ ᴛʜᴇ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴏꜱᴛ ᴜᴘɢʀᴀᴅᴇ!'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWU1NGFiYmM2NWIxM2E0MmMyOTU5MGEwY2Y5ZDNlMDA3MDJkMWU2MGQ5NzRmOTI4NmE3YzE3MjY3ZjIyODJjOSJ9fX0='
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU3NjBiYmMxMTNjMjczZmFjNDA4OTZmYTIwODlhNTZjYzc0NmE3OWE3YTgyNzVmNjM4NTdlNjllNmY3NzAzYSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&F&F&2&B&2&Bᴍᴀx ʟᴇᴠᴇʟ'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bʏᴏᴜ ʜᴀᴠᴇ ʀᴇᴀᴄʜᴇᴅ ᴛʜᴇ ᴍᴀxɪᴍᴜᴍ'
+          - '  &X&E&B&E&B&E&Bʟᴇᴠᴇʟ ᴏꜰ ᴛʜᴇ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴏꜱᴛ ᴜᴘɢʀᴀᴅᴇ!'
+          - ''
+  minecarts-limit:
+    item: '&'
+    '1':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTUxMmJlOGI5NDNkNWZiZjkxOGE1YjhlZjU3NDE3NDRkMjYxZDYwODE0NWEzZDJmMjIwM2FmZjk5MjVhYjliIn19fQ=='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴍɪɴᴇᴄᴀʀᴛ ɪɴᴄʀᴇᴀꜱᴇ &X&E&B&E&B&E&B(ᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ᴍɪɴᴇᴄᴀʀᴛ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ''ꜱ'
+          - '  &X&E&B&E&B&E&Bᴍᴀx ᴍɪɴᴇᴄᴀʀᴛꜱ ʟɪᴍɪᴛ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F2'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴀᴍᴏᴜɴᴛ: &X&0&0&D&C&F&F8x ᴍɪɴᴇᴄᴀʀᴛ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$1,000,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTUxMmJlOGI5NDNkNWZiZjkxOGE1YjhlZjU3NDE3NDRkMjYxZDYwODE0NWEzZDJmMjIwM2FmZjk5MjVhYjliIn19fQ=='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴍɪɴᴇᴄᴀʀᴛ ɪɴᴄʀᴇᴀꜱᴇ &X&E&B&E&B&E&B(ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ᴍɪɴᴇᴄᴀʀᴛ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ''ꜱ'
+          - '  &X&E&B&E&B&E&Bᴍᴀx ᴍɪɴᴇᴄᴀʀᴛꜱ ʟɪᴍɪᴛ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F2'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴀᴍᴏᴜɴᴛ: &X&0&0&D&C&F&F8x ᴍɪɴᴇᴄᴀʀᴛ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$1,000,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+    '2':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTUxMmJlOGI5NDNkNWZiZjkxOGE1YjhlZjU3NDE3NDRkMjYxZDYwODE0NWEzZDJmMjIwM2FmZjk5MjVhYjliIn19fQ=='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴍɪɴᴇᴄᴀʀᴛ ɪɴᴄʀᴇᴀꜱᴇ &X&E&B&E&B&E&B(ᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ᴍɪɴᴇᴄᴀʀᴛ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ''ꜱ'
+          - '  &X&E&B&E&B&E&Bᴍᴀx ᴍɪɴᴇᴄᴀʀᴛꜱ ʟɪᴍɪᴛ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F3'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴀᴍᴏᴜɴᴛ: &X&0&0&D&C&F&F16x ᴍɪɴᴇᴄᴀʀᴛ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$3,000,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTUxMmJlOGI5NDNkNWZiZjkxOGE1YjhlZjU3NDE3NDRkMjYxZDYwODE0NWEzZDJmMjIwM2FmZjk5MjVhYjliIn19fQ=='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴍɪɴᴇᴄᴀʀᴛ ɪɴᴄʀᴇᴀꜱᴇ &X&E&B&E&B&E&B(ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ᴍɪɴᴇᴄᴀʀᴛ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ''ꜱ'
+          - '  &X&E&B&E&B&E&Bᴍᴀx ᴍɪɴᴇᴄᴀʀᴛꜱ ʟɪᴍɪᴛ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F3'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴀᴍᴏᴜɴᴛ: &X&0&0&D&C&F&F16x ᴍɪɴᴇᴄᴀʀᴛ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$3,000,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+    '3':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTUxMmJlOGI5NDNkNWZiZjkxOGE1YjhlZjU3NDE3NDRkMjYxZDYwODE0NWEzZDJmMjIwM2FmZjk5MjVhYjliIn19fQ=='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴍɪɴᴇᴄᴀʀᴛ ɪɴᴄʀᴇᴀꜱᴇ &X&E&B&E&B&E&B(ᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ᴍɪɴᴇᴄᴀʀᴛ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ''ꜱ'
+          - '  &X&E&B&E&B&E&Bᴍᴀx ᴍɪɴᴇᴄᴀʀᴛꜱ ʟɪᴍɪᴛ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F4'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴀᴍᴏᴜɴᴛ: &X&0&0&D&C&F&F32x ᴍɪɴᴇᴄᴀʀᴛ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$9,000,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTUxMmJlOGI5NDNkNWZiZjkxOGE1YjhlZjU3NDE3NDRkMjYxZDYwODE0NWEzZDJmMjIwM2FmZjk5MjVhYjliIn19fQ=='
+        name: '&X&6&A&6&A&6&A● &X&0&5&E&5&2&0ᴍɪɴᴇᴄᴀʀᴛ ɪɴᴄʀᴇᴀꜱᴇ &X&E&B&E&B&E&B(ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ)'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bᴘᴜʀᴄʜᴀꜱɪɴɢ ᴛʜᴇ ᴍɪɴᴇᴄᴀʀᴛ ᴜᴘɢʀᴀᴅᴇ'
+          - '  &X&E&B&E&B&E&Bᴡɪʟʟ ɪɴᴄʀᴇᴀꜱᴇ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ''ꜱ'
+          - '  &X&E&B&E&B&E&Bᴍᴀx ᴍɪɴᴇᴄᴀʀᴛꜱ ʟɪᴍɪᴛ.'
+          - ''
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bɴᴇxᴛ ʟᴇᴠᴇʟ: &X&0&0&D&C&F&F4'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴀᴍᴏᴜɴᴛ: &X&0&0&D&C&F&F32x ᴍɪɴᴇᴄᴀʀᴛ'
+          - '  &X&0&0&D&C&F&F❙ &X&E&B&E&B&E&Bᴘʀɪᴄᴇ: &X&0&0&D&C&F&F$9,000,000'
+          - ''
+          - '  &X&1&D&F&5&1&6▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+          - ''
+    '4':
+      has-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU3NjBiYmMxMTNjMjczZmFjNDA4OTZmYTIwODlhNTZjYzc0NmE3OWE3YTgyNzVmNjM4NTdlNjllNmY3NzAzYSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&F&F&2&B&2&Bᴍᴀx ʟᴇᴠᴇʟ'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bʏᴏᴜ ʜᴀᴠᴇ ʀᴇᴀᴄʜᴇᴅ ᴛʜᴇ ᴍᴀxɪᴍᴜᴍ'
+          - '  &X&E&B&E&B&E&Bʟᴇᴠᴇʟ ᴏꜰ ᴛʜᴇ ᴍɪɴᴇᴄᴀʀᴛ ᴜᴘɢʀᴀᴅᴇ!'
+          - ''
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 1.0
+        type: PLAYER_HEAD
+        skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU3NjBiYmMxMTNjMjczZmFjNDA4OTZmYTIwODlhNTZjYzc0NmE3OWE3YTgyNzVmNjM4NTdlNjllNmY3NzAzYSJ9fX0='
+        name: '&X&6&A&6&A&6&A● &X&F&F&2&B&2&Bᴍᴀx ʟᴇᴠᴇʟ'
+        lore:
+          - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+          - ''
+          - '  &X&E&B&E&B&E&Bʏᴏᴜ ʜᴀᴠᴇ ʀᴇᴀᴄʜᴇᴅ ᴛʜᴇ ᴍᴀxɪᴍᴜᴍ'
+          - '  &X&E&B&E&B&E&Bʟᴇᴠᴇʟ ᴏꜰ ᴛʜᴇ ᴍɪɴᴇᴄᴀʀᴛ ᴜᴘɢʀᴀᴅᴇ!'
+          - ''
+
+# 570549AE4Z8RO2JQ

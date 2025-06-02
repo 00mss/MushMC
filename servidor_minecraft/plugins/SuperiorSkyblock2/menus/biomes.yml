@@ -1,0 +1,254 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&nSeleccionar biomas'
+previous-menu: true
+
+pattern:
+  - '°'
+  - '+ $ $ $ $ $ $ $ $'
+  - ''
+  - '__     ^       ___'
+  - '_ ___       !@*%_'
+  - ''
+
+# Should the current biome be glowing?
+current-biome-glow: false
+
+items:
+  '$':
+    type: BLACK_STAINED_GLASS_PANE
+    name: '&f'  
+  '+':
+    type: LIME_STAINED_GLASS_PANE
+    name: '&f'  
+  '°':
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjE3OTk1YTdhZjJmYWU3MDFhMDgyY2RhMWQzODU2MDZjN2NjYmYwYjIxODYxMTRiZTkwMGM5MTM4Y2VlNjkwZiJ9fX0='
+    name: '&aSelección de biomas'
+    lore:
+      - '&8Artículo de información'
+      - ''
+      - '&fSelecciona un bioma en especifico '
+      - '&fy mejora el diseño de tu isla.  '
+      - ''
+      - '&e▸ ¡Selecciona tu diseño favorito!    '
+  '!':
+    biome: PLAINS
+    access:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDQ5NjVmZDY5ZGQ2NzIwM2I0NjgxMmY0MjMxOWY0M2EyNDgzN2VmM2EyNDc2ZWQwNDAxZWQzZmY5NmNjMzNhYiJ9fX0='
+      name: '&aBioma plantas &7(Disponible)'
+      lore:
+        - '&8Artículo de información'
+        - ''
+        - '&fTu isla cambiara de diseño '
+        - '&fa el diseño qué selecciones.  '
+        - ''
+        - '&e▸ ¡Si, comenzar con el proceso!    '
+    no-access:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDQ5NjVmZDY5ZGQ2NzIwM2I0NjgxMmY0MjMxOWY0M2EyNDgzN2VmM2EyNDc2ZWQwNDAxZWQzZmY5NmNjMzNhYiJ9fX0='
+      name: '&aBioma plantas &7(Bloqueado)'
+      lore:
+        - '&8Artículo de información'
+        - ''
+        - '&fTu isla cambiara de diseño '
+        - '&fa el diseño qué selecciones.  '
+        - ''
+        - '&e▸ ¡Si, comenzar con el proceso!    '
+  '@':
+    biome: JUNGLE
+    access:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWM3YjZiNGQ0ZDI5M2U0ZWM2ZTBkZjk2ZWZiMjg3N2IzMTZhMjY5MTRlY2Y2NjJlODdjYTE0NzA2OWE0MTgzOCJ9fX0='
+      name: '&eBioma jungla &7(Disponible)'
+      lore:
+        - '&8Artículo de información'
+        - ''
+        - '&fTu isla cambiara de diseño '
+        - '&fa el diseño qué selecciones.  '
+        - ''
+        - '&e▸ ¡Si, comenzar con el proceso!    '
+    no-access:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWM3YjZiNGQ0ZDI5M2U0ZWM2ZTBkZjk2ZWZiMjg3N2IzMTZhMjY5MTRlY2Y2NjJlODdjYTE0NzA2OWE0MTgzOCJ9fX0='
+      name: '&eBioma jungla &7(Bloqueado)'
+      lore:
+        - '&8Artículo de información'
+        - ''
+        - '&fTu isla cambiara de diseño '
+        - '&fa el diseño qué selecciones.  '
+        - ''
+        - '&e▸ ¡Si, comenzar con el proceso!    '
+  '%':
+    biome: TAIGA
+    access:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTNkNWU5ZTMwODYwMGZhNzQ5NjY1MWRhMmZmMmUxOTI0N2MzNDk2YjliNTE1ZmIxMThjYTVhNjcxZjNhZTg1In19fQ=='
+      name: '&3Bioma de taiga &7(Disponible)'
+      lore:
+        - '&8Artículo de información'
+        - ''
+        - '&fTu isla cambiara de diseño '
+        - '&fa el diseño qué selecciones.  '
+        - ''
+        - '&e▸ ¡Si, comenzar con el proceso!    '
+    no-access:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTNkNWU5ZTMwODYwMGZhNzQ5NjY1MWRhMmZmMmUxOTI0N2MzNDk2YjliNTE1ZmIxMThjYTVhNjcxZjNhZTg1In19fQ=='
+      name: '&3Bioma de taiga &7(Bloqueado)'
+      lore:
+        - '&8Artículo de información'
+        - ''
+        - '&fTu isla cambiara de diseño '
+        - '&fa el diseño qué selecciones.  '
+        - ''
+        - '&e▸ ¡Si, comenzar con el proceso!    '
+  '^':
+    biome: DESERT
+    access:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjdjMzNjZDBjMTRiYTgzMGRhMTQ5OTA3ZjdhNmFhZTgzNWI2YTM1YWVhMDFlMGNlMDczZmIzYzU5Y2M0NjMyNiJ9fX0='
+      name: '&eBioma de generadores &7(Disponible)'
+      lore:
+        - '&8Artículo de información'
+        - ''
+        - '&fTu isla cambiara de diseño '
+        - '&fa el diseño qué selecciones.  '
+        - ''
+        - '&e▸ ¡Si, comenzar con el proceso!    '
+    no-access:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjdjMzNjZDBjMTRiYTgzMGRhMTQ5OTA3ZjdhNmFhZTgzNWI2YTM1YWVhMDFlMGNlMDczZmIzYzU5Y2M0NjMyNiJ9fX0='
+      name: '&eBioma de generadores &7(Bloqueado)'
+      lore:
+        - '&8Artículo de información'
+        - ''
+        - '&fTu isla cambiara de diseño '
+        - '&fa el diseño qué selecciones.  '
+        - ''
+        - '&e▸ ¡Si, comenzar con el proceso!    '
+  '&':
+    biome: NETHER_WASTES
+    access:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTU2Y2E1YzY3OTMzNmRkNGYzMjYyZjRmYmMyM2MxYTJlZTBkODJhN2ZkODFlNmU2MjMzN2U1ZmQ1YzcifX19'
+      name: '&eNether Biome &a(Available)'
+      lore:
+        - '&7Change your island biome to nether.'
+        - '&cWarning ice, snow and water must go!'
+    no-access:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTU2Y2E1YzY3OTMzNmRkNGYzMjYyZjRmYmMyM2MxYTJlZTBkODJhN2ZkODFlNmU2MjMzN2U1ZmQ1YzcifX19'
+      name: '&eNether Biome &c(Unavailable)'
+      lore:
+        - '&7Change your island biome to nether.'
+        - '&cWarning ice snow, and water must go!'
+  '*':
+    biome: SWAMP
+    access:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjhhZjQyOTgxYTRlMDViOTg2ODkwMjA1YjI1NmIwNTM0MmVmMGE4ZTY0MzhiMDQ2NGQ2ZTQ3ZDIzYzEyNzYxNCJ9fX0='
+      name: '&2Bioma laguna &7(Disponible)'
+      lore:
+        - '&8Artículo de información'
+        - ''
+        - '&fTu isla cambiara de diseño '
+        - '&fa el diseño qué selecciones.  '
+        - ''
+        - '&e▸ ¡Si, comenzar con el proceso!    '
+    no-access:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjhhZjQyOTgxYTRlMDViOTg2ODkwMjA1YjI1NmIwNTM0MmVmMGE4ZTY0MzhiMDQ2NGQ2ZTQ3ZDIzYzEyNzYxNCJ9fX0='
+      name: '&2Bioma laguna &7(Bloqueado)'
+      lore:
+        - '&8Artículo de información'
+        - ''
+        - '&fTu isla cambiara de diseño '
+        - '&fa el diseño qué selecciones.  '
+        - ''
+        - '&e▸ ¡Si, comenzar con el proceso!    '
+  '~':
+    biome: WOODED_HILLS
+    access:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODJkNWZlZmUyMGRhZjMxYzIzOGVlMjI3ZGQxNDE4MjdhZGE1ZWY4NDgyZDhkMzU3YmJlNWE3Y2Y0MGFmODUifX19'
+      name: '&eMesa Biome &a(Available)'
+      lore:
+        - '&7Change your island biome to Mesa.'
+    no-access:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODJkNWZlZmUyMGRhZjMxYzIzOGVlMjI3ZGQxNDE4MjdhZGE1ZWY4NDgyZDhkMzU3YmJlNWE3Y2Y0MGFmODUifX19'
+      name: '&eMesa Biome &c(Unavailable)'
+      lore:
+        - '&7Change your island biome to Mesa.'
+
+sounds:
+  '!':
+    access:
+      type: ENTITY_ENDERMAN_TELEPORT
+      volume: 0.8
+      pitch: 0.2
+    no-access:
+      type: BLOCK_ANVIL_PLACE
+      volume: 0.2
+      pitch: 0.2
+  '@':
+    access:
+      type: ENTITY_ENDERMAN_TELEPORT
+      volume: 0.8
+      pitch: 0.2
+    no-access:
+      type: BLOCK_ANVIL_PLACE
+      volume: 0.2
+      pitch: 0.2
+  '%':
+    access:
+      type: ENTITY_ENDERMAN_TELEPORT
+      volume: 0.8
+      pitch: 0.2
+    no-access:
+      type: BLOCK_ANVIL_PLACE
+      volume: 0.2
+      pitch: 0.2
+  '^':
+    access:
+      type: ENTITY_ENDERMAN_TELEPORT
+      volume: 0.8
+      pitch: 0.2
+    no-access:
+      type: BLOCK_ANVIL_PLACE
+      volume: 0.2
+      pitch: 0.2
+  '&':
+    access:
+      type: ENTITY_ENDERMAN_TELEPORT
+      volume: 0.8
+      pitch: 0.2
+    no-access:
+      type: BLOCK_ANVIL_PLACE
+      volume: 0.2
+      pitch: 0.2
+  '*':
+    access:
+      type: ENTITY_ENDERMAN_TELEPORT
+      volume: 0.8
+      pitch: 0.2
+    no-access:
+      type: BLOCK_ANVIL_PLACE
+      volume: 0.2
+      pitch: 0.2
+  '~':
+    access:
+      type: ENTITY_ENDERMAN_TELEPORT
+      volume: 0.8
+      pitch: 0.2
+    no-access:
+      type: BLOCK_ANVIL_PLACE
+      volume: 0.2
+      pitch: 0.2

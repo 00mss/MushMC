@@ -1,0 +1,195 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&X&2&7&2&7&2&7Island Panel'
+previous-menu: true
+
+pattern:
+  - '1 1 1 1 2 2 2 1 1'
+  - '2 4 1 5 6 7 8 9 1'
+  - '2 = 1 2 + _ - 2 1'
+  - '1 1 1 1 2 2 2 1 1'
+
+items:
+  '1':
+    type: BLACK_STAINED_GLASS_PANE
+  '2':
+    type: GRAY_STAINED_GLASS_PANE
+    name: ''
+  '4':
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTZiYjlmYjk3YmE4N2NiNzI3Y2QwZmY0NzdmNzY5MzcwYmVhMTljY2JmYWZiNTgxNjI5Y2Q1NjM5ZjJmZWMyYiJ9fX0='
+    name: '&X&6&A&6&A&6&A● &X&0&0&F&B&1&7ɪꜱʟᴀɴᴅ ᴛᴇʟᴇᴘᴏʀᴛ'
+    lore:
+      - '&X&6&A&6&A&6&Aɪɴᴛᴇʀᴀᴄᴛɪᴠᴇ ɪᴛᴇᴍ'
+      - ''
+      - '  &X&E&B&E&B&E&Bᴛʀᴀᴠᴇʟ ᴛᴏ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ'
+      - '  &X&E&B&E&B&E&Bꜱᴘᴀᴡɴ, ꜱᴇᴛ ᴜꜱɪɴɢ ᴛʜᴇ'
+      - ''
+      - '  &X&0&5&E&5&2&0▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+      - ''
+  '5':
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTMzMDM0NjRkYjFmMWRjMjAyYjA3MDMzMzExMmVmN2ZhNjMyOTE1MDgwNzZmZjM1NGE5ZjBlYjYwMzAwODY0NCJ9fX0='
+    name: '&X&6&A&6&A&6&A● &X&3&A&E&4&F&Fɪꜱʟᴀɴᴅ ʙᴏʀᴅᴇʀ'
+    lore:
+      - '&X&6&A&6&A&6&Aɪɴᴛᴇʀᴀᴄᴛɪᴠᴇ ɪᴛᴇᴍ'
+      - ''
+      - '  &X&E&B&E&B&E&Bᴄʜᴀɴɢᴇ ᴛʜᴇ ᴄᴏʟᴏʀ ʙᴏʀᴅᴇʀ'
+      - '  &X&E&B&E&B&E&Bᴏꜰ ʏᴏᴜʀ ꜱᴋʏʙʟᴏᴄᴋ ɪꜱʟᴀɴᴅ'
+      - ''
+      - '  &X&3&A&E&4&F&F▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+      - ''
+  '6':
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzRlNzFiNjg0MjQ5NDY5ZWFmMWUyMmNkMTkzODE0YzVjZmQyMTUyNTI1Y2IzNjQ2YTMyZDQyMzI0NzIzOCJ9fX0='
+    name: '&X&6&A&6&A&6&A● &X&F&B&E&8&0&0ɪꜱʟᴀɴᴅ ᴜᴘɢʀᴀᴅᴇꜱ'
+    lore:
+      - '&X&6&A&6&A&6&Aɪɴᴛᴇʀᴀᴄᴛɪᴠᴇ ɪᴛᴇᴍ'
+      - ''
+      - '  &X&E&B&E&B&E&Bᴜᴘɢʀᴀᴅᴇ ʏᴏᴜʀ ꜱᴋʏʙʟᴏᴄᴋ'
+      - '  &X&E&B&E&B&E&Bɪꜱʟᴀɴᴅ ꜱᴇᴛᴛɪɴɢꜱ ᴡɪᴛʜ ᴍᴏɴᴇʏ'
+      - ''
+      - '  &X&C&6&B&7&0&0▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+      - ''
+  '7':
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWQzZjBhZjMyNDFkNjFmNzllYmY4NDUxZmJkMzdiZmU0OWNlZjNhZTlhZjAxYmRmYjBjMDJjYmFjYjY0N2NmNyJ9fX0='
+    name: '&X&6&A&6&A&6&A● &X&E&0&3&E&F&6ɪꜱʟᴀɴᴅ ʟᴇᴀᴅᴇʀʙᴏᴀʀᴅꜱ'
+    lore:
+      - '&X&6&A&6&A&6&Aɪɴᴛᴇʀᴀᴄᴛɪᴠᴇ ɪᴛᴇᴍ'
+      - ''
+      - '  &X&E&B&E&B&E&Bꜱᴇᴇ ᴛʜᴇ ᴛᴏᴘ ᴏꜰ ᴛʜᴇ ʙᴇꜱᴛ'
+      - '  &X&E&B&E&B&E&Bɪꜱʟᴀɴᴅꜱ ᴏꜰ ᴛʜᴇ ᴡʜᴏʟᴇ ꜱᴇʀᴠᴇʀ'
+      - ''
+      - '  &X&B&B&2&D&C&E▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+      - ''
+  '8':
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk0MWUxZmVhNjA1YjI3ZGU2ZjVhM2MwMTgzMGUxYTEwZDc4N2I2N2RhYjdiYTdmYWJiZjA4NjlkOTVlYWI3MiJ9fX0='
+    name: '&X&6&A&6&A&6&A● &X&F&F&2&B&2&Bɪꜱʟᴀɴᴅ ᴍᴇᴍʙᴇʀꜱ'
+    lore:
+      - '&X&6&A&6&A&6&Aɪɴᴛᴇʀᴀᴄᴛɪᴠᴇ ɪᴛᴇᴍ'
+      - ''
+      - '  &X&E&B&E&B&E&Bᴍᴀɴᴀɢᴇ ᴛʜᴇ ᴍᴇᴍʙᴇʀꜱ'
+      - '  &X&E&B&E&B&E&Bᴏꜰ ʏᴏᴜʀ ꜱᴋʏʙʟᴏᴄᴋ ɪꜱʟᴀɴᴅ'
+      - ''
+      - '  &X&F&F&2&B&2&B▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+      - ''
+  '9':
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzM0ZjQ4ODEwZGRjZGZjOGM3NmIxNDVjNTNiNzQ3MTAyYzc1NjU1NWFjNTVjNjQ4YjFmODIyNzgxNTA1NzNjMSJ9fX0='
+    name: '&X&6&A&6&A&6&A● &X&0&0&C&9&1&Bɪꜱʟᴀɴᴅ ᴠɪꜱɪᴛᴏʀꜱ'
+    lore:
+      - '&X&6&A&6&A&6&Aɪɴᴛᴇʀᴀᴄᴛɪᴠᴇ ɪᴛᴇᴍ'
+      - ''
+      - '  &X&E&B&E&B&E&Bᴍᴀɴᴀɢᴇ ᴛʜᴇ ᴠɪꜱɪᴛᴏʀꜱ'
+      - '  &X&E&B&E&B&E&Bᴏꜰ ʏᴏᴜʀ ꜱᴋʏʙʟᴏᴄᴋ ɪꜱʟᴀɴᴅ'
+      - ''
+      - '  &X&0&0&C&9&1&B▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+      - ''
+  '=':
+    type: ITEM_FRAME
+    name: '&X&6&A&6&A&6&A● &X&0&0&D&4&F&Fɪꜱʟᴀɴᴅ ꜱᴛᴀᴛɪꜱᴛɪᴄꜱ'
+    lore:
+      - '&X&6&A&6&A&6&Aɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+      - ''
+      - '  &X&E&B&E&B&E&Bᴀʟʟ ʏᴏᴜʀ ɪꜱʟᴀɴᴅ'
+      - '  &X&E&B&E&B&E&Bɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+      - ''
+      - '  &X&0&0&D&4&F&F❙ &X&E&B&E&B&E&Bʟᴇᴀᴅᴇʀ: &X&0&0&D&4&F&F%superior_island_name_leader%'
+      - '  &X&0&0&D&4&F&F❙ &X&E&B&E&B&E&Bʟᴇᴠᴇʟ: &X&0&0&D&4&F&F%superior_island_level% ✔'
+      - '  &X&0&0&D&4&F&F❙ &X&E&B&E&B&E&Bᴍᴇᴍʙᴇʀꜱ: &X&0&0&D&4&F&F%superior_island_team_size%&X&6&A&6&A&6&A/&X&0&0&D&4&F&F%superior_island_team_limit% ❤'
+      - ''
+  '+':
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzg2NTFjMmI1MTAxZGYzNzk4NmE5NDFkZDBjYzUxMGNiMDFhYTg4MjI1MWExNTIxMmQyOTVjMDAyZTRjMmE1In19fQ=='
+    name: '&X&6&A&6&A&6&A● &X&0&0&9&3&F&Fɪꜱʟᴀɴᴅ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ'
+    lore:
+      - '&X&6&A&6&A&6&Aɪɴᴛᴇʀᴀᴄᴛɪᴠᴇ ɪᴛᴇᴍ'
+      - ''
+      - '  &X&E&B&E&B&E&Bᴍᴀɴᴀɢᴇ ᴛʜᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ'
+      - '  &X&E&B&E&B&E&Bᴏꜰ ʏᴏᴜʀ ꜱᴋʏʙʟᴏᴄᴋ ɪꜱʟᴀɴᴅ'
+      - ''
+      - '  &X&0&0&9&3&F&F▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+      - ''
+  '-':
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ2OTE2NmFlMDc5MzYwZjQ2Yjc2ZjcxZGUyOGQzOGIwOTYzMzIwZGRiZDg4MWY0ZGVjMDBjYzUxODUwMjJkNCJ9fX0='
+    name: '&X&6&A&6&A&6&A● &X&B&6&3&3&C&7ɪꜱʟᴀɴᴅ qᴜᴇꜱᴛꜱ'
+    lore:
+      - '&X&6&A&6&A&6&Aɪɴᴛᴇʀᴀᴄᴛɪᴠᴇ ɪᴛᴇᴍ'
+      - ''
+      - '  &X&E&B&E&B&E&Bᴄᴏᴍᴘʟᴇᴛᴇ qᴜᴇꜱᴛꜱ ᴛᴏ ɢᴇᴛ'
+      - '  &X&E&B&E&B&E&Bᴍᴏɴᴇʏ ᴀɴᴅ ꜱᴋʏʙʟᴏᴄᴋ'
+      - '  &X&E&B&E&B&E&Bᴇxᴘᴇʀɪᴇɴᴄᴇ ᴛᴏ ʟᴇᴠᴇʟᴜᴘꜱ'
+      - ''
+      - '  &X&B&6&3&3&C&7▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+      - ''
+  '_':
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ=='
+    name: '&X&6&A&6&A&6&A● &X&C&A&0&0&0&0ɪꜱʟᴀɴᴅ ᴅɪꜱʙᴀɴᴅ'
+    lore:
+      - '&X&6&A&6&A&6&Aɪɴᴛᴇʀᴀᴄᴛɪᴠᴇ ɪᴛᴇᴍ'
+      - ''
+      - '  &X&E&B&E&B&E&Bᴅɪꜱʙᴀɴᴅ ʏᴏᴜʀ ꜱᴋʏʙʟᴏᴄᴋ'
+      - '  &X&E&B&E&B&E&Bɪꜱʟᴀɴᴅ ꜰᴏʀᴇᴠᴇʀ'
+      - ''
+      - '  &X&C&A&0&0&0&0▶ ʟᴇꜰᴛ-ᴄʟɪᴄᴋ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ'
+      - ''
+
+sounds:
+  '4':
+    type: BLOCK_BREWING_STAND_BREW
+    volume: 1.0
+  '5':
+    type: UI_BUTTON_CLICK
+    volume: 1.0
+  '6':
+    type: UI_BUTTON_CLICK
+    volume: 1.0
+  '7':
+    type: UI_BUTTON_CLICK
+    volume: 1.0
+  '8':
+    type: UI_BUTTON_CLICK
+    volume: 1.0
+  '9':
+    type: UI_BUTTON_CLICK
+    volume: 1.0
+  '+':
+    type: UI_BUTTON_CLICK
+    volume: 1.0
+  '-':
+    type: UI_BUTTON_CLICK
+    volume: 1.0
+  '_':
+    type: UI_BUTTON_CLICK
+    volume: 1.0
+
+commands:
+  '4':
+    - '[player] is tp'
+  '5':
+    - '[player] is border'
+  '6':
+    - '[player] is upgrades'
+  '7':
+    - '[player] is top'
+  '8':
+    - '[player] is members'
+  '9':
+    - '[player] is visitors'
+  '+':
+    - '[player] is permissions'
+  '-':
+    - '[player] is missions'
+  '_':
+    - '[player] is disband'
+
+# 570549AE4Z8RO2JQ

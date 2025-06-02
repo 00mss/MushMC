@@ -1,0 +1,61 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&nCoperativos de isla'
+previous-menu: true
+
+pattern:
+  - '1 1 2 2 2 2 2 2 2'
+  - '1 @ @ @ @ @ @ @ 2'
+  - '2 @ @ @ @ @ @ @ 2'
+  - '2 1 1 1 1 1 1 1 1'
+  - '2 2 2 % * ^ 1 1 1'
+
+slots: '@'
+previous-page: '%'
+current-page: '*'
+next-page: '^'
+
+items:
+  '1':
+    type: GRAY_STAINED_GLASS_PANE
+    name: ''
+  '2':
+    type: BLACK_STAINED_GLASS_PANE
+    name: ''
+  '@':
+    type: PLAYER_HEAD
+    name: '&b{0} &a&l✔'
+
+  '%':
+    type: PAPER
+    name: '&cPágina Anterior'
+
+  '*':
+    type: BOOK
+    name: '&b&nmc.mineluxe.us'
+
+  '^':
+    type: PAPER
+    name: '&aSiguiente página'
+
+
+sounds:
+  '@':
+    type: BLOCK_CHEST_OPEN
+    volume: 1.0
+  '%':
+    type: UI_BUTTON_CLICK
+    volume: 1.0
+  '*':
+    type: UI_BUTTON_CLICK
+    volume: 1.0
+  '^':      
+    type: UI_BUTTON_CLICK
+    volume: 1.0
+
+# 570549AE4Z8RO2JQ

@@ -1,0 +1,79 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&nSeleccionar un rol al jugador'
+previous-menu: true
+
+pattern:
+  - '1 1 2 2 1 2 2 1 1'
+  - '1 2 @ % 2 & * 2 1'
+  - '2 2 2 2 2 2 2 2 2'
+  - '1 1 2 1 1 1 2 1 1'
+
+items:
+  '1':
+    type: BLACK_STAINED_GLASS_PANE
+    name: ''
+  '2':
+    type: GRAY_STAINED_GLASS_PANE
+    name: ''  
+  '*':
+    type: GRAY_STAINED_GLASS_PANE
+    name: ''
+  '@':
+    role: Member
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTA4YTM3ZDM3OTlmODhmY2ZlNjEzN2ZmMDdkYTBmYzE3NDVhNWFlMDE2NThhNjRhOWNmOGU5ZjUwYTgzNWIwZSJ9fX0='
+    name: '&X&0&5&E&5&2&0Seleccionar rol miembro'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&X&E&B&E&B&E&BHaz clic para establecer el rol'
+    - '&X&E&B&E&B&E&Bdel jugador como miembro.'
+    - ''
+    - '&e▸ ¡Si, seleccionar el rol!'
+
+  '%':
+    role: Moderator
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTA4YTM3ZDM3OTlmODhmY2ZlNjEzN2ZmMDdkYTBmYzE3NDVhNWFlMDE2NThhNjRhOWNmOGU5ZjUwYTgzNWIwZSJ9fX0='
+    name: '&X&0&0&B&4&D&4Seleccionar rol moderador'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&X&E&B&E&B&E&BHaz clic para establecer el rol'
+    - '&X&E&B&E&B&E&Bdel jugador como moderador.'
+    - ''
+    - '&e▸ ¡Si, seleccionar el rol!'
+  '&':
+    role: Admin
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTA4YTM3ZDM3OTlmODhmY2ZlNjEzN2ZmMDdkYTBmYzE3NDVhNWFlMDE2NThhNjRhOWNmOGU5ZjUwYTgzNWIwZSJ9fX0='
+    name: '&X&C&8&0&0&0&0Seleccionar rol administrador'
+    lore:
+    - '&8Artículo de información'
+    - ''
+    - '&X&E&B&E&B&E&BHaz clic para establecer el rol'
+    - '&X&E&B&E&B&E&Bdel jugador como admin.'
+    - ''
+    - '&e▸ ¡Si, seleccionar el rol!'
+
+sounds:
+  '@':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 1.0
+  '%':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 1.0
+  '&':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 1.0
+  '*':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 1.0
+
+# 570549AE4Z8RO2JQ
